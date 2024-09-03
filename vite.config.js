@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import vuetify from 'vite-plugin-vuetify';
 import vue from '@vitejs/plugin-vue';
+import path from 'path';
 
 export default defineConfig({
     plugins: [
@@ -16,5 +18,15 @@ export default defineConfig({
                 },
             },
         }),
+        vuetify({
+            styles: {
+                configFile: 'resources/styles/settings.scss',
+            },
+        }),
     ],
+    resolve: {
+        alias: {
+            '@styles': path.resolve(__dirname, 'resources', 'styles'),
+        },
+    },
 });
