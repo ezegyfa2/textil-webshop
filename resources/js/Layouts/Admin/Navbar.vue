@@ -1,12 +1,12 @@
 <template>
-    <v-app-bar class="p-3">
+    <v-app-bar class="bg-grey-lighten-3 p-3">
         <v-app-bar-nav-icon 
             color="secondary"
             variant="text"
             @click.stop="drawer = !drawer"
         />
         <v-toolbar-title class="text-h5 font-weight-bold">
-            <Link :href="route('admin:dashboard')">
+            <Link :href="route('admin.dashboard')">
                 <span class="text-primary">MA</span>Textil
             </Link>
         </v-toolbar-title>
@@ -14,7 +14,7 @@
     <v-navigation-drawer
         v-model="drawer"
         :location="$vuetify.display.mobile ? 'bottom' : undefined"
-        class="pt-6"
+        class="bg-grey-lighten-3 pt-6"
     >
         <v-list>
             <v-list-item
@@ -23,8 +23,8 @@
                 class="admin-list-item"
                 color="surface"
             >
-                <Link :href="navItem.href" class="d-flex align-center font-weight-bold">
-                    <v-icon :icon="navItem.icon" class="mr-3"/>{{ navItem.text }}
+                <Link :href="navItem.href" class="d-flex align-center text-h6 py-3">
+                    <v-icon :icon="navItem.icon" class="mr-5"/>{{ navItem.text }}
                 </Link>
             </v-list-item>
         </v-list>
@@ -38,24 +38,19 @@ import { ref } from 'vue';
 let drawer = ref(false);
 const navItems = [
     {
-        icon: 'mdi-clock',
-        text: 'Products',
-        href: '/products',
+        icon: 'mdi-account-outline',
+        text: 'Utilizatori',
+        href: route('admin.user.index'),
     },
     {
-        icon: 'mdi-clock',
-        text: 'Products',
-        href: '/products',
+        icon: 'mdi-package-variant-closed',
+        text: 'Produsele',
+        href: route('admin.product.index'),
     },
     {
-        icon: 'mdi-clock',
-        text: 'Products',
-        href: '/products',
-    },
-    {
-        icon: 'mdi-clock',
-        text: 'Products',
-        href: '/products',
+        icon: 'mdi-dolly',
+        text: 'Comenzi',
+        href: route('admin.checkout.index'),
     },
 ];
 </script>

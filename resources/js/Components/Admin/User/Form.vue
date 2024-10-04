@@ -11,7 +11,7 @@
                         <v-form @submit.prevent="$emit('submit')">
                             <v-text-field
                                 v-model="props.form.name"
-                                :counter="255"
+                                :counter="250"
                                 label="Name"
                                 hide-details="auto"
                                 :rules="nameRules"
@@ -21,7 +21,7 @@
 
                             <v-text-field
                                 v-model="props.form.email"
-                                :counter="255"
+                                :counter="250"
                                 label="Email"
                                 hide-details="auto"
                                 :rules="emailRules"
@@ -31,14 +31,14 @@
 
                             <v-text-field
                                 v-model="props.form.password"
-                                :counter="255"
+                                :counter="250"
                                 label="Password"
                                 hide-details="auto"
                                 :rules="passwordRules"
                                 required
                                 type="password"
                                 :error-messages="props.form.errors.password"
-                            ></v-text-field>
+                            />
 
                             <v-btn 
                                 text="Save"
@@ -46,7 +46,7 @@
                                 size="large"
                                 rounded="2"
                                 class="my-5"
-                            ></v-btn>
+                            />
                         </v-form>
                     </v-card-text>
                 </v-card>
@@ -58,24 +58,10 @@
 <script lang="ts" setup>
 import { InertiaForm } from '@inertiajs/vue3';
 import User from '@/types/user';
-import { requiredRule, passwordRule, maxLengthRule, emailRule, lowerCaseRule } from '@/Components/ValidationRules';
+import { passwordRules, nameRules, emailRules } from '@/Components/ValidationRules';
 
 const props = defineProps<{
     title: string,
     form: InertiaForm<User>,
 }>();
-
-let nameRules = [
-    requiredRule,
-    (value: string) => maxLengthRule(value, 50),
-];
-let emailRules = [
-    requiredRule,
-    (value: string) => maxLengthRule(value, 50),
-    emailRule,
-    lowerCaseRule,
-];
-let passwordRules = [
-    passwordRule,
-];
 </script>

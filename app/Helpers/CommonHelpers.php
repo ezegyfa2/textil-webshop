@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\Storage;
 
 class CommonHelpers
 {
-    public static function getImageSrc(string $imageName): string
+    public static function getImageSrc(string $imageName, int $width): string
     {
-        return Storage::url('images/'.$imageName);
+        return Storage::url('images/'.$imageName.'/'.$width.'.webp');
     }
 
     public static function getFirstSentence(string $text): string

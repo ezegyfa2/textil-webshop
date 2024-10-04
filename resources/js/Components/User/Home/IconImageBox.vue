@@ -5,7 +5,7 @@
         :gradient="gradient"
         cover
     >
-        <a
+        <Link
             class="content-box"
             :href="href"
         >
@@ -32,12 +32,13 @@
                 />
                 <p class="title">{{ title }}</p>
             </div>
-        </a>
+        </Link>
     </v-img>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import { Link } from '@inertiajs/vue3';
 
 const props = defineProps<{
     title: string,

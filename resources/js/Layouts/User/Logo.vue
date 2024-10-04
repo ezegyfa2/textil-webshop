@@ -13,7 +13,7 @@
         <div class="d-flex flex-column">
             <div class="d-flex">
                 <div class="text-h4 main-text text-primary">MA</div>
-                <div class="text-h4 main-text text-surface">Textile</div>
+                <div class="text-h4 main-text text-surface">Textil</div>
             </div>
             <p class="text-subtitle-2 text-surface">Îmbrăcăminte de lucru și accesorii</p>
         </div>

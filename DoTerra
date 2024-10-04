@@ -1,0 +1,21 @@
+function myFunction() {
+    const response = UrlFetchApp.fetch("https://www.theterra.hu/termekek/doterra-onallo-esszencialis-olajok?page=1");
+    const $ = Cheerio.load(response.getContentText("windows-1250"));
+    const productElements = $(".productgroup-items-container.productgroup-cols-4 .item-container.item-container-mod1");
+    let products = [
+        [
+            "Név",
+            "Ár",
+        ],
+    ];
+    productElements.each(function(value) {
+        products.push([
+            $(".productname", this).text(),
+            $(".price", this).text(),
+        ]);
+    });
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var tab1 = ss.getSheetByName("2023_foglalas");
+    tab1.clearContents();
+    tab1.getRange(1, 1, products.length, 2).setValues(products);
+}

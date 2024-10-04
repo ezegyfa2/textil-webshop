@@ -1,20 +1,16 @@
 <template>
-    <v-container>
-        <v-row class="button-row">
-            <v-col cols="12" sm="6" md="8" class="d-flex justify-space-between align-center">
-                <Link :href="route('admin:user.create')">
+    <v-container class="section-separator">
+        <v-row class="pt-2">
+            <v-col cols="12" class="d-flex justify-space-between align-center">
+                <Link :href="route('admin.user.create')">
                     <v-btn
                         prepend-icon="mdi-plus"
-                        text="Create new"
-                        elevation="0"
-                        rounded="2"
+                        text="Creați noi"
                     />
                 </Link>
                 <v-btn
                     prepend-icon="mdi-delete-outline"
-                    text="Delete all"
-                    elevation="0"
-                    rounded="2"
+                    text="Ștergeți toate"
                     @click="showDeleteAllModal = true"
                     color="error"
                 />
@@ -22,31 +18,43 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-card outlined class="pa-5">
+                <v-card class="pa-5">
                     <v-container fluid>
                         <v-row class="p-0">
                             <v-col class="pa-0" cols="12" sm="6" md="4" lg="3">
                                 <v-text-field
                                     v-model="search"
-                                    placeholder="Search"
+                                    placeholder="Cautare"
                                     hide-details="auto"
-                                    rounded="2"
                                     density="compact"
                                 />
                             </v-col>
                         </v-row>
                     </v-container>
                     <v-data-table-server
-                        v-model:page="tablePage"
-                        v-model:items-per-page="itemsPerPage"
+                        class="pt-5"
                         :headers="headers"
+                        v-model:page="page"
+                        v-model:items-per-page="itemsPerPage"
                         :items="users"
                         :items-length="usersTotalCount"
-                        items-per-page-text="Users per page"
+                        items-per-page-text="Utilizatori pe pagină"
                         :loading="loading"
                         item-value="name"
                         @update:options="loadItems"
                     >
+                        <template v-slot:header.name>
+                            <p class="text-h6 main-text">Nume</p>
+                        </template>
+                        <template v-slot:header.email>
+                            <p class="text-h6 main-text">Email</p>
+                        </template>
+                        <template v-slot:item.name="{ item }">
+                            <p class="text-body-2">{{ item.name }}</p>
+                        </template>
+                        <template v-slot:item.email="{ item }">
+                            <p class="text-body-2">{{ item.email }}</p>
+                        </template>
                         <template v-slot:item.actions="{ item }">
                             <v-menu rounded>
                                 <template v-slot:activator="{ props }">
@@ -54,7 +62,6 @@
                                         class="actions-button"
                                         text="asd"
                                         elevation="0"
-                                        rounded
                                         icon="mdi-dots-vertical"
                                         v-bind="props"
                                     />
@@ -63,7 +70,7 @@
                                     class="mx-auto"
                                     max-width="300">
                                     <v-list density="compact">
-                                        <Link :href="route('admin:user.edit', item.id)">
+                                        <Link :href="route('admin.user.edit', item.id)">
                                             <v-list-item
                                                 prepend-icon="mdi-pencil-outline"
                                                 slim
@@ -71,7 +78,7 @@
                                                 <v-list-item-title v-text="'Edit'"/>
                                             </v-list-item>
                                         </Link>
-                                        <Link :href="route('admin:user.create')">
+                                        <Link :href="route('admin.user.create')">
                                             <v-list-item
                                                 prepend-icon="mdi-delete-outline"
                                                 slim
@@ -83,20 +90,24 @@
                                 </v-card>
                             </v-menu>
                         </template>
+
+                        <template v-slot:no-data>
+                            <p class="text-body-1 py-10">Nu există date disponibile</p>
+                        </template>
                     </v-data-table-server>
                 </v-card>
             </v-col>
         </v-row>
         <confirms-modal 
             v-model:show="showDeleteModal"
-            title="Are you sure to delete?"
-            content="Click to delete this item"
+            title="Sunteți sigur că doriți să ștergeți?"
+            content="Faceți clic pentru a șterge acest element"
             @confirmed="deleteItem()"
         />
         <confirms-modal 
             v-model:show="showDeleteAllModal"
-            title="Are you sure to delete?"
-            content="Click to delete all items"
+            title="Sunteți sigur că doriți să ștergeți?"
+            content="Faceți clic pentru a șterge toate elementele"
             @confirmed="deleteAll()"
         />
     </v-container>
@@ -104,12 +115,13 @@
 
 <script lang="ts" setup>
 import { ref, Ref, computed, watch } from 'vue';
-import { usePage, Link } from '@inertiajs/vue3';
+import { Link } from '@inertiajs/vue3';
 import axios from 'axios';
 import User from '@/types/user';
 import ConfirmsModal from '@/Components/ConfirmsModal.vue';
+import { addNotification } from '@/Layouts/Notification/AddNotification';
 
-let tablePage = ref(1);
+let page = ref(1);
 let itemsPerPage = ref(10);
 let search = ref('');
 let loading = ref(false);
@@ -118,15 +130,9 @@ let usersTotalCount = ref(0);
 let selectedId = ref();
 let showDeleteModal = ref(false);
 let showDeleteAllModal = ref(false);
-const page = usePage();
 let headers = computed(() => [
     {
-        title: 'ID',
-        sortable: false,
-        key: 'id',
-    },
-    {
-        title: 'Name',
+        title: 'Nume',
         sortable: false,
         key: 'name',
     },
@@ -136,18 +142,7 @@ let headers = computed(() => [
         key: 'email',
     },
     {
-        title: 'Created at',
-        sortable: false,
-        key: 'created_at',
-    },
-    {
-        title: 'Email verified at',
-        sortable: false,
-        key: 'email_verified_at',
-    },
-    {
         value: 'actions',
-        title: 'Actions',
         sortable: false,
         align: 'end',
     },
@@ -157,20 +152,14 @@ watch(search, () => loadItems());
 
 function deleteItem(): void {
     loading.value = true;
-    axios.post(route('admin:user.delete', [selectedId]))
+    axios.post(route('admin.user.delete', [selectedId]))
         .then((resp) => {
-            page.props.notifications.push({
-                type: 'success',
-                message: 'User successfully deleted',
-            });
+            addNotification('Utilizator șters cu succes', 'success');
             loadItems();
         })
         .catch((error) => {
             console.error(error);
-            page.props.notifications.push({
-                type: 'error',
-                message: 'An unexpected error occured while deleting item',
-            });
+            addNotification('A apărut o eroare neașteptată în timpul ștergerii elementului', 'error');
             loading.value = false;
         })
         .finally(() => {
@@ -183,29 +172,20 @@ function showConfirmDelete(item: User): void {
         selectedId.value = item.id;
         showDeleteModal.value = true;
     } else {
-        page.props.notifications.push({
-            type: 'error',
-            message: 'An unexpected error occured during delete',
-        });
+        addNotification('A apărut o eroare neașteptată în timpul ștergerii', 'error');
     }
 }
 
 function deleteAll(): void {
     loading.value = true;
-    axios.post(route('admin:user.delete-all'))
+    axios.post(route('admin.user.delete-all'))
         .then((resp) => {
-            page.props.notifications.push({
-                type: 'success',
-                message: 'User successfully deleted',
-            });
+            addNotification('Utilizatori șterși cu succes', 'success');
             users.value = [];
         })
         .catch((error) => {
             console.error(error);
-            page.props.notifications.push({
-                type: 'error',
-                message: 'An unexpected error occured while deleting item',
-            });
+            addNotification('A apărut o eroare neașteptată în timpul ștergerii elementului', 'error');
         })
         .finally(() => {
             loading.value = false;
@@ -214,21 +194,18 @@ function deleteAll(): void {
 }
 
 function loadItems(): void {
-    axios.get(route('admin:user.fetch'), {
-        page: tablePage.value,
+    axios.get(route('admin.user.fetch', {
+        page: page.value,
         per_page: itemsPerPage.value,
         search: search.value,
-    })
+    }))
     .then((resp) => {
         users.value = resp.data.data;
-        usersTotalCount.value = Math.ceil(resp.data.meta.total / resp.data.meta.per_page);
+        usersTotalCount.value = resp.data.meta.total;
     })
     .catch((error) => {
         console.error(error);
-        page.props.notifications.push({
-            type: 'error',
-            message: 'An unexpected error occured while loading data',
-        });
+        addNotification('A apărut o eroare neașteptată în timpul încărcării datelor', 'error');
         users.value = [];
         usersTotalCount.value = 1;
     })
@@ -239,12 +216,6 @@ function loadItems(): void {
 </script>
 
 <style scoped>
-.button-row {
-    padding-top: 2rem;
-}
-.filter-row {
-    padding-bottom: 2rem;
-}
 .actions-button {
     background-color: transparent !important;
 }

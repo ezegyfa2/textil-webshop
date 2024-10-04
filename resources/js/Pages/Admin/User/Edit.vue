@@ -22,7 +22,7 @@ props.user.password = '';
 const form = useForm(props.user);
 
 function submit() {
-    form.put(route('admin:user.update', props.user.id), {
+    form.put(route('admin.user.update', props.user.id), {
         preserveScroll: true,
         onError: (errors) => {
             console.log(errors);

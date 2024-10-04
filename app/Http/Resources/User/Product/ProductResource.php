@@ -10,10 +10,9 @@ class ProductResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'name' => $this->name,
-            'description' => $this->description,
             'price' => $this->price,
-            'image_sources' => $this->images->pluck('src'),
+            'colors' => $this->colors->select(['name', 'id']),
+            'sizes' => $this->sizes->select(['name', 'id']),
         ];
     }
 }

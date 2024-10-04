@@ -1,7 +1,7 @@
 <template>
     <v-app class="layout">
         <Navbar/>
-        <v-main class="bg-surface-variant d-flex justify-center align-center h-100">
+        <v-main class="d-flex">
             <slot />
             <Notifications/>
         </v-main>
@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import Notifications from '@/Components/Notifications.vue';
+import Notifications from '@/Layouts/Notification/Notifications.vue';
 import Navbar from '@/Layouts/Admin/Navbar.vue';
 
 const props = defineProps<{

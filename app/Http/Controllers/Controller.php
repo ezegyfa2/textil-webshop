@@ -10,8 +10,8 @@ abstract class Controller
 {
     public function getFetchResponseByQuery(mixed $query, Request $request, string $resourceClass, int $perPage = 10, $page = 1): AnonymousResourceCollection
     {
-        $perPage = $request->input('per_page', 10);
-        $page = $request->input('page', 1);
+        $perPage = $request->get('per_page', 10);
+        $page = $request->get('page', 1);
 
         $total = ceil($query->count() / $perPage);
 

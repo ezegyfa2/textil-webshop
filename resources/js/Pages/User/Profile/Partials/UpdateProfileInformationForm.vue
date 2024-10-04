@@ -54,7 +54,7 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <PrimaryButton :disabled="form.processing">Save</PrimaryButton>
+                <v-btn :disabled="form.processing">Save</-btn>
 
                 <Transition
                     enter-active-class="transition ease-in-out"
@@ -70,7 +70,6 @@
 </template>
 
 <script setup lang="ts">
-import PrimaryButton from '@/Components/PrimaryButton.vue';
 import { Link, useForm, usePage } from '@inertiajs/vue3';
 
 defineProps<{

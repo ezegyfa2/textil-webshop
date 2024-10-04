@@ -1,19 +1,32 @@
 <template>
-    <a class="button">
+    <Link
+        :href="href"
+        class="button"
+    >
         <div class="skew-content">
             <div class="skew-content-text main-text">{{ content }}</div>
         </div>
-    </a>
+    </Link>
 </template>
 
 <script setup lang="ts">
+import { Link } from '@inertiajs/vue3';
+
 const props = defineProps<{
     content: string;
+    href: string;
 }>()
 </script>
 
 <style scoped lang="scss">
 @import '@styles/themeVariables';
+@import 'vuetify/lib/styles/settings/_variables';
+
+@media #{map-get($display-breakpoints, 'sm-and-down')} {
+    .button {
+        width: 130px !important;
+    }
+}
 
 .button {
     width: 180px;
@@ -22,6 +35,7 @@ const props = defineProps<{
     background-color: $primary-color;
     transition: $main-transition;
 }
+
 .button:hover {
     background-color: $surface-variant-color;
     color: $primary-color;

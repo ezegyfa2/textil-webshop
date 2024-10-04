@@ -2,14 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Notifications\Notifiable;
 
 class Blog extends Model
 {
-    use Notifiable;
-
     protected $fillable = [
         'title',
         'short_content',

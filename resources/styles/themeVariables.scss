@@ -1,10 +1,12 @@
 $text-color: white;
 $surface-color: #FFFFFF;
 $surface-variant-color: #2F2D2F;
-$background-color2: #020202;
 $primary-color: #FF9505;
 $secondary-color: #191719;
 $error-color: #C20114;
+$success-color: #1B998B;
 
 $main-transition: all .4s ease;
-$section-separator-distance: 120px;
+$sm-section-separator-distance: 40px;
+$md-section-separator-distance: 80px;
+$lg-section-separator-distance: 120px;

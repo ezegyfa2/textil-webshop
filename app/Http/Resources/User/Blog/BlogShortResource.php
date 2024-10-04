@@ -12,7 +12,7 @@ class BlogShortResource extends JsonResource
         return [
             'title' => $this->title,
             'content' => CommonHelpers::getFirstSentence($this->short_content),
-            'image_src' => $this->image->src,
+            'image_src' => $this->image->getSrc(400),
             'href' => route('blog.show', [
                 'blog' => $this->id
             ]),

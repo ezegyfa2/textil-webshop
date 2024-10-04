@@ -7,13 +7,14 @@
             :blog3="props.main_blog3"
         />
         <DescriptionSection 
+            id="about_us"
             title="Bine ați venit la MATextil"
             content="Fie că lucrați în construcții, industrie, logistică sau alte domenii, noi vă oferim echipamente profesionale care combină durabilitatea, confortul și stilul. În magazinul nostru veți găsi o gamă variată de produse special concepute pentru a asigura siguranța și eficiența la locul de muncă."
             button-text="Produsele noastre"
             src="storage/images/Welcome.jpg"
-            href="/products"
+            :href="route('product.index')"
         />
-        <CategorySection/>
+        <CategorySection :categories="categories"/>
         <ClientOpinionSection class="top-section-separator"/>
         <BlogSection
             :blog1="blog1"
@@ -40,5 +41,6 @@ const props = defineProps<{
     blog1: BlogShort,
     blog2: BlogShort,
     blog3: BlogShort,
+    categories: Array,
 }>();
 </script>

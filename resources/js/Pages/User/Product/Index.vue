@@ -2,199 +2,213 @@
     <MainLayout>
         <v-container>
             <v-row>
-                <v-col>
+                <v-col class="top-section-separator">
+                    <v-card class="pa-3 mt-6 mt-sm-0 d-flex">
+                        <v-btn
+                            class="mr-3"
+                            icon="mdi-filter"
+                            @click="drawer = !drawer"
+                        />
+                        <v-text-field
+                            v-model="search"
+                            density="comfortable"
+                            placeholder="Căutare"
+                            prepend-inner-icon="mdi-magnify"
+                            style="max-width: 300px;"
+                            variant="solo"
+                            clearable
+                            :rules="[maxFieldLengthRule]"
+                            :disabled="loading"
+                            :loading="loading"
+                            :error-messages="errorMessages.search"
+                        />
+                    </v-card>
                     <v-card>
-                        <v-data-iterator
-                            :items="products"
-                            :items-per-page="productsPerPage"
-                        >
-                            <template v-slot:header>
-                                <v-toolbar class="px-2">
-                                    <v-text-field
-                                        v-model="search"
-                                        density="comfortable"
-                                        placeholder="Search"
-                                        prepend-inner-icon="mdi-magnify"
-                                        style="max-width: 300px;"
-                                        variant="solo"
-                                        clearable
-                                        hide-details
-                                    ></v-text-field>
-                                </v-toolbar>
-                            </template>
-
-                            <template v-slot:default="{ items }">
-                                <v-container class="pa-2" fluid>
-                                    <v-row dense>
-                                        <v-col
-                                            v-for="item in items"
-                                            :key="item.name"
-                                            class="pa-2"
-                                            cols="12"
-                                            sm="6"
-                                            md="3"
-                                        >
-                                            <Link :href="route('product.show', {product: item.raw.id})">
-                                                <v-card
-                                                    class="product-box"
-                                                    color="white"
-                                                    rounded="0"
-                                                    flat
-                                                >
-                                                    <v-img 
-                                                        width="100%"
-                                                        height="300"
-                                                        :src="item.raw.image_src"
-                                                        cover
-                                                    >
-                                                        <div class="image-hover-content">
-                                                            <v-icon 
-                                                                icon="mdi-eye"
-                                                                color="primary"
-                                                                size="80"
-                                                            />
-                                                        </div>
-                                                    </v-img>
-
-                                                    <div class="p-5">
-
-                                                        <div class="d-flex justify-space-between align-center">
-                                                            <div>
-                                                                <strong class="product-box-text text-h6 font-weight-bold">{{ item.raw.name }}</strong>
-                                                                <div class="product-box-text text-subtitle-2">{{ item.raw.price }} RON</div>
-                                                            </div>
-
-                                                            <v-btn
-                                                                size="small"
-                                                                text="Read"
-                                                                icon="mdi-cart"
-                                                                flat
-                                                            ></v-btn>
-                                                        </div>
-                                                    </div>
-                                                </v-card>
-                                            </Link>
-                                        </v-col>
-                                    </v-row>
-                                </v-container>
-                            </template>
-
-                            <template v-slot:footer>
-                                <div class="d-flex align-center justify-center pa-4">
-                                    <v-btn
-                                        :disabled="page <= 1"
-                                        density="comfortable"
-                                        icon="mdi-arrow-left"
-                                        variant="tonal"
-                                        rounded
-                                        @click="prevPage"
-                                    ></v-btn>
-
-                                    <div class="mx-2 text-caption">
-                                        Page {{ page }} of {{ pageCount }}
-                                    </div>
-
-                                    <v-btn
-                                        :disabled="page >= pageCount"
-                                        density="comfortable"
-                                        icon="mdi-arrow-right"
-                                        variant="tonal"
-                                        rounded
-                                        @click="nextPage"
-                                    ></v-btn>
-                                </div>
-                            </template>
-                        </v-data-iterator>
+                        <ProductTable
+                            :filters="validatedFilters"
+                            v-model:loading="loading"
+                            v-model:error-messages="errorMessages"
+                        />
                     </v-card>
                 </v-col>
             </v-row>
         </v-container>
+        <v-navigation-drawer
+            v-model="drawer"
+            class="bg-surface top-0 h-100"
+            elevation="2"
+        >
+            <v-form ref="filterForm">
+                <v-expansion-panels 
+                    v-model="panels"
+                    multiple
+                >
+                    <v-expansion-panel
+                        rounded="0"
+                    >
+                        <template v-slot:title>
+                            <p class="text-h6 main-text">Prețuri</p>
+                        </template>
+                        <template v-slot:text>
+                            <v-text-field
+                                v-model="fromPrice"
+                                placeholder="De la preț"
+                                class="text-body-2 main-text"
+                                type="number"
+                                step=".01"
+                                density="comfortable"
+                                variant="solo"
+                                clearable
+                                :rules="[pozitiveRule]"
+                                :disabled="loading"
+                                :loading="loading"
+                                :error-messages="errorMessages.from_price"
+                            />
+                            <v-text-field
+                                v-model="toPrice"
+                                placeholder="La preț"
+                                class="text-body-2 main-text"
+                                type="number"
+                                step=".01"
+                                density="comfortable"
+                                variant="solo"
+                                clearable
+                                :rules="[toPriceMinRule, pozitiveRule]"
+                                :disabled="loading"
+                                :loading="loading"
+                                :error-messages="errorMessages.to_price"
+                            />
+                        </template>
+                    </v-expansion-panel>
+                    <v-expansion-panel rounded="0">
+                        <template v-slot:title>
+                            <p class="text-h6 main-text">Categorii</p>
+                        </template>
+                        <template v-slot:text>
+                            <v-list-item
+                                v-for="category in categories"
+                                :key="category.name"
+                                class="d-flex justify-end"
+                            >
+                                <v-checkbox
+                                    v-model="selectedCategoryIds"
+                                    :value="category.id"
+                                    density="compact"
+                                    hide-details
+                                    :disabled="loading"
+                                >
+                                    <template v-slot:prepend>
+                                        <p class="text-body-2 main-text">{{ category.name }}</p>
+                                    </template>
+                                </v-checkbox>
+                            </v-list-item>
+                        </template>
+                    </v-expansion-panel>
+                    <v-expansion-panel rounded="0">
+                        <template v-slot:title>
+                            <p class="text-h6 main-text">Dimensiuni</p>
+                        </template>
+                        <template v-slot:text>
+                            <v-list-item
+                                v-for="size in sizes"
+                                :key="size.name"
+                                class="d-flex justify-end"
+                            >
+                                <v-checkbox
+                                    v-model="selectedSizeIds"
+                                    :value="size.id"
+                                    density="compact"
+                                    hide-details
+                                    :disabled="loading"
+                                >
+                                    <template v-slot:prepend>
+                                        <p class="text-body-2 main-text">{{ size.name }}</p>
+                                    </template>
+                                </v-checkbox>
+                            </v-list-item>
+                        </template>
+                    </v-expansion-panel>
+                    <v-expansion-panel rounded="0">
+                        <template v-slot:title>
+                            <p class="text-h6 main-text">Culorile</p>
+                        </template>
+                        <template v-slot:text>
+                            <v-list-item
+                                v-for="color in colors"
+                                :key="color.name"
+                                class="d-flex justify-end"
+                            >
+                                <v-checkbox
+                                    v-model="selectedColorIds"
+                                    :value="color.id"
+                                    density="compact"
+                                    hide-details
+                                    :disabled="loading"
+                                >
+                                    <template v-slot:prepend>
+                                        <p class="text-body-2 main-text">{{ color.name }}</p>
+                                    </template>
+                                </v-checkbox>
+                            </v-list-item>
+                        </template>
+                    </v-expansion-panel>
+                </v-expansion-panels>
+            </v-form>
+        </v-navigation-drawer>
     </MainLayout>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import MainLayout from '@/Layouts/User/MainLayout.vue';
-import { ref, computed, watch, onMounted } from 'vue';
-import { Link } from '@inertiajs/vue3';
+import ProductTable from '@/Components/User/Product/Table.vue';
+import { maxFieldLengthRule, minRule, pozitiveRule, numberRule } from '@/Helpers/ValidationRules';
+import { ref, computed, watch, useTemplateRef } from 'vue';
 
-let search = ref('');
-let products = ref([]);
-let page = ref(1);
-let pageCount = ref(1);
-let productsPerPage = ref(10);
-let loading = ref(false);
-let errorMessages = ref([]);
+const props = defineProps<{
+    sizes: Array,
+    colors: Array,
+    categories: Array,
+}>();
 
-function nextPage() {
-    if (page.value < pageCount.value) {
-        ++page.value;
-        fetch();
-    } else {
-        throw new Error('Maximum page number exceeded');
-    }
-}
+const search = ref('');
+const fromPrice = ref(null);
+const toPrice = ref(null);
+const selectedCategoryIds = ref([]);
+const selectedSizeIds = ref([]);
+const selectedColorIds = ref([]);
+const loading = ref(false);
+const errorMessages = ref({});
+const drawer = ref(false);
+const panels = ref([0, 1, 2, 3]);
+const validatedFilters = ref({});
+const filterFormComponent = useTemplateRef('filterForm');
 
-function prevPage() {
-    if (page.value > 0) {
-        --page.value;
-        fetch();
-    } else {
-        throw new Error('Minimum page number exceeded');
-    }
-}
-
-watch(search, () => {
-    fetch();
-});
-
-onMounted(fetch);
-
-function fetch() {
-    loading.value = true;
-    axios.get(route('product.fetch', fetchFilterValues.value))
-    .then((response) => {
-        products.value = response.data.data;
-        pageCount.value = Math.ceil(response.data.meta.total / response.data.meta.per_page);
-        if (page.value > pageCount.value) {
-            page.value = pageCount.value;
-        }
-        errorMessages.value = [];
-    })
-    .catch((error) => {
-        console.error(error);
-        errorMessages.value = error.response.data.errors;
-        products.value = [];
-    })
-    .finally(() => {
-        loading.value = false;
-    });
-}
-
-const fetchFilterValues = computed(() => {
+const filters = computed(() => {
     return {
-        page: page.value,
-        per_page: productsPerPage.value,
         search: search.value,
+        from_price: fromPrice.value,
+        to_price: toPrice.value,
+        category_ids: selectedCategoryIds.value,
+        size_ids: selectedSizeIds.value,
+        color_ids: selectedColorIds.value,
     };
 });
+
+watch(filters, (newFilters) => {
+    if (filterFormComponent.value) {
+        filterFormComponent.value.validate().then((result) => {
+            if (result.valid) {
+                validatedFilters.value = newFilters;
+            }
+        });
+    }
+});
+
+function toPriceMinRule(value) {
+    if (fromPrice.value === null || fromPrice.value === '') {
+        return true;
+    } else {
+        return minRule(value, fromPrice.value);
+    }
+}
 </script>
-
-<style scoped lang="scss">
-@import "@styles/themeVariables";
-
-.image-hover-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    background-color: black;
-}
-.image-hover-content:hover {
-    opacity: 0.7;
-}
-.product-box:hover .product-box-text {
-    color: yellow;
-}
-</style>

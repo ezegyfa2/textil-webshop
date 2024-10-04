@@ -20,7 +20,7 @@ const form = useForm({
 });
 
 function submit() {
-    form.post(route('admin:user.store'), {
+    form.post(route('admin.user.store'), {
         preserveScroll: true,
         onError: (errors) => {
             console.log(errors);

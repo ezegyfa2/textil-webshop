@@ -34,27 +34,27 @@ class RouteServiceProvider extends ServiceProvider
             ->group(function () {
 
                 Route::prefix('admin')
-                    ->name('admin:')
+                    ->name('admin.')
                     ->group(base_path('routes/admin/auth.php'));
 
-                Route::middleware(['auth:admin'])
+                /*Route::middleware(['auth:admin'])
                     ->prefix('admin/profile')
-                    ->name('admin:')
-                    ->group(base_path('routes/admin/profile.php'));
+                    ->name('admin.')
+                    ->group(base_path('routes/admin/profile.php'));*/
 
                 Route::middleware(['auth:admin', 'verified']) // 'role:admin|superadmin'
                     ->prefix('admin')
-                    ->name('admin:')
+                    ->name('admin.')
                     ->group(base_path('routes/admin/web.php'));
 
-                Route::middleware(['auth:admin', 'verified'])
+                /*Route::middleware(['auth:admin', 'verified'])
                     ->prefix('admin')
-                    ->name('admin:')
-                    ->group(base_path('routes/admin/devops.php'));
+                    ->name('admin.')
+                    ->group(base_path('routes/admin/devops.php'));*/
             });
 
         Route::middleware('api')
-            ->name('admin:api:')
+            ->name('admin.api:')
             ->prefix('admin/api')
             ->group(base_path('routes/admin/api.php'));
     }

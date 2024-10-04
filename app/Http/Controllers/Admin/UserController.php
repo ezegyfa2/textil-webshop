@@ -42,7 +42,7 @@ class UserController extends Controller
         $user = new User();
         $this->save($user, $request);
 
-        return redirect()->route('admin:user.index')->with([
+        return redirect()->route('admin.user.index')->with([
             'notifications' => [ 
                 [
                     'type' => 'success',
@@ -63,7 +63,7 @@ class UserController extends Controller
     {
         $this->save($user, $request);
 
-        return redirect()->route('admin:user.index')->with([
+        return redirect()->route('admin.user.index')->with([
             'notifications' => [ 
                 [
                     'type' => 'success',
@@ -83,7 +83,7 @@ class UserController extends Controller
             ]);
         }
 
-        return redirect()->route('admin:User.index')->with([
+        return redirect()->route('admin.User.index')->with([
             'notifications' => [ 
                 [
                     'type' => 'success',

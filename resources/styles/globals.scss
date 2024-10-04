@@ -1,0 +1,144 @@
+@import '@styles/themeVariables';
+@import 'vuetify/lib/styles/settings/_variables';
+
+@media #{map-get($display-breakpoints, 'xs')} {
+    td, th {
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
+}
+
+// Text field
+input,
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: $secondary-color;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: none;
+    --tw-ring-shadow: 0 0 transparent !important;
+    --tw-ring-color: transparent !important;
+}
+
+a {
+    color: $secondary-color;
+    opacity: 1;
+    text-decoration: none;
+
+    &:not([disabled=true]) {
+        cursor: pointer;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+[disabled=true] {
+    opacity: 0.5;
+}
+
+.global-button:hover {
+    color: $primary-color !important;
+    background-color: $secondary-color !important;
+    opacity: 1;
+    transition: $main-transition;
+}
+
+.section-separator {
+    padding-top: $sm-section-separator-distance !important;
+    padding-bottom: $sm-section-separator-distance !important;
+}
+.large-section-separator {
+    padding-top: $sm-section-separator-distance * 1.7 !important;
+    padding-bottom: $sm-section-separator-distance * 1.7 !important;
+}
+
+.top-section-separator {
+    padding-top: $sm-section-separator-distance !important;
+}
+.large-top-section-separator {
+    padding-top: $sm-section-separator-distance * 1.7 !important;
+}
+
+.bottom-section-separator {
+    padding-bottom: $sm-section-separator-distance !important;
+}
+.large-bottom-section-separator {
+    padding-bottom: $sm-section-separator-distance * 1.7 !important;
+}
+
+@media #{map-get($display-breakpoints, 'md-and-up')} {
+    .section-separator {
+        padding-top: $md-section-separator-distance !important;
+        padding-bottom: $md-section-separator-distance !important;
+    }
+    .large-section-separator {
+        padding-top: $md-section-separator-distance * 1.7 !important;
+        padding-bottom: $md-section-separator-distance * 1.7 !important;
+    }
+    
+    .top-section-separator {
+        padding-top: $md-section-separator-distance !important;
+    }
+    .large-top-section-separator {
+        padding-top: $md-section-separator-distance * 1.7 !important;
+    }
+    
+    .bottom-section-separator {
+        padding-bottom: $md-section-separator-distance !important;
+    }
+    .large-bottom-section-separator {
+        padding-bottom: $md-section-separator-distance * 1.7 !important;
+    }
+}
+
+@media #{map-get($display-breakpoints, 'lg-and-up')} {
+    .section-separator {
+        padding-top: $lg-section-separator-distance !important;
+        padding-bottom: $lg-section-separator-distance !important;
+    }
+    
+    .top-section-separator {
+        padding-top: $lg-section-separator-distance !important;
+    }
+    
+    .bottom-section-separator {
+        padding-bottom: $lg-section-separator-distance !important;
+    }
+}
+
+.main-text {
+    font-family: "Kanit" !important;
+    font-weight: bolder !important;
+    text-transform: uppercase !important;
+}
+
+.v-btn {
+    min-width: 0;
+}
+/*.v-field {
+    box-shadow: none !important;
+
+    .v-field__field {
+        background-color: $surface-color;
+    
+        input, input:focus {
+            opacity: 1 !important;
+            background-color: $primary-color !important;
+            border-width: 0;
+            border-radius: settings.$field-rounded-border-radius !important;
+        }
+    }
+}*/
+
+.v-data-table-footer {
+    font-size: 0.875rem !important;
+    font-family: "Kanit" !important;
+    font-weight: bolder !important;
+}

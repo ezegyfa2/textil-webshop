@@ -2,7 +2,7 @@
     <v-container class="blog-container">
         <v-row>
             <v-col 
-                class="pr-10"
+                class="pr-10 d-none d-md-flex"
                 cols="12"
                 md="6"
                 lg="4"
@@ -17,7 +17,7 @@
                 />
             </v-col>
             <v-col 
-                class="px-5"
+                class="px-5 d-none d-md-flex"
                 cols="12"
                 md="6"
                 lg="4"
@@ -32,7 +32,7 @@
                 />
             </v-col>
             <v-col 
-                class="pl-10"
+                class="pl-10 d-none d-lg-flex"
                 cols="12"
                 md="6"
                 lg="4"
@@ -62,8 +62,10 @@ const props = defineProps<{
 </script>
 
 <style>
-.blog-container {
-    background-color: transparent;
-    margin-top: -127px;
+@media (min-width: 960px) {
+    .blog-container {
+        background-color: transparent;
+        margin-top: -127px;
+    }
 }
 </style>

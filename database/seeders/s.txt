@@ -1,0 +1,1153 @@
+<?php
+
+return [
+    [
+        'GI64800 SOFTSTYLE® ADULT DOUBLE PIQUÉ POLO',
+        177,
+        'GILDAN',
+        'Tricouri Polo',
+        [
+            '100% Bumbac',
+        ],
+        [
+            'Maneca lunga',
+            'La baza gatului',
+            'Cusatura laterala',
+        ],
+        [
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'white',
+                'purchase_price' => 15.72,
+                'price' => 26.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '5XL'],
+                'color' => 'white',
+                'purchase_price' => 22,
+                'price' => 36.9,
+            ],
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'colored',
+                'purchase_price' => 18.66,
+                'price' => 30.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '5XL'],
+                'color' => 'colored',
+                'purchase_price' => 26,
+                'price' => 43.9,
+            ],
+        ],
+        [
+            'Buc./' => [24, 24, 24, 24, 24, 24, 24],
+            'Lungimea corpului (A)' => [68, 70, 72, 74, 76, 78, 80],
+            'Latimea pieptului (B)' => [44, 47, 50, 53, 56, 62, 69],
+            'Lungimea manecii (C)' => [76, 78, 80, 82, 84, 86, 88],
+        ]
+    ],
+    [
+        'GI8800',
+        [
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'white',
+                'purchase_price' => 14.52,
+                'price' => 25.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '3XL'],
+                'color' => 'white',
+                'purchase_price' => 18.5,
+                'price' => 28.9,
+            ],
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'colored',
+                'purchase_price' => 17.96,
+                'price' => 27.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '3XL'],
+                'color' => 'colored',
+                'purchase_price' => 22.8,
+                'price' => 37.9,
+            ],
+        ],
+    ],
+    [
+        'GIL64800',
+        [
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'white',
+                'purchase_price' => 16.72,
+                'price' => 26.9,
+            ],
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'colored',
+                'purchase_price' => 18.66,
+                'price' => 30.9,
+            ],
+        ],
+    ],
+    [
+        'SO11338',
+        [
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'white',
+                'purchase_price' => 17.56,
+                'price' => 27.9,
+            ],
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'colored',
+                'purchase_price' => 20.26,
+                'price' => 35.9,
+            ],
+        ],
+    ],
+    [
+        'SO11342',
+        [
+            [
+                'sizeInterval' => ['XS', '2XL'],
+                'color' => 'white',
+                'purchase_price' => 17.56,
+                'price' => 30.9,
+            ],
+            [
+                'sizeInterval' => ['XS', '2XL'],
+                'color' => 'colored',
+                'purchase_price' => 20.26,
+                'price' => 35.9,
+            ],
+        ],
+    ],
+    [
+        'SO03566',
+        [
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'white',
+                'purchase_price' => 20.86,
+                'price' => 35.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '5XL'],
+                'color' => 'white',
+                'purchase_price' => 28.8,
+                'price' => 44.9,
+            ],
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'colored',
+                'purchase_price' => 23.7,
+                'price' => 37.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '5XL'],
+                'color' => 'colored',
+                'purchase_price' => 32.6,
+                'price' => 54.9,
+            ],
+        ],
+    ],
+    [
+        'SO11376',
+        [
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'white',
+                'purchase_price' => 21.41,
+                'price' => 34.9,
+            ],
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'colored',
+                'purchase_price' => 25.25,
+                'price' => 37.9,
+            ],
+        ],
+    ],
+    [
+        'SO11377',
+        [
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'white',
+                'purchase_price' => 21.41,
+                'price' => 34.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '3XL'],
+                'color' => 'white',
+                'purchase_price' => 25.7,
+                'price' => 37.9,
+            ],
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'colored',
+                'purchase_price' => 25.25,
+                'price' => 37.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '3XL'],
+                'color' => 'colored',
+                'purchase_price' => 30.4,
+                'price' => 46.9,
+            ],
+        ],
+    ],
+    [
+        'KA255',
+        [
+            [
+                'sizeInterval' => ['XS', '3XL'],
+                'color' => 'all',
+                'purchase_price' => 22,
+                'price' => 34.9,
+            ],
+        ],
+    ],
+    [
+        'GI85800',
+        [
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'white',
+                'purchase_price' => 22.26,
+                'price' => 34.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '3XL'],
+                'color' => 'white',
+                'purchase_price' => 28.6,
+                'price' => 45.5,
+            ],
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'colored',
+                'purchase_price' => 24.8,
+                'price' => 36.5,
+            ],
+            [
+                'sizeInterval' => ['3XL', '3XL'],
+                'color' => 'colored',
+                'purchase_price' => 31.75,
+                'price' => 47.5,
+            ],
+        ],
+    ],
+    [
+        'SO11346',
+        [
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'white',
+                'purchase_price' => 22.26,
+                'price' => 34.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '4XL'],
+                'color' => 'white',
+                'purchase_price' => 34.5,
+                'price' => 49.9,
+            ],
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'colored',
+                'purchase_price' => 22.8,
+                'price' => 34.9,
+            ],
+            [
+                'sizeInterval' => ['3XL', '4XL'],
+                'color' => 'colored',
+                'purchase_price' => 32.8,
+                'price' => 48.9,
+            ],
+        ],
+    ],
+    [
+        'SO11347',
+        [
+            [
+                'sizeInterval' => ['S', '2XL'],
+                'color' => 'all',
+                'purchase_price' => 22.8,
+                'price' => 34.9,
+            ],
+        ],
+    ],
+    [
+        'KA2025',
+        [
+            [
+                'sizeInterval' => ['S', '4XL'],
+                'color' => 'white',
+                'purchase_price' => 23.2,
+                'price' => 34.9,
+            ],
+            [
+                'sizeInterval' => ['S', '4XL'],
+                'color' => 'colored',
+                'purchase_price' => 26.65,
+                'price' => 43.5,
+            ],
+        ],
+    ],
+    [
+        'KA2026',
+        [
+            [
+                'sizeInterval' => ['XS', '3XL'],
+                'color' => 'white',
+                'purchase_price' => 23.2,
+                'price' => 34.5,
+            ],
+            [
+                'sizeInterval' => ['XS', '3XL'],
+                'color' => 'colored',
+                'purchase_price' => 26.65,
+                'price' => 42.5,
+            ],
+        ],
+    ],
+    [
+        'KA254',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'all',
+                'purchase_price' => 23.9,
+                'price' => 40.9,
+            ],
+        ],
+    ],
+    [
+        'KA262',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => 25.8,
+                'price' => 42.5,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+    [
+        '',
+        [
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'white',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+            [
+                'sizeInterval' => ['', ''],
+                'color' => 'colored',
+                'purchase_price' => ,
+                'price' => ,
+            ],
+        ],
+    ],
+];

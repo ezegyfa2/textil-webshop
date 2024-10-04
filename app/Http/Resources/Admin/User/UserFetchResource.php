@@ -10,10 +10,8 @@ class UserFetchResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'name' => $this->name,
+            'name' => $this->getName(),
             'email' => $this->email,
-            'email_verified_at' => $this->email_verified_at ? $this->email_verified_at->format('Y.m.d') : null,
-            'created_at' => $this->created_at->format('Y.m.d'),
         ];
     }
 }

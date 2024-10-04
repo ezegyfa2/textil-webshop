@@ -1,5 +1,6 @@
 import './bootstrap';
 import '../css/app.css';
+import '../styles/globals.scss';
 
 import { createApp, h, DefineComponent } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
@@ -12,16 +13,18 @@ import 'vuetify/styles';
 import { createVuetify, type ThemeDefinition } from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
+import debounce from 'lodash.debounce';
+window.debounce = debounce;
 
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+const appName = 'MATextil';
 
 const textColor = 'white';
 const surfaceColor = '#FFFFFF';
 const surfaceVariantColor = '#2F2D2F';
-const backgroundColor2 = '#020202';
 const primaryColor = '#FF9505';
 const secondaryColor = '#191719';
-const errorColor = '#C20114';
+const errorColor = '#DA4167';
+const successColor = '#1B998B';
 
 const mainTheme: ThemeDefinition = {
     colors: {
@@ -30,6 +33,7 @@ const mainTheme: ThemeDefinition = {
         surface: surfaceColor,
         'surface-variant': surfaceVariantColor,
         error: errorColor,
+        success: successColor,
     },
     /*variables: {
         'medium-emphasis-opacity': 0.85,
@@ -54,6 +58,17 @@ const vuetify = createVuetify({
             color: 'primary',
             elevation: 1,
         },
+        VTextField: {
+            'hide-details': 'auto',
+            rounded: 0,
+        },
+        VTextarea: {
+            'hide-details': 'auto',
+            rounded: 0,
+        },
+        VCard: {
+            rounded: 0,
+        },
     },
     /*defaults: {
         global: {
@@ -75,7 +90,7 @@ const vuetify = createVuetify({
 });
 
 createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
+    title: (title) => title ? `${title} - ${appName}` : `${appName}`,
     resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob<DefineComponent>('./Pages/**/*.vue')),
     setup({ el, App, props, plugin }) {
         createApp({ render: () => h(App, props) })

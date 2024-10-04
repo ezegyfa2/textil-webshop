@@ -1,6 +1,5 @@
 <?php
 
 require __DIR__.'/user/web.php';
-require __DIR__.'/user/auth.php';
 require __DIR__.'/admin/web.php';
-require __DIR__.'/admin/auth.php';
+require __DIR__.'/auth.php';
