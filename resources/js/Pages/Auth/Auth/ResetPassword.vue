@@ -60,7 +60,6 @@
 
 <script setup lang="ts">
 import GuestLayout from '@/Layouts/GuestLayout.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
 import { Head, useForm } from '@inertiajs/vue3';
 
 const props = defineProps<{
