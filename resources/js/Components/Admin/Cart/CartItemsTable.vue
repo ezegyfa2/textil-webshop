@@ -39,7 +39,7 @@
         </template>
 
         <template v-slot:item.price="{ item }">
-            <p class="text-body-2 text-center main-text">{{ item.product.price }} RON</p>
+            <p class="text-body-2 text-center main-text">{{ item.product.price.toFixed(2) }} RON</p>
         </template>
 
         <template v-slot:item.quantity="{ item }">

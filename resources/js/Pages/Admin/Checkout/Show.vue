@@ -48,7 +48,7 @@
                             opacity="100"
                         />
                         <div class="p-5">
-                            <p class="text-h5 main-text text-end">Preț total: {{ total_price }} RON</p>
+                            <p class="text-h5 main-text text-end">Preț total: {{ total_price.toFixed(2) }} RON</p>
                         </div>
                     </v-card>
                 </v-col>

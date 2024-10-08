@@ -50,7 +50,7 @@
                             <p class="text-body-2">{{ item.company_name }}</p>
                         </template>
                         <template v-slot:item.total_price="{ item }">
-                            <p class="text-body-2">{{ item.total_price }} RON</p>
+                            <p class="text-body-2">{{ item.total_price.toFixed(2) }} RON</p>
                         </template>
                         <template v-slot:item.items_count="{ item }">
                             <p class="text-body-2">{{ item.items_count }}</p>

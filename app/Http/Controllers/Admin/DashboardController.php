@@ -8,8 +8,9 @@ use Inertia\Response;
 
 class DashboardController extends Controller
 {
-    public function index(): Response
+    public function index(): \Illuminate\Http\RedirectResponse
     {
-        return Inertia::render('Admin/Dashboard');
+        return redirect()->route('admin.checkout.index');
+        //return Inertia::render('Admin/Dashboard');
     }
 }
