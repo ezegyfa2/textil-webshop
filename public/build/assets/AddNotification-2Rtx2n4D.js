@@ -1,1 +1,0 @@
-import{a1 as p}from"./app-CQD9cFlp.js";function e(){r("A apărut o eroare neașteptată","error")}function r(t,a){const o=p();let i=0;o.props.notifications?o.props.notifications.length>0&&(i=Math.max(...o.props.notifications.map(n=>n.id))):o.props.notifications=[],o.props.notifications.push({id:i+1,message:t,type:a})}export{r as a,e as b};
