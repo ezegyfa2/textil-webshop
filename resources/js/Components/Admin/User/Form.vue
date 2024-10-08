@@ -58,7 +58,7 @@
 <script lang="ts" setup>
 import { InertiaForm } from '@inertiajs/vue3';
 import User from '@/types/user';
-import { passwordRules, nameRules, emailRules } from '@/Components/ValidationRules';
+import { passwordRules, nameRules, emailRules } from '@/Helpers/ValidationRules';
 
 const props = defineProps<{
     title: string,
