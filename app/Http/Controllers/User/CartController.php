@@ -34,7 +34,7 @@ class CartController extends Controller
         ])->with('product', 'product.type', 'product.type.mainImage', 'size', 'color')
             ->get();
         if (Auth::check()) {
-            $userData = Auth::user()->attributes;
+            $userData = Auth::user()->getAttributes();
         } else {
             $userData = [];
         }
@@ -57,7 +57,8 @@ class CartController extends Controller
             'postal_code' => $request->postal_code,
         ]);
         if (Auth::check()) {
-            Auth::user()->updateProfileByCheckout($checkout);
+            // Ez nem biztos h kell
+            //Auth::user()->updateProfileByCheckout($checkout);
         }
         session(['cart_id' => null]);
 
