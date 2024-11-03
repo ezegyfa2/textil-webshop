@@ -19,10 +19,10 @@ class HomeController extends Controller
             ->get();
         
         // TODO: Change to category
-        $categories = Brand::with('image')->get();
+        $brands = Brand::with('image')->get();
         
         return Inertia::render('User/Home', [
-            'categories' => $categories->map(function ($category) {
+            'brands' => $brands->map(function ($category) {
                 return [
                     'name' => $category->name,
                     'image_src' => $category->image->getSrc(400),

@@ -8,7 +8,7 @@
                     </v-card-title>
 
                     <v-card-text>
-                        <v-form @submit.prevent="$emit('submit')">
+                        <v-form @submit.prevent="$emit('submitted')">
                             <v-text-field
                                 v-model="props.form.name"
                                 :counter="250"

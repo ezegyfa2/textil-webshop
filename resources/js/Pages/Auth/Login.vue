@@ -1,24 +1,19 @@
 <template>
-    <GuestLayout 
-        title="Login"
-    >
-        <v-container class="h-100">
-            <v-row class="justify-center h-100">
+    <MainLayout title="Login">
+        <v-container fluid class="h-100 guest-container">
+            <v-row class="section-separator justify-center h-100">
                 <v-col
-                    class="h-100 d-flex flex-column justify-center"
                     cols="12"
-                    sm="9"
-                    md="6"
+                    sm="8"
+                    md="5"
                 >
-                    <v-card
-                        rounded="0"
-                    >
-                        <v-card-title class="text-h5 ml-3 mt-2 mb-8">Log in</v-card-title>
+                    <v-card class="pa-7" max-width="500" rounded="0">
+                        <v-card-title class="text-h5 font-weight-bold ml-7 mt-2 pa-0">Logare</v-card-title>
+                        <v-card-subtitle class="guest-subtitle ml-3 mb-8">Vă rugăm să introduceți datele dvs. de conectare pentru identificare</v-card-subtitle>
 
                         <v-form @submit.prevent="submit">
                             <v-card-item>
                                 <v-text-field
-                                    id="email"
                                     class="mb-4"
                                     type="email"
                                     label="Email"
@@ -26,13 +21,12 @@
                                     :disabled="form.processing"
                                     :loading="form.processing"
                                     required
-                                    maxlength="50"
+                                    maxlength="255"
                                     :error-messages="form.errors.email"
                                 />
                                 <v-text-field
-                                    id="password"
                                     type="password"
-                                    label="Password"
+                                    label="Parola"
                                     v-model="form.password"
                                     :disabled="form.processing"
                                     :loading="form.processing"
@@ -43,32 +37,39 @@
                                 />
                                 <v-checkbox 
                                     name="remember"
-                                    label="Remember me"
+                                    label="Amintește-ți de mine"
                                     :disabled="form.processing"
                                     v-model:checked="form.remember"
                                 />
                             </v-card-item>
-                            <v-btn
-                                type="submit"
-                                size="large"
-                                class="ml-3 mb-6"
-                                color="primary"
-                                :disabled="form.processing"
-                                :loading="form.processing"
-                            >
-                                Log in
-                            </v-btn>
+                            <div class="d-flex justify-space-between align-center mx-6 mb-6">
+                                <v-btn
+                                    type="submit"
+                                    size="large"
+                                    color="primary"
+                                    :disabled="form.processing"
+                                    :loading="form.processing"
+                                >
+                                    Log in
+                                </v-btn>
+                                <Link
+                                    :href="form.processing ? '' : route('forgot-password')"
+                                    :disabled="form.processing"
+                                >
+                                    <p class="text-body-1 main-text">Ați uitat parola?</p>
+                                </Link>
+                            </div>
                         </v-form>
                     </v-card>
                 </v-col>
             </v-row>
         </v-container>
-    </GuestLayout>
+    </MainLayout>
 </template>
 
 <script setup lang="ts">
-import { useForm } from '@inertiajs/vue3';
-import GuestLayout from '@/Layouts/GuestLayout.vue';
+import { useForm, Link } from '@inertiajs/vue3';
+import MainLayout from '@/Layouts/User/MainLayout.vue';
 
 const form = useForm({
     email: '',
@@ -78,12 +79,24 @@ const form = useForm({
 
 const submit = () => {
     form.post(route('login'), {
+        onError: (error) => {
+            console.log(error)
+        },
         onFinish: () => {
             form.reset('password');
         },
-        onError: (error) => {
-            console.log(error)
-        }
     });
 };
 </script>
+
+<style>
+.guest-container {
+    background-image: url('/storage/images/Header background 3.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.guest-subtitle {
+    text-wrap: wrap !important;
+    padding-left: 17px !important;
+}
+</style>

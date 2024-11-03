@@ -37,7 +37,15 @@
 
         <template v-slot:item.name="{ item }">
             <p class="text-body-2 main-text pr-5 pr-md-0 pt-3">{{ shortText(item.product.name) }}</p>
-            <p class="text-body-2" pr-5 pr-md-0>{{ item.size }} {{ item.color }}</p>
+            <div class="d-flex align-center">
+                <div
+                    v-for="colorCode in item.combined_color.codes"
+                    class="mr-1 border-sm"
+                    :style="'height:20px;width:20px;background-color:#' + colorCode"
+                >
+                </div>
+                <p class="text-body-2 main-text pl-2">{{ item.size.name }}</p>
+            </div>
             <p
                 v-if="smAndDown"
                 class="text-body-2 pr-5 pr-md-0 pb-3"
@@ -65,7 +73,7 @@
                         v-model="item.quantity"
                         @change="updateQuantity(item)"
                         type="number"
-                        class="m-0 text-body-2 main-text text-center"
+                        class="cart-item-input m-0 text-body-2 main-text text-center"
                         rounded="0"
                         hide-spin-buttons
                         hide-details
@@ -165,6 +173,9 @@ function removeItem(item) {
     loading.value = true;
     axios.delete(route('cart.remove-from-cart', {
         product_id: item.product.id,
+        size_id: item.size.id,
+        combined_color_id: item.combined_color.id,
+        quantity: item.quantity,
     }))
     .then((response) => {
         items.value.splice(items.value.indexOf(item), 1);
@@ -214,6 +225,8 @@ const updateQuantity = debounce((item: CartItem) => {
     loading.value = true;
     axios.put(route('cart.update'), {
         product_id: item.product.id,
+        size_id: item.size.id,
+        combined_color_id: item.combined_color.id,
         quantity: item.quantity,
     })
     .then((response) => {
@@ -244,6 +257,12 @@ const updateQuantity = debounce((item: CartItem) => {
     }
     .quantity-field {
         width: 100px !important;
+        .cart-item-input .v-field {
+            height: 32px !important;
+        }
+        .cart-item-input input {
+            padding-top: 0 !important;
+        }
     }
 }
 @media #{map-get($display-breakpoints, 'sm')} {

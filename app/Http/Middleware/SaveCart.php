@@ -17,6 +17,11 @@ class SaveCart
                 'cart_id' => $this->getCurrentCart()->id,
             ]);
         }
+        if (!session('cart_item_count')) {
+            session([
+                'cart_item_count' => $this->getCurrentCart()->items()->count(),
+            ]);
+        }
  
         return $next($request);
     }

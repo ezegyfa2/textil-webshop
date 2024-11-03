@@ -2,7 +2,7 @@
 
 namespace App\Models\Product;
 
-use App\Models\Color;
+use App\Models\CombinedColor;
 use App\Models\Size;
 use App\Models\Cart\CartItem;
 use App\Models\Model;
@@ -28,9 +28,9 @@ class Product extends Model
         return $this->belongsTo(ProductType::class, 'product_type_id');
     }
 
-    public function colors(): BelongsToMany
+    public function combinedColors(): BelongsToMany
     {
-        return $this->belongsToMany(Color::class, 'product_colors');
+        return $this->belongsToMany(CombinedColor::class, 'product_combined_colors');
     }
 
     public function sizes(): BelongsToMany

@@ -7,6 +7,7 @@
                         <v-btn
                             class="mr-3"
                             icon="mdi-filter"
+                            elevation="2"
                             @click="drawer = !drawer"
                         />
                         <v-text-field
@@ -18,7 +19,6 @@
                             variant="solo"
                             clearable
                             :rules="[maxFieldLengthRule]"
-                            :disabled="loading"
                             :loading="loading"
                             :error-messages="errorMessages.search"
                         />
@@ -60,7 +60,6 @@
                                 variant="solo"
                                 clearable
                                 :rules="[pozitiveRule]"
-                                :disabled="loading"
                                 :loading="loading"
                                 :error-messages="errorMessages.from_price"
                             />
@@ -74,7 +73,6 @@
                                 variant="solo"
                                 clearable
                                 :rules="[toPriceMinRule, pozitiveRule]"
-                                :disabled="loading"
                                 :loading="loading"
                                 :error-messages="errorMessages.to_price"
                             />
@@ -88,17 +86,17 @@
                             <v-list-item
                                 v-for="category in categories"
                                 :key="category.name"
-                                class="d-flex justify-end"
+                                class="d-flex justify-end pa-0"
+                                density="compact"
                             >
                                 <v-checkbox
                                     v-model="selectedCategoryIds"
                                     :value="category.id"
                                     density="compact"
                                     hide-details
-                                    :disabled="loading"
                                 >
                                     <template v-slot:prepend>
-                                        <p class="text-body-2 main-text">{{ category.name }}</p>
+                                        <p class="filter-checkbox text-caption main-text">{{ category.name }}</p>
                                     </template>
                                 </v-checkbox>
                             </v-list-item>
@@ -112,23 +110,23 @@
                             <v-list-item
                                 v-for="size in sizes"
                                 :key="size.name"
-                                class="d-flex justify-end"
+                                class="d-flex justify-end pa-0"
+                                density="compact"
                             >
                                 <v-checkbox
                                     v-model="selectedSizeIds"
                                     :value="size.id"
                                     density="compact"
                                     hide-details
-                                    :disabled="loading"
                                 >
                                     <template v-slot:prepend>
-                                        <p class="text-body-2 main-text">{{ size.name }}</p>
+                                        <p class="filter-checkbox text-caption main-text">{{ size.name }}</p>
                                     </template>
                                 </v-checkbox>
                             </v-list-item>
                         </template>
                     </v-expansion-panel>
-                    <v-expansion-panel rounded="0">
+                    <!--v-expansion-panel rounded="0">
                         <template v-slot:title>
                             <p class="text-h6 main-text">Culorile</p>
                         </template>
@@ -151,7 +149,7 @@
                                 </v-checkbox>
                             </v-list-item>
                         </template>
-                    </v-expansion-panel>
+                    </v-expansion-panel-->
                 </v-expansion-panels>
             </v-form>
         </v-navigation-drawer>
@@ -166,21 +164,24 @@ import { ref, computed, watch, useTemplateRef } from 'vue';
 
 const props = defineProps<{
     sizes: Array,
-    colors: Array,
+    //colors: Array,
     categories: Array,
+    choosed_category_id: Number|null,
 }>();
 
 const search = ref('');
 const fromPrice = ref(null);
 const toPrice = ref(null);
-const selectedCategoryIds = ref([]);
 const selectedSizeIds = ref([]);
-const selectedColorIds = ref([]);
+const selectedCategoryIds = ref(props.choosed_category_id ? [parseInt(props.choosed_category_id)] : []);
+//const selectedColorIds = ref([]);
 const loading = ref(false);
 const errorMessages = ref({});
 const drawer = ref(false);
 const panels = ref([0, 1, 2, 3]);
-const validatedFilters = ref({});
+const validatedFilters = ref({
+    category_ids: selectedCategoryIds.value,
+});
 const filterFormComponent = useTemplateRef('filterForm');
 
 const filters = computed(() => {
@@ -190,7 +191,7 @@ const filters = computed(() => {
         to_price: toPrice.value,
         category_ids: selectedCategoryIds.value,
         size_ids: selectedSizeIds.value,
-        color_ids: selectedColorIds.value,
+        //color_ids: selectedColorIds.value,
     };
 });
 
@@ -212,3 +213,9 @@ function toPriceMinRule(value) {
     }
 }
 </script>
+
+<style scopped>
+.filter-checkbox {
+    margin-right: -10px;
+}
+</style>

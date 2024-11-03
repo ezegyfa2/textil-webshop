@@ -1,7 +1,7 @@
 <template>
     <GuestLayout
         title="Forgot password"
-        subtitle="Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one."
+        subtitle="Vă rugăm să introduceți adresa dvs. de e-mail și vă vom trimite un link de resetare a parolei care vă va permite să alegeți una nouă."
     >
         <Head title="Forgot Password" />
 
@@ -43,7 +43,7 @@ const form = useForm({
 });
 
 const submit = () => {
-    form.post(route('password.email'), {
+    form.post(route('send-password-link'), {
         onError: (error) => {
             console.log(error)
         }

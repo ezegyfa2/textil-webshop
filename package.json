@@ -27,6 +27,8 @@
         "lodash.debounce": "^4.0.8",
         "path": "^0.12.7",
         "vite-plugin-vuetify": "^2.0.4",
+        "vue-cookie-consent-modal": "^0.0.17",
+        "vue3-cookies": "^1.0.6",
         "vuetify": "^3.6.14"
     }
 }

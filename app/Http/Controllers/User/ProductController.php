@@ -31,15 +31,28 @@ class ProductController extends Controller
     public function index(): Response
     {
         return Inertia::render('User/Product/Index', [
-            'sizes' => Size::all()->select(['name', 'id']),
-            'colors' => Color::all()->select(['name', 'id']),
-            'categories' => ProductCategory::all()->select(['name', 'id']),
+            'choosed_category_id' => request()->get('category'),
+            'sizes' => Size::whereIn('name', [
+                'XXS',
+                'XS',
+                'S',
+                'M',
+                'L',
+                'XL',
+                '2XL',
+                '3XL',
+                '4XL',
+                '5XL',
+            ])->select(['name', 'id'])->orderBy('id')->get(),
+            //'colors' => Color::all()->select(['name', 'id']),
         ]);
     }
 
     public function show(Request $request, ProductType $productType): Response
     {
-        $productType->load('sizes', 'sizes.size', 'products', 'products.colors', 'products.sizes');
+        $productType->load('sizes', 'sizes.size', 'products', 'products.combinedColors', 
+            'products.combinedColors.colors', 'products.sizes');
+
         return Inertia::render('User/Product/Show', (new ProductTypeResource($productType))->toArray($request));
     }
 
@@ -50,7 +63,7 @@ class ProductController extends Controller
         if ($request->search) {
             $query->where('name', 'LIKE', "%$request->search%");
         }
-        $query->whereExists(function (QueryBuilder $filterQuery) use ($request) {
+        $query->whereHas('products', function (Builder $filterQuery) use ($request) {
             $filterQuery->select('products.id')
                 ->from('products');
             if ($request->from_price) {
@@ -64,12 +77,19 @@ class ProductController extends Controller
                     ->whereIn('size_id', $request->size_ids);
             }
             if ($request->color_ids) {
-                $filterQuery->join('product_colors', 'product_colors.product_id', 'products.id')
-                    ->whereIn('color_id', $request->color_ids);
+                $filterQuery->join(
+                    'product_combined_colors',
+                    'product_combined_colors.product_id',
+                    'products.id'
+                )->join(
+                    'combined_color_colors',
+                    'combined_color_colors.combined_color_id',
+                    'product_combined_colors.combined_color_id'
+                )->whereIn('combined_color_colors.color_id', $request->color_ids);
             }
         });
         if ($request->category_ids) {
-            $request->whereIn('product_category_id', $request->category_ids);
+            $query->whereIn('product_category_id', $request->category_ids);
         }
 
         return $query;

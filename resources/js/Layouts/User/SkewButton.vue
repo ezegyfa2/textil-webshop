@@ -4,7 +4,9 @@
         class="button"
     >
         <div class="skew-content">
-            <div class="skew-content-text main-text">{{ content }}</div>
+            <div class="skew-content-text main-text">
+                <slot/>
+            </div>
         </div>
     </Link>
 </template>
@@ -13,7 +15,6 @@
 import { Link } from '@inertiajs/vue3';
 
 const props = defineProps<{
-    content: string;
     href: string;
 }>()
 </script>

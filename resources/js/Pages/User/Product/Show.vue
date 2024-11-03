@@ -28,20 +28,28 @@
                             </template>
                         </v-select>
                         <v-select
-                            v-model="colorId"
-                            :items="availableColors"
+                            v-model="combinedColorId"
+                            :items="availableCombinedColors"
                             item-title="name"
                             item-value="id"
                             class="text-body-1 main-text"
-                            label="Tipul"
-                            placeholder="Selecteaza tipul"
+                            label="Culoare"
+                            placeholder="Selectați culoarea"
                             :rules="[requiredRule]"
-                            :error-messages="errorMessages.color_id"
+                            :error-messages="errorMessages.combined_color_id"
                         >
-                            <template v-slot:item="{ props }">
+                            <template v-slot:item="{ item, props }">
                                 <v-list-item v-bind="props">
                                     <template v-slot:title="{ title }">
-                                        <p class="text-body-1 main-text">{{ title }}</p>
+                                        <div class="d-flex align-center">
+                                            <div
+                                                v-for="colorCode in item.raw.codes"
+                                                class="mr-1 border-sm"
+                                                :style="'height:20px;width:20px;background-color:#' + colorCode"
+                                            >
+                                            </div>
+                                            <p class="ml-2 text-body-1 main-text">{{ title }}</p>
+                                        </div>
                                     </template>
                                 </v-list-item>
                             </template>
@@ -125,16 +133,15 @@
                                 class="pb-0"
                                 cols="12"
                             >
-                                <div class="d-flex justify-space-between align-end">
+                                <div 
+                                    v-if="fabric_properties.length > 0"
+                                    class="d-flex justify-space-between align-end"
+                                >
                                     <p class="text-h6 main-text">Material</p>
-                                    <p
-                                        v-if="fabric_properties.length > 0"
-                                        class="text-body-1"
-                                    >
-                                        {{ fabric_properties[0] }}
-                                    </p>
+                                    <p class="text-body-1">{{ fabric_properties[0] }}</p>
                                 </div>
                                 <p
+                                    v-if="fabric_properties.length > 0"
                                     v-for="i in fabric_properties.length - 1"
                                     class="text-end"
                                 >
@@ -145,16 +152,15 @@
                                 class="pb-0"
                                 cols="12"
                             >
-                                <div class="d-flex justify-space-between align-end">
+                                <div 
+                                    v-if="cut_properties.length > 0"
+                                    class="d-flex justify-space-between align-end"
+                                >
                                     <p class="text-h6 main-text">Taietura</p>
-                                    <p
-                                        v-if="cut_properties.length > 0"
-                                        class="text-body-1"
-                                    >
-                                        {{ cut_properties[0] }}
-                                    </p>
+                                    <p class="text-body-1">{{ cut_properties[0] }}</p>
                                 </div>
                                 <p
+                                    v-if="cut_properties.length > 0"
                                     v-for="i in cut_properties.length - 1"
                                     class="text-end"
                                 >
@@ -172,31 +178,6 @@
                             disable-sort
                         >
                             <template v-slot:header.type></template>
-                            <template v-slot:header.XXS="{ column }">
-                                <p class="text-body-1 main-text">{{ column.title }}</p>
-                            </template>
-                            <template v-slot:header.XS="{ column }">
-                                <p class="text-body-1 main-text">{{ column.title }}</p>
-                            </template>
-                            <template v-slot:header.S="{ column }">
-                                <p class="text-body-1 main-text">{{ column.title }}</p>
-                            </template>
-                            <template v-slot:header.M="{ column }">
-                                <p class="text-body-1 main-text">{{ column.title }}</p>
-                            </template>
-                            <template v-slot:header.L="{ column }">
-                                <p class="text-body-1 main-text">{{ column.title }}</p>
-                            </template>
-                            <template v-slot:header.XL="{ column }">
-                                <p class="text-body-1 main-text">{{ column.title }}</p>
-                            </template>
-                            <template v-slot:header.2XL="{ column }">
-                                <p class="text-body-1 main-text">{{ column.title }}</p>
-                            </template>
-                            <template v-slot:header.3XL="{ column }">
-                                <p class="text-body-1 main-text">{{ column.title }}</p>
-                            </template>
-
                             <template v-slot:item.type="{ item }">
                                 <p class="text-body-1 main-text">{{ item.type }}</p>
                             </template>
@@ -229,7 +210,7 @@ const props = defineProps<{
     sizes: Object,
 }>();
 
-const colorId = ref(null);
+const combinedColorId = ref(null);
 const sizeId = ref(null);
 const quantity = ref(1);
 const formComponent = useTemplateRef('addToCartForm');
@@ -238,8 +219,8 @@ const errorMessages = ref([]);
 
 const availableSizes = computed(() => {
     let productsWithCorrespondingColor = props.products.filter(product => {
-        const productColors = product.colors.map(color => color.id);
-        if (colorId.value && !productColors.includes(colorId.value)) {
+        const productCombinedColors = product.combined_colors.map(combinedColor => combinedColor.id);
+        if (combinedColorId.value && !productCombinedColors.includes(combinedColorId.value)) {
             return false;
         } else {
             return true;
@@ -248,7 +229,7 @@ const availableSizes = computed(() => {
     const sizes = productsWithCorrespondingColor.map(product => product.sizes).flat();
     return distinctObjectsByProperty(sizes, 'id');
 });
-const availableColors = computed(() => {
+const availableCombinedColors = computed(() => {
     let productsWithCorrespondingSize = props.products.filter(product => {
         const productSizes = product.sizes.map(size => size.id);
         if (sizeId.value && !productSizes.includes(sizeId.value)) {
@@ -257,11 +238,11 @@ const availableColors = computed(() => {
             return true;
         }
     });
-    const colors = productsWithCorrespondingSize.map(product => product.colors).flat();
+    const colors = productsWithCorrespondingSize.map(product => product.combined_colors).flat();
     return distinctObjectsByProperty(colors, 'id');
 });
 const price = computed(() => {
-    if (colorId.value && sizeId.value && choosedProducts.value.length != 1) {
+    if (combinedColorId.value && sizeId.value && choosedProducts.value.length != 1) {
         addUnexpectedErrorNotification();
         throw new Error('Invalid choosed product count');
     } else {
@@ -275,11 +256,12 @@ const price = computed(() => {
 })
 const choosedProducts = computed(() => props.products.filter(product => {
     const productSizes = product.sizes.map(size => size.id);
+    console.log(productSizes)
     if (sizeId.value && !productSizes.includes(sizeId.value)) {
         return false;
     } else {
-        const productColors = product.colors.map(color => color.id);
-        if (colorId.value && !productColors.includes(colorId.value)) {
+        const productCombinedColors = product.combined_colors.map(combinedColor => combinedColor.id);
+        if (combinedColorId.value && !productCombinedColors.includes(combinedColorId.value)) {
             return false;
         } else {
             return true;
@@ -295,7 +277,7 @@ async function addToCart() {
                 product_id: choosedProducts.value[0].id,
                 quantity: quantity.value,
                 size_id: sizeId.value,
-                color_id: colorId.value,
+                combined_color_id: combinedColorId.value,
             }, {
                 onError: (errors) => {
                     addUnexpectedErrorNotification();
@@ -329,5 +311,12 @@ function decrease() {
 }
 .quantity-field input {
     text-align: center;
+}
+th {
+    font-size: 1rem !important;
+    font-family: "Kanit" !important;
+    font-weight: bolder !important;
+    line-height: 1.5;
+    letter-spacing: 0.03125em !important;
 }
 </style>

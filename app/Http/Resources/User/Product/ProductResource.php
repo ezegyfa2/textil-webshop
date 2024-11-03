@@ -11,7 +11,13 @@ class ProductResource extends JsonResource
         return [
             'id' => $this->id,
             'price' => $this->price,
-            'colors' => $this->colors->select(['name', 'id']),
+            'combined_colors' => $this->combinedColors->map(function ($combinedColor) {
+                return [
+                    'id' => $combinedColor->id,
+                    'codes' => $combinedColor->colors->pluck('code'),
+                    'name' => $combinedColor->getName(),
+                ];
+            }),
             'sizes' => $this->sizes->select(['name', 'id']),
         ];
     }

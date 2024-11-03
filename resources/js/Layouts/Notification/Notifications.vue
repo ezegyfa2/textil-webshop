@@ -7,7 +7,7 @@
         :timeout="1500"
         rounded="0"
     >
-        <p class="text-body-1 text-surface p-2">{{ currentNotificationSnackbar.notification.message }}</p>
+        <p class="text-h6 text-surface p-2">{{ currentNotificationSnackbar.notification.message }}</p>
         <template v-slot:actions>
             <v-btn
                 icon="mdi-close-thick"
@@ -27,9 +27,12 @@ import { NotificationSnackbar } from '@/types/notifications';
 
 const page = usePage();
 const notificationSnackbars: Ref<NotificationSnackbar[]> = ref([]);
-const showedNotificationIds = computed(() => notificationSnackbars.value.map(
-    (notificationSnackbar: NotificationSnackbar) => notificationSnackbar.notification.id
-));
+const showedNotificationIds = computed(() => notificationSnackbars.value
+    .filter(notificationSnackbar => notificationSnackbar.snackbar)
+    .map(
+        (notificationSnackbar: NotificationSnackbar) => notificationSnackbar.notification.id
+    )
+);
 const currentNotificationSnackbar = computed(() => {
     for (let notificationSnackbar of notificationSnackbars.value) {
         if (notificationSnackbar.snackbar) {
@@ -64,8 +67,8 @@ function updateNotificationSnackbars(notifications) {
 
 function updateNotificationIds(notifications) {
     if (notifications) {
-        let maxId = Math.max(...notifications.map(notification => notification.id));
-        if (maxId <= 0) {
+        let maxId = Math.max(...notifications.map(notification => notification.id ? notification.id : 1));
+        if (!maxId) {
             maxId = 1;
         }
         notifications.forEach(notification => {

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->foreignId('main_image_id')->nullable()->constrained('images');
-            $table->integer('gram_per_m2');
+            $table->integer('gram_per_m2')->nullable();
             $table->foreignId('product_category_id')->constrained('product_categories');
             $table->foreignId('brand_id')->constrained('brands');
             $table->timestamps();

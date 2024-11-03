@@ -17,9 +17,9 @@ class CartItemRequest extends FormRequest
                 'required',
                 'exists:sizes,id',
             ],
-            'color_id' => [
+            'combined_color_id' => [
                 'required',
-                'exists:colors,id',
+                'exists:combined_colors,id',
             ],
             'quantity' => [
                 'required',

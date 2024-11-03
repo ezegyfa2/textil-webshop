@@ -24,7 +24,7 @@ class StoreOrderRequest extends FormRequest
             ],
             'phone' => [
                 'nullable',
-                'phone',
+                'phone:INTERNATIONAL,RO',
             ],
             'company_name' => [
                 'max:250',

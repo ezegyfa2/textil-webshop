@@ -6,29 +6,23 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
-        Schema::create('product_colors', function (Blueprint $table) {
+        Schema::create('product_combined_colors', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id')->constrained('products');
-            $table->foreignId('color_id')->constrained('colors');
+            $table->foreignId('combined_color_id')->constrained('combined_colors');
             $table->timestamps();
 
             $table->unique([
                 'product_id',
-                'color_id',
+                'combined_color_id',
             ]);
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
-        Schema::dropIfExists('product_colors');
+        Schema::dropIfExists('product_combined_colors');
     }
 };

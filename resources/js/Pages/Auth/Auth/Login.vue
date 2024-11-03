@@ -25,7 +25,7 @@
             <v-text-field
                 id="password"
                 type="password"
-                label="Password"
+                label="Parola"
                 v-model="form.password"
                 :disabled="form.processing"
                 :loading="form.processing"
@@ -36,7 +36,7 @@
             />
             <v-checkbox 
                 name="remember"
-                label="Remember me"
+                label="Amintește-ți de mine"
                 class="ml-1"
                 :disabled="form.processing"
                 v-model:checked="form.remember"

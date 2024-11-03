@@ -3,7 +3,7 @@
         <UserForm
             title="Create new user"
             :form="form"
-            @submit="submit"
+            @submitted="submit"
         />
     </MainLayout>
 </template>

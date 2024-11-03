@@ -11,10 +11,10 @@
             title="Bine ați venit la MATextil"
             content="Fie că lucrați în construcții, industrie, logistică sau alte domenii, noi vă oferim echipamente profesionale care combină durabilitatea, confortul și stilul. În magazinul nostru veți găsi o gamă variată de produse special concepute pentru a asigura siguranța și eficiența la locul de muncă."
             button-text="Produsele noastre"
-            src="storage/images/Welcome.jpg"
+            src="storage/images/header/5.jpg"
             :href="route('product.index')"
         />
-        <CategorySection :categories="categories"/>
+        <CategorySection :categories="brands"/>
         <ClientOpinionSection class="top-section-separator"/>
         <BlogSection
             :blog1="blog1"
@@ -41,6 +41,6 @@ const props = defineProps<{
     blog1: BlogShort,
     blog2: BlogShort,
     blog3: BlogShort,
-    categories: Array,
+    brands: Array,
 }>();
 </script>

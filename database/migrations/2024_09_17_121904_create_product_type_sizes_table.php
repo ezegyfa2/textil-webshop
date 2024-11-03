@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('size_id')->constrained('sizes');
             $table->foreignId('product_type_id')->constrained('product_types');
             $table->string('name');
-            $table->integer('value');
+            $table->string('value');
             $table->timestamps();
 
             $table->unique([

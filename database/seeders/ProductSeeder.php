@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use App\Models\Image;
 use App\Models\Size;
+use App\Models\Color;
+use App\Models\CombinedColor;
 use App\Models\Product\Product;
 use App\Models\Product\Brand;
 use App\Models\Product\ProductCategory;
@@ -26,12 +28,23 @@ class ProductSeeder extends Seeder
         '4XL',
         '5XL',
     ];
-    protected $whiteColorId = 1;
-    protected $coloredColorId = 2;
 
+    protected $colors = [];
+    protected $combinedColors = [];
+    
     public function run(): void
     {
+        $this->imageNames = array_filter(scandir(storage_path('app/public/images')), function($fileName) {
+            return is_dir(storage_path('app/public/images') . '/' . $fileName);
+        });
+        $enProductTypes = require(__DIR__ . '/EnProducts.php');
         $productTypes = require(__DIR__ . '/Products.php');
+        $productTypes = array_map(function ($productType) use ($enProductTypes) {
+            $enProductType = $this->getEnProductType($productType, $enProductTypes);
+            $productType[6] = $enProductType[6];
+
+            return $productType;
+        }, $productTypes);
         foreach ($productTypes as $productType) {
             $this->create(
                 $productType[0],
@@ -42,71 +55,52 @@ class ProductSeeder extends Seeder
                 $productType[5],
                 $productType[6],
                 $productType[7],
+                $productType[8]
             );
         }
-        /*$product = $this->createWithImage('s.jpg');
-        $product->images()->attach(Image::create([
-            'src' => 's1.jpg',
-        ]));
-        $product->images()->attach(Image::create([
-            'src' => 's2.jpg',
-        ]));
-        $product->images()->attach(Image::create([
-            'src' => 's3.jpg',
-        ]));
-        $product->images()->attach(Image::create([
-            'src' => 's4.jpg',
-        ]));
-        $this->createWithImage('s1.jpg');
-        $this->createWithImage('s2.jpg');
-        $this->createWithImage('s3.jpg');
-        $this->createWithImage('s4.jpg');
-        $this->createWithImage('s5.jpg');
-        $this->createWithImage('s6.jpg');
-        $this->createWithImage('s7.jpg');
-        $this->createWithImage('s8.jpg');
-        $this->createWithImage('s9.jpg');
-        $this->createWithImage('s10.jpg');
-        $this->createWithImage('s11.png');*/
-    }
-
-    protected function createWithImage($imageName)
-    {
-        $image = Image::create([
-            'src' => $imageName,
-        ]);
-        $product = Product::create([
-            'name' => fake()->name(),
-            'price' => fake()->numberBetween(0, 20) * 10,
-            'main_image_id' => $image->id,
-        ]);
-        $product->images()->save($image);
-
-        return $product;
     }
 
     protected function create(
         string $name,
-        int $gPerM2,
+        ?int $gPerM2,
         string $brandName,
         string $categoryName,
         array $fabricProperties,
         array $cutProperties,
         array $products,
-        array $sizes
+        array $sizes,
+        ?array $priceSizes = null
     ) {
+        if (!$priceSizes) {
+            dd('sd');
+            if ($products[0]['sizeInterval'] != '') {
+                $startIndex = array_search($products[0]['sizeInterval'][0], $this->sizes);
+                $endIndex = array_search($products[count($products) - 1]['sizeInterval'][1], $this->sizes);
+                $priceSizes = array_slice(
+                    $this->sizes,
+                    $startIndex,
+                    $endIndex - $startIndex + 1
+                );
+            } else {
+                $priceSizes = $this->sizes;
+            }
+        }
         $productCode = explode(' ', $name)[0];
         $images = [];
-        for ($i = 1; $i <= 7; ++$i) {
-            array_push($images, Image::firstOrCreate([
-                'src' => $productCode . '-' . $i,
-            ]));
+        foreach ($this->imageNames as $imageName) {
+            if (str_starts_with(strtolower($imageName), strtolower($productCode) . '-')) {
+                array_push($images, Image::firstOrCreate([
+                    'src' => $imageName,
+                ]));
+            }
         }
+        
         $brand = Brand::firstOrCreate([
             'name' => $brandName,
         ], [
-            'image_id' => Image::where('src', $productCode . '-1')->first()->id,
+            'image_id' => $images[0]->id,
         ]);
+            
         $category = ProductCategory::firstOrCreate([
             'name' => $categoryName,
         ]);
@@ -137,42 +131,110 @@ class ProductSeeder extends Seeder
                 'price' => $productData['price'],
                 'product_type_id' => $productType->id,
             ]);
-            switch ($productData['color']) {
-                case 'all':
-                    $product->colors()->attach($this->whiteColorId);
-                    $product->colors()->attach($this->coloredColorId);
-                    break;
-                case 'white':
-                    $product->colors()->attach($this->whiteColorId);
-                    break;
-                case 'colored':
-                    $product->colors()->attach($this->coloredColorId);
-                    break;
+            foreach ($productData['colors'] as $colorName) {
+                $combinedColor = $this->getCombinedColor($colorName);
+                $product->combinedColors()->attach($combinedColor->id);
+                
+                /*$color = Color::where('name', $colorName)->first();
+                if ($color) {
+                    $product->colors()->attach($color->id);
+                } else {
+                    //throw new \Exception('itt a hiba');
+                    $currentColors = explode('/', $colorName);
+                    foreach ($currentColors as $currentColor) {
+                        if (!in_array($currentColor, array_keys($this->colors))) {
+                            $this->colors[$currentColor] = $name;
+                        }
+                    }
+                }*/
             }
-
-            $intervalSizes = array_slice(
-                $this->sizes,
-                array_search($productData['sizeInterval'][0], $this->sizes),
-                array_search($productData['sizeInterval'][1], $this->sizes)
-            );
-            $beginSizeId = array_search($productData['sizeInterval'][0], $this->sizes) + 1;
-            $endSizeId = array_search($productData['sizeInterval'][1], $this->sizes) + 1;
-            for ($sizeId = $beginSizeId; $sizeId <= $endSizeId; ++$sizeId) {
-                $product->sizes()->attach(Size::find($sizeId));
+            foreach ($this->getIntervalSizes($productData, $priceSizes) as $intervalSize) {
+                $size = Size::firstOrCreate([
+                    'name' => $intervalSize,
+                ]);
+                $product->sizes()->attach($size->id);
             }
         }
         foreach ($sizes as $sizeTypeName => $sizeValues) {
-            $firstSizeId = array_search($products[0]['sizeInterval'][0], $this->sizes) + 1;
             for ($i = 0; $i < count($sizeValues); ++$i) {
-                $productType->sizes()->create([
-                    'name' => $sizeTypeName,
-                    'value' => $sizeValues[$i],
-                    'size_id' => $i + $firstSizeId,
-                ]);
+                //try {
+                    $productType->sizes()->create([
+                        'name' => $sizeTypeName,
+                        'value' => $sizeValues[$i],
+                        'size_id' => Size::firstOrCreate([
+                            'name' => $priceSizes[$i]
+                        ])->id,
+                    ]);
+                //} catch (\Exception $e) {
+                //    dd($priceSizes, $name, $sizeValues);
+                //}
             }
         }
         $productType->main_image_id = $productType->images[0]->id;
         $productType->save();
+    }
+
+    protected function getIntervalSizes(array $productData, array $priceSizes): array
+    {
+        if (count($productData['sizeInterval']) == 2 && $productData['sizeInterval'][0] != '') {
+            $startIndex = array_search($productData['sizeInterval'][0], $priceSizes);
+            $endIndex = array_search($productData['sizeInterval'][1], $priceSizes);
+
+            return array_slice(
+                $priceSizes,
+                $startIndex,
+                $endIndex - $startIndex + 1
+            );
+        } else {
+            return $priceSizes;
+        }
+    }
+
+    protected function getCombinedColor(string $colorName): CombinedColor
+    {
+        $currentColorNames = collect(explode('/', $colorName));
+        foreach ($this->combinedColors as $combinedColor) {
+            if ($this->colorNamesAreEquals($currentColorNames, $combinedColor['colors'])) {
+                return CombinedColor::find($combinedColor['id']);
+            }
+        }
+        $newCombinedColor = CombinedColor::create([]);
+        foreach ($currentColorNames as $colorName) {
+            $color = Color::firstOrCreate([
+                'name' => $colorName,
+            ]);
+            $newCombinedColor->colors()->attach($color->id);
+        }
+        $newCombinedColor->save();
+        array_push($this->combinedColors, [
+            'id' => $newCombinedColor->id,
+            'colors' => $currentColorNames,
+        ]);
+        return $newCombinedColor;
+    }
+
+    protected function colorNamesAreEquals($colorNames, $expectedColorNames): bool
+    {
+        if ($colorNames->count() == $expectedColorNames->count()) {
+            for ($i = 0; $i < $colorNames->count(); ++$i) {
+                if ($colorNames[$i] !== $expectedColorNames[$i]) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    protected function getEnProductType($productType, $enProductTypes)
+    {
+        foreach ($enProductTypes as $enProductType) {
+            if ($enProductType[0] == $productType[0]) {
+                return $enProductType;
+            }
+        }
+        throw new \Exception('Nincs angol valtozat ' . $productType[0]);
     }
 
     protected function getSizeInterval(string $beginSize, string $endSize)

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\User\Auth;
+namespace App\Http\Requests\Auth;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -25,7 +25,7 @@ class RegistrationRequest extends FormRequest
             ],
             'phone' => [
                 'nullable',
-                'phone',
+                'phone:INTERNATIONAL,RO',
             ],
             'company_name' => [
                 'max:250',
@@ -41,8 +41,12 @@ class RegistrationRequest extends FormRequest
             'password' => [
                 'required',
                 'confirmed', 
-                'password',
+                'string',
                 'min:8',
+                'regex:/[a-z]/',
+                'regex:/[A-Z]/',
+                'regex:/[0-9]/',
+                'regex:/[@$!%*#?&]/', // must contain a special character
             ],
         ];
     }

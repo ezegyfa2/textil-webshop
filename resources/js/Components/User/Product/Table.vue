@@ -99,7 +99,7 @@ const page = usePage();
 const products = ref([]);
 const selectedPage = ref(1);
 const pageCount = ref(1);
-const productsPerPage = ref(10);
+const productsPerPage = ref(12);
 const loading = defineModel('loading');
 const errorMessages = defineModel('errorMessages');
 

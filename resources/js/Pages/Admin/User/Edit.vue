@@ -1,7 +1,7 @@
 <template>
     <MainLayout>
         <UserForm
-            @submit="submit"
+            @submitted="submit"
             title="Edit user"
             :form="form"
         />

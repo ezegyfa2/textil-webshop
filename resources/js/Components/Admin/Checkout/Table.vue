@@ -126,6 +126,7 @@ const headers = [
 watch(search, () => loadItems());
 
 function loadItems(): void {
+    loading.value = true;
     axios.get(route('admin.checkout.fetch', {
         page: page.value,
         per_page: checkoutsPerPage.value,

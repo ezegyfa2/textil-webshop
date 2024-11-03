@@ -37,6 +37,8 @@
             <slot />
             <Notifications/>
         </v-main>
+        <OnlyForCompaniesDialog/>
+        <CookieConsent/>
         <Footer/>
     </v-app>
 </template>
@@ -46,6 +48,8 @@ import Notifications from '@/Layouts/Notification/Notifications.vue';
 import Logo from '@/Layouts/User/Logo.vue';
 import Navbar from '@/Layouts/User/Navbar.vue';
 import Footer from '@/Layouts/User/Footer.vue';
+import CookieConsent from '@/Layouts/User/CookieConsent.vue';
+import OnlyForCompaniesDialog from '@/Layouts/User/OnlyForCompaniesDialog.vue';
 import IconText from '@/Layouts/User/IconText.vue';
 
 const props = defineProps<{

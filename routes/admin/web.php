@@ -7,7 +7,7 @@ use App\Http\Controllers\Admin\CheckoutController;
 use App\Http\Controllers\Admin\CartController;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
+Route::middleware('role:admin')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/users', [UserController::class, 'index'])->name('user.index');
     Route::get('/users/fetch', [UserController::class, 'fetch'])->name('user.fetch');

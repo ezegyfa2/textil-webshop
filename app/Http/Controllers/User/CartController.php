@@ -31,7 +31,7 @@ class CartController extends Controller
     {
         $items = CartItem::where([
             'cart_id' => session('cart_id'),
-        ])->with('product', 'product.type', 'product.type.mainImage', 'size', 'color')
+        ])->with('product', 'product.type', 'product.type.mainImage', 'size', 'combinedColor', 'combinedColor.colors')
             ->get();
         if (Auth::check()) {
             $userData = Auth::user()->getAttributes();
@@ -61,23 +61,28 @@ class CartController extends Controller
             //Auth::user()->updateProfileByCheckout($checkout);
         }
         session(['cart_id' => null]);
+        session(['cart_item_count' => 0]);
 
         return redirect()->route('thank-you');
     }
 
     public function addToCart(CartItemRequest $request): RedirectResponse
     {
-        $correspondingCartItems = CartItem::getProductItemQuery($request->get('product_id'))->get();
+        $correspondingCartItems = CartItem::getProductItemQuery(
+            $request->get('product_id'),
+            $request->get('size_id'),
+            $request->get('combined_color_id')
+        )->get();
 
         if ($correspondingCartItems->count() == 0) {
             CartItem::create([
                 'cart_id' => session('cart_id'),
                 'product_id' => $request->product_id,
                 'size_id' => $request->size_id,
-                'color_id' => $request->color_id,
+                'combined_color_id' => $request->combined_color_id,
                 'quantity' => $request->quantity,
             ]);
-
+            session(['cart_item_count' => session('cart_item_count') + 1]);
         } else {
             $currentItem = $correspondingCartItems[0];
             $currentItem->update([
@@ -97,13 +102,18 @@ class CartController extends Controller
 
     public function removeFromCart(CartItemRequest $request): JsonResponse
     {
-        $correspondingCartItems = CartItem::getProductItemQuery($request->get('product_id'))->get();
+        $correspondingCartItems = CartItem::getProductItemQuery(
+            $request->get('product_id'),
+            $request->get('size_id'),
+            $request->get('combined_color_id')
+        )->get();
 
         if ($correspondingCartItems->count() == 0) {
             throw new \Exception('Product has not been added to cart');
         } else {
             $correspondingCartItems->each(function ($correspondingItem) {
                 $correspondingItem->delete();
+                session(['cart_item_count' => session('cart_item_count') - 1]);
             });
 
             return response()->json([
@@ -114,10 +124,13 @@ class CartController extends Controller
 
     public function update(UpdateCartRequest $request): JsonResponse
     {
-        CartItem::getProductItemQuery($request->get('product_id'))
-            ->update([
-                'quantity' => $request->get('quantity'),
-            ]);
+        CartItem::getProductItemQuery(
+            $request->get('product_id'),
+            $request->get('size_id'),
+            $request->get('combined_color_id')
+        )->update([
+            'quantity' => $request->get('quantity'),
+        ]);
 
         return response()->json([
             'message' => 'Cantitatea produsului au fost modificate cu succes',
@@ -131,7 +144,7 @@ class CartController extends Controller
             $cartId = session('cart_id');
         }
         $query = CartItem::where('cart_id', $cartId)
-            ->with('product', 'product.type', 'product.type.mainImage', 'size', 'color');
+            ->with('product', 'product.type', 'product.type.mainImage', 'size', 'combinedColor', 'combinedColor.colors');
 
         return $this->getFetchResponseByQuery(
             $query,

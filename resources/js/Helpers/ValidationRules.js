@@ -29,11 +29,11 @@ export const phoneRules = [
 ]
 
 export function requiredRule(value) {
-    return (value != null && value != '') || 'Acest câmp este obligatoriu';
+    return (value !== null && value !== '') || 'Acest câmp este obligatoriu';
 }
 
 export function minLengthRule(value, minLength) {
-    return value == null || value.length >= minLength || `Valoarea trebuie să aibă cel puțin ${minLength} caractere lungime`;
+    return isNullable(value) || value.length >= minLength || `Valoarea trebuie să aibă cel puțin ${minLength} caractere lungime`;
 }
 
 export function maxTextareaLengthRule(value) {
@@ -45,7 +45,7 @@ export function maxFieldLengthRule(value) {
 }
 
 export function maxLengthRule(value, maxLength) {
-    return value == null || value.length <= maxLength || `Valoarea trebuie să aibă maximum ${maxLength} caractere lungi`;
+    return isNullable(value) || value.length <= maxLength || `Valoarea trebuie să aibă maximum ${maxLength} caractere lungi`;
 }
 
 export function pozitiveRule(value) {
@@ -53,7 +53,7 @@ export function pozitiveRule(value) {
 }
 
 export function minRule(value, min) {
-    if (value == null || value == '') {
+    if (isNullable(value)) {
         return true;
     } else {
         const numberValidation = numberRule(value);
@@ -66,7 +66,7 @@ export function minRule(value, min) {
 }
 
 export function maxRule(value, max) {
-    if (value == null || value == '') {
+    if (isNullable(value)) {
         return true;
     } else {
         const numberValidation = numberRule(value);
@@ -79,39 +79,47 @@ export function maxRule(value, max) {
 }
 
 export function phoneRule(value) {
-    return /[0-9+]*$/.test(value) || 'Valoarea trebuie să fie un număr de telefon valid'
+    return isNullable(value) || /[0-9+]*$/.test(value) || 'Valoarea trebuie să fie un număr de telefon valid'
 }
 
 export function emailRule(value) {
-    return /.+@.+\..+/.test(value) || 'Valoarea trebuie să fie un e-mail valid';
+    return isNullable(value) || /.+@.+\..+/.test(value) || 'Valoarea trebuie să fie un e-mail valid';
 }
 
 export function lowerCaseRule(value) {
-    return value == null || value == '' || value == value.toLowerCase() || 'Valoarea trebuie să fie minusculă';
+    return isNullable(value) || value == value.toLowerCase() || 'Valoarea trebuie să fie minusculă';
 }
 
 export function containLowerCaseRule(value) {
-    return /[a-z]/.test(value) || 'Valoarea trebuie să conțină cel puțin o literă minusculă';
+    return isNullable(value) || /[a-z]/.test(value) || 'Valoarea trebuie să conțină cel puțin o literă minusculă';
 }
 
 export function containUpperCaseRule(value) {
-    return /[A-Z]/.test(value) || 'Valoarea trebuie să conțină cel puțin o literă majusculă';
+    return isNullable(value) || /[A-Z]/.test(value) || 'Valoarea trebuie să conțină cel puțin o literă majusculă';
 }
 
 export function containNumberRule(value) {
-    return /[0-9]/.test(value) || 'Valoarea trebuie să conțină cel puțin un număr';
+    return isNullable(value) || /[0-9]/.test(value) || 'Valoarea trebuie să conțină cel puțin un număr';
 }
 
 export function containSpecialCharacterRule(value) {
-    return /\W|_/.test(value) || 'Valoarea trebuie să conțină cel puțin un caracter special';
+    return isNullable(value) || /\W|_/.test(value) || 'Valoarea trebuie să conțină cel puțin un caracter special';
 }
 
 export function numberRule(value) {
-    return value === null || value === '' || (!isNaN(value) && !isNaN(parseFloat(value))) || 'Valoarea trebuie să fie un număr';
+    return isNullable(value) || (!isNaN(value) && !isNaN(parseFloat(value))) || 'Valoarea trebuie să fie un număr';
 }
 
 export function integerRule(value) {
-    return value === null || value === '' || Number.isInteger(value) || 'Valoarea trebuie să fie un număr întreg';
+    return isNullable(value) || Number.isInteger(value) || 'Valoarea trebuie să fie un număr întreg';
+}
+
+export function confirmPasswordRule(value, confirmValue) {
+    if (value == confirmValue) {
+        return true;
+    } else {
+        return 'Parola și confirmarea trebuie să coincidă';
+    }
 }
 
 export function combineRules(...ruleResults) {
@@ -121,4 +129,8 @@ export function combineRules(...ruleResults) {
         }
     }
     return true;
+}
+
+function isNullable(value) {
+    return value === null || value === '' || value === undefined;
 }

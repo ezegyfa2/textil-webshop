@@ -15,8 +15,14 @@ class CartItemResource extends JsonResource
                 'price' => $this->product->price,
                 'image_src' => $this->product->type->mainImage->getSrc(400),
             ],
-            'size' => $this->size->name,
-            'color' => $this->color->name,
+            'size' => [
+                'name' => $this->size->name,
+                'id' => $this->size->id,
+            ],
+            'combined_color' => [
+                'codes' => $this->combinedColor->colors->pluck('code'),
+                'id' => $this->combinedColor->id,
+            ],
             'quantity' => $this->quantity,
         ];
     }

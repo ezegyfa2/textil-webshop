@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\Product\ProductCategory;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -33,6 +34,13 @@ class HandleInertiaRequests extends Middleware
             ...parent::share($request),
             'notifications' => session('notifications') ?? [],
             'cart_items' => session('cartitems') ?? [],
+            'cart_item_count' => session('cart_item_count') ?? 0,
+            'categories' => ProductCategory::all()->map(function($productCategory) {
+                return [
+                    'id' => $productCategory->id,
+                    'name' => $productCategory->name,
+                ];
+            }),
             'auth' => [
                 'user' => $request->user(),
             ],

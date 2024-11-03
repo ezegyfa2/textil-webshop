@@ -21,8 +21,8 @@ const appName = 'MATextil';
 const textColor = 'white';
 const surfaceColor = '#FFFFFF';
 const surfaceVariantColor = '#2F2D2F';
-const primaryColor = '#FF9505';
-const secondaryColor = '#191719';
+const primaryColor = '#F86624';// '#FF3C38';
+const secondaryColor = '#08090A';
 const errorColor = '#DA4167';
 const successColor = '#1B998B';
 

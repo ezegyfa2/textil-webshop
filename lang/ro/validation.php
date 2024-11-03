@@ -199,6 +199,7 @@ return [
         'postal_code' => 'cod postal',
         'size_id' => 'dimensiune',
         'color_id' => 'culoare',
+        'combined_color_id' => 'culoare',
         'search' => 'căutare',
         'from_price' => 'de la preț',
         'to_price' => 'la preț',

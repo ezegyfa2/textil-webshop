@@ -7,7 +7,7 @@
         cycle
     >
         <v-carousel-item
-            src="/storage/images/Header background 1.webp"
+            src="/storage/images/header/1.1.jpg"
             cover
         >
             <v-container class="h-100">
@@ -29,12 +29,12 @@
             </v-container>
         </v-carousel-item>
         <v-carousel-item
-            src="/storage/images/Header background 2.webp"
+            src="/storage/images/header/2.1.jpg"
             cover
         >
             <v-container class="h-100">
-                <v-row class="justify-end h-100">
-                    <v-col cols="12" md="6" class="text-md-end pt-16">
+                <v-row class="justify-center h-100">
+                    <v-col cols="12" md="6" class="text-md-center pt-16">
                         <h1 class="text-h3 text-surface font-weight-bold mb-3 mt-16">Siguranță și confort la locul de muncă</h1>
                         <h2 class="text-h6 text-surface mb-6">Hainele care te susțin!</h2>
                         <Link :href="route('product.index')">
@@ -51,14 +51,14 @@
             </v-container>
         </v-carousel-item>
         <v-carousel-item
-            src="/storage/images/Header background 3.webp"
+            src="/storage/images/header/4.2.jpg"
             cover
         >
             <v-container class="h-100">
                 <v-row class="justify-start h-100">
                     <v-col cols="12" md="6" class="text-md-start pt-16">
-                        <h1 class="text-h3 font-weight-bold mb-3 mt-16">Echipat pentru succes</h1>
-                        <h2 class="text-h6 mb-6">Îmbrăcăminte de lucru la un click distanță!</h2>
+                        <h1 class="text-h3 text-surface font-weight-bold mb-3 mt-16">Echipat pentru succes</h1>
+                        <h2 class="text-h6 text-surface mb-6">Îmbrăcăminte de lucru la un click distanță!</h2>
                         <Link :href="route('product.index')">
                             <v-btn 
                                 size="x-large"
