@@ -60,7 +60,7 @@ const form = useForm({
 });
 
 const submit = () => {
-    form.post(route('profile.change-password'), {
+    form.post(route('profile.password.update'), {
         onFinish: () => {
             form.reset('password', 'password_confirmation');
         },

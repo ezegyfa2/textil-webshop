@@ -41,9 +41,9 @@ Route::middleware('auth')->group(function () {
     Route::post('profile', [ProfileController::class, 'update'])
         ->name('profile.update');
     Route::get('profile/change-password', [PasswordController::class, 'edit'])
-        ->name('profile.change-password');
+        ->name('profile.password.edit');
     Route::post('profile/change-password', [PasswordController::class, 'update'])
-        ->name('profile.change-password');
+        ->name('profile.password.update');
 
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
         ->name('logout');
