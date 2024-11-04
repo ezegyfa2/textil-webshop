@@ -143,7 +143,7 @@
                                         />
                                     </v-list-item>
                                 </Link>
-                                <Link :href="route('profile.change-password')">
+                                <Link :href="route('profile.password.edit')">
                                     <v-list-item slim>
                                         <v-list-item-title
                                             class="text-body-1 main-text pt-5 px-4"
