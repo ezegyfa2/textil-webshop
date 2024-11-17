@@ -5,7 +5,7 @@
             title="Mulțumim pentru comandă"
             content="Vă mulțumim pentru cumpărături cu noi, echipa noastră de vânzări vă va contacta în scurt timp pentru a aranja detaliile de livrare"
             button-text="Înapoi la pagina principală"
-            src="storage/images/Importance of fashion/1200.webp"
+            src="storage/images/Thank you/1200.webp"
             :href="route('home')"
         />
         <!--v-container>
