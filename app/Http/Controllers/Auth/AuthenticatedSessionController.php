@@ -33,14 +33,25 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(route('home', absolute: false))->with([
-            'notifications' => [
-                [
-                    'type' => 'success',
-                    'message' => 'V-ați conectat cu succes',
+        if (Auth::user()->hasRole('admin')) {
+            return redirect()->intended(route('admin.dashboard', absolute: false))->with([
+                'notifications' => [
+                    [
+                        'type' => 'success',
+                        'message' => 'V-ați conectat cu succes',
+                    ],
                 ],
-            ],
-        ]);
+            ]);
+        } else {
+            return redirect()->intended(route('home', absolute: false))->with([
+                'notifications' => [
+                    [
+                        'type' => 'success',
+                        'message' => 'V-ați conectat cu succes',
+                    ],
+                ],
+            ]);
+        }
     }
 
     /**
