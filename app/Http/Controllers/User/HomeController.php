@@ -30,7 +30,12 @@ class HomeController extends Controller
                 ];
             }),
             'main_blog1' => (new BlogShortResource($blogs[0]))->toArray($request),
-            'main_blog2' => (new BlogShortResource($blogs[1]))->toArray($request),
+            'main_blog2' => [
+                'title' => 'Doriți să vă personalizați produsele? Bestbrod.ro',
+                'content' => '',
+                'image_src' => '/storage/images/Bestbrod/400.webp',
+                'href' => 'https://bestbrod.ro',
+            ],
             'main_blog3' => (new BlogShortResource($blogs[2]))->toArray($request),
             'blog1' => (new BlogShortResource($blogs[0]))->toArray($request),
             'blog2' => (new BlogShortResource($blogs[1]))->toArray($request),

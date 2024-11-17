@@ -30,7 +30,7 @@
                 />
 
                 <div class="mx-2 text-caption">
-                    Page {{ selectedPage }} of {{ pageCount }}
+                    Pagina {{ selectedPage }} din {{ pageCount }}
                 </div>
 
                 <v-btn
@@ -62,6 +62,7 @@ const selectedPage = ref(1);
 const pageCount = ref(1);
 const blogsPerPage = ref(10);
 const loading = defineModel('loading');
+const itemsLoaded = ref(false);
 const errorMessages = defineModel('errorMessages');
 
 function nextPage() {
@@ -90,6 +91,8 @@ const fetch = debounce(() => {
             pageCount.value = Math.ceil(response.data.meta.total / response.data.meta.per_page);
             if (page.value > pageCount.value) {
                 page.value = pageCount.value;
+            } else if (page.value == 0) {
+                page.value = 1;
             }
             errorMessages.value = [];
         })
@@ -102,6 +105,9 @@ const fetch = debounce(() => {
             blogs.value = [];
         })
         .finally(() => {
+            if (!itemsLoaded.value) {
+                itemsLoaded.value = true;
+            }
             loading.value = false;
         });
 }, 300);

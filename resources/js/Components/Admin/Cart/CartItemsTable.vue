@@ -102,9 +102,15 @@ function loadItems(): void {
         per_page: itemsPerPage.value,
         cart_id: props.cart_id,
     }))
-    .then((resp) => {
-        items.value = resp.data.data;
-        itemsTotalCount.value = resp.data.meta.total;
+    .then((response) => {
+        items.value = response.data.data;
+        itemsTotalCount.value = response.data.meta.total;
+        const pageCount = Math.ceil(response.data.meta.total / response.data.meta.per_page);
+        if (page.value > pageCount) {
+            page.value = pageCount;
+        } else if (page.value == 0) {
+            page.value = 1;
+        }
     })
     .catch((error) => {
         console.error(error);

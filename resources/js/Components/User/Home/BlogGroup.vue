@@ -13,7 +13,7 @@
                     icon="mdi-account-hard-hat"
                     :src="blog1.image_src"
                     :href="blog1.href"
-                    gradient-color="#ff9507"
+                    gradient-color="#1B998B"
                 />
             </v-col>
             <v-col 
@@ -28,7 +28,7 @@
                     icon="mdi-shield"
                     :src="blog2.image_src"
                     :href="blog2.href"
-                    gradient-color="#3052E0"
+                    gradient-color="#7D80DA"
                 />
             </v-col>
             <v-col 
@@ -43,7 +43,7 @@
                     icon="mdi-tshirt-crew"
                     :src="blog3.image_src"
                     :href="blog3.href"
-                    gradient-color="#A4303F"
+                    gradient-color="#B47EB3"
                 />
             </v-col>
         </v-row>

@@ -1,5 +1,8 @@
 <template>
     <v-app class="layout">
+        <Head>
+            <link rel="icon" type="image/png" href="/storage/images/Logo.png" />
+        </Head>
         <v-toolbar
             class="pt-7 pb-12"
             color="secondary"
@@ -51,6 +54,7 @@ import Footer from '@/Layouts/User/Footer.vue';
 import CookieConsent from '@/Layouts/User/CookieConsent.vue';
 import OnlyForCompaniesDialog from '@/Layouts/User/OnlyForCompaniesDialog.vue';
 import IconText from '@/Layouts/User/IconText.vue';
+import { Head } from '@inertiajs/vue3';
 
 const props = defineProps<{
     title?: string;

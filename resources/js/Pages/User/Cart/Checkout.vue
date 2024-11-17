@@ -92,12 +92,19 @@
                                 />
 
                                 <v-btn
+                                    v-if="totalPrice >= 200"
                                     class="mb-3"
                                     size="x-large"
                                     type="submit"
                                 >
                                     <p class="text-uppercase text-body-1 main-text">Plasați comanda</p>
                                 </v-btn>
+                                <p
+                                    v-else
+                                    class="text-body-1 main-text"
+                                >
+                                    Valoarea minimă a comenzii este de 200 lei
+                                </p>
                             </v-form>
                         </v-card-text>
                     </v-card>

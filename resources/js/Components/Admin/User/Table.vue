@@ -199,9 +199,15 @@ function loadItems(): void {
         per_page: itemsPerPage.value,
         search: search.value,
     }))
-    .then((resp) => {
-        users.value = resp.data.data;
-        usersTotalCount.value = resp.data.meta.total;
+    .then((response) => {
+        users.value = response.data.data;
+        usersTotalCount.value = response.data.meta.total;
+        const pageCount = Math.ceil(response.data.meta.total / response.data.meta.per_page);
+        if (page.value > pageCount) {
+            page.value = pageCount;
+        } else if (page.value == 0) {
+            page.value = 1;
+        }
     })
     .catch((error) => {
         console.error(error);

@@ -8,7 +8,8 @@
         :items-length="itemsTotalCount"
         first-icon=""
         last-icon=""
-        :hide-default-footer="itemsTotalCount <= 10"
+        items-per-page-text="Produse pe pagină"
+        :hide-default-footer="itemsTotalCount <= itemsPerPage"
         disable-sort
         @update:options="loadItems"
     >
@@ -116,7 +117,12 @@
         </template>
 
         <template v-slot:no-data>
-            <p class="text-body-1 pt-12 pb-8">Coșul este gol</p>
+            <p 
+                v-if="!loading && itemsLoaded"
+                class="text-body-1 pt-12 pb-8"
+            >
+                Coșul este gol
+            </p>
         </template>
     </v-data-table-server>
 </template>
@@ -133,6 +139,7 @@ const itemsPerPage = ref(5);
 const itemsTotalCount = ref(0);
 const items = defineModel('items');
 const loading = defineModel('loading');
+const itemsLoaded = ref(false);
 const { smAndDown, smAndUp, mdAndUp } = useDisplay();
 const imageSize = computed(() => {
     if (mdAndUp.value) {
@@ -196,9 +203,15 @@ function loadItems(): void {
         page: page.value,
         per_page: itemsPerPage.value,
     }))
-    .then((resp) => {
-        items.value = resp.data.data;
-        itemsTotalCount.value = resp.data.meta.total;
+    .then((response) => {
+        items.value = response.data.data;
+        itemsTotalCount.value = response.data.meta.total;
+        const pageCount = Math.ceil(response.data.meta.total / response.data.meta.per_page);
+        if (page.value > pageCount) {
+            page.value = pageCount;
+        } else if (page.value == 0) {
+            page.value = 1;
+        }
     })
     .catch((error) => {
         console.error(error);
@@ -208,6 +221,9 @@ function loadItems(): void {
     })
     .finally(() => {
         loading.value = false;
+        if (!itemsLoaded.value) {
+            itemsLoaded.value = true;
+        }
     });
 }
 

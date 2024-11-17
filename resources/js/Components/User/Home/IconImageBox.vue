@@ -1,13 +1,15 @@
 <template>
     <v-img
+        class="elevation-5"
         :src="src"
         height="230"
         :gradient="gradient"
         cover
     >
-        <Link
+        <a
             class="content-box"
-            :href="href"
+            :href="href.includes('http') ? href : ''"
+            @click="() => clicked"
         >
             <div class="content-section p-5">
                 <div class="d-flex">
@@ -32,13 +34,13 @@
                 />
                 <p class="title">{{ title }}</p>
             </div>
-        </Link>
+        </a>
     </v-img>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { Link } from '@inertiajs/vue3';
+import { router } from '@inertiajs/vue3';
 
 const props = defineProps<{
     title: string,
@@ -56,6 +58,10 @@ const gradient = computed(() => {
         return '';
     }
 })
+
+function clicked() {
+    router.visit(props.href);
+}
 </script>
 
 <style lang="scss">

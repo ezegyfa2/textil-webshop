@@ -35,8 +35,9 @@
                                 <p class="text-body-1 main-text">{{ totalPrice }} RON</p>
                             </div>
                         </div>
-                        <div class="px-4 pb-4">
+                        <div class="px-5 pb-4">
                             <v-btn
+                                v-if="totalPrice >= 200"
                                 class="mb-3 w-100"
                                 size="x-large"
                                 :disabled="loading"
@@ -45,6 +46,12 @@
                             >
                                 <p class="text-uppercase text-body-1 main-text">Finalizează comanda</p>
                             </v-btn>
+                            <p
+                                v-else
+                                class="text-body-1 main-text"
+                            >
+                                Valoarea minimă a comenzii este de 200 lei
+                            </p>
                         </div>
                     </v-card>
                 </v-col>

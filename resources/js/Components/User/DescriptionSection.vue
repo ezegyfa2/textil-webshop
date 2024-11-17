@@ -26,6 +26,7 @@
             >
                 <v-img 
                     :src="src"
+                    :max-height="image_max_height"
                     cover
                 />
             </v-col>
@@ -42,6 +43,7 @@ const props = defineProps<{
     buttonText: string;
     src: string;
     href: string;
+    image_max_height: number;
 }>();
 </script>
 

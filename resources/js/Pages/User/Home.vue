@@ -9,9 +9,10 @@
         <DescriptionSection 
             id="about_us"
             title="Bine ați venit la MATextil"
-            content="Fie că lucrați în construcții, industrie, logistică sau alte domenii, noi vă oferim echipamente profesionale care combină durabilitatea, confortul și stilul. În magazinul nostru veți găsi o gamă variată de produse special concepute pentru a asigura siguranța și eficiența la locul de muncă."
+            content="Bine ați venit în magazinul nostru online, dedicat companiilor care caută îmbrăcăminte de lucru și accesorii de calitate, produse responsabil din bumbac organic. Credem în crearea unor articole durabile și confortabile, care să reflecte grija față de angajați și față de mediu. Fiecare produs este realizat din bumbac organic, oferind nu doar rezistență, ci și o atingere delicată pentru piele. În magazinul nostru, veți găsi atât echipamente de lucru practice, cât și accesorii de încredere, potrivite pentru diverse domenii de activitate. Designurile noastre sunt moderne, adaptate cerințelor actuale, și se pretează excelent pentru personalizare prin branding. Astfel, companiile își pot transmite identitatea prin echipamentele angajaților. Fiecare articol de îmbrăcăminte este realizat cu atenție la detalii și la nevoile utilizatorului. Cu produsele noastre, veți investi în echipamente care respectă standardele de calitate, siguranță și sustenabilitate."
             button-text="Produsele noastre"
             src="storage/images/header/5.jpg"
+            :image_max_height="600"
             :href="route('product.index')"
         />
         <CategorySection :categories="brands"/>

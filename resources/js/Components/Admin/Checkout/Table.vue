@@ -62,6 +62,7 @@
                             <Link :href="route('admin.checkout.show', item.id)">
                                 <v-btn 
                                     class="show-button"
+                                    color="surface"
                                     icon="mdi-eye"
                                     elevation="0"
                                 />
@@ -132,9 +133,15 @@ function loadItems(): void {
         per_page: checkoutsPerPage.value,
         search: search.value,
     }))
-    .then((resp) => {
-        checkouts.value = resp.data.data;
-        checkoutsTotalCount.value = resp.data.meta.total;
+    .then((response) => {
+        checkouts.value = response.data.data;
+        checkoutsTotalCount.value = response.data.meta.total;
+        const pageCount = Math.ceil(response.data.meta.total / response.data.meta.per_page);
+        if (page.value > pageCount) {
+            page.value = pageCount;
+        } else if (page.value == 0) {
+            page.value = 1;
+        }
     })
     .catch((error) => {
         console.error(error);

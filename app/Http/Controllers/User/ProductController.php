@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Models\Size;
 use App\Models\Color;
+use App\Models\Product\Brand;
 use App\Models\Product\ProductType;
 use App\Models\Product\ProductCategory;
 use App\Http\Requests\User\ProductTypeFetchRequest;
@@ -30,20 +31,24 @@ class ProductController extends Controller
 
     public function index(): Response
     {
+        $sizes = Size::whereIn('name', [
+            'XXS',
+            'XS',
+            'S',
+            'M',
+            'L',
+            'XL',
+            '2XL',
+            '3XL',
+            '4XL',
+            '5XL',
+        ])->select(['name', 'id'])->orderBy('id')->get();
+        
         return Inertia::render('User/Product/Index', [
             'choosed_category_id' => request()->get('category'),
-            'sizes' => Size::whereIn('name', [
-                'XXS',
-                'XS',
-                'S',
-                'M',
-                'L',
-                'XL',
-                '2XL',
-                '3XL',
-                '4XL',
-                '5XL',
-            ])->select(['name', 'id'])->orderBy('id')->get(),
+            'choosed_brand_id' => request()->get('brand'),
+            'sizes' => $sizes,
+            'brands' => Brand::select(['name', 'id'])->get(),
             //'colors' => Color::all()->select(['name', 'id']),
         ]);
     }
@@ -90,6 +95,9 @@ class ProductController extends Controller
         });
         if ($request->category_ids) {
             $query->whereIn('product_category_id', $request->category_ids);
+        }
+        if ($request->brand_ids) {
+            $query->whereIn('brand_id', $request->brand_ids);
         }
 
         return $query;

@@ -23,8 +23,8 @@ class BlogSeeder extends Seeder
             'src' => 'Importance of quality',
         ]);
         Blog::create([
-            'title' => 'Importanța îmbrăcămintei de lucru de calitate',
-            'short_content' => 'Îmbrăcămintea de lucru este un element esențial în multe industrii, având un rol nu doar funcțional, ci și de siguranță, confort și reprezentare a identității corporative. Alegerea unor uniforme de calitate superioară este o investiție importantă pentru orice companie, contribuind la bunăstarea și performanța angajaților. Articolul de față va explora în detaliu importanța îmbrăcămintei de lucru de calitate și efectele sale pozitive asupra angajaților, siguranței și imaginii companiei.',
+            'title' => 'Importanța îmbrăcămintei de lucru din Bumbac Organic',
+            'short_content' => 'În contextul actual, tot mai multe companii sunt preocupate de adoptarea unor practici sustenabile, fie că vorbim despre reducerea deșeurilor, folosirea energiei verzi sau selectarea unor materiale ecologice pentru produsele lor. Îmbrăcămintea de lucru din bumbac organic reprezintă una dintre aceste opțiuni ecologice, având numeroase avantaje atât pentru angajați, cât și pentru companie și mediu.',
             'content' => file_get_contents(__DIR__.'/blog2.html'),
             'image_id' => $image->id,
         ]);
@@ -32,8 +32,8 @@ class BlogSeeder extends Seeder
             'src' => 'Importance of fashion',
         ]);
         Blog::create([
-            'title' => 'Cât de fashion trebuie să fie echipamentele de protecţie?',
-            'short_content' => 'Echipamentele de protecție reprezintă o componentă esențială în asigurarea siguranței angajaților în multe industrii, de la construcții și industrie grea până la laboratoare de cercetare și sectorul medical. În esență, rolul lor principal este de a proteja utilizatorii împotriva riscurilor fizice, chimice sau biologice care pot apărea în timpul muncii. Însă, pe măsură ce preocuparea pentru siguranță se îmbină cu tendințele moderne, se ridică întrebarea: cât de fashion trebuie să fie echipamentele de protecție? În continuare, vom analiza această problemă și vom explora avantajele și limitele unei abordări estetice în proiectarea acestor echipamente.',
+            'title' => 'Cât de Fashion Trebuie să Fie Îmbrăcămintea de Lucru?',
+            'short_content' => 'Îmbrăcămintea de lucru joacă un rol esențial în mediul profesional, oferind atât protecție și confort, cât și o oportunitate de a reflecta imaginea companiei. Deși accentul pe funcționalitate este primordial, estetica îmbrăcămintei de lucru a căpătat o importanță tot mai mare în ultimii ani. De la uniforme moderne, personalizabile, până la echipamente de lucru care îmbină stilul cu funcționalitatea, companiile încep să recunoască valoarea pe care o aduce o abordare “fashion” în îmbrăcămintea de lucru.',
             'content' => file_get_contents(__DIR__.'/blog3.html'),
             'image_id' => $image->id,
         ]);

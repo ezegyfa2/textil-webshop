@@ -4,7 +4,26 @@
         :items-per-page="productsPerPage"
     >
         <template v-slot:default="{ items }">
-            <v-container class="pa-2" fluid>
+            <v-container
+                v-if="loading"
+                class="pa-2"
+                fluid
+            >
+                <v-row dense>
+                    <v-col
+                        v-for="item in 8"
+                        class="pa-2"
+                        cols="12" sm="6" md="3"
+                    >
+                        <v-skeleton-loader type="card"/>
+                    </v-col>
+                </v-row>
+            </v-container>
+            <v-container
+                v-else
+                class="pa-2"
+                fluid
+            >
                 <v-row dense>
                     <v-col
                         v-for="item in items"
@@ -58,7 +77,10 @@
         </template>
 
         <template v-slot:footer>
-            <div class="d-flex align-center justify-center pa-4">
+            <div
+                v-if="pageCount > 0"
+                class="d-flex align-center justify-center pa-4"
+            >
                 <v-btn
                     :disabled="selectedPage <= 1"
                     density="comfortable"
@@ -69,7 +91,7 @@
                 />
 
                 <div class="mx-2 text-caption">
-                    Page {{ selectedPage }} of {{ pageCount }}
+                    Pagina {{ selectedPage }} din {{ pageCount }}
                 </div>
 
                 <v-btn
@@ -80,6 +102,17 @@
                     rounded="0"
                     @click="nextPage"
                 />
+            </div>
+        </template>
+
+        <template v-slot:no-data>
+            <div class="w-100 d-flex justify-center">
+                <p
+                    v-if="!loading && itemsLoaded"
+                    class="text-body-1 py-16"
+                >
+                    Nu există niciun produs care să corespundă criteriilor de căutare
+                </p>
             </div>
         </template>
     </v-data-iterator>
@@ -100,6 +133,7 @@ const products = ref([]);
 const selectedPage = ref(1);
 const pageCount = ref(1);
 const productsPerPage = ref(12);
+const itemsLoaded = ref(false);
 const loading = defineModel('loading');
 const errorMessages = defineModel('errorMessages');
 
@@ -133,8 +167,10 @@ const fetch = debounce(async () => {
         .then((response) => {
             products.value = response.data.data;
             pageCount.value = Math.ceil(response.data.meta.total / response.data.meta.per_page);
-            if (page.value > pageCount.value) {
-                page.value = pageCount.value;
+            if (selectedPage.value > pageCount.value) {
+                selectedPage.value = pageCount.value;
+            } else if (selectedPage.value == 0) {
+                selectedPage.value = 1;
             }
             errorMessages.value = [];
         })
@@ -148,6 +184,9 @@ const fetch = debounce(async () => {
         })
         .finally(() => {
             loading.value = false;
+            if (!itemsLoaded.value) {
+                itemsLoaded.value = true;
+            }
         });
 }, 400);
 
@@ -158,7 +197,9 @@ const fetchFilterValues = computed(() => {
     }, props.filters);
 });
 
-onMounted(fetch);
+onMounted(() => {
+    fetch();
+});
 </script>
 
 <style scoped lang="scss">

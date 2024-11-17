@@ -126,6 +126,30 @@
                             </v-list-item>
                         </template>
                     </v-expansion-panel>
+                    <v-expansion-panel rounded="0">
+                        <template v-slot:title>
+                            <p class="text-h6 main-text">Branduri</p>
+                        </template>
+                        <template v-slot:text>
+                            <v-list-item
+                                v-for="brand in brands"
+                                :key="brand.name"
+                                class="d-flex justify-end pa-0"
+                                density="compact"
+                            >
+                                <v-checkbox
+                                    v-model="selectedBrandIds"
+                                    :value="brand.id"
+                                    density="compact"
+                                    hide-details
+                                >
+                                    <template v-slot:prepend>
+                                        <p class="filter-checkbox text-caption main-text">{{ brand.name }}</p>
+                                    </template>
+                                </v-checkbox>
+                            </v-list-item>
+                        </template>
+                    </v-expansion-panel>
                     <!--v-expansion-panel rounded="0">
                         <template v-slot:title>
                             <p class="text-h6 main-text">Culorile</p>
@@ -164,9 +188,11 @@ import { ref, computed, watch, useTemplateRef } from 'vue';
 
 const props = defineProps<{
     sizes: Array,
+    brands: Array,
     //colors: Array,
     categories: Array,
     choosed_category_id: Number|null,
+    choosed_brand_id: Number|null,
 }>();
 
 const search = ref('');
@@ -174,6 +200,7 @@ const fromPrice = ref(null);
 const toPrice = ref(null);
 const selectedSizeIds = ref([]);
 const selectedCategoryIds = ref(props.choosed_category_id ? [parseInt(props.choosed_category_id)] : []);
+const selectedBrandIds = ref(props.choosed_brand_id ? [parseInt(props.choosed_brand_id)] : []);
 //const selectedColorIds = ref([]);
 const loading = ref(false);
 const errorMessages = ref({});
@@ -181,8 +208,11 @@ const drawer = ref(false);
 const panels = ref([0, 1, 2, 3]);
 const validatedFilters = ref({
     category_ids: selectedCategoryIds.value,
+    brand_ids: selectedBrandIds.value,
 });
 const filterFormComponent = useTemplateRef('filterForm');
+
+console.log(selectedBrandIds.value)
 
 const filters = computed(() => {
     return {
@@ -191,6 +221,7 @@ const filters = computed(() => {
         to_price: toPrice.value,
         category_ids: selectedCategoryIds.value,
         size_ids: selectedSizeIds.value,
+        brand_ids: selectedBrandIds.value,
         //color_ids: selectedColorIds.value,
     };
 });
