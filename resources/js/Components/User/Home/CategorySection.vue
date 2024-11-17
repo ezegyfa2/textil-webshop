@@ -20,7 +20,7 @@
                     <ImageBox
                         :src="category.image_src"
                     >
-                            <p class="text-h6 text-surface">{{ category.name }}</p>
+                        <p class="text-h6 text-surface">{{ category.name }}</p>
                     </ImageBox>
                 </Link>
             </v-col>

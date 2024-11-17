@@ -3,6 +3,7 @@
         :src="src"
         :height="height"
         :width="width"
+        class="elevation-1"
         cover
     >
         <div class="content">
