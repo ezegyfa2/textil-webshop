@@ -3,7 +3,7 @@
         :src="src"
         :height="height"
         :width="width"
-        class="elevation-1"
+        :class="{ 'elevation-1': elevation }"
         cover
     >
         <div class="content">
@@ -17,6 +17,7 @@ const props = defineProps<{
     height?: number|string,
     width?: number|string,
     src: string,
+    elevation: boolean,
 }>();
 </script>
 

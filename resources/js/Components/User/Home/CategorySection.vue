@@ -19,6 +19,7 @@
                 >
                     <ImageBox
                         :src="category.image_src"
+                        elevation
                     >
                         <p class="text-h6 text-surface">{{ category.name }}</p>
                     </ImageBox>
