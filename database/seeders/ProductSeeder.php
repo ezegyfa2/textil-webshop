@@ -36,7 +36,7 @@ class ProductSeeder extends Seeder
     
     public function run(): void
     {
-        $this->imageNames = array_filter(scandir(storage_path('app/public/images/productType')), function($fileName) {
+        $this->imageNames = array_filter(scandir(storage_path('app/public/images/producttype')), function($fileName) {
             return is_dir(storage_path('app/public/images/producttype') . '/' . $fileName);
         });
         $enProductTypes = require(__DIR__ . '/EnProducts.php');
