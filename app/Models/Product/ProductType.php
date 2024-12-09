@@ -14,6 +14,8 @@ class ProductType extends Model
         'name',
         'main_image_id',
         'gram_per_m2',
+        'product_category_id',
+        'brand_id',
     ];
 
     protected function casts(): array
@@ -28,14 +30,14 @@ class ProductType extends Model
         return $this->hasMany(Product::class);
     }
 
-    public function images(): BelongsToMany
+    public function images(): HasMany
     {
-        return $this->belongsToMany(Image::class, 'product_type_images');
+        return $this->hasMany(ProductTypeImage::class);
     }
 
     public function mainImage(): BelongsTo
     {
-        return $this->belongsTo(Image::class, 'main_image_id');
+        return $this->belongsTo(ProductTypeImage::class, 'main_image_id');
     }
 
     public function category(): BelongsTo

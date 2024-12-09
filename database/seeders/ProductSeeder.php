@@ -2,16 +2,18 @@
 
 namespace Database\Seeders;
 
-use App\Models\Image;
 use App\Models\Size;
 use App\Models\Color;
 use App\Models\CombinedColor;
 use App\Models\Product\Product;
 use App\Models\Product\Brand;
+use App\Models\Product\BrandImage;
 use App\Models\Product\ProductCategory;
 use App\Models\Product\ProductType;
+use App\Models\Product\ProductTypeImage;
 use App\Models\Product\FabricProperty;
 use App\Models\Product\CutProperty;
+use App\Helpers\FileMethods;
 use Illuminate\Database\Seeder;
 
 class ProductSeeder extends Seeder
@@ -34,8 +36,8 @@ class ProductSeeder extends Seeder
     
     public function run(): void
     {
-        $this->imageNames = array_filter(scandir(storage_path('app/public/images')), function($fileName) {
-            return is_dir(storage_path('app/public/images') . '/' . $fileName);
+        $this->imageNames = array_filter(scandir(storage_path('app/public/images/productType')), function($fileName) {
+            return is_dir(storage_path('app/public/images/producttype') . '/' . $fileName);
         });
         $enProductTypes = require(__DIR__ . '/EnProducts.php');
         $productTypes = require(__DIR__ . '/Products.php');
@@ -72,7 +74,6 @@ class ProductSeeder extends Seeder
         ?array $priceSizes = null
     ) {
         if (!$priceSizes) {
-            dd('sd');
             if ($products[0]['sizeInterval'] != '') {
                 $startIndex = array_search($products[0]['sizeInterval'][0], $this->sizes);
                 $endIndex = array_search($products[count($products) - 1]['sizeInterval'][1], $this->sizes);
@@ -86,21 +87,27 @@ class ProductSeeder extends Seeder
             }
         }
         $productCode = explode(' ', $name)[0];
-        $images = [];
+        $imageNames = [];
         foreach ($this->imageNames as $imageName) {
             if (str_starts_with(strtolower($imageName), strtolower($productCode) . '-')) {
-                array_push($images, Image::firstOrCreate([
-                    'src' => $imageName,
-                ]));
+                array_push($imageNames, $imageName);
             }
         }
         
-        $brand = Brand::firstOrCreate([
-            'name' => $brandName,
-        ], [
-            'image_id' => $images[0]->id,
-        ]);
-            
+        $brand = Brand::where('name', $brandName)->first();
+        if (!$brand) {
+            $brandImage = BrandImage::firstOrCreate([
+                'relative_path' => $imageNames[0],
+            ]);
+            $productTypeImage = new ProductTypeImage();
+            $productTypeImage->relative_path = $brandImage->relative_path;
+            FileMethods::copyFolder($productTypeImage->getFolderPath(), $brandImage->getFolderPath());
+            $brand = Brand::create([
+                'name' => $brandName,
+                'image_id' => $brandImage->id,
+            ]);
+        }
+        
         $category = ProductCategory::firstOrCreate([
             'name' => $categoryName,
         ]);
@@ -110,8 +117,14 @@ class ProductSeeder extends Seeder
             'brand_id' => $brand->id,
             'product_category_id' => $category->id,
         ]);
-        foreach ($images as $image) {
-            $productType->images()->attach($image);
+        foreach ($imageNames as $imageName) {
+            $image = ProductTypeImage::create([
+                'relative_path' => $imageName,
+                'product_type_id' => $productType->id,
+            ]);
+            if (!$productType->main_image_id) {
+                $productType->main_image_id = $image->id;
+            }
         }
         foreach ($fabricProperties as $fabricProperty) {
             $property = FabricProperty::firstOrCreate([

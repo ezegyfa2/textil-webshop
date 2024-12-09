@@ -3,15 +3,15 @@
 namespace Database\Seeders;
 
 use App\Models\Blog;
-use App\Models\Image;
+use App\Models\BlogImage;
 use Illuminate\Database\Seeder;
 
 class BlogSeeder extends Seeder
 {
     public function run(): void
     {
-        $image = Image::create([
-            'src' => 'Pozitive effects',
+        $image = BlogImage::create([
+            'relative_path' => 'Pozitive effects',
         ]);
         Blog::create([
             'title' => 'Efectele pozitive ale uniformei de lucru',
@@ -19,8 +19,8 @@ class BlogSeeder extends Seeder
             'content' => file_get_contents(__DIR__.'/blog1.html'),
             'image_id' => $image->id,
         ]);
-        $image = Image::create([
-            'src' => 'Importance of quality',
+        $image = BlogImage::create([
+            'relative_path' => 'Importance of quality',
         ]);
         Blog::create([
             'title' => 'Importanța îmbrăcămintei de lucru din Bumbac Organic',
@@ -28,8 +28,8 @@ class BlogSeeder extends Seeder
             'content' => file_get_contents(__DIR__.'/blog2.html'),
             'image_id' => $image->id,
         ]);
-        $image = Image::create([
-            'src' => 'Importance of fashion',
+        $image = BlogImage::create([
+            'relative_path' => 'Importance of fashion',
         ]);
         Blog::create([
             'title' => 'Cât de Fashion Trebuie să Fie Îmbrăcămintea de Lucru?',

@@ -13,7 +13,7 @@ class ProductTypeFetchResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'price' => $this->getPrice(),
-            'image_src' => $this->mainImage->getSrc(400),
+            'image_src' => $this->mainImage->getUrl(400),
         ];
     }
 

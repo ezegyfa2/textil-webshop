@@ -1,7 +1,7 @@
 <template>
     <v-app class="layout">
         <Head>
-            <link rel="icon" type="image/png" href="/storage/images/Logo.png" />
+            <link rel="icon" type="image/png" href="/assets/images/logo.png" />
         </Head>
         <v-toolbar
             class="pt-7 pb-12"

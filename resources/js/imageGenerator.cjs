@@ -9,12 +9,12 @@ const imageSizes = [
 ]
 
 let imageFolder = 'C:\\Projects\\laragon\\www\\textil-webshop\\storage\\app\\public\\images\\';
-let fullSizeImageFolder = imageFolder + 'fullSize\\';
+let fullSizeImageFolder = imageFolder + 'producttype\\';
 
 fs.readdirSync(fullSizeImageFolder).forEach(fileName => {
     imageCreator.createResponsiveVersions(
         fullSizeImageFolder + fileName, 
         imageSizes,
-        imageFolder + path.parse(fileName).name
+        fullSizeImageFolder + path.parse(fileName).name
     )
 });

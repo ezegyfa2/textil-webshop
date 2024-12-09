@@ -169,8 +169,6 @@ const fetch = debounce(async () => {
             pageCount.value = Math.ceil(response.data.meta.total / response.data.meta.per_page);
             if (selectedPage.value > pageCount.value) {
                 selectedPage.value = pageCount.value;
-            } else if (selectedPage.value == 0) {
-                selectedPage.value = 1;
             }
             errorMessages.value = [];
         })

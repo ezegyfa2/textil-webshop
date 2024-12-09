@@ -12,13 +12,16 @@
     </v-img>
 </template>
 
-<script setup lang="ts">
-const props = defineProps<{
-    height?: number|string,
-    width?: number|string,
-    src: string,
-    elevation: boolean,
-}>();
+<script setup>
+const props = defineProps({
+    height: Number|String|null,
+    width: Number|String|null,
+    src: String,
+    elevation: {
+        type: Boolean,
+        default: true,
+    },
+});
 </script>
 
 <style scoped lang="scss">

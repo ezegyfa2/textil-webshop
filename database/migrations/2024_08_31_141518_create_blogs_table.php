@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('short_content');
             $table->longText('content');
-            $table->foreignId('image_id')->nullable()->constrained('images');
+            $table->foreignId('image_id')->nullable()->constrained('blog_images');
             $table->timestamps();
         });
     }

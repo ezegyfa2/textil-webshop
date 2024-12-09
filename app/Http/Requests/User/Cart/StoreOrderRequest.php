@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\User\Cart;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Requests\FormRequest;
 
 class StoreOrderRequest extends FormRequest
 {

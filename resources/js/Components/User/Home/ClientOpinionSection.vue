@@ -83,7 +83,7 @@ let clientOpinions = [
             companyName: 'Shoes corporation',
         },
         content: 'Am avut o experiență excelentă cu acest magazin online! Am comandat mai multe tricouri polo de diferite culori.',
-        logoSrc: '/storage/images/Company-logo1/400.webp',
+        logoSrc: '/assets/images/company-logo1.webp',
     },
     {
         client: {
@@ -91,7 +91,7 @@ let clientOpinions = [
             companyName: 'Megatool srl.',
         },
         content: 'Recomand cu căldură acest magazin pentru toți cei care caută tricouri polo de calitate superioară! Se vede clar că sunt atenți la detalii și oferă o gamă variată de modele, culori și mărimi.',
-        logoSrc: '/storage/images/Company-logo2/400.webp',
+        logoSrc: '/assets/images/company-logo2.webp',
     },
     {
         client: {
@@ -100,7 +100,7 @@ let clientOpinions = [
         },
         lastItem: true,
         content: 'Un magazin online de încredere! Tricourile polo pe care le-am comandat sunt exact așa cum mă așteptam, chiar mai bune decât în poze.',
-        logoSrc: '/storage/images/Company-logo3/400.webp',
+        logoSrc: '/assets/images/company-logo3.webp',
     },
 ]
 </script>

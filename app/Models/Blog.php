@@ -15,6 +15,6 @@ class Blog extends Model
 
     public function image(): BelongsTo
     {
-        return $this->belongsTo(Image::class, 'image_id');
+        return $this->belongsTo(BlogImage::class, 'image_id');
     }
 }

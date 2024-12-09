@@ -25,7 +25,7 @@ class HomeController extends Controller
             'brands' => $brands->map(function ($category) {
                 return [
                     'name' => $category->name,
-                    'image_src' => $category->image->getSrc(400),
+                    'image_src' => $category->image->getUrl(400),
                     'href' => route('product.index') . '?brand=' . $category->id,
                 ];
             }),
@@ -33,7 +33,7 @@ class HomeController extends Controller
             'main_blog2' => [
                 'title' => 'Doriți să vă personalizați produsele? Bestbrod.ro',
                 'content' => '',
-                'image_src' => '/storage/images/Bestbrod/400.webp',
+                'image_src' => '/assets/images/bestbrod/400.webp',
                 'href' => 'https://bestbrod.ro',
             ],
             'main_blog3' => (new BlogShortResource($blogs[2]))->toArray($request),

@@ -12,7 +12,7 @@ class BlogResource extends JsonResource
         return [
             'title' => $this->title,
             'content' => $this->content,
-            'image_src' => $this->image->getSrc(1200),
+            'image_src' => $this->image->getUrl(1200),
             'created_at' => $this->created_at->format('Y.M.d'),
         ];
     }

@@ -209,8 +209,6 @@ function loadItems(): void {
         const pageCount = Math.ceil(response.data.meta.total / response.data.meta.per_page);
         if (page.value > pageCount) {
             page.value = pageCount;
-        } else if (page.value == 0) {
-            page.value = 1;
         }
     })
     .catch((error) => {

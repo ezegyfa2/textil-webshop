@@ -17,6 +17,19 @@ Route::middleware('role:admin')->prefix('admin')->name('admin.')->group(function
     Route::put('/users/{user}', [UserController::class, 'update'])->name('user.update');
 
     Route::get('/products', [ProductController::class, 'index'])->name('product.index');
+    Route::get('/products/fetch', [ProductController::class, 'fetch'])->name('product.fetch');
+    Route::get('/products/search-category', [ProductController::class, 'searchCategory'])
+        ->name('product.search-category');
+    Route::get('/products/search-brand', [ProductController::class, 'searchBrand'])
+        ->name('product.search-brand');
+    Route::get('/products/{productType}', [ProductController::class, 'show'])->name('product.show');
+    Route::put('/products/{productType}', [ProductController::class, 'update'])->name('product.update');
+    Route::get('/products/{productType}/edit', [ProductController::class, 'edit'])->name('product.edit');
+    Route::delete('/products/{productType}', [ProductController::class, 'delete'])->name('product.delete');
+    Route::post('/products/upload-image', [ProductController::class, 'uploadImage'])
+        ->name('product.upload-image');
+    Route::delete('/products/delete-image/{productImage}', [ProductController::class, 'deleteImage'])
+        ->name('product.delete-image');
 
     Route::get('/checkouts', [CheckoutController::class, 'index'])->name('checkout.index');
     Route::get('/checkouts/fetch', [CheckoutController::class, 'fetch'])->name('checkout.fetch');

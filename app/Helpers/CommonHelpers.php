@@ -17,6 +17,18 @@ class CommonHelpers
         return preg_replace('/(.*?[?!.](?=\s|$)).*/', '\\1', $text);
     }
 
+    public static function getRelationSelectValue($model, string $textField = 'name'): ?array
+    {
+        if ($model) {
+            return [
+                'id' => $model->id ?? null,
+                $textField => $model->$textField ?? '-',
+            ];
+        } else {
+            return null;
+        }
+    }
+
     public static function concatenateStrings(array|Collection $stringsToConcatenate, string $concatenator)
     {
         $result = '';

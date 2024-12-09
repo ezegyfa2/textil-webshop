@@ -14,7 +14,7 @@ class ProductTypeResource extends JsonResource
             'gram_per_m2' => $this->gram_per_m2,
             'brand' => $this->brand->name,
             'category' => $this->category->name,
-            'image_sources' => $this->images->map(fn ($image) => $image->getSrc(1200)),
+            'image_sources' => $this->images->map(fn ($image) => $image->getUrl(1200)),
             'fabric_properties' => $this->fabricProperties->pluck('name'),
             'cut_properties' => $this->cutProperties->pluck('name'),
             'products' => ProductResource::collection($this->products),
