@@ -1,5 +1,5 @@
 <template>
-    <div :class="[ (dragover && !loading) ? 'border-primary' : 'border-secondary', 'border-md', 'border-dashed', 'border-opacity-100', 'rounded-lg' ]">
+    <div :class="[ (dragover && !loading) ? 'border-primary' : 'border-secondary', 'border-md', 'border-dashed', 'border-opacity-100' ]">
         <v-container>
             <v-row class="align-center py-8 flex-column">
                 <v-progress-circular
@@ -25,7 +25,7 @@
                     v-if="!loading"
                     class="title indigo--text text--darken-2"
                 >
-                    Húzza be a képeket a feltöltéshez!
+                    Glisați și fixați imaginile pentru a le încărca!
                 </span>
             </v-row>
             <v-row>
@@ -38,7 +38,7 @@
                         cols="12" sm="6" md="4" lg="3"
                     >
                         <v-img
-                            class="rounded-lg text-end"
+                            class="text-end"
                             :src="images[i - 1].url"
                             width="100%"
                             height="200"
@@ -63,20 +63,8 @@
 
                         <v-radio
                             class="pt-1"
-                            label="Alapértelmezett"
+                            label="Implicit"
                             :value="getDefaultValue(i - 1)"
-                        />
-
-                        <v-text-field
-                            v-model="images[i - 1].description"
-                            class="pt-1"
-                            label="Leírás"
-                            :counter="255"
-                            clearable
-                            :rules="[maxFieldLengthRule]"
-                            :disabled="loading"
-                            :loading="loading"
-                            :error-messages="errors ? errors[i - 1]?.description : null"
                         />
                     </v-col>
                     <v-col
@@ -85,7 +73,7 @@
                         class="text-center"
                         cols="12" sm="6" md="4" lg="3"
                     >
-                        <p class="text-body-1 mt-5">Kép feltöltése</p>
+                        <p class="text-body-1 mt-5">Încărcați o imagine</p>
                         <p class="text-body-1 my-5">{{ progressValue }}%</p>
                         <v-progress-linear
                             :model-value="progressValue"
@@ -251,5 +239,6 @@ onUpdated(initializeEvents);
 <style scoped>
 .uploader-section {
     border: 2px dashed #ccc;
+    border-radius: 0;
 }
 </style>

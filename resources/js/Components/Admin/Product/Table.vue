@@ -72,7 +72,7 @@
                                                 prepend-icon="mdi-pencil-outline"
                                                 slim
                                             >
-                                                <v-list-item-title v-text="'Szerkesztés'"/>
+                                                <v-list-item-title v-text="'Editare'"/>
                                             </v-list-item>
                                         </Link>
                                         <Link :href="route('admin.product.delete', { productType: item.id })">
@@ -80,7 +80,7 @@
                                                 prepend-icon="mdi-delete-outline"
                                                 slim
                                             >
-                                                <v-list-item-title v-text="'Torles'"/>
+                                                <v-list-item-title v-text="'Șterge'"/>
                                             </v-list-item>
                                         </Link>
                                     </v-list>

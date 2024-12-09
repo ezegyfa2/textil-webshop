@@ -2,7 +2,7 @@
     <MainLayout>
         <ProductForm
             @submitted="submit"
-            title="Edit product"
+            title="Editarea produsului"
             :form="form"
         />
     </MainLayout>
