@@ -19,7 +19,7 @@ class ProductTypeResource extends JsonResource
             'images' => $this->images->map(function($image) {
                 return [
                     'id' => $image->id,
-                    'url' => $image->getUrl(400),
+                    'url' => $image->getUrl(450),
                 ];
             }),
         ];
