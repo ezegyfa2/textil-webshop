@@ -25,7 +25,7 @@ class HomeController extends Controller
             'brands' => $brands->map(function ($category) {
                 return [
                     'name' => $category->name,
-                    'image_src' => $category->image->getUrl(400),
+                    'image_src' => $category->image->getUrl(450),
                     'href' => route('product.index') . '?brand=' . $category->id,
                 ];
             }),
