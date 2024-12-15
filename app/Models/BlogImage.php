@@ -13,24 +13,12 @@ class BlogImage extends Image
     protected $relativeFolderPath = 'blog';
     protected $resizeValues = [
         [
-            'width' => 100,
-            'height' => 100,
+            'width' => 400,
+            'height' => 400,
         ],
         [
-            'width' => 250,
-            'height' => 200,
-        ],
-        [
-            'width' => 450,
-            'height' => 600,
-        ],
-        [
-            'width' => 600,
-            'height' => 600,
-        ],
-        [
-            'width' => 770,
-            'height' => 600,
+            'width' => 1200,
+            'height' => 1200,
         ],
     ];
 }
