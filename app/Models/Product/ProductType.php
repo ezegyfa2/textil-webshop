@@ -65,4 +65,17 @@ class ProductType extends Model
     {
         return $this->belongsToMany(FabricProperty::class, 'product_type_fabric_properties');
     }
+
+    public function getOrderedSizes(): array
+    {
+        // order mezo
+        $orderedSizes = [];
+        foreach ($this->sizes as $size) {
+            if (!array_key_exists($size->name, $orderedSizes)) {
+                $orderedSizes[$size->name] = [];
+            }
+            $orderedSizes[$size->name][$size->size->name] = $size->value;
+        }
+        return $orderedSizes;
+    }
 }

@@ -25,7 +25,7 @@
                 <IconImageBox
                     :title="blog2.title"
                     :content="blog2.content"
-                    icon="mdi-shield"
+                    icon="mdi-tag-edit-outline"
                     :src="blog2.image_src"
                     :href="blog2.href"
                     gradient-color="#7D80DA"

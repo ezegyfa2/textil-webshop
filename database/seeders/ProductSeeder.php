@@ -9,6 +9,7 @@ use App\Models\Product\Product;
 use App\Models\Product\Brand;
 use App\Models\Product\BrandImage;
 use App\Models\Product\ProductCategory;
+use App\Models\Product\ProductCategoryImage;
 use App\Models\Product\ProductType;
 use App\Models\Product\ProductTypeImage;
 use App\Models\Product\FabricProperty;
@@ -96,21 +97,32 @@ class ProductSeeder extends Seeder
         
         $brand = Brand::where('name', $brandName)->first();
         if (!$brand) {
-            $brandImage = BrandImage::firstOrCreate([
+            $brandImage = BrandImage::Create([
                 'relative_path' => $imageNames[0],
             ]);
             $productTypeImage = new ProductTypeImage();
             $productTypeImage->relative_path = $brandImage->relative_path;
-            FileMethods::copyFolder($productTypeImage->getFolderPath(), $brandImage->getFolderPath());
+            //FileMethods::copyFolder($productTypeImage->getFolderPath(), $brandImage->getFolderPath());
             $brand = Brand::create([
                 'name' => $brandName,
                 'image_id' => $brandImage->id,
             ]);
         }
         
-        $category = ProductCategory::firstOrCreate([
-            'name' => $categoryName,
-        ]);
+        $category = ProductCategory::where('name', $categoryName)->first();
+        if (!$category) {
+            $categoryImage = ProductCategoryImage::Create([
+                'relative_path' => $imageNames[0],
+            ]);
+            $productTypeImage = new ProductTypeImage();
+            $productTypeImage->relative_path = $categoryImage->relative_path;
+            //FileMethods::copyFolder($productTypeImage->getFolderPath(), $categoryImage->getFolderPath());
+            $category = ProductCategory::Create([
+                'name' => $categoryName,
+                'image_id' => $categoryImage->id,
+            ]);
+        }
+
         $productType = ProductType::create([
             'name' => $name,
             'gram_per_m2' => $gPerM2,

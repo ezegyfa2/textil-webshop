@@ -52,6 +52,37 @@
                                 :error_messages="props.form.errors.brand"
                             />
                         </v-col>
+                        
+                        <v-col cols="12">
+                            <SearchField
+                                v-model="form.fabric_properties"
+                                search_route="admin.product.search-fabric-property"
+                                label="Material"
+                                :disabled="form.processing"
+                                :loading="form.processing"
+                                :error_messages="form.errors['fabric_properties']"
+                            />
+                        </v-col>
+
+                        <v-col cols="12">
+                            <SearchField
+                                v-model="form.cut_properties"
+                                search_route="admin.product.search-cut-property"
+                                label="Taietura"
+                                :disabled="form.processing"
+                                :loading="form.processing"
+                                :error_messages="form.errors['cut_properties']"
+                            />
+                        </v-col>
+
+                        <v-col cols="12">
+                            <Sizes
+                                v-model="form.sizes"
+                                :disabled="form.processing"
+                                :loading="form.processing"
+                                :error_messages="form.errors['sizes']"
+                            />
+                        </v-col>
                     </v-row>
                 </v-card-text>
             </v-card>
@@ -88,6 +119,7 @@
 </template>
 
 <script lang="ts" setup>
+import Sizes from '@/Components/Admin/Product/Sizes.vue';
 import SearchField from '@/Components/SearchField.vue';
 import ImageDrop from '@/Components/Admin/Product/ImageDrop.vue';
 import { InertiaForm } from '@inertiajs/vue3';

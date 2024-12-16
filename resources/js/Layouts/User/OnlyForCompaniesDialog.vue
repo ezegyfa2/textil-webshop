@@ -23,7 +23,6 @@ import { ref } from 'vue';
 
 const { cookies } = useCookies();
 const isActive = ref(!cookies.get('only-for-companies-accepted'));
-console.log(cookies.get('only-for-companies-accepted'))
 
 function accept() {
     isActive.value = false;

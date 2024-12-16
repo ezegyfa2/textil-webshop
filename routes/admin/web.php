@@ -20,6 +20,10 @@ Route::middleware('role:admin')->prefix('admin')->name('admin.')->group(function
     Route::get('/products/fetch', [ProductController::class, 'fetch'])->name('product.fetch');
     Route::get('/products/search-category', [ProductController::class, 'searchCategory'])
         ->name('product.search-category');
+    Route::get('/products/search-fabric-property', [ProductController::class, 'searchFabricProperty'])
+        ->name('product.search-fabric-property');
+    Route::get('/products/search-cut-property', [ProductController::class, 'searchCutProperty'])
+        ->name('product.search-cut-property');
     Route::get('/products/search-brand', [ProductController::class, 'searchBrand'])
         ->name('product.search-brand');
     Route::get('/products/{productType}', [ProductController::class, 'show'])->name('product.show');

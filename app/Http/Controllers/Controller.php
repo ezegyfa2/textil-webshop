@@ -33,6 +33,30 @@ abstract class Controller
         }
     }
 
+    protected function updateManyToManyRelatedModels(Model $model, string $relationName, array $items = []): void
+    {
+        $relationClassName = $model->$relationName()->getRelated();
+        // Doesn't work with upsert or updateOrCreate
+        $itemIds = array_map(function ($itemData) use($model, $relationName, $relationClassName) {
+            if (array_key_exists('id', $itemData)) {
+                $item = $relationClassName::find($itemData['id']);
+                $item->update($itemData);
+
+                return $item->id;
+            } else {
+                return $relationClassName::create($itemData)->id;
+            }
+        }, $items);
+        $model->$relationName()->sync($itemIds);
+    }
+
+    protected function removeManyToManyUnnecessaryItems(Model $model, string $relationName, array $items = [])
+    {
+        foreach ($this->getUnneccessaryModels($model, $relationName, $items) as $model) {
+            $model->$relationName()->detach($model->id);
+        }
+    }
+
     protected function updateRelatedModels(Model $model, string $relationName, array $items = []): void
     {
         $relationClassName = $model->$relationName()->getRelated();

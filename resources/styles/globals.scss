@@ -22,7 +22,7 @@ input:-webkit-autofill:active {
     --tw-ring-color: transparent !important;
 }
 
-a {
+a:not(.text-decoration-none) {
     color: $secondary-color;
     opacity: 1;
     text-decoration: none;

@@ -7,6 +7,8 @@ use App\Models\Color;
 use App\Models\Product\Brand;
 use App\Models\Product\ProductType;
 use App\Models\Product\ProductCategory;
+use App\Models\Product\FabricProperty;
+use App\Models\Product\CutProperty;
 use App\Http\Requests\User\ProductTypeFetchRequest;
 use App\Http\Resources\User\Product\ProductTypeFetchResource;
 use App\Http\Resources\User\Product\ProductTypeResource;

@@ -1,8 +1,15 @@
 <template>
     <MainLayout>
-        <v-container>
+        <ProductCategoryTable 
+            v-if="selectedCategoryIds.length == 0"
+            class="top-section-separator"
+            :product_categories="categories"
+        />
+        <v-container v-else>
             <v-row>
-                <v-col class="top-section-separator">
+                <v-col
+                    class="top-section-separator"
+                >
                     <v-card class="pa-3 mt-6 mt-sm-0 d-flex">
                         <v-btn
                             class="mr-3"
@@ -183,6 +190,7 @@
 <script setup lang="ts">
 import MainLayout from '@/Layouts/User/MainLayout.vue';
 import ProductTable from '@/Components/User/Product/Table.vue';
+import ProductCategoryTable from '@/Components/User/Product/CategoryTable.vue';
 import { maxFieldLengthRule, minRule, pozitiveRule, numberRule } from '@/Helpers/ValidationRules';
 import { ref, computed, watch, useTemplateRef } from 'vue';
 
@@ -211,8 +219,6 @@ const validatedFilters = ref({
     brand_ids: selectedBrandIds.value,
 });
 const filterFormComponent = useTemplateRef('filterForm');
-
-console.log(selectedBrandIds.value)
 
 const filters = computed(() => {
     return {

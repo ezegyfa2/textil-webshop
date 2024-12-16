@@ -21,16 +21,4 @@ class ProductTypeResource extends JsonResource
             'sizes' => $this->getOrderedSizes(),
         ];
     }
-
-    protected function getOrderedSizes(): array
-    {
-        $orderedSizes = [];
-        foreach ($this->sizes as $size) {
-            if (!array_key_exists($size->name, $orderedSizes)) {
-                $orderedSizes[$size->name] = [];
-            }
-            $orderedSizes[$size->name][$size->size->name] = $size->value;
-        }
-        return $orderedSizes;
-    }
 }

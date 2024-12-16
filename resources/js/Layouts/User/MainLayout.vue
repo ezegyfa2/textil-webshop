@@ -24,12 +24,15 @@
                                 title="De luni până vineri"
                                 content="9:00am - 6:00pm"
                             />
-                            <IconText
-                                class="d-none d-md-flex ml-7"
-                                icon="mdi-email-outline"
-                                title="Trimiteți-ne un e-mail"
-                                content="lekellcserelni@gmail.com"
-                            />
+                            
+                            <a class="text-decoration-none" href="https://www.bestbrod.ro">
+                                <IconText
+                                    class="d-none d-md-flex ml-7"
+                                    icon="mdi-tag-edit-outline"
+                                    title="Doriți să vă personalizați produsele?"
+                                    content="Bestbrod.ro"
+                                />
+                            </a>
                         </div>
                     </v-col>
                 </v-row>

@@ -7,6 +7,8 @@ use App\Models\Product\ProductCategory;
 use App\Models\Product\ProductType;
 use App\Models\Product\ProductTypeImage;
 use App\Models\Product\Brand;
+use App\Models\Product\CutProperty;
+use App\Models\Product\FabricProperty;
 use App\Http\Requests\Admin\Product\ProductTypeRequest;
 use App\Http\Requests\Admin\Product\ProductTypeFetchRequest;
 use App\Http\Requests\ImageUploadRequest;
@@ -48,6 +50,8 @@ class ProductController extends Controller
 
     public function edit(ProductType $productType): Response
     {
+        $productType->load('fabricProperties', 'cutProperties', 'sizes', 'sizes.size');
+
         return Inertia::render('Admin/Product/Edit', [
             'product' => new ProductTypeResource($productType)
         ]);
@@ -69,7 +73,9 @@ class ProductController extends Controller
 
     protected function save(ProductTypeRequest $request, ProductType $productType): void
     {
-        $productType->update($request->except('brand', 'product_category'));
+        $productType->update($request->except('brand', 'product_category', 'fabric_properties', 'cut_properties'));
+        $this->updateManyToManyRelatedModels($productType, 'fabricProperties', $request->get('fabric_properties', []));
+        $this->updateManyToManyRelatedModels($productType, 'cutProperties', $request->get('cut_properties', []));
         $this->updateImages($request, $productType);
     }
 
@@ -173,5 +179,27 @@ class ProductController extends Controller
                 'id',
             ])
             ->get();
+    }
+    
+    public function searchFabricProperty(Request $request): JsonResponse
+    {
+        $searchValue = "%{$request->get('search')}%";
+        $fabricProperties = FabricProperty::where('name', 'LIKE', $searchValue)
+            ->select(['id', 'name'])
+            ->take(10)
+            ->get();
+
+        return response()->json($fabricProperties);
+    }
+    
+    public function searchCutProperty(Request $request): JsonResponse
+    {
+        $searchValue = "%{$request->get('search')}%";
+        $cutProperties = CutProperty::where('name', 'LIKE', $searchValue)
+            ->select(['id', 'name'])
+            ->take(10)
+            ->get();
+
+        return response()->json($cutProperties);
     }
 }

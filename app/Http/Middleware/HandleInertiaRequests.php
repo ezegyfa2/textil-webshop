@@ -35,10 +35,11 @@ class HandleInertiaRequests extends Middleware
             'notifications' => session('notifications') ?? [],
             'cart_items' => session('cartitems') ?? [],
             'cart_item_count' => session('cart_item_count') ?? 0,
-            'categories' => ProductCategory::all()->map(function($productCategory) {
+            'categories' => ProductCategory::with('image')->get()->map(function($productCategory) {
                 return [
                     'id' => $productCategory->id,
                     'name' => $productCategory->name,
+                    'image_src' => $productCategory->image->getUrl(450),
                 ];
             }),
             'auth' => [
