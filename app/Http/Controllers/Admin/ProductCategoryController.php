@@ -80,8 +80,8 @@ class ProductCategoryController extends Controller
     protected function save(ProductCategoryRequest $request, ProductCategory $productCategory): void
     {
         $productCategory->fill($request->except('image'));
-        $productCategory->save();
         $this->updateImage($productCategory, $request->get('image'));
+        $productCategory->save();
     }
 
     public function delete(ProductCategory $productCategory): JsonResponse

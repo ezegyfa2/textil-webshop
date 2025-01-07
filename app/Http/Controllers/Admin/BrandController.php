@@ -80,8 +80,8 @@ class BrandController extends Controller
     protected function save(BrandRequest $request, Brand $brand): void
     {
         $brand->fill($request->except('image'));
-        $brand->save();
         $this->updateImage($brand, $request->get('image'));
+        $brand->save();
     }
 
     public function delete(Brand $brand): JsonResponse

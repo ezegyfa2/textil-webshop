@@ -80,8 +80,8 @@ class BlogController extends Controller
     protected function save(BlogRequest $request, Blog $blog): void
     {
         $blog->fill($request->except('image'));
-        $blog->save();
         $this->updateImage($blog, $request->get('image'));
+        $blog->save();
     }
 
     public function delete(Blog $blog): JsonResponse
