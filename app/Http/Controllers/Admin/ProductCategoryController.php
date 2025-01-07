@@ -95,7 +95,7 @@ class ProductCategoryController extends Controller
                 $productCategory->image_id = $image->id;
             }
         }
-        //$productCategory->image->createResizedVersions();
+        $productCategory->image->createResizedVersions();
     }
 
     public function delete(ProductCategory $productCategory): JsonResponse

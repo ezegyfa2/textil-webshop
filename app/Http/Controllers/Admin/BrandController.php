@@ -95,7 +95,7 @@ class BrandController extends Controller
                 $brand->image_id = $image->id;
             }
         }
-        //$brand->image->createResizedVersions();
+        $brand->image->createResizedVersions();
     }
 
     public function delete(Brand $brand): JsonResponse

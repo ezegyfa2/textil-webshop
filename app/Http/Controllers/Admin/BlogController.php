@@ -95,7 +95,7 @@ class BlogController extends Controller
                 $blog->image_id = $image->id;
             }
         }
-        //$blog->image->createResizedVersions();
+        $blog->image->createResizedVersions();
     }
 
     public function delete(Blog $blog): JsonResponse
