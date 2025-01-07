@@ -180,13 +180,10 @@ abstract class Controller
         $model->load('image');
         if ($imageData) {
             $imageData['relative_path'] = str_replace('/storage/uploads/', '', $imageData['url']);
-            if ($model->image) {
-                if ($imageData['relative_path'] != $model->image->relative_path) {
-                    $model->image->update(['relative_path' => $imageData['relative_path']]);
-                    $model->image->moveFromUploads();
-                    $model->image->createResizedVersions();
+            if (!array_key_exists('id', $imageData)) {
+                if ($model->image) {
+                    $model->image->delete();
                 }
-            } else {
                 $image = $model->image()->create(['relative_path' => $imageData['relative_path']]);
                 $model->image()->associate($image);
                 $model->save();
