@@ -86,10 +86,7 @@ class ProductCategoryController extends Controller
         if ($image) {
             $image['relative_path'] = str_replace('/storage/uploads/', '', $image['url']);
             unset($image['url']);
-            if (!array_key_exists('id', $image)) {
-                $productCategory->image = ProductCategoryImage::create($image);
-                $productCategory->image->createResizedVersions();
-            } else if ($image['relative_path'] != $productCategory->image->relative_path) {
+            if ($image['relative_path'] != $productCategory->image->relative_path) {
                 $productCategory->image->update(['relative_path' => $image['relative_path']]);
                 $productCategory->image->createResizedVersions();
             }
