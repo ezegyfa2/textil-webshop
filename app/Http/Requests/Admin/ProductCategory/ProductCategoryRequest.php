@@ -11,7 +11,7 @@ class ProductCategoryRequest extends FormRequest
     {
         return [
             'name' => [
-                Rule::unique('product_categories', 'name')->ignore($this->route('productCategory')->id),
+                Rule::unique('product_categories', 'name')->ignore($this->route('productCategory')->id ?? null),
                 'required',
                 'string',
                 'max:250',
