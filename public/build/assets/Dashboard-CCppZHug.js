@@ -1,1 +1,0 @@
-import{_ as a}from"./MainLayout.vue_vue_type_script_setup_true_lang-DYt3MHNr.js";import{d as e,o,c as r,b as s,x as n}from"./app-TW6wAi4G.js";import"./Notifications.vue_vue_type_style_index_0_lang-1QaX_-gt.js";const f=e({__name:"Dashboard",setup(_){return(m,t)=>(o(),r(a,null,{default:s(()=>t[0]||(t[0]=[n(" asd ")])),_:1}))}});export{f as default};
