@@ -1,11 +1,11 @@
 <template>
-    <v-app-bar class="bg-grey-lighten-3 p-3">
+    <v-app-bar class="bg-grey-lighten-3 p-2">
         <v-app-bar-nav-icon 
             color="secondary"
             variant="text"
             @click.stop="drawer = !drawer"
         />
-        <v-toolbar-title class="text-h5 font-weight-bold">
+        <v-toolbar-title class="text-h5 font-weight-bold ml-4">
             <Link :href="route('admin.dashboard')">
                 <span class="text-primary">MA</span>Textil
             </Link>
@@ -23,8 +23,15 @@
                 class="admin-list-item"
                 color="surface"
             >
-                <Link :href="navItem.href" class="d-flex align-center text-h6 py-3">
-                    <v-icon :icon="navItem.icon" class="mr-5"/>{{ navItem.text }}
+                <Link
+                    :href="navItem.href"
+                    class="d-flex align-center text-h6 py-3"
+                >
+                    <v-icon
+                        :icon="navItem.icon"
+                        class="mr-5"
+                    />
+                    {{ navItem.text }}
                 </Link>
             </v-list-item>
         </v-list>
@@ -38,9 +45,9 @@ import { ref } from 'vue';
 let drawer = ref(false);
 const navItems = [
     {
-        icon: 'mdi-account-outline',
-        text: 'Utilizatori',
-        href: route('admin.user.index'),
+        icon: 'mdi-dolly',
+        text: 'Comenzi',
+        href: route('admin.checkout.index'),
     },
     {
         icon: 'mdi-package-variant-closed',
@@ -48,9 +55,24 @@ const navItems = [
         href: route('admin.product.index'),
     },
     {
-        icon: 'mdi-dolly',
-        text: 'Comenzi',
-        href: route('admin.checkout.index'),
+        icon: 'mdi-package-variant-closed-plus',
+        text: 'Categorii de produse',
+        href: route('admin.product-category.index'),
+    },
+    {
+        icon: 'mdi-tshirt-crew-outline ',
+        text: 'Branduri',
+        href: route('admin.brand.index'),
+    },
+    {
+        icon: 'mdi-notebook-outline ',
+        text: 'Bloguri',
+        href: route('admin.blog.index'),
+    },
+    {
+        icon: 'mdi-account-outline',
+        text: 'Utilizatori',
+        href: route('admin.user.index'),
     },
 ];
 </script>
@@ -62,6 +84,6 @@ const navItems = [
     background-color: $primary-color;
 }
 .admin-list-item:hover a {
-    color: $secondary-color;
+    color: $secondary-color !important;
 }
 </style>

@@ -181,6 +181,7 @@ class ProductSeeder extends Seeder
             }
         }
         foreach ($sizes as $sizeTypeName => $sizeValues) {
+            $order = 1;
             for ($i = 0; $i < count($sizeValues); ++$i) {
                 //try {
                     $productType->sizes()->create([
@@ -189,7 +190,9 @@ class ProductSeeder extends Seeder
                         'size_id' => Size::firstOrCreate([
                             'name' => $priceSizes[$i]
                         ])->id,
+                        'order' => $order,
                     ]);
+                    ++$order;
                 //} catch (\Exception $e) {
                 //    dd($priceSizes, $name, $sizeValues);
                 //}
@@ -218,11 +221,11 @@ class ProductSeeder extends Seeder
     protected function getCombinedColor(string $colorName): CombinedColor
     {
         $currentColorNames = collect(explode('/', $colorName));
-        foreach ($this->combinedColors as $combinedColor) {
+        /*foreach ($this->combinedColors as $combinedColor) {
             if ($this->colorNamesAreEquals($currentColorNames, $combinedColor['colors'])) {
                 return CombinedColor::find($combinedColor['id']);
             }
-        }
+        }*/
         $newCombinedColor = CombinedColor::create([]);
         foreach ($currentColorNames as $colorName) {
             $color = Color::firstOrCreate([
@@ -235,6 +238,7 @@ class ProductSeeder extends Seeder
             'id' => $newCombinedColor->id,
             'colors' => $currentColorNames,
         ]);
+        
         return $newCombinedColor;
     }
 

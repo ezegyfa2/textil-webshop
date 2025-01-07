@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Closure;
 
 abstract class Controller
 {
@@ -33,21 +34,36 @@ abstract class Controller
         }
     }
 
-    protected function updateManyToManyRelatedModels(Model $model, string $relationName, array $items = []): void
-    {
-        $relationClassName = $model->$relationName()->getRelated();
+    protected function updateManyToManyRelatedModels(
+        Model $model,
+        string $relationName,
+        array $items = [],
+        Closure $afterRelatedModelCreated = null
+    ): void {
+        $relationClassName = $this->getRelatedClassName($model, $relationName);
         // Doesn't work with upsert or updateOrCreate
-        $itemIds = array_map(function ($itemData) use($model, $relationName, $relationClassName) {
-            if (array_key_exists('id', $itemData)) {
-                $item = $relationClassName::find($itemData['id']);
-                $item->update($itemData);
-
-                return $item->id;
-            } else {
-                return $relationClassName::create($itemData)->id;
+        $itemIds = array_map(function ($itemData) use($model, $relationName, $relationClassName, $afterRelatedModelCreated) {
+            $relatedModel = $this->getManyToManyRelatedModel($model, $relationClassName, $itemData);
+            if ($afterRelatedModelCreated) {
+                $afterRelatedModelCreated($relatedModel, $itemData);
             }
+
+            return $relatedModel->id;
         }, $items);
         $model->$relationName()->sync($itemIds);
+    }
+
+    protected function getManyToManyRelatedModel(Model $model, string $relationClassName, array $itemData): Model
+    {
+        if (array_key_exists('id', $itemData)) {
+            $item = $relationClassName::find($itemData['id']);
+            unset($itemData['id']);
+            $item->update($itemData);
+
+            return $item;
+        } else {
+            return $relationClassName::create($itemData);
+        }
     }
 
     protected function removeManyToManyUnnecessaryItems(Model $model, string $relationName, array $items = [])
@@ -57,23 +73,57 @@ abstract class Controller
         }
     }
 
-    protected function updateRelatedModels(Model $model, string $relationName, array $items = []): void
+    protected function updateRelatedModels(
+        Model $model,
+        string $relationName,
+        array $items = [],
+        Closure $afterRelatedModelCreated = null
+    ): void {
+        $relationClassName = $this->getRelatedClassName($model, $relationName);
+        $this->removeUnnecessaryItems($model, $relationName, $items);
+        // Doesn't work with upsert or updateOrCreate
+        $items = array_map(function ($itemData) use ($model, $relationName, $relationClassName, $afterRelatedModelCreated) {
+            $relatedModel = $this->getRelatedModel($itemData, $model, $relationName, $relationClassName);
+            if ($afterRelatedModelCreated) {
+                $afterRelatedModelCreated($relatedModel, $itemData);
+            }
+
+            return $relatedModel;
+        }, $items);
+        $model->$relationName()->saveMany($items);
+    }
+
+    protected function getRelatedModel($itemData, Model $model, string $relationName, string $relationClassName): Model
+    {
+        if (array_key_exists('id', $itemData)) {
+            $item = $relationClassName::find($itemData['id']);
+            unset($itemData['id']);
+            $item->update($itemData);
+
+            return $item;
+        } else {
+            return $model->$relationName()->create($itemData);
+        }
+    }
+
+    protected function updateComboboxModels(Model $model, string $relationName, array $items = [], string $mainColumnName = 'name')
     {
         $relationClassName = $model->$relationName()->getRelated();
         $this->removeUnnecessaryItems($model, $relationName, $items);
         // Doesn't work with upsert or updateOrCreate
-        $items = array_map(function ($itemData) use($model, $relationName, $relationClassName) {
+        $items = array_map(function ($itemData) use($model, $relationName, $relationClassName, $mainColumnName) {
             if (array_key_exists('id', $itemData)) {
                 $item = $relationClassName::find($itemData['id']);
+                unset($itemData['id']);
                 $item->update($itemData);
 
                 return $item;
+            } else if (is_array($itemData)) {
+                return $model->$relationName()->create($itemData);
             } else {
-                try {
-                    return $model->$relationName()->create($itemData);
-                } catch (\Exception $e) {
-                    dd($itemData);
-                }
+                return $model->$relationName()->create([
+                    $mainColumnName => $itemData
+                ]);
             }
         }, $items);
         $model->$relationName()->saveMany($items);
@@ -86,12 +136,25 @@ abstract class Controller
         }
     }
 
+    protected function createDataFromComboboxValues(array $items, string $mainColumnName = 'name')
+    {
+        return array_map(function ($item) use ($mainColumnName) {
+            if (is_array($item)) {
+                return $item;
+            } else {
+                return [
+                    $mainColumnName => $item,
+                ];
+            }
+        }, $items);
+    }
+
     protected function getUnneccessaryModels(Model $model, string $relationName, array $items = [])
     {
         $model->load($relationName);
 
         $oldItems = array_filter($items, function ($item) {
-            return array_key_exists('id', $item);
+            return is_array($item) && array_key_exists('id', $item);
         });
 
         $oldItemIds = array_map(function ($item) {
@@ -101,5 +164,14 @@ abstract class Controller
         return $model->$relationName->filter(function ($relatedModel) use ($oldItemIds) {
             return !in_array($relatedModel->id, $oldItemIds);
         });
+    }
+
+    protected function getRelatedClassName(Model $model, string $relationName): string
+    {
+        $relationClassName = $model->$relationName()->getRelated();
+        if (gettype($relationClassName) != 'string') {
+            $relationClassName = get_class($relationClassName);
+        }
+        return $relationClassName;
     }
 }

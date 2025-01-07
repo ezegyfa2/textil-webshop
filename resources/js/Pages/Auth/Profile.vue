@@ -48,7 +48,7 @@
                                 />
                                 <v-textarea
                                     v-model="form.address"
-                                    :counter="500"
+                                    :counter="1000"
                                     label="Adresa"
                                     :rules="[maxTextareaLengthRule]"
                                     :disabled="form.processing"

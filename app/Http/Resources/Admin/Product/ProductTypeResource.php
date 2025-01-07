@@ -25,7 +25,8 @@ class ProductTypeResource extends JsonResource
                     'url' => $image->getUrl(450),
                 ];
             }),
-            'sizes' => $this->getOrderedSizes(),
+            'sizes' => $this->getOrderedSizeValues(),
+            'products' => ProductResource::collection($this->products),
         ];
     }
 }

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('product_categories', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('image_id')->unique();
+            $table->foreignId('image_id')->nullable()->constrained('product_category_images')->cascadeOnDelete();
             $table->timestamps();
         });
     }

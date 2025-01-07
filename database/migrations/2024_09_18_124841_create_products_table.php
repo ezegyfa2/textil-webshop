@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->decimal('purchase_price');
             $table->decimal('price');
-            $table->foreignId('product_type_id')->constrained('product_types');
+            $table->foreignId('product_type_id')->constrained('product_types')->cascadeOnDelete();
             $table->timestamps();
         });
     }

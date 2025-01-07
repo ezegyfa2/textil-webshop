@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('product_type_fabric_properties', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_type_id')->constrained('product_types')->cascadeOnDelete();
-            $table->foreignId('fabric_property_id')->constrained('fabric_properties')->cascadeOnDelete();
+            $table->foreignId('fabric_property_id')->constrained('fabric_properties');
             $table->timestamps();
         });
     }

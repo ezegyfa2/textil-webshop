@@ -8,10 +8,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class CombinedColor extends Model
 {
-    protected $fillable = [
-        'name',
-    ];
-    
+    protected $fillable = ['name'];
+
     public function colors(): BelongsToMany
     {
         return $this->belongsToMany(Color::class, 'combined_color_colors');

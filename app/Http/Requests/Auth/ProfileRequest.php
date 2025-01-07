@@ -25,7 +25,7 @@ class ProfileRequest extends FormRequest
                 'max:250',
             ],
             'address' => [
-                'max:500',
+                'max:1000',
             ],
             'postal_code' => [
                 'nullable',

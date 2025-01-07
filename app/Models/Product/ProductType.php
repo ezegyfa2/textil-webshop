@@ -25,6 +25,17 @@ class ProductType extends Model
         ];
     }
 
+    public static function boot()
+    {
+        parent::boot();
+
+        self::deleting(function($productType) {
+            foreach ($productType->images as $image) {
+                $image->delete();
+            }
+        });
+    }
+
     public function products(): HasMany
     {
         return $this->hasMany(Product::class);
@@ -48,7 +59,7 @@ class ProductType extends Model
     public function sizes(): HasMany
     {
         return $this->hasMany(ProductTypeSize::class)
-            ->orderBy('size_id');
+            ->orderBy('order');
     }
 
     public function brand(): BelongsTo
@@ -64,6 +75,21 @@ class ProductType extends Model
     public function fabricProperties(): BelongsToMany
     {
         return $this->belongsToMany(FabricProperty::class, 'product_type_fabric_properties');
+    }
+
+    public function getOrderedSizeValues(): array
+    {
+        $orderedSizes = $this->getOrderedSizes();
+        $orderedSizeValues = [];
+        if (count($orderedSizes) > 0) {
+            $headers = array_keys(array_values($orderedSizes)[0]);
+            array_push($orderedSizeValues, ['type', ...$headers]);
+            foreach ($orderedSizes as $key => $orderedSize) {
+                array_push($orderedSizeValues, array_values([$key, ...$orderedSize]));
+            }
+        }
+        
+        return $orderedSizeValues;
     }
 
     public function getOrderedSizes(): array

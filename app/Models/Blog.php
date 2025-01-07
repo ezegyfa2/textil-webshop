@@ -13,6 +13,15 @@ class Blog extends Model
         'image_id',
     ];
 
+    public static function boot()
+    {
+        parent::boot();
+
+        self::deleting(function($blog) {
+            $blog->image->delete();
+        });
+    }
+
     public function image(): BelongsTo
     {
         return $this->belongsTo(BlogImage::class, 'image_id');

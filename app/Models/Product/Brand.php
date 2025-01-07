@@ -13,6 +13,15 @@ class Brand extends Model
         'image_id',
     ];
 
+    public static function boot()
+    {
+        parent::boot();
+
+        self::deleting(function($brand) {
+            $brand->image->delete();
+        });
+    }
+
     public function image(): BelongsTo
     {
         return $this->belongsTo(BrandImage::class);

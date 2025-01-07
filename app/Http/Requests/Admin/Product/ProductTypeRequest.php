@@ -33,6 +33,34 @@ class ProductTypeRequest extends FormRequest
                 'required',
                 'exists:brands,id',
             ],
+            'sizes' => [
+                'array',
+            ],
+            'sizes.*' => [
+                'array',
+            ],
+            'products' => [
+                'array',
+                'min:1',
+            ],
+            'products.*' => [
+                'array',
+            ],
+            'products.*.price' => [
+                'numeric',
+                'min:0',
+            ],
+            'products.*.sizes' => [
+                'array',
+            ],
+            'products.*.purchase_price' => [
+                'numeric',
+                'min:0',
+            ],
+            'products.*.combined_colors' => [
+                'array',
+                'min:1',
+            ],
         ];
     }
 }

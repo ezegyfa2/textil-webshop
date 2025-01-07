@@ -136,10 +136,6 @@ function loadItems(): void {
     .then((response) => {
         checkouts.value = response.data.data;
         checkoutsTotalCount.value = response.data.meta.total;
-        const pageCount = Math.ceil(response.data.meta.total / response.data.meta.per_page);
-        if (page.value > pageCount) {
-            page.value = pageCount;
-        }
     })
     .catch((error) => {
         console.error(error);

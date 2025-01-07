@@ -22,11 +22,17 @@ class HomeController extends Controller
         $brands = Brand::with('image')->get();
         
         return Inertia::render('User/Home', [
-            'brands' => $brands->map(function ($category) {
+            'brands' => $brands->map(function ($brand) {
+                if ($brand->image) {
+                    $imageUrl = $brand->image->getUrl(450);
+                } else {
+                    $imageUrl = null;
+                }
+
                 return [
-                    'name' => $category->name,
-                    'image_src' => $category->image->getUrl(450),
-                    'href' => route('product.index') . '?brand=' . $category->id,
+                    'name' => $brand->name,
+                    'image_src' => $imageUrl,
+                    'href' => route('product.index') . '?brand=' . $brand->id,
                 ];
             }),
             'main_blog1' => (new BlogShortResource($blogs[0]))->toArray($request),

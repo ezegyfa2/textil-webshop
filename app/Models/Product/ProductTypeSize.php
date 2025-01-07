@@ -13,12 +13,14 @@ class ProductTypeSize extends Model
         'value',
         'size_id',
         'product_type_id',
+        'order',
     ];
 
     protected function casts(): array
     {
         return [
             'value' => 'integer',
+            'order' => 'integer',
         ];
     }
 

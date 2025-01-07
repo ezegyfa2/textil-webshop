@@ -1,5 +1,8 @@
 // Forditasokhoz lehet hasznalni az xtraerps megoldast ugy h a forditas jsonoket legeneralja a https://github.com/xiCO2k/laravel-vue-i18n package
 
+import { addUnexpectedErrorNotification } from '@/Layouts/Notification/AddNotification';
+import { nextTick } from 'vue';
+
 export const emailRules = [
     requiredRule,
     maxFieldLengthRule,
@@ -26,10 +29,24 @@ export const phoneRules = [
     phoneRule,
     value => minLengthRule(value, 6),
     value => maxLengthRule(value, 15),
-]
+];
+
+export function handleValidationErrors(errors, goTo) {
+    if (errors) {
+        console.log(errors);
+    }
+    addUnexpectedErrorNotification(' în timpul executării operațiunii');
+    nextTick(() => {
+        goTo(document.querySelector(".v-messages__message:first-of-type"), {
+            easing: 'easeInOutCubic',
+            offset: -200,
+        })
+    });
+}
 
 export function requiredRule(value) {
-    return (value !== null && value !== '') || 'Acest câmp este obligatoriu';
+    const isEmptyArray = Array.isArray(value) && value.length == 0;
+    return (value !== null && value !== undefined && value !== '' && !isEmptyArray) || 'Acest câmp este obligatoriu';
 }
 
 export function minLengthRule(value, minLength) {
@@ -37,7 +54,7 @@ export function minLengthRule(value, minLength) {
 }
 
 export function maxTextareaLengthRule(value) {
-    return maxLengthRule(value, 500);
+    return maxLengthRule(value, 1000);
 }
 
 export function maxFieldLengthRule(value) {

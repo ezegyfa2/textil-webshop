@@ -88,7 +88,6 @@
 <script setup>
 import { ref, onMounted, onUpdated, getCurrentInstance } from 'vue';
 import { addUnexpectedErrorNotification } from '@/Layouts/Notification/AddNotification';
-import { maxFieldLengthRule } from '@/Helpers/ValidationRules';
 
 const props = defineProps({
     label: String,

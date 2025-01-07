@@ -4,6 +4,7 @@
             @submitted="submit"
             title="Editarea produsului"
             :form="form"
+            :available_colors="available_colors"
         />
     </MainLayout>
 </template>
@@ -15,6 +16,7 @@ import { useForm } from '@inertiajs/vue3';
 
 const props = defineProps<{
     product: Object,
+    available_colors: Array<Object>,
 }>();
 
 const form = useForm(props.product);

@@ -12,6 +12,15 @@ class ProductCategory extends Model
         'name',
     ];
 
+    public static function boot()
+    {
+        parent::boot();
+
+        self::deleting(function($productCategory) {
+            $productCategory->image->delete();
+        });
+    }
+
     public function image(): BelongsTo
     {
         return $this->belongsTo(ProductCategoryImage::class);

@@ -7,7 +7,7 @@
         :disabled="disabled"
         :label="label"
         :name="name"
-        placeholder="Kezdjen el gépelni a kereséshez"
+        placeholder="Începeți să tastați pentru caută"
         :error-messages="error_messages"
         :required="required"
         :dense="dense"
@@ -65,7 +65,13 @@ const props = defineProps({
 
 const isMultiple = computed(() => Array.isArray(selected.value));
 
-const items = ref(isMultiple.value ? selected.value : [selected.value]);
+let defaultItems = [];
+if (isMultiple.value) {
+    defaultItems = selected.value;
+} else if (selected.value !== null) {
+    defaultItems = [selected.value];
+}
+const items = ref(defaultItems);
 const search = ref("");
 const firstSearch = true;
 

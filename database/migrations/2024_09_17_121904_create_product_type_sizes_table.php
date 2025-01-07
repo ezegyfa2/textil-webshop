@@ -14,9 +14,10 @@ return new class extends Migration
         Schema::create('product_type_sizes', function (Blueprint $table) {
             $table->id();
             $table->foreignId('size_id')->constrained('sizes');
-            $table->foreignId('product_type_id')->constrained('product_types');
+            $table->foreignId('product_type_id')->constrained('product_types')->cascadeOnDelete();
             $table->string('name');
             $table->string('value');
+            $table->integer('order');
             $table->timestamps();
 
             $table->unique([

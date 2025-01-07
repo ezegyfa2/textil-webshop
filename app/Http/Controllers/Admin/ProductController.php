@@ -9,6 +9,8 @@ use App\Models\Product\ProductTypeImage;
 use App\Models\Product\Brand;
 use App\Models\Product\CutProperty;
 use App\Models\Product\FabricProperty;
+use App\Models\Color;
+use App\Models\Size;
 use App\Http\Requests\Admin\Product\ProductTypeRequest;
 use App\Http\Requests\Admin\Product\ProductTypeFetchRequest;
 use App\Http\Requests\ImageUploadRequest;
@@ -48,12 +50,35 @@ class ProductController extends Controller
         ]);
     }
 
+    public function create(ProductType $productType): Response
+    {
+        return Inertia::render('Admin/Product/Create', [
+            'available_colors' => Color::select(['id', 'name', 'code'])->get(),
+        ]);
+    }
+
+    public function store(ProductTypeRequest $request, ProductType $productType): RedirectResponse
+    {
+        $this->save($request, new ProductType);
+
+        return redirect()->route('admin.product.index')->with([
+            'notifications' => [
+                [
+                    'type' => 'success',
+                    'message' => 'Produsul a fost modificat cu succes',
+                ],
+            ],
+        ]);
+    }
+
     public function edit(ProductType $productType): Response
     {
-        $productType->load('fabricProperties', 'cutProperties', 'sizes', 'sizes.size');
+        $productType->load('fabricProperties', 'cutProperties', 'sizes', 'sizes.size', 'products', 'products.sizes',
+            'products.combinedColors', 'products.combinedColors.colors');
 
         return Inertia::render('Admin/Product/Edit', [
-            'product' => new ProductTypeResource($productType)
+            'product' => new ProductTypeResource($productType),
+            'available_colors' => Color::select(['id', 'name', 'code'])->get(),
         ]);
     }
 
@@ -73,10 +98,61 @@ class ProductController extends Controller
 
     protected function save(ProductTypeRequest $request, ProductType $productType): void
     {
-        $productType->update($request->except('brand', 'product_category', 'fabric_properties', 'cut_properties'));
-        $this->updateManyToManyRelatedModels($productType, 'fabricProperties', $request->get('fabric_properties', []));
-        $this->updateManyToManyRelatedModels($productType, 'cutProperties', $request->get('cut_properties', []));
+        $productType->fill($request->except('brand', 'product_category', 'fabric_properties', 'cut_properties'));
+        $productType->save();
+        $fabricProperties = $this->createDataFromComboboxValues($request->get('fabric_properties', []));
+        $this->updateManyToManyRelatedModels($productType, 'fabricProperties', $fabricProperties);
+        $cutProperties = $this->createDataFromComboboxValues($request->get('cut_properties', []));
+        $this->updateManyToManyRelatedModels($productType, 'cutProperties', $cutProperties);
+        $this->updateSizes($productType, $request);
+        $this->updateProducts($productType, $request);
         $this->updateImages($request, $productType);
+    }
+
+    protected function updateSizes(ProductType $productType, ProductTypeRequest $request): void
+    {
+        $sizes = $request->get('sizes', []);
+        $productType->sizes()->delete();
+        if (count($sizes) > 1) {
+            $order = 1;
+            for ($sizeRowIndex = 1; $sizeRowIndex < count($sizes); ++$sizeRowIndex) {
+                for ($sizeColumnIndex = 1; $sizeColumnIndex < count($sizes[$sizeRowIndex]); ++$sizeColumnIndex) {
+                    $size = Size::firstOrCreate(['name' => $sizes[0][$sizeColumnIndex]]);
+                    $productType->sizes()->create([
+                        'name' => $sizes[$sizeRowIndex][0],
+                        'value' => $sizes[$sizeRowIndex][$sizeColumnIndex],
+                        'order' => $order,
+                        'size_id' => $size->id,
+                    ]);
+                    ++$order;
+                }
+            }
+        }
+    }
+
+    protected function updateProducts(ProductType $productType, ProductTypeRequest $request): void
+    {
+        $productsData = $request->get('products', []);
+        $this->updateRelatedModels($productType, 'products', $productsData, function ($product, $productData) {
+            $sizes = array_map(function ($sizeName) {
+                $size = Size::firstOrCreate([ 'name' => $sizeName ]);
+                return [
+                    'id' => $size->id,
+                    'name' => $size->name,
+                ];
+            }, $productData['sizes'] ?? []);
+            $this->updateManyToManyRelatedModels($product, 'sizes', $sizes);
+
+            $product->combinedColors()->sync([]);
+            $this->updateManyToManyRelatedModels(
+                $product,
+                'combinedColors',
+                $productData['combined_colors'] ?? [], 
+                function ($combinedColor, $combinedColorData) {
+                    $this->updateManyToManyRelatedModels($combinedColor, 'colors', $combinedColorData['codes'] ?? []);
+                }
+            );
+        });
     }
 
     protected function updateImages(ProductTypeRequest $request, ProductType $productType): void
@@ -123,6 +199,13 @@ class ProductController extends Controller
             }
             $productType->save();
         }
+    }
+
+    public function delete(ProductType $productType): JsonResponse
+    {
+        $productType->delete();
+
+        return response()->json('Produsul a fost eliminată cu succes');
     }
 
     public function uploadImage(ImageUploadRequest $request): JsonResponse

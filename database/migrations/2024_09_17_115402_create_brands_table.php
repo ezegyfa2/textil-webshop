@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('brands', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->foreignId('image_id')->constrained('brand_images');
+            $table->foreignId('image_id')->nullable()->constrained('brand_images')->cascadeOnDelete();
             $table->timestamps();
         });
     }
