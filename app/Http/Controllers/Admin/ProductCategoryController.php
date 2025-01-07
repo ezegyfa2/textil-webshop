@@ -102,7 +102,7 @@ class ProductCategoryController extends Controller
     {
         $productCategoryImage->delete();
 
-        return response()->json('A kép sikeresen el lett távolítva');
+        return response()->json('Imaginea a fost eliminată cu succes');
     }
 
     protected function getFetchQuery(Request $request): Builder

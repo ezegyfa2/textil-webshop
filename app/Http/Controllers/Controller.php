@@ -181,9 +181,7 @@ abstract class Controller
         if ($imageData) {
             $imageData['relative_path'] = str_replace('/storage/uploads/', '', $imageData['url']);
             if (!array_key_exists('id', $imageData)) {
-                if ($model->image) {
-                    $model->image->delete();
-                }
+                //$model->image->delete();
                 $image = $model->image()->create(['relative_path' => $imageData['relative_path']]);
                 $model->image()->associate($image);
                 $model->save();

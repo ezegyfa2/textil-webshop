@@ -172,7 +172,7 @@ function uploadFiles(fileList) {
         })
         .catch((error) => {
             console.error(error);
-            addUnexpectedErrorNotification(' a kép feltöltése közben');
+            addUnexpectedErrorNotification(' în timpul încărcării imaginii');
         })
         .finally(() => {
             progressValues.value.splice(i, 1);
@@ -198,7 +198,7 @@ function removeImage(imageToRemoveIndex) {
         })
         .catch((error) => {
             console.error(error);
-            addUnexpectedErrorNotification(' a kép feltöltése eltávolítása közben');
+            addUnexpectedErrorNotification(' în timpul eliminării imaginii în timpul încărcării');
         })
         .finally(() => {
             loading.value = false;

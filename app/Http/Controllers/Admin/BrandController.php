@@ -48,7 +48,7 @@ class BrandController extends Controller
             'notifications' => [
                 [
                     'type' => 'success',
-                    'message' => 'Categoria de produse a fost creată cu succes',
+                    'message' => 'Brandul a fost creată cu succes',
                 ],
             ],
         ]);
@@ -71,7 +71,7 @@ class BrandController extends Controller
             'notifications' => [
                 [
                     'type' => 'success',
-                    'message' => 'Categoria de produse a fost modificat cu succes',
+                    'message' => 'Brandul a fost modificat cu succes',
                 ],
             ],
         ]);
@@ -88,7 +88,7 @@ class BrandController extends Controller
     {
         $brand->delete();
 
-        return response()->json('Produsul a fost eliminată cu succes');
+        return response()->json('Brandul a fost eliminată cu succes');
     }
 
     public function uploadImage(ImageUploadRequest $request): JsonResponse
@@ -102,7 +102,7 @@ class BrandController extends Controller
     {
         $brandImage->delete();
 
-        return response()->json('A kép sikeresen el lett távolítva');
+        return response()->json('Imaginea a fost eliminată cu succes');
     }
 
     protected function getFetchQuery(Request $request): Builder
