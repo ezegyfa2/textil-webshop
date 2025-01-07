@@ -174,4 +174,23 @@ abstract class Controller
         }
         return $relationClassName;
     }
+
+    protected function updateImage(Model $model, array $imageData): void
+    {
+        $model->load('image');
+        if ($imageData) {
+            $imageData['relative_path'] = str_replace('/storage/uploads/', '', $imageData['url']);
+            if ($model->image) {
+                if ($imageData['relative_path'] != $model->image->relative_path) {
+                    $model->image->update(['relative_path' => $imageData['relative_path']]);
+                    $model->image->moveFromUploads();
+                    $model->image->createResizedVersions();
+                }
+            } else {
+                $model->image()->save(['relative_path' => $imageData['relative_path']]);
+                $model->image->moveFromUploads();
+                $model->image->createResizedVersions();
+            }
+        }
+    }
 }

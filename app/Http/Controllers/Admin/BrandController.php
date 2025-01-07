@@ -81,21 +81,7 @@ class BrandController extends Controller
     {
         $brand->fill($request->except('image'));
         $brand->save();
-        $brand->load('image');
-        $image = $request->get('image');
-        if ($image) {
-            if ($brand->image) {
-                $brand->image->update([
-                    'relative_path' => str_replace('/storage/uploads/', '', $image['url']),
-                ]);
-            } else {
-                $image = BrandImage::create([
-                    'relative_path' => str_replace('/storage/uploads/', '', $image['url']),
-                ]);
-                $brand->image_id = $image->id;
-            }
-        }
-        $brand->image->createResizedVersions();
+        $this->updateImage($brand, $request->get('image'));
     }
 
     public function delete(Brand $brand): JsonResponse

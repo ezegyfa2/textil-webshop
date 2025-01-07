@@ -81,21 +81,7 @@ class BlogController extends Controller
     {
         $blog->fill($request->except('image'));
         $blog->save();
-        $blog->load('image');
-        $image = $request->get('image');
-        if ($image) {
-            if ($blog->image) {
-                $blog->image->update([
-                    'relative_path' => str_replace('/storage/uploads/', '', $image['url']),
-                ]);
-            } else {
-                $image = BlogImage::create([
-                    'relative_path' => str_replace('/storage/uploads/', '', $image['url']),
-                ]);
-                $blog->image_id = $image->id;
-            }
-        }
-        $blog->image->createResizedVersions();
+        $this->updateImage($blog, $request->get('image'));
     }
 
     public function delete(Blog $blog): JsonResponse

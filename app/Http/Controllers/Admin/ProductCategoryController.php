@@ -81,16 +81,7 @@ class ProductCategoryController extends Controller
     {
         $productCategory->fill($request->except('image'));
         $productCategory->save();
-        $productCategory->load('image');
-        $image = $request->get('image');
-        if ($image) {
-            $image['relative_path'] = str_replace('/storage/uploads/', '', $image['url']);
-            unset($image['url']);
-            if ($image['relative_path'] != $productCategory->image->relative_path) {
-                $productCategory->image->update(['relative_path' => $image['relative_path']]);
-                $productCategory->image->createResizedVersions();
-            }
-        }
+        $this->updateImage($productCategory, $request->get('image'));
     }
 
     public function delete(ProductCategory $productCategory): JsonResponse
