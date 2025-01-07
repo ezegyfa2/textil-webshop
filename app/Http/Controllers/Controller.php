@@ -185,7 +185,9 @@ abstract class Controller
                 $image = $model->image()->create(['relative_path' => $imageData['relative_path']]);
                 $model->image()->associate($image);
                 $model->save();
-                $oldImage->delete();
+                if ($oldImage) {
+                    $oldImage->delete();
+                }
                 $image->moveFromUploads();
                 $image->createResizedVersions();
             }
