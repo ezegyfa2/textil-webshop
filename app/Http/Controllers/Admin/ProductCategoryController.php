@@ -84,18 +84,16 @@ class ProductCategoryController extends Controller
         $productCategory->load('image');
         $image = $request->get('image');
         if ($image) {
-            if ($productCategory->image) {
-                $productCategory->image->update([
-                    'relative_path' => str_replace('/storage/uploads/', '', $image['url']),
-                ]);
-            } else {
-                $image = ProductCategoryImage::create([
-                    'relative_path' => str_replace('/storage/uploads/', '', $image['url']),
-                ]);
-                $productCategory->image_id = $image->id;
+            $image['relative_path'] = str_replace('/storage/uploads/', '', $image['url']);
+            unset($image['url']);
+            if (!array_key_exists('id', $image)) {
+                $productCategory->image = ProductCategoryImage::create($image);
+                $productCategory->image->createResizedVersions();
+            } else if ($image['relative_path'] != $productCategory->image->relative_path) {
+                $productCategory->image->update(['relative_path' => $image['relative_path']]);
+                $productCategory->image->createResizedVersions();
             }
         }
-        $productCategory->image->createResizedVersions();
     }
 
     public function delete(ProductCategory $productCategory): JsonResponse
