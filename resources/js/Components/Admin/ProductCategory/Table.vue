@@ -71,7 +71,7 @@
                                         <v-list-item
                                             prepend-icon="mdi-delete-outline"
                                             slim
-                                            @click="() => deleteProductCategory(item)"
+                                            @click="showConfirmDelete(item)"
                                         >
                                             <v-list-item-title v-text="'Șterge'"/>
                                         </v-list-item>
@@ -87,15 +87,24 @@
                 </v-card>
             </v-col>
         </v-row>
+        <confirms-modal 
+            v-model:show="showDeleteModal"
+            title="Sunteți sigur că doriți să ștergeți?"
+            content="Faceți clic pentru a șterge acest element"
+            @confirmed="deleteProductCategory"
+        />
     </v-container>
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue';
-import { Link } from '@inertiajs/vue3';
-import axios from 'axios';
+import ConfirmsModal from '@/Components/ConfirmsModal.vue';
 import { addNotification, addUnexpectedErrorNotification } from '@/Layouts/Notification/AddNotification';
+import axios from 'axios';
+import { Link } from '@inertiajs/vue3';
+import { ref, watch } from 'vue';
 
+const selectedProductCategoryId = ref(null);
+const showDeleteModal = ref(false);
 const page = ref(1);
 const productCategoriesPerPage = ref(10);
 const search = ref('');
@@ -138,10 +147,19 @@ function loadItems(): void {
     });
 }
 
-function deleteProductCategory(productCategory) {
+function showConfirmDelete(item) {
+    if (item.id) {
+        selectedProductCategoryId.value = item.id;
+        showDeleteModal.value = true;
+    } else {
+        addUnexpectedErrorNotification();
+    }
+}
+
+function deleteProductCategory() {
     loading.value = true;
     axios.delete(route('admin.product-category.delete', {
-        productCategory: productCategory.id,
+        productCategory: selectedProductCategoryId.value,
     }))
     .then((response) => {
         loadItems();

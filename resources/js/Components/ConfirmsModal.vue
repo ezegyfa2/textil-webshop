@@ -5,17 +5,18 @@
         max-width="600px"
     >
         <v-card>
-            <v-card-title>
+            <v-card-title class="pa-4">
                 {{ title }}
             </v-card-title>
 
-            <v-card-text>
+            <v-card-text class="pa-4">
                 {{ content }}
             </v-card-text>
 
-            <v-card-actions class="d-flex justify-space-between">
+            <v-card-actions class="d-flex justify-space-between pa-4">
                 <v-btn
-                    color="secondary"
+                    class="bg-primary"
+                    color="surface"
                     type="button"
                     @click="cancel"
                 >
@@ -23,7 +24,8 @@
                 </v-btn>
                 <v-btn
                     type="button"
-                    :color="confirmButtonColor"
+                    class="bg-error"
+                    color="surface"
                     @click="confirm"
                 >
                     {{ confirmButtonText }}
@@ -33,12 +35,6 @@
     </v-dialog>
 </span>
 </template>
-
-<script lang="ts">
-export default {
-    name: "ConfirmsModal",
-}
-</script>
 
 <script lang="ts" setup>
 import { ref, watch } from 'vue';
@@ -53,10 +49,6 @@ const props = defineProps({
     confirmButtonText: {
         type: String,
         default: 'Confirm',
-    },
-    confirmButtonColor: {
-        type: String,
-        default: 'error'
     },
     show: {
         type: Boolean,

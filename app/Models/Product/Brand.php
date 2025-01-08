@@ -17,7 +17,7 @@ class Brand extends Model
     {
         parent::boot();
 
-        self::deleting(function($brand) {
+        self::deleted(function($brand) {
             $brand->image->delete();
         });
     }

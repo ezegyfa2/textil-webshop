@@ -16,7 +16,7 @@ class ProductCategory extends Model
     {
         parent::boot();
 
-        self::deleting(function($productCategory) {
+        self::deleted(function($productCategory) {
             $productCategory->image->delete();
         });
     }

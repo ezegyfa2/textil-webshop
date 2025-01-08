@@ -71,7 +71,7 @@
                                         <v-list-item
                                             prepend-icon="mdi-delete-outline"
                                             slim
-                                            @click="() => deleteProductCategory(item)"
+                                            @click="showConfirmDelete(item)"
                                         >
                                             <v-list-item-title v-text="'Șterge'"/>
                                         </v-list-item>
@@ -87,15 +87,24 @@
                 </v-card>
             </v-col>
         </v-row>
+        <confirms-modal 
+            v-model:show="showDeleteModal"
+            title="Sunteți sigur că doriți să ștergeți?"
+            content="Faceți clic pentru a șterge acest element"
+            @confirmed="deleteBlog"
+        />
     </v-container>
 </template>
 
 <script setup lang="ts">
+import ConfirmsModal from '@/Components/ConfirmsModal.vue';
 import { ref, watch } from 'vue';
 import { Link } from '@inertiajs/vue3';
 import axios from 'axios';
 import { addNotification, addUnexpectedErrorNotification } from '@/Layouts/Notification/AddNotification';
 
+const selectedBlogId = ref(null);
+const showDeleteModal = ref(false);
 const page = ref(1);
 const blogsPerPage = ref(10);
 const search = ref('');
@@ -138,17 +147,26 @@ function loadItems(): void {
     });
 }
 
-function deleteProductCategory(blog) {
+function showConfirmDelete(item) {
+    if (item.id) {
+        selectedBlogId.value = item.id;
+        showDeleteModal.value = true;
+    } else {
+        addUnexpectedErrorNotification();
+    }
+}
+
+function deleteBlog() {
     loading.value = true;
     axios.delete(route('admin.blog.delete', {
-        blog: blog.id,
+        blog: selectedBlogId.value,
     }))
     .then((response) => {
         loadItems();
     })
     .catch((error) => {
         console.error(error);
-        addUnexpectedErrorNotification('în timpul ștergerii');
+        addUnexpectedErrorNotification();
         loading.value = false;
     });
 }

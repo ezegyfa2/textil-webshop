@@ -17,7 +17,7 @@ class Blog extends Model
     {
         parent::boot();
 
-        self::deleting(function($blog) {
+        self::deleted(function($blog) {
             $blog->image->delete();
         });
     }
