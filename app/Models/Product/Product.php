@@ -13,6 +13,7 @@ class Product extends Model
 {
     protected $fillable = [
         'price',
+        'purchase_price',
         'product_type_id',
     ];
 

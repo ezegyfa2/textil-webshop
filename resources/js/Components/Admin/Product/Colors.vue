@@ -1,6 +1,6 @@
 <template>
     <v-input
-        :rules="[() => product.combined_colors.length > 0 || 'Cel puțin o culoare trebuie să fie setată']"
+        :rules="[() => (product.combined_colors && product.combined_colors.length > 0) || 'Cel puțin o culoare trebuie să fie setată']"
         error
     >
         <h2 class="text-h5 mt-12">Culorile</h2>
@@ -17,12 +17,13 @@
             v-for="(combinedColor, index) in product.combined_colors"
             cols="12" sm="6" md="4" lg="3"
         >
-            <v-combobox
+            <v-autocomplete
                 v-model="product.combined_colors[index].codes"
                 :items="available_colors"
                 class="text-body-1 main-text"
                 :label="'Culoare ' + (index + 1)"
                 item-title="name"
+                return-object
                 placeholder="Selectați culoarea"
                 multiple
                 :rules="[requiredRule]"
@@ -49,7 +50,7 @@
                         </template>
                     </v-list-item>
                 </template>
-            </v-combobox>
+            </v-autocomplete>
         </v-col>
     </v-row>
 </template>

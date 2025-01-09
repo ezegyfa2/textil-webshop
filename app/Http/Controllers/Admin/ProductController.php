@@ -144,6 +144,7 @@ class ProductController extends Controller
             $this->updateManyToManyRelatedModels($product, 'sizes', $sizes);
 
             $product->combinedColors()->sync([]);
+
             $this->updateManyToManyRelatedModels(
                 $product,
                 'combinedColors',

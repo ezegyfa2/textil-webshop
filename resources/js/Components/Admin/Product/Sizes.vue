@@ -24,7 +24,7 @@
                             >
                                 <div
                                     v-if="i != 1"
-                                    class="size-inputs d-flex pt-3 h-100"
+                                    class="size-inputs d-flex justify-center pt-3 w-100 h-100"
                                 >
                                     <v-btn
                                         :class="{ loading: props.loading }"

@@ -12,13 +12,16 @@
 <script setup lang="ts">
 import MainLayout from '@/Layouts/Admin/MainLayout.vue';
 import ProductForm from '@/Components/Admin/Product/Form.vue';
+import { handleValidationErrors } from '@/Helpers/ValidationRules';
 import { useForm } from '@inertiajs/vue3';
+import { useGoTo } from 'vuetify';
 
 const props = defineProps<{
     product: Object,
     available_colors: Array<Object>,
 }>();
 
+const goTo = useGoTo();
 const form = useForm(props.product);
 
 function submit() {
@@ -27,7 +30,7 @@ function submit() {
     }), {
         preserveScroll: true,
         onError: (errors) => {
-            console.log(errors);
+            handleValidationErrors(errors, goTo);
         },
     });
 }

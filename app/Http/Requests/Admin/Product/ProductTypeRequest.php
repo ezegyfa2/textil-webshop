@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Admin\Product;
 
 use App\Http\Requests\FormRequest;
+use Illuminate\Validation\Rule;
 
 class ProductTypeRequest extends FormRequest
 {
@@ -10,6 +11,7 @@ class ProductTypeRequest extends FormRequest
     {
         return [
             'name' => [
+                Rule::unique('product_types', 'name')->ignore($this->route('productType')->id ?? null),
                 'required',
                 'string',
                 'max:255',

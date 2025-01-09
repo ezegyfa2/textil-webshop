@@ -11,8 +11,11 @@
 <script setup lang="ts">
 import MainLayout from '@/Layouts/Admin/MainLayout.vue';
 import ProductCategoryForm from '@/Components/Admin/ProductCategory/Form.vue';
+import { handleValidationErrors } from '@/Helpers/ValidationRules';
 import { useForm } from '@inertiajs/vue3';
+import { useGoTo } from 'vuetify';
 
+const goTo = useGoTo();
 const props = defineProps<{
     product_category: Object,
 }>();
@@ -25,7 +28,7 @@ function submit() {
     }), {
         preserveScroll: true,
         onError: (errors) => {
-            console.log(errors);
+            handleValidationErrors(errors, goTo);
         },
     });
 }

@@ -127,6 +127,7 @@ function addNewProduct() {
         price: null,
         purchase_price: null,
         sizes: [],
+        combined_colors: [],
     });
 }
 

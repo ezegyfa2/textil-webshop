@@ -154,8 +154,8 @@ return [
     'starts_with' => 'Câmpul :attribute trebuie să înceapă cu unul dintre următoarele: :values.',
     'string' => 'Câmpul :attribute trebuie să fie un șir de caractere.',
     'timezone' => 'Câmpul :attribute trebuie să fie un fus orar valid.',
-    'unique' => 'Atributul :a fost deja luat.',
-    'uploaded' => 'Atributul :nu a reușit să fie încărcat.',
+    'unique' => 'Atributul :attribute fost deja luat.',
+    'uploaded' => 'Atributul :attribute nu a reușit să fie încărcat.',
     'uppercase' => 'Câmpul :attribute trebuie să fie scris cu majuscule.',
     'url' => 'Câmpul :attribute trebuie să fie un URL valid.',
     'ulid' => 'Câmpul :attribute trebuie să fie un ULID valid.',
@@ -191,6 +191,7 @@ return [
     */
 
     'attributes' => [
+        'name' => 'nume',
         'first_name' => 'prenume',
         'last_name' => 'nume',
         'phone' => 'număr de telefon',
