@@ -262,7 +262,7 @@ const page = usePage();
     height: 72px !important;
     width: 72px !important;
 }
-.v-toolbar__content {
+.main-navbar .v-toolbar__content {
     height: 90px !important;
     display: flex;
     justify-content: center;

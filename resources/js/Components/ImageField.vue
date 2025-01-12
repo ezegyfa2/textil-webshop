@@ -31,7 +31,7 @@
                         </v-icon>
                         <span
                             v-if="!loading"
-                            class="title indigo--text text--darken-2"
+                            class="title text-center indigo--text text--darken-2"
                         >
                             Glisați și fixați imaginile pentru a le încărca!
                         </span>

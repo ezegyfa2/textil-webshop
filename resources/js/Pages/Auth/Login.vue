@@ -11,17 +11,20 @@
                         <v-card-title class="text-h5 font-weight-bold ml-7 mt-2 pa-0">Logare</v-card-title>
                         <v-card-subtitle class="guest-subtitle ml-3 mb-8">Vă rugăm să introduceți datele dvs. de conectare pentru identificare</v-card-subtitle>
 
-                        <v-form @submit.prevent="submit">
+                        <v-form
+                            ref="formTemplate"
+                            @submit.prevent="submit"
+                        >
                             <v-card-item>
                                 <v-text-field
                                     class="mb-4"
+                                    v-model="form.email"
                                     type="email"
                                     label="Email"
-                                    v-model="form.email"
                                     :disabled="form.processing"
                                     :loading="form.processing"
+                                    :rules="emailRules"
                                     required
-                                    maxlength="255"
                                     :error-messages="form.errors.email"
                                 />
                                 <v-text-field
@@ -70,23 +73,33 @@
 <script setup lang="ts">
 import { useForm, Link } from '@inertiajs/vue3';
 import MainLayout from '@/Layouts/User/MainLayout.vue';
+import { emailRules, handleValidationErrors } from '@/Helpers/ValidationRules';
+import { useGoTo } from 'vuetify';
+import { useTemplateRef } from 'vue';
 
+const formTemplate = useTemplateRef('formTemplate');
+const goTo = useGoTo();
 const form = useForm({
     email: '',
     password: '',
     remember: false,
 });
 
-const submit = () => {
-    form.post(route('login'), {
-        onError: (error) => {
-            console.log(error)
-        },
-        onFinish: () => {
-            form.reset('password');
-        },
-    });
-};
+async function submit() {
+    const { valid } = await formTemplate.value.validate();
+    
+    if (valid) {
+        form.post(route('login'), {
+            preserveScroll: true,
+            onError: (errors) => {
+                handleValidationErrors(errors, goTo);
+                form.reset('password');
+            },
+        });
+    } else {
+        handleValidationErrors(null, goTo);
+    }
+}
 </script>
 
 <style>

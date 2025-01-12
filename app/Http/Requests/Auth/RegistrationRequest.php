@@ -21,7 +21,7 @@ class RegistrationRequest extends FormRequest
                 'required',
                 'max:250',
                 'email',
-                'unique:users',
+                'unique:users,email',
             ],
             'phone' => [
                 'nullable',

@@ -7,7 +7,10 @@
                         <v-card-title class="text-h5 font-weight-bold ml-7 mt-2 pa-0">Resetarea parola</v-card-title>
                         <v-card-subtitle class="guest-subtitle ml-3 mb-8">Vă rugăm să introduceți parolă nouă</v-card-subtitle>
 
-                        <v-form @submit.prevent="submit">
+                        <v-form
+                            ref="formTemplate"
+                            @submit.prevent="submit"
+                        >
                             <v-card-item>
                                 <v-text-field
                                     type="password"
@@ -51,21 +54,33 @@
 
 <script setup lang="ts">
 import MainLayout from '@/Layouts/User/MainLayout.vue';
-import { passwordRules, confirmPasswordRule } from '@/Helpers/ValidationRules';
+import { passwordRules, confirmPasswordRule, handleValidationErrors } from '@/Helpers/ValidationRules';
 import { useForm } from '@inertiajs/vue3';
+import { useGoTo } from 'vuetify';
+import { useTemplateRef } from 'vue';
 
+const formTemplate = useTemplateRef('formTemplate');
+const goTo = useGoTo();
 const form = useForm({
     password: '',
     password_confirmation: '',
 });
 
-const submit = () => {
-    form.post(route('profile.password.update'), {
-        onFinish: () => {
-            form.reset('password', 'password_confirmation');
-        },
-    });
-};
+async function submit() {
+    const { valid } = await formTemplate.value.validate();
+    
+    if (valid) {
+        form.post(route('profile.password.update'), {
+            preserveScroll: true,
+            onError: (errors) => {
+                handleValidationErrors(errors, goTo);
+                form.reset('password', 'password_confirmation');
+            },
+        });
+    } else {
+        handleValidationErrors(null, goTo);
+    }
+}
 </script>
 
 <style>

@@ -11,7 +11,10 @@
                         <v-card-title class="text-h5 font-weight-bold ml-7 mt-2 pa-0">Registrare</v-card-title>
                         <v-card-subtitle class="guest-subtitle ml-3 mb-8">Vă rugăm să introduceți datele dvs. de conectare pentru identificare</v-card-subtitle>
 
-                        <v-form @submit.prevent="submit">
+                        <v-form
+                            ref="formTemplate"
+                            @submit.prevent="submit"
+                        >
                             <v-card-item class="mb-2">
                                 <v-text-field
                                     label="Nume"
@@ -124,8 +127,13 @@
 <script setup lang="ts">
 import MainLayout from '@/Layouts/User/MainLayout.vue';
 import { useForm } from '@inertiajs/vue3';
-import { requiredRule, maxLengthRule, maxFieldLengthRule, maxTextareaLengthRule, emailRules, passwordRules, confirmPasswordRule, phoneRules } from '@/Helpers/ValidationRules';
+import { requiredRule, maxLengthRule, maxFieldLengthRule, maxTextareaLengthRule, emailRules, passwordRules,
+    confirmPasswordRule, phoneRules, handleValidationErrors } from '@/Helpers/ValidationRules';
+import { useGoTo } from 'vuetify';
+import { useTemplateRef } from 'vue';
 
+const formTemplate = useTemplateRef('formTemplate');
+const goTo = useGoTo();
 const form = useForm({
     first_name: '',
     last_name: '',
@@ -138,13 +146,21 @@ const form = useForm({
     password_confirmation: '',
 });
 
-const submit = () => {
-    form.post(route('register'), {
-        onFinish: () => {
-            form.reset('password', 'password_confirmation');
-        },
-    });
-};
+async function submit() {
+    const { valid } = await formTemplate.value.validate();
+    
+    if (valid) {
+        form.post(route('register'), {
+            preserveScroll: true,
+            onError: (errors) => {
+                handleValidationErrors(errors, goTo);
+                form.reset('password', 'password_confirmation');
+            },
+        });
+    } else {
+        handleValidationErrors(null, goTo);
+    }
+}
 </script>
 
 <style>

@@ -9,7 +9,10 @@
                             Vă rugăm să introduceți adresa dvs. de e-mail și vă vom trimite un link de resetare a parolei care vă va permite să alegeți una nouă.
                         </v-card-subtitle>
 
-                        <v-form @submit.prevent="submit">
+                        <v-form
+                            ref="formTemplate"
+                            @submit.prevent="submit"
+                        >
                             <v-card-item>
                                 <v-text-field
                                     v-model="form.email"
@@ -18,8 +21,8 @@
                                     type="email"
                                     :disabled="form.processing"
                                     :loading="form.processing"
+                                    :rules="emailRules"
                                     required
-                                    maxlength="255"
                                     :error-messages="form.errors.email"
                                 />
                             </v-card-item>
@@ -44,18 +47,30 @@
 <script setup lang="ts">
 import { useForm } from '@inertiajs/vue3';
 import MainLayout from '@/Layouts/User/MainLayout.vue';
+import { emailRules, handleValidationErrors } from '@/Helpers/ValidationRules';
+import { useGoTo } from 'vuetify';
+import { useTemplateRef } from 'vue';
 
+const formTemplate = useTemplateRef('formTemplate');
+const goTo = useGoTo();
 const form = useForm({
     email: '',
 });
 
-const submit = () => {
-    form.post(route('send-password-link'), {
-        onError: (error) => {
-            console.log(error)
-        },
-    });
-};
+async function submit() {
+    const { valid } = await formTemplate.value.validate();
+    
+    if (valid) {
+        form.post(route('send-password-link'), {
+            preserveScroll: true,
+            onError: (errors) => {
+                handleValidationErrors(errors, goTo);
+            },
+        });
+    } else {
+        handleValidationErrors(null, goTo);
+    }
+}
 </script>
 
 <style>

@@ -7,7 +7,7 @@
                         <v-row class="p-0">
                             <v-col
                                 class="d-flex pa-0"
-                                cols="12" sm="6" md="4" lg="3"
+                                cols="12" sm="6" md="4"
                             >
                                 <Link :href="route('admin.product.create')">
                                     <v-btn 
