@@ -1,1 +1,0 @@
-import{M as o}from"./MainLayout-tpytbo3z.js";import{d as t,o as e,c as r}from"./app-BgW4skEC.js";import"./Notifications.vue_vue_type_style_index_0_lang-BKAOjr_x.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";const _=t({__name:"TermsAndConditions",setup(n){return(a,s)=>(e(),r(o))}});export{_ as default};
