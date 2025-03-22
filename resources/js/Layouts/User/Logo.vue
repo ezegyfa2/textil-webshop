@@ -6,7 +6,7 @@
     >
         <v-img 
             class="mr-3 mt-1"
-            src="/assets/images/Logo.png"
+            src="/public/assets/images/Logo.png"
             height="60"
             width="60"
         />
