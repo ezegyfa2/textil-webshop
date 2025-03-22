@@ -43,6 +43,7 @@ class RegistrationRequest extends FormRequest
                 'confirmed', 
                 'string',
                 'min:8',
+                'max:255',
                 'regex:/[a-z]/',
                 'regex:/[A-Z]/',
                 'regex:/[0-9]/',

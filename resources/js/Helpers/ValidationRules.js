@@ -96,7 +96,7 @@ export function maxRule(value, max) {
 }
 
 export function phoneRule(value) {
-    return isNullable(value) || /[0-9+]*$/.test(value) || 'Valoarea trebuie să fie un număr de telefon valid'
+    return isNullable(value) || /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(value) || 'Valoarea trebuie să fie un număr de telefon valid'
 }
 
 export function emailRule(value) {
