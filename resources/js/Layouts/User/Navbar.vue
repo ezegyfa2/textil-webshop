@@ -256,7 +256,7 @@ const { xs, smAndUp } = useDisplay();
 const page = usePage();
 
 const menuElements = computed(() => {
-    return page.props.categories.concat(page.props.genders);
+    return page.props.genders.concat(page.props.categories);
 })
 </script>
 
