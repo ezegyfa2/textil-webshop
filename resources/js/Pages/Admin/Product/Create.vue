@@ -5,6 +5,7 @@
             title="Crearea produsului"
             :form="form"
             :available_colors="available_colors"
+            :genders="genders"
         />
     </MainLayout>
 </template>
@@ -18,6 +19,7 @@ import { useGoTo } from 'vuetify';
 
 const props = defineProps({
     available_colors: Array,
+    genders: Array,
 });
 
 const goTo = useGoTo();

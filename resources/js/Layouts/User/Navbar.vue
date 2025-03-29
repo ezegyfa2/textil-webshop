@@ -38,7 +38,7 @@
                                         >
                                             <Link
                                                 v-for="category in page.props.categories.slice(0, 6)"
-                                                :href="route('product.index') + '?category=' + category.id"
+                                                :href="category.url"
                                             >
                                                 <v-list-item slim>
                                                     <v-list-item-title

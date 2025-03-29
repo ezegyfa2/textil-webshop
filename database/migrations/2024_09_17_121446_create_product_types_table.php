@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name')->unique();
             $table->foreignId('main_image_id')->nullable();
             $table->integer('gram_per_m2')->nullable();
+            $table->tinyInteger('gender')->default(2);
             $table->foreignId('product_category_id')->constrained('product_categories')->cascadeOnDelete();
             $table->foreignId('brand_id')->constrained('brands');
             $table->timestamps();

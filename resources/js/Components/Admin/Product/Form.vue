@@ -59,7 +59,18 @@
                             />
                         </v-col>
                         
-                        <v-col cols="12">
+                        <v-col cols="12" sm="6">
+                            <v-select
+                                v-model="props.form.gender"
+                                :items="genders"
+                                label="Gen"
+                                placeholder="Gen"
+                                :rules="[requiredRule]"
+                                :error-messages="props.form.errors.gender"
+                            />
+                        </v-col>
+
+                        <v-col cols="12" sm="6">
                             <SearchCombobox
                                 v-model="form.fabric_properties"
                                 search_route="admin.product.search-fabric-property"
@@ -140,6 +151,7 @@ const props = defineProps({
     title: String,
     form: Object,
     available_colors: Array,
+    genders: Array,
 });
 
 if (props.form.sizes.length == 0) {

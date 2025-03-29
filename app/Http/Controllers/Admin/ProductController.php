@@ -17,6 +17,8 @@ use App\Http\Requests\ImageUploadRequest;
 use App\Http\Resources\Admin\Product\ProductTypeResource;
 use App\Http\Resources\Admin\Product\ProductTypeFetchResource;
 use App\Http\Controllers\Controller;
+use App\Enums\Gender;
+use App\Helpers\Helpers;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -54,6 +56,7 @@ class ProductController extends Controller
     {
         return Inertia::render('Admin/Product/Create', [
             'available_colors' => Color::select(['id', 'name', 'code'])->get(),
+            'genders' => Helpers::createSelectOptions(Gender::translations),
         ]);
     }
 
@@ -79,6 +82,7 @@ class ProductController extends Controller
         return Inertia::render('Admin/Product/Edit', [
             'product' => new ProductTypeResource($productType),
             'available_colors' => Color::select(['id', 'name', 'code'])->get(),
+            'genders' => Helpers::createSelectOptions(Gender::translations),
         ]);
     }
 

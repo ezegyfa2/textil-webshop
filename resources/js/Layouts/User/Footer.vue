@@ -9,6 +9,9 @@
                     <Link :href="route('privacy-policy')">
                         <p class="footer-link text-center text-sm-start text-h6 text-surface main-text pb-1">Politica de confidențialitate</p>
                     </Link>
+                    <Link :href="route('return-policy')">
+                        <p class="footer-link text-center text-sm-start text-h6 text-surface main-text pb-1">Politica de returnare</p>
+                    </Link>
                 </v-col>
                 <v-col
                     class="text-end"

@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use App\Models\Product\ProductCategory;
+use App\Enums\Gender;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -30,24 +31,32 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
+        $categories = ProductCategory::with('image')->get()->map(function($productCategory) {
+            if ($productCategory->image) {
+                $imageSrc = $productCategory->image->getUrl(450);
+            } else {
+                $imageSrc = null;
+            }
+
+            return [
+                'name' => $productCategory->name,
+                'image_src' => $imageSrc,
+                'url' => route('product.index') . '?category=' . $productCategory->id,
+            ];
+        });
+        $genders = array_map(function ($gender) {
+            return [
+                'name' => Gender::translations[$gender->value],
+                'url' => route('product.index') . '?gender=' . $gender->value,
+            ];
+        }, Gender::cases());
+        
         return [
             ...parent::share($request),
             'notifications' => session('notifications') ?? [],
             'cart_items' => session('cartitems') ?? [],
             'cart_item_count' => session('cart_item_count') ?? 0,
-            'categories' => ProductCategory::with('image')->get()->map(function($productCategory) {
-                if ($productCategory->image) {
-                    $imageSrc = $productCategory->image->getUrl(450);
-                } else {
-                    $imageSrc = null;
-                }
-
-                return [
-                    'id' => $productCategory->id,
-                    'name' => $productCategory->name,
-                    'image_src' => $imageSrc,
-                ];
-            }),
+            'categories' => array_merge($genders, $categories->toArray()),
             'auth' => [
                 'user' => $request->user(),
             ],

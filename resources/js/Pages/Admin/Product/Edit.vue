@@ -5,21 +5,23 @@
             title="Editarea produsului"
             :form="form"
             :available_colors="available_colors"
+            :genders="genders"
         />
     </MainLayout>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import MainLayout from '@/Layouts/Admin/MainLayout.vue';
 import ProductForm from '@/Components/Admin/Product/Form.vue';
 import { handleValidationErrors } from '@/Helpers/ValidationRules';
 import { useForm } from '@inertiajs/vue3';
 import { useGoTo } from 'vuetify';
 
-const props = defineProps<{
+const props = defineProps({
     product: Object,
-    available_colors: Array<Object>,
-}>();
+    available_colors: Array,
+    genders: Array,
+});
 
 const goTo = useGoTo();
 const form = useForm(props.product);

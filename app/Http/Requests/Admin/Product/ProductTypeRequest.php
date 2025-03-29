@@ -2,8 +2,10 @@
 
 namespace App\Http\Requests\Admin\Product;
 
+use App\Enums\Gender;
 use App\Http\Requests\FormRequest;
 use Illuminate\Validation\Rule;
+use Illuminate\Validation\Rules\Enum;
 
 class ProductTypeRequest extends FormRequest
 {
@@ -20,6 +22,10 @@ class ProductTypeRequest extends FormRequest
                 'nullable',
                 'numeric',
                 'min:0',
+            ],
+            'gender' => [
+                'required',
+                new Enum(Gender::class),
             ],
             'product_category' => [
                 'required',

@@ -87,6 +87,30 @@
                     </v-expansion-panel>
                     <v-expansion-panel rounded="0">
                         <template v-slot:title>
+                            <p class="text-h6 main-text">Gender</p>
+                        </template>
+                        <template v-slot:text>
+                            <v-list-item
+                                v-for="gender in genders"
+                                :key="gender.value"
+                                class="d-flex justify-end pa-0"
+                                density="compact"
+                            >
+                                <v-checkbox
+                                    v-model="selectedGenders"
+                                    :value="gender.value"
+                                    density="compact"
+                                    hide-details
+                                >
+                                    <template v-slot:prepend>
+                                        <p class="filter-checkbox text-caption main-text">{{ gender.title }}</p>
+                                    </template>
+                                </v-checkbox>
+                            </v-list-item>
+                        </template>
+                    </v-expansion-panel>
+                    <v-expansion-panel rounded="0">
+                        <template v-slot:title>
                             <p class="text-h6 main-text">Categorii</p>
                         </template>
                         <template v-slot:text>
@@ -187,21 +211,23 @@
     </MainLayout>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import MainLayout from '@/Layouts/User/MainLayout.vue';
 import ProductTable from '@/Components/User/Product/Table.vue';
 import ProductCategoryTable from '@/Components/User/Product/CategoryTable.vue';
 import { maxFieldLengthRule, minRule, pozitiveRule, numberRule } from '@/Helpers/ValidationRules';
 import { ref, computed, watch, useTemplateRef } from 'vue';
 
-const props = defineProps<{
+const props = defineProps({
     sizes: Array,
     brands: Array,
+    genders: Array,
     //colors: Array,
     categories: Array,
     choosed_category_id: Number|null,
     choosed_brand_id: Number|null,
-}>();
+    choosed_gender: String|null,
+});
 
 const search = ref('');
 const fromPrice = ref(null);
@@ -209,6 +235,7 @@ const toPrice = ref(null);
 const selectedSizeIds = ref([]);
 const selectedCategoryIds = ref(props.choosed_category_id ? [parseInt(props.choosed_category_id)] : []);
 const selectedBrandIds = ref(props.choosed_brand_id ? [parseInt(props.choosed_brand_id)] : []);
+const selectedGenders = ref(props.choosed_gender ? [props.choosed_gender] : []);
 //const selectedColorIds = ref([]);
 const loading = ref(false);
 const errorMessages = ref({});
@@ -228,6 +255,7 @@ const filters = computed(() => {
         category_ids: selectedCategoryIds.value,
         size_ids: selectedSizeIds.value,
         brand_ids: selectedBrandIds.value,
+        genders: selectedGenders.value,
         //color_ids: selectedColorIds.value,
     };
 });

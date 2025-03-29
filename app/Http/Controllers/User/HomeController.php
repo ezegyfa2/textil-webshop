@@ -63,4 +63,9 @@ class HomeController extends Controller
     {
         return Inertia::render('User/PrivacyPolicy');
     }
+
+    public function returnPolicy(): Response
+    {
+        return Inertia::render('User/ReturnPolicy');
+    }
 }

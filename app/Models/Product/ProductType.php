@@ -4,6 +4,7 @@ namespace App\Models\Product;
 
 use App\Models\Image;
 use App\Models\Model;
+use App\Enums\Gender;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -13,6 +14,7 @@ class ProductType extends Model
     protected $fillable = [
         'name',
         'main_image_id',
+        'gender',
         'gram_per_m2',
         'product_category_id',
         'brand_id',
@@ -21,6 +23,7 @@ class ProductType extends Model
     protected function casts(): array
     {
         return [
+            'gender' => Gender::class,
             'gram_per_m2' => 'integer',
         ];
     }

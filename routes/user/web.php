@@ -33,3 +33,4 @@ Route::middleware([SaveCart::class])->group(function () {
 
 Route::get('/terms-and-conditions', [HomeController::class, 'termsAndConditions'])->name('terms-and-conditions');
 Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('privacy-policy');
+Route::get('/return-policy', [HomeController::class, 'returnPolicy'])->name('return-policy');

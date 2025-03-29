@@ -16,6 +16,7 @@ class ProductTypeResource extends JsonResource
             'product_category' => CommonHelpers::getRelationSelectValue($this->category),
             'brand' => CommonHelpers::getRelationSelectValue($this->brand),
             'gram_per_m2' => $this->gram_per_m2,
+            'gender' => $this->gender,
             'main_image' => $this->main_image_id,
             'fabric_properties' => Helpers::getSelectValues($this->fabricProperties),
             'cut_properties' => Helpers::getSelectValues($this->cutProperties),

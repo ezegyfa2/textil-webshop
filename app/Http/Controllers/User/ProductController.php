@@ -12,7 +12,9 @@ use App\Models\Product\CutProperty;
 use App\Http\Requests\User\ProductTypeFetchRequest;
 use App\Http\Resources\User\Product\ProductTypeFetchResource;
 use App\Http\Resources\User\Product\ProductTypeResource;
+use App\Enums\Gender;
 use App\Http\Controllers\Controller;
+use App\Helpers\Helpers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Database\Query\Builder as QueryBuilder;
@@ -45,12 +47,14 @@ class ProductController extends Controller
             '4XL',
             '5XL',
         ])->select(['name', 'id'])->orderBy('id')->get();
+        $genders = Helpers::createSelectOptions(Gender::translations);
         
         return Inertia::render('User/Product/Index', [
             'choosed_category_id' => request()->get('category'),
             'choosed_brand_id' => request()->get('brand'),
             'sizes' => $sizes,
             'brands' => Brand::select(['name', 'id'])->get(),
+            'genders' => $genders,
             //'colors' => Color::all()->select(['name', 'id']),
         ]);
     }
@@ -101,7 +105,10 @@ class ProductController extends Controller
         if ($request->brand_ids) {
             $query->whereIn('brand_id', $request->brand_ids);
         }
-
+        if ($request->genders) {
+            $query->whereIn('gender', $request->genders);
+        }
+        
         return $query;
     }
 }
