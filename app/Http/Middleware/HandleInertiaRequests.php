@@ -56,7 +56,8 @@ class HandleInertiaRequests extends Middleware
             'notifications' => session('notifications') ?? [],
             'cart_items' => session('cartitems') ?? [],
             'cart_item_count' => session('cart_item_count') ?? 0,
-            'categories' => array_merge($genders, $categories->toArray()),
+            'categories' => $categories,
+            'genders' => $genders,
             'auth' => [
                 'user' => $request->user(),
             ],

@@ -1,7 +1,7 @@
 <template>
     <MainLayout>
         <ProductCategoryTable 
-            v-if="selectedCategoryIds.length == 0"
+            v-if="nothingSelected"
             class="top-section-separator"
             :product_categories="categories"
         />
@@ -244,6 +244,7 @@ const panels = ref([0, 1, 2, 3]);
 const validatedFilters = ref({
     category_ids: selectedCategoryIds.value,
     brand_ids: selectedBrandIds.value,
+    genders: selectedGenders.value,
 });
 const filterFormComponent = useTemplateRef('filterForm');
 
@@ -258,6 +259,9 @@ const filters = computed(() => {
         genders: selectedGenders.value,
         //color_ids: selectedColorIds.value,
     };
+});
+const nothingSelected = computed(() => {
+    return selectedCategoryIds.length == 0 && selectedBrandIds.length == 0 && selectedGenders.length == 0;
 });
 
 watch(filters, (newFilters) => {

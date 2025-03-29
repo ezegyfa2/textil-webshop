@@ -8,7 +8,7 @@
                 <v-row dense>
                     <v-col
                         v-for="item in items"
-                        :key="item.raw.id"
+                        :key="item.raw.url"
                         class="pa-2"
                         cols="12" sm="6" md="3"
                     >
@@ -17,7 +17,7 @@
                             color="white"
                             rounded="0"
                         >
-                            <Link :href="route('product.index', {category: item.raw.id})">
+                            <Link :href="item.raw.url">
                                 <ImageBox
                                     width="100%"
                                     height="300"
@@ -40,13 +40,13 @@
     </v-data-iterator>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import ImageBox from '@/Components/User/ImageBox.vue';
 import { Link } from '@inertiajs/vue3';
 
-const props = defineProps<{
+const props = defineProps({
     product_categories: Array,
-}>();
+});
 </script>
 
 <style scoped lang="scss">

@@ -37,7 +37,7 @@
                                             min-width="160"
                                         >
                                             <Link
-                                                v-for="category in page.props.categories.slice(0, 6)"
+                                                v-for="category in menuElements.slice(0, 6)"
                                                 :href="category.url"
                                             >
                                                 <v-list-item slim>
@@ -59,7 +59,7 @@
                                             min-width="160"
                                         >
                                             <Link
-                                                v-for="category in page.props.categories.slice(6, 12)"
+                                                v-for="category in menuElements.slice(6, 12)"
                                                 :href="route('product.index') + '?category=' + category.id"
                                             >
                                                 <v-list-item slim>
@@ -80,7 +80,7 @@
                                             min-width="160"
                                         >
                                             <Link
-                                                v-for="category in page.props.categories.slice(12, 18)"
+                                                v-for="category in menuElements.slice(12, 18)"
                                                 :href="route('product.index') + '?category=' + category.id"
                                             >
                                                 <v-list-item slim>
@@ -246,13 +246,17 @@
     </v-app-bar>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import SkewButton from '@/Layouts/User/SkewButton.vue';
 import { Link, usePage } from '@inertiajs/vue3';
 import { useDisplay } from 'vuetify';
 
 const { xs, smAndUp } = useDisplay();
 const page = usePage();
+
+const menuElements = computed(() => {
+    return page.props.categories.concat(page.props.genders);
+})
 </script>
 
 <style lang="scss">
