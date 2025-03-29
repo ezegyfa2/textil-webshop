@@ -60,7 +60,7 @@
                                         >
                                             <Link
                                                 v-for="category in menuElements.slice(6, 12)"
-                                                :href="route('product.index') + '?category=' + category.id"
+                                                :href="category.url"
                                             >
                                                 <v-list-item slim>
                                                     <v-list-item-title
@@ -81,7 +81,7 @@
                                         >
                                             <Link
                                                 v-for="category in menuElements.slice(12, 18)"
-                                                :href="route('product.index') + '?category=' + category.id"
+                                                :href="category.url"
                                             >
                                                 <v-list-item slim>
                                                     <v-list-item-title
@@ -256,7 +256,6 @@ const { xs, smAndUp } = useDisplay();
 const page = usePage();
 
 const menuElements = computed(() => {
-    console.log(page.props.genders.concat(page.props.categories))
     return page.props.genders.concat(page.props.categories);
 })
 </script>

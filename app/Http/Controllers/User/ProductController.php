@@ -47,7 +47,6 @@ class ProductController extends Controller
             '4XL',
             '5XL',
         ])->select(['name', 'id'])->orderBy('id')->get();
-        $genders = Helpers::createSelectOptions(Gender::translations);
         
         return Inertia::render('User/Product/Index', [
             'choosed_category_id' => request()->get('category'),
