@@ -250,6 +250,7 @@
 import SkewButton from '@/Layouts/User/SkewButton.vue';
 import { Link, usePage } from '@inertiajs/vue3';
 import { useDisplay } from 'vuetify';
+import { computed } from 'vue';
 
 const { xs, smAndUp } = useDisplay();
 const page = usePage();

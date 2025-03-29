@@ -261,7 +261,8 @@ const filters = computed(() => {
     };
 });
 const nothingSelected = computed(() => {
-    return selectedCategoryIds.length == 0 && selectedBrandIds.length == 0 && selectedGenders.length == 0;
+    return selectedCategoryIds.value.length == 0 && selectedBrandIds.value.length == 0 
+        && selectedGenders.value.length == 0;
 });
 
 watch(filters, (newFilters) => {
