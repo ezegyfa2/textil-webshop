@@ -39,11 +39,13 @@ class HandleInertiaRequests extends Middleware
             }
 
             return [
+                'id' => $productCategory->id,
                 'name' => $productCategory->name,
                 'image_src' => $imageSrc,
                 'url' => route('product.index') . '?category=' . $productCategory->id,
             ];
         });
+
         $genders = array_map(function ($gender) {
             return [
                 'name' => Gender::translations[$gender->value],
