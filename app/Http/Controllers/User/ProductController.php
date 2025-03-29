@@ -52,6 +52,7 @@ class ProductController extends Controller
         return Inertia::render('User/Product/Index', [
             'choosed_category_id' => request()->get('category'),
             'choosed_brand_id' => request()->get('brand'),
+            'choosed_gender' => request()->get('gender'),
             'sizes' => $sizes,
             'brands' => Brand::select(['name', 'id'])->get(),
             //'colors' => Color::all()->select(['name', 'id']),
