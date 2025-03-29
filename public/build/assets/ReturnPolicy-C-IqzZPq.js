@@ -1,0 +1,1 @@
+import{M as o}from"./MainLayout-2M8RMJFx.js";import{d as t,o as e,c as r}from"./app-BxfFrbCs.js";import"./Notifications.vue_vue_type_style_index_0_lang-CuXaTqes.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";const _=t({__name:"ReturnPolicy",setup(a){return(n,c)=>(e(),r(o))}});export{_ as default};

@@ -1,1 +1,0 @@
-import{M as o}from"./MainLayout-BNVLcK6I.js";import{d as r,o as t,c as a}from"./app-Bg1r7m87.js";import"./Notifications.vue_vue_type_style_index_0_lang-Cc0AjRA8.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";const _=r({__name:"PrivacyPolicy",setup(e){return(c,n)=>(t(),a(o))}});export{_ as default};
