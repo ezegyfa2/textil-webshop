@@ -103,7 +103,7 @@
                                     hide-details
                                 >
                                     <template v-slot:prepend>
-                                        <p class="filter-checkbox text-caption main-text">{{ gender.title }}</p>
+                                        <p class="filter-checkbox text-caption main-text">{{ gender.name }}</p>
                                     </template>
                                 </v-checkbox>
                             </v-list-item>

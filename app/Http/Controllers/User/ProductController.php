@@ -54,7 +54,6 @@ class ProductController extends Controller
             'choosed_brand_id' => request()->get('brand'),
             'sizes' => $sizes,
             'brands' => Brand::select(['name', 'id'])->get(),
-            'genders' => $genders,
             //'colors' => Color::all()->select(['name', 'id']),
         ]);
     }

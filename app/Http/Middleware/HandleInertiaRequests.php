@@ -47,6 +47,7 @@ class HandleInertiaRequests extends Middleware
         $genders = array_map(function ($gender) {
             return [
                 'name' => Gender::translations[$gender->value],
+                'value' => $gender->value,
                 'url' => route('product.index') . '?gender=' . $gender->value,
             ];
         }, Gender::cases());
