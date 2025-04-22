@@ -3385,8 +3385,8 @@ return [
     "FHLV881 ADULT'S KNITTED TRACKSUIT PANTS",
     2,
     null,
+    "FINDEN + HALES",
     "Sport",
-    "Imbracaminte Unisex",
     [
         "100% Poliester"
     ],
@@ -5893,8 +5893,8 @@ return [
     "PA038 TECHNICAL TREKKING SOCKS",
     2,
     null,
+    "PROACT",
     "Sport",
-    "Imbracaminte Unisex",
     [
         "Respirabil",
         "Uscare rapida"
@@ -6125,8 +6125,8 @@ return [
     "PA035 TECHNICAL SPORTS SOCKS",
     2,
     null,
+    "PROACT",
     "Sport",
-    "Imbracaminte Unisex",
     [
         "Respirabil",
         "Uscare rapida"
@@ -6775,8 +6775,8 @@ return [
     "PA033 MICROFIBRE TRAINER SOCKS - PACK OF 3 PAIRS",
     2,
     null,
+    "PROACT",
     "Sport",
-    "Imbracaminte Unisex",
     [
         "Poliamida/Elastan"
     ],
@@ -6801,8 +6801,8 @@ return [
     "PA0300 TWO-TONE SPORTS SOCKS",
     2,
     null,
+    "PROACT",
     "Sport",
-    "Imbracaminte Unisex",
     [],
     [],
     [],
@@ -6968,8 +6968,8 @@ return [
     "PA037 BAMBOO SPORTS TRAINER SOCKS",
     2,
     null,
+    "PROACT",
     "Sport",
-    "Imbracaminte Unisex",
     [],
     [],
     [],
@@ -6990,8 +6990,8 @@ return [
     "PA032 SEAMLESS SPORTS SLEEVES",
     2,
     null,
+    "PROACT",
     "Sport",
-    "Imbracaminte Unisex",
     [
         "Poliester/Elastan"
     ],
@@ -7018,8 +7018,8 @@ return [
     "PA678 ELASTIC ARMBAND WITH LABEL HOLDER",
     2,
     null,
+    "PROACT",
     "Sport",
-    "Imbracaminte Unisex",
     [],
     [],
     [],
@@ -7385,8 +7385,8 @@ return [
     "KP427 THINSULATE™ POLAR-FLEECE GLOVES",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "100% Poliester"
     ],
@@ -7505,8 +7505,8 @@ return [
     "KP426 THINSULATE™ KNITTED GLOVES",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "100% Acril"
     ],
@@ -7594,8 +7594,8 @@ return [
     "KP435 KNITTED SCARF",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "Sapkák banner_téli szezon"
     ],
@@ -7786,8 +7786,8 @@ return [
     "KP207 SPORTS CAP",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "100% Poliester"
     ],
@@ -7814,8 +7814,8 @@ return [
     "KP434 FRINGED SCARF",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "100% Acril"
     ],
@@ -7840,8 +7840,8 @@ return [
     "KP540 FAIR ISLE KNIT BEANIE",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "100% Acril"
     ],
@@ -8001,8 +8001,8 @@ return [
     "KP425 TOUCH SCREEN KNITTED GLOVES",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "100% Acril"
     ],
@@ -8057,8 +8057,8 @@ return [
     "KP550 KNITTED BEANIE",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "Sapkák banner_téli szezon"
     ],
@@ -8086,8 +8086,8 @@ return [
     "KP552 SAILOR'S BEANIE",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "Sapkák banner_téli szezon"
     ],
@@ -8250,8 +8250,8 @@ return [
     "KP558 BEANIE WITH CHRISTMAS PATTERNS",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "Fara eticheta"
     ],
@@ -8380,8 +8380,8 @@ return [
     "KP533 BEANIE WITH TURN-UP",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "Sapkák banner_téli szezon"
     ],
@@ -8665,8 +8665,8 @@ return [
     "KP518 FLEECE LINED BEANIE",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "Poliester/Elastan"
     ],
@@ -8719,8 +8719,8 @@ return [
     "KP121 FLEECE-LINED NECKWARMER",
     2,
     null,
+    "K-UP",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "100% Poliester"
     ],
@@ -8849,8 +8849,8 @@ return [
     "SO01664 SOL'S PITTSBURGH - SOLID-COLOUR BEANIE WITH CUFFED DESIGN",
     2,
     null,
+    "SOL'S",
     "Sepci",
-    "Imbracaminte Unisex",
     [
         "100% Acril",
         "Nervura"
@@ -12736,8 +12736,8 @@ return [
     "KP882 KIDS' FLEECE GLOVES",
     3,
     null,
+    "K-UP",
     "Copii",
-    "Imbracaminte Unisex",
     [
         "100% Poliester"
     ],
@@ -14039,8 +14039,8 @@ return [
     "KA679 RECORD - FLEECE LINED BODYWARMER",
     2,
     null,
+    "KARIBAN",
     "Veste",
-    "Imbracaminte Unisex",
     [
         "100% Poliester",
         "100% Poliamida"
@@ -14204,8 +14204,8 @@ return [
     "SO01171 SOL'S SKATE - UNISEX LINED WINDBREAKER",
     2,
     null,
+    "SOL'S",
     "Windbreakers",
-    "Imbracaminte Unisex",
     [
         "100% Poliester"
     ],
@@ -14253,8 +14253,8 @@ return [
     "SO46000 SOL'S MISTRAL - JERSEY-LINED WATER REPELLENT WINDBREAKER",
     2,
     null,
+    "SOL'S",
     "Windbreakers",
-    "Imbracaminte Unisex",
     [
         "Maneca lunga",
         "Cusatura laterala",
@@ -14302,8 +14302,8 @@ return [
     "KA632 EAGLE II - LINED WINDBREAKER",
     2,
     null,
+    "KARIBAN",
     "Windbreakers",
-    "Imbracaminte Unisex",
     [
         "100% Poliamida"
     ],
@@ -14493,8 +14493,8 @@ return [
     "SO32000 SOL'S SURF - UNISEX WATER REPELLENT WINDBREAKER",
     2,
     null,
+    "SOL'S",
     "Windbreakers",
-    "Imbracaminte Unisex",
     [
         "Maneca lunga",
         "Buzunar",
