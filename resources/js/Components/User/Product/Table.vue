@@ -157,7 +157,7 @@ function prevPage() {
     }
 }
 
-watch(() => selectedPage.value, {
+watch(() => selectedPage.value, () => {
     goTo(0);
 });
 
