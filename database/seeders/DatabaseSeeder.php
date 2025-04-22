@@ -2017,6 +2017,302 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Marl Grey',
                 'code' => '818a90',
             ],
+            [
+                'name' => 'Heather Denim',
+                'code' => '464d60',
+            ],
+            [
+                'name' => 'Caribbean Blue',
+                'code' => '00a9ce',
+            ],
+            [
+                'name' => 'Charity Pink',
+                'code' => 'F8A3BC',
+            ],
+            [
+                'name' => 'Teal Ice',
+                'code' => 'B1E4E3',
+            ],
+            [
+                'name' => 'True Red',
+                'code' => 'BB1237',
+            ],
+            [
+                'name' => 'Heather Military Green',
+                'code' => '7E7F74',
+            ],
+            [
+                'name' => 'Heather Navy',
+                'code' => '333F48',
+            ],
+            [
+                'name' => 'Heather Royal',
+                'code' => '307FE2',
+            ],
+            [
+                'name' => 'Jade Dome',
+                'code' => '008E85',
+            ],
+            [
+                'name' => 'Antique Heliconia',
+                'code' => 'AA0061',
+            ],
+            [
+                'name' => 'Berry',
+                'code' => '7F2952',
+            ],
+            [
+                'name' => 'Cobalt',
+                'code' => '374393',
+            ],
+            [
+                'name' => 'Cornsilk',
+                'code' => 'f0ec74',
+            ],
+            [
+                'name' => 'Heather Orange',
+                'code' => 'FF8D6D',
+            ],
+            [
+                'name' => 'Heather Purple',
+                'code' => '614B79',
+            ],
+            [
+                'name' => 'Apricot',
+                'code' => 'FF8D6D',
+            ],
+            [
+                'name' => 'Light Purple',
+                'code' => '68508E',
+            ],
+            [
+                'name' => 'Tango Red',
+                'code' => '8B001C',
+            ],
+            [
+                'name' => 'Antique Irish Green',
+                'code' => '00843D',
+            ],
+            [
+                'name' => 'Antique Jade Dome',
+                'code' => '006269',
+            ],
+            [
+                'name' => 'Antique Orange',
+                'code' => 'B33D26',
+            ],
+            [
+                'name' => 'Blackberry',
+                'code' => '4A3041',
+            ],
+            [
+                'name' => 'Brown Savana',
+                'code' => '776A60',
+            ],
+            [
+                'name' => 'Heather Sapphire',
+                'code' => '0076A8',
+            ],
+            [
+                'name' => 'Midnight',
+                'code' => '005670',
+            ],
+            [
+                'name' => 'Russet',
+                'code' => '512F2E',
+            ],
+            [
+                'name' => 'Sunset',
+                'code' => 'DC6B2F',
+            ],
+            [
+                'name' => 'Tweed',
+                'code' => '4B4F54',
+            ],
+            [
+                'name' => 'Ancient Pink',
+                'code' => 'A36167',
+            ],
+            [
+                'name' => 'Chili',
+                'code' => '5A151A',
+            ],
+            [
+                'name' => 'Cream',
+                'code' => 'F7EECF',
+            ],
+            [
+                'name' => 'Earth',
+                'code' => '3E281B',
+            ],
+            [
+                'name' => 'Hibiscus',
+                'code' => 'EF3340',
+            ],
+            [
+                'name' => 'Ice Blue',
+                'code' => '7F99A7',
+            ],
+            [
+                'name' => 'Sage Green',
+                'code' => 'CED7AD',
+            ],
+            [
+                'name' => 'Coconut Milk',
+                'code' => 'F7F4EC',
+            ],
+            [
+                'name' => 'Blue Dusk',
+                'code' => '253746',
+            ],
+            [
+                'name' => 'Heather Cardinal',
+                'code' => '9B2743',
+            ],
+            [
+                'name' => 'Ice Grey',
+                'code' => 'd0c4c5',
+            ],
+            [
+                'name' => 'Iris',
+                'code' => '3975B7',
+            ],
+            [
+                'name' => 'Metro Blue',
+                'code' => '264583',
+            ],
+            [
+                'name' => 'Prairie Dust',
+                'code' => '7a7256',
+            ],
+            [
+                'name' => 'Tan',
+                'code' => 'B29E69',
+            ],
+            [
+                'name' => 'Texas Orange',
+                'code' => 'B65A30',
+            ],
+            [
+                'name' => 'Vegas Gold',
+                'code' => 'F4D1A1',
+            ],
+            [
+                'name' => 'Prepared for Dye (White)',
+                'code' => 'FFFFFF',
+            ],
+            [
+                'name' => 'Absolute White',
+                'code' => 'FFFFFF',
+            ],
+            [
+                'name' => 'Kelly Mist',
+                'code' => '00957A',
+            ],
+            [
+                'name' => 'Navy Mist',
+                'code' => '2C4068',
+            ],
+            [
+                'name' => 'Red Mist',
+                'code' => 'CA3639',
+            ],
+            [
+                'name' => 'Sport Dark Navy',
+                'code' => '00263A',
+            ],
+            [
+                'name' => 'Adriatic Blue',
+                'code' => '4C8290',
+            ],
+            [
+                'name' => 'Beige Cream',
+                'code' => 'C9C2B5',
+            ],
+            [
+                'name' => 'Butternut',
+                'code' => 'F56F45',
+            ],
+            [
+                'name' => 'Cool Blue',
+                'code' => '5c788f',
+            ],
+            [
+                'name' => 'Dark Camel',
+                'code' => '916D50',
+            ],
+            [
+                'name' => 'Deep Chocolate',
+                'code' => '3B312F',
+            ],
+            [
+                'name' => 'Lemon Citrus',
+                'code' => 'EDEDB4',
+            ],
+            [
+                'name' => 'Paprika',
+                'code' => 'b7312c',
+            ],
+            [
+                'name' => 'Parma',
+                'code' => 'b3b0c4',
+            ],
+            [
+                'name' => 'Clementine Heather',
+                'code' => 'C97629',
+            ],
+            [
+                'name' => 'Grizzly Brown Heather',
+                'code' => '564534',
+            ],
+            [
+                'name' => 'Organic Khaki Heather',
+                'code' => '2A2E24',
+            ],
+            [
+                'name' => 'Mango Tango',
+                'code' => 'E65851',
+            ],
+            [
+                'name' => 'Twilight Purple',
+                'code' => '4D5EB0',
+            ],
+            [
+                'name' => 'Grey Marl',
+                'code' => 'D9D9D6',
+            ],
+            [
+                'name' => 'Indigo',
+                'code' => '13294B',
+            ],
+            [
+                'name' => 'Antique Rose',
+                'code' => 'A6646E',
+            ],
+            [
+                'name' => 'Driftwood',
+                'code' => '847361',
+            ],
+            [
+                'name' => 'Heather Black',
+                'code' => '030D18',
+            ],
+            [
+                'name' => 'Solid Black',
+                'code' => '1D1D1B',
+            ],
+            [
+                'name' => 'Solid White',
+                'code' => 'FFFFFF',
+            ],
+            [
+                'name' => 'Light Yellow',
+                'code' => 'FCEC7F',
+            ],
+            [
+                'name' => 'Light Grey Heather',
+                'code' => 'A6A9AA',
+            ],
         ];
         foreach ($colors as $color) {
             Color::create($color);

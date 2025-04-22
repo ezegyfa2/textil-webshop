@@ -43,6 +43,18 @@ function getThirdColor(colorName) {
 }
 
 
+
+
+
+var colors = '[';
+var colorNodes = document.querySelectorAll('.swatchsquare');
+for (colorNode of colorNodes) { 
+    if (colorNode.attributes.title.value != 'White') {
+        colors += "'" + colorNode.attributes.title.value + "',";
+    }
+}
+colors += ']';
+
 Skate Graffiti
 Mexican Skull
 Mariniere

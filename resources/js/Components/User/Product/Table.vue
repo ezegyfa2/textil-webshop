@@ -118,16 +118,18 @@
     </v-data-iterator>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import ImageBox from '@/Components/User/ImageBox.vue';
 import { addUnexpectedErrorNotification } from '@/Layouts/Notification/AddNotification';
 import { usePage, Link, router } from '@inertiajs/vue3';
 import { ref, computed, watch, onMounted } from 'vue';
+import { useGoTo } from 'vuetify';
 
-const props = defineProps<{
+const props = defineProps({
     filters: Object,
-}>();
+});
 
+const goTo = useGoTo();
 const page = usePage();
 const products = ref([]);
 const selectedPage = ref(1);
@@ -154,6 +156,10 @@ function prevPage() {
         throw new Error('Minimum page number exceeded');
     }
 }
+
+watch(() => selectedPage.value, {
+    goTo(0);
+});
 
 watch(() => props.filters, () => {
     fetch();

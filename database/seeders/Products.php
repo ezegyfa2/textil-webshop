@@ -3,6 +3,7 @@
 return [
 [
     "GI64800 SOFTSTYLE® ADULT DOUBLE PIQUÉ POLO",
+    0,
     177,
     "GILDAN",
     "Tricouri Polo",
@@ -66,6 +67,7 @@ return [
 ],
 [
     "GI8800 DRYBLEND® ADULT JERSEY POLO",
+    2,
     203,
     "GILDAN",
     "Tricouri Polo",
@@ -123,6 +125,7 @@ return [
 ],
 [
     "GIL64800 SOFTSTYLE® LADIES' DOUBLE PIQUÉ POLO",
+    1,
     177,
     "GILDAN",
     "Tricouri Polo",
@@ -176,6 +179,7 @@ return [
 ],
 [
     "SO11338 SOL'S PASSION - WOMEN'S POLO SHIRT",
+    1,
     170,
     "SOL'S",
     "Tricouri Polo",
@@ -223,6 +227,7 @@ return [
 ],
 [
     "SO11342 SOL'S SUMMER II - MEN'S POLO SHIRT",
+    0,
     170,
     "SOL'S",
     "Tricouri Polo",
@@ -273,6 +278,7 @@ return [
 ],
 [
     "SO03566 SOL'S PLANET MEN - POLO SHIRT",
+    0,
     170,
     "SOL'S",
     "Tricouri Polo",
@@ -330,6 +336,7 @@ return [
 ],
 [
     "SO11376 SOL'S PRESCOTT WOMEN - POLO SHIRT",
+    1,
     170,
     "SOL'S",
     "Tricouri Polo",
@@ -375,6 +382,7 @@ return [
 ],
 [
     "SO11377 SOL'S PRESCOTT MEN - POLO SHIRT",
+    0,
     170,
     "SOL'S",
     "Tricouri Polo",
@@ -424,6 +432,7 @@ return [
 ],
 [
     "KA255 LADIES’ SHORT-SLEEVED PIQUÉ POLO SHIRT",
+    1,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -487,6 +496,7 @@ return [
 ],
 [
     "GI85800 PREMIUM COTTON® ADULT DOUBLE PIQUÉ POLO",
+    2,
     223,
     "GILDAN",
     "Tricouri Polo",
@@ -546,6 +556,7 @@ return [
 ],
 [
     "SO11346 SOL'S PERFECT MEN - POLO SHIRT",
+    0,
     180,
     "SOL'S",
     "Tricouri Polo",
@@ -604,6 +615,7 @@ return [
 ],
 [
     "SO11347 SOL'S PERFECT WOMEN - POLO SHIRT",
+    1,
     180,
     "SOL'S",
     "Tricouri Polo",
@@ -651,6 +663,7 @@ return [
 ],
 [
     "KA2025 MEN'S ORGANIC 180 PIQUÉ POLO SHIRT",
+    0,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -712,6 +725,7 @@ return [
 ],
 [
     "KA2026 LADIES' ORGANIC 180 PIQUÉ POLO SHIRT",
+    1,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -773,6 +787,7 @@ return [
 ],
 [
     "KA254 MEN'S SHORT-SLEEVED PIQUÉ POLO SHIRT",
+    0,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -835,6 +850,7 @@ return [
 ],
 [
     "KA262 MEN'S SHORT SLEEVED JERSEY POLO SHIRT",
+    0,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -893,6 +909,7 @@ return [
 ],
 [
     "KA263 LADIES' SHORT SLEEVED JERSEY POLO SHIRT",
+    1,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -951,6 +968,7 @@ return [
 ],
 [
     "SO11328 SOL'S STAR - MEN'S POLO SHIRT",
+    0,
     170,
     "SOL'S",
     "Tricouri Polo",
@@ -997,6 +1015,7 @@ return [
 ],
 [
     "SO11310 SOL'S PEOPLE - WOMEN'S POLO SHIRT",
+    1,
     210,
     "SOL'S",
     "Tricouri Polo",
@@ -1044,6 +1063,7 @@ return [
 ],
 [
     "SO11362 SOL'S SPRING II - MEN’S PIQUE POLO SHIRT",
+    0,
     210,
     "SOL'S",
     "Tricouri Polo",
@@ -1102,6 +1122,7 @@ return [
 ],
 [
     "WK209 LADIES’ SHORT-SLEEVED LONGLINE POLO SHIRT",
+    1,
     220,
     "DESIGNED TO WORK",
     "Tricouri Polo",
@@ -1163,6 +1184,7 @@ return [
 ],
 [
     "KA272 MEN'S 2 STRIPED SHORT SLEEVED POLOSHIRT",
+    0,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -1215,6 +1237,7 @@ return [
 ],
 [
     "KA273 LADIE'S 2 STRIPED SHORT SLEEVED POLOSHIRT",
+    1,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -1263,6 +1286,7 @@ return [
 ],
 [
     "KA257 LADIES’ LONG-SLEEVED PIQUÉ POLO SHIRT",
+    1,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -1326,6 +1350,7 @@ return [
 ],
 [
     "KA258 MEN'S TWO-TONE PIQUÉ POLO SHIRT",
+    0,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -1388,6 +1413,7 @@ return [
 ],
 [
     "KA259 LADIES’ TWO-TONE PIQUÉ POLO SHIRT",
+    1,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -1445,6 +1471,7 @@ return [
 ],
 [
     "KA242 LADIES' SHORT-SLEEVED POLO SHIRT",
+    1,
     220,
     "KARIBAN",
     "Tricouri Polo",
@@ -1502,6 +1529,7 @@ return [
 ],
 [
     "SO02083 SOL'S PERFECT LSL WOMEN - LONG-SLEEVE PIQUÉ POLO SHIRT",
+    1,
     180,
     "SOL'S",
     "Tricouri Polo",
@@ -1544,6 +1572,7 @@ return [
 ],
 [
     "SO02087 SOL'S PERFECT LSL MEN - LONG-SLEEVE PIQUÉ POLO SHIRT",
+    0,
     180,
     "SOL'S",
     "Tricouri Polo",
@@ -1590,6 +1619,7 @@ return [
 ],
 [
     "JP003 STRETCH TIPPED POLO",
+    2,
     200,
     "JUST POLOS",
     "Tricouri Polo",
@@ -1642,6 +1672,7 @@ return [
 ],
 [
     "KA241 MEN'S SHORT-SLEEVED POLO SHIRT",
+    0,
     220,
     "KARIBAN",
     "Tricouri Polo",
@@ -1704,6 +1735,7 @@ return [
 ],
 [
     "WK276 MEN'S LONG-SLEEVED POLO SHIRT (ex.KA276)",
+    0,
     200,
     "DESIGNED TO WORK",
     "Tricouri Polo",
@@ -1768,6 +1800,7 @@ return [
 ],
 [
     "WK277 LADIES' LONG-SLEEVED POLO SHIRT (ex.KA277)",
+    1,
     200,
     "DESIGNED TO WORK",
     "Tricouri Polo",
@@ -1827,6 +1860,7 @@ return [
 ],
 [
     "KA256 MEN'S LONG-SLEEVED PIQUÉ POLO SHIRT",
+    0,
     180,
     "KARIBAN",
     "Tricouri Polo",
@@ -1889,6 +1923,7 @@ return [
 ],
 [
     "KA223 MEN'S SHORT SLEEVE POLO SHIRT WITH MANDARIN COLLAR",
+    0,
     220,
     "KARIBAN",
     "Tricouri Polo",
@@ -1952,6 +1987,7 @@ return [
 ],
 [
     "WK270 MEN'S SHORT-SLEEVED CONTRASTING DAYTODAY POLO SHIRT (ex.KA270)",
+    0,
     220,
     "DESIGNED TO WORK",
     "Tricouri Polo",
@@ -2018,6 +2054,7 @@ return [
 ],
 [
     "WK271 LADIES' SHORT-SLEEVED CONTRASTING DAYTODAY POLO SHIRT (ex.KA271)",
+    1,
     220,
     "DESIGNED TO WORK",
     "Tricouri Polo",
@@ -2079,6 +2116,7 @@ return [
 ],
 [
     "KA251 LADIES' SHORT-SLEEVED POLO SHIRT",
+    1,
     220,
     "KARIBAN",
     "Tricouri Polo",
@@ -2135,6 +2173,7 @@ return [
 ],
 [
     "SO00577 SOL'S PASADENA MEN - POLO SHIRT",
+    0,
     200,
     "SOL'S",
     "Tricouri Polo",
@@ -2185,6 +2224,7 @@ return [
 ],
 [
     "SO00578 SOL'S PASADENA WOMEN - POLO SHIRT",
+    1,
     200,
     "SOL'S",
     "Tricouri Polo",
@@ -2231,6 +2271,7 @@ return [
 ],
 [
     "WK225 MEN'S SHORT SLEEVE STUD POLO SHIRT (ex.KA225)",
+    0,
     220,
     "DESIGNED TO WORK",
     "Tricouri Polo",
@@ -2299,6 +2340,7 @@ return [
 ],
 [
     "KA243 MEN'S LONG-SLEEVED POLO SHIRT",
+    0,
     220,
     "KARIBAN",
     "Tricouri Polo",
@@ -2361,6 +2403,7 @@ return [
 ],
 [
     "KA250 MEN'S SHORT-SLEEVED POLO SHIRT",
+    0,
     220,
     "KARIBAN",
     "Tricouri Polo",
@@ -2418,6 +2461,7 @@ return [
 ],
 [
     "KA239 MIKE - MEN'S SHORT-SLEEVED POLO SHIRT",
+    0,
     220,
     "KARIBAN",
     "Tricouri Polo",
@@ -2475,6 +2519,7 @@ return [
 ],
 [
     "KA240 BROOKE - LADIES' SHORT-SLEEVED POLO SHIRT",
+    1,
     220,
     "KARIBAN",
     "Tricouri Polo",
@@ -2532,6 +2577,7 @@ return [
 ],
 [
     "KV2206 MEN'S VINTAGE SHORT SLEEVE POLO SHIRT",
+    0,
     220,
     "KARIBAN",
     "Tricouri Polo",
@@ -2588,6 +2634,7 @@ return [
 ],
 [
     "KV2207 LADIES' VINTAGE SHORT SLEEVE POLO SHIRT",
+    1,
     220,
     "KARIBAN",
     "Tricouri Polo",
@@ -2644,6 +2691,7 @@ return [
 ],
 [
     "SO01708 SOL'S PHOENIX MEN - COTTON-ELASTANE POLO SHIRT",
+    0,
     220,
     "SOL'S",
     "Tricouri Polo",
@@ -2695,6 +2743,7 @@ return [
 ],
 [
     "PA378 HIGH NECK JACKET",
+    0,
     310,
     "PROACT",
     "Sport",
@@ -2760,6 +2809,7 @@ return [
 ],
 [
     "PA359 LADIES’ HOODED SWEATSHIRT",
+    1,
     310,
     "PROACT",
     "Sport",
@@ -2816,6 +2866,7 @@ return [
 ],
 [
     "PA233 DUAL-FABRIC SPORTS JACKET",
+    0,
     195,
     "PROACT",
     "Sport",
@@ -2880,6 +2931,7 @@ return [
 ],
 [
     "PA1008 MEN'S TROUSERS",
+    0,
     310,
     "PROACT",
     "Sport",
@@ -2952,6 +3004,7 @@ return [
 ],
 [
     "PA379 LADIES' HIGH NECK JACKET",
+    1,
     310,
     "PROACT",
     "Sport",
@@ -3012,6 +3065,7 @@ return [
 ],
 [
     "PA235 DUAL-FABRIC SLEEVELESS SPORTS JACKET",
+    2,
     195,
     "PROACT",
     "Sport",
@@ -3066,6 +3120,7 @@ return [
 ],
 [
     "PA1009 LADIES’ TROUSERS",
+    1,
     310,
     "PROACT",
     "Sport",
@@ -3131,6 +3186,7 @@ return [
 ],
 [
     "FHLV871 ADULT'S KNITTED TRACKSUIT TOP",
+    2,
     250,
     "FINDEN + HALES",
     "Sport",
@@ -3198,6 +3254,7 @@ return [
 ],
 [
     "PA369 ADULT TWO-TONE HOODED SWEATSHIRT",
+    2,
     280,
     "PROACT",
     "Sport",
@@ -3261,6 +3318,7 @@ return [
 ],
 [
     "PA380 UNISEX TWO-TONE ZIPPED HOODED FLEECE JACKET",
+    2,
     280,
     "PROACT",
     "Sport",
@@ -3325,6 +3383,7 @@ return [
 ],
 [
     "FHLV881 ADULT'S KNITTED TRACKSUIT PANTS",
+    2,
     null,
     "Sport",
     "Imbracaminte Unisex",
@@ -3391,6 +3450,7 @@ return [
 ],
 [
     "JC031 MEN'S COOL 1/2 ZIP SWEAT",
+    0,
     280,
     "JUST COOL",
     "Sport",
@@ -3443,6 +3503,7 @@ return [
 ],
 [
     "JC036 WOMEN'S COOL 1/2 ZIP SWEAT",
+    1,
     280,
     "JUST COOL",
     "Sport",
@@ -3495,6 +3556,7 @@ return [
 ],
 [
     "JC057 MEN'S COOL CONTRAST ZOODIE",
+    0,
     240,
     "JUST COOL",
     "Sport",
@@ -3548,9 +3610,10 @@ return [
 ],
 [
     "JC058 WOMEN'S COOL CONTRAST ZOODIE",
+    1,
     null,
+    "JUST COOL",
     "Sport",
-    "Imbracaminte De Femei",
     [
         "Poliester/Elastan"
     ],
@@ -3601,6 +3664,7 @@ return [
 ],
 [
     "PA390 ADULT ZIPPED TRACKSUIT JACKET",
+    2,
     200,
     "PROACT",
     "Sport",
@@ -3668,6 +3732,7 @@ return [
 ],
 [
     "PA1028 MEN'S SHORTS",
+    0,
     310,
     "PROACT",
     "Sport",
@@ -3702,6 +3767,7 @@ return [
 ],
 [
     "JC037 MENS COOL COWL NECK TOP",
+    0,
     210,
     "JUST COOL",
     "Sport",
@@ -3755,6 +3821,7 @@ return [
 ],
 [
     "JC038 WOMEN'S COOL COWL NECK TOP",
+    1,
     210,
     "JUST COOL",
     "Sport",
@@ -3808,6 +3875,7 @@ return [
 ],
 [
     "JC052 COOL URBAN FITNESS HOODIE",
+    0,
     240,
     "JUST COOL",
     "Sport",
@@ -3862,6 +3930,7 @@ return [
 ],
 [
     "JC082 MENS COOL TAPERED JOGPANT",
+    1,
     240,
     "JUST COOL",
     "Sport",
@@ -3907,6 +3976,7 @@ return [
 ],
 [
     "PA1022 ADULT FLEECE MULTISPORT BERMUDA SHORTS",
+    2,
     280,
     "PROACT",
     "Sport",
@@ -3976,6 +4046,7 @@ return [
 ],
 [
     "JC035 WOMEN'S COOL FLEX 1/2 ZIP TOP",
+    1,
     280,
     "JUST COOL",
     "Sport",
@@ -4028,6 +4099,7 @@ return [
 ],
 [
     "JC281 ACTIVE TRACKPANTS",
+    2,
     110,
     "JUST COOL",
     "Sport",
@@ -4080,6 +4152,7 @@ return [
 ],
 [
     "PA186 UNISEX LIGHTWEIGHT COTTON TRACKSUIT BOTTOMS",
+    2,
     190,
     "PROACT",
     "Sport",
@@ -4143,6 +4216,7 @@ return [
 ],
 [
     "PA017 MEN’S SPORTS BASE LAYER LEGGINGS",
+    0,
     200,
     "PROACT",
     "Sport",
@@ -4191,6 +4265,7 @@ return [
 ],
 [
     "PA005 ADULTS' LONG-SLEEVED BASE LAYER SPORTS T-SHIRT",
+    0,
     200,
     "PROACT",
     "Sport",
@@ -4246,6 +4321,7 @@ return [
 ],
 [
     "JC053 URBAN SLEEVEESS MUSCLE HOODIE",
+    0,
     240,
     "JUST COOL",
     "Sport",
@@ -4292,6 +4368,7 @@ return [
 ],
 [
     "JC072 MEN'S COOL JOG SHORT",
+    0,
     240,
     "JUST COOL",
     "Sport",
@@ -4336,6 +4413,7 @@ return [
 ],
 [
     "JC041 SUPERCOOL PERFORMANCE  POLO",
+    0,
     170,
     "JUST COOL",
     "Sport",
@@ -4386,6 +4464,7 @@ return [
 ],
 [
     "PA167 PERFORMANCE SHORTS",
+    0,
     120,
     "PROACT",
     "Sport",
@@ -4455,6 +4534,7 @@ return [
 ],
 [
     "JC232 ACTIVE RECYCLED BASELAYER",
+    2,
     160,
     "JUST COOL",
     "Sport",
@@ -4505,6 +4585,7 @@ return [
 ],
 [
     "PA154 SPORTS SHORTS",
+    0,
     100,
     "PROACT",
     "Sport",
@@ -4566,6 +4647,7 @@ return [
 ],
 [
     "JC074 WOMEN'S COOL JOG SHORT",
+    1,
     240,
     "JUST COOL",
     "Sport",
@@ -4611,6 +4693,7 @@ return [
 ],
 [
     "PA4017 MEN'S TECHNICAL LONG-SLEEVED T-SHIRT WITH UV PROTECTION",
+    0,
     160,
     "PROACT",
     "Sport",
@@ -4670,6 +4753,7 @@ return [
 ],
 [
     "PA482 MEN'S SHORT-SLEEVED POLO SHIRT",
+    0,
     145,
     "PROACT",
     "Sport",
@@ -4725,6 +4809,7 @@ return [
 ],
 [
     "SO01689 SOL'S SANDY - MEN'S SWIM SHORTS",
+    0,
     90,
     "SOL'S",
     "Sport",
@@ -4772,6 +4857,7 @@ return [
 ],
 [
     "PA133 MEN'S RUNNING SHORTS",
+    0,
     70,
     "PROACT",
     "Sport",
@@ -4822,6 +4908,7 @@ return [
 ],
 [
     "PA483 LADIES' SHORT-SLEEVED POLO SHIRT",
+    1,
     145,
     "PROACT",
     "Sport",
@@ -4867,6 +4954,7 @@ return [
 ],
 [
     "SO01179 SOL'S PERFORMER WOMEN - SPORTS POLO SHIRT",
+    1,
     180,
     "SOL'S",
     "Sport",
@@ -4912,6 +5000,7 @@ return [
 ],
 [
     "SO01180 SOL'S PERFORMER MEN - SPORTS POLO SHIRT",
+    0,
     180,
     "SOL'S",
     "Sport",
@@ -4957,6 +5046,7 @@ return [
 ],
 [
     "PA151 MEN'S JERSEY SPORTS SHORTS",
+    0,
     185,
     "PROACT",
     "Sport",
@@ -5018,6 +5108,7 @@ return [
 ],
 [
     "PA4007 ADULT SURF T-SHIRT",
+    2,
     160,
     "PROACT",
     "Sport",
@@ -5073,6 +5164,7 @@ return [
 ],
 [
     "JC043 CONTRAST COOL POLO",
+    0,
     140,
     "JUST COOL",
     "Sport",
@@ -5124,6 +5216,7 @@ return [
 ],
 [
     "JC288 WOMEN'S RECYCLED TECH SHORTS",
+    1,
     240,
     "JUST COOL",
     "Sport",
@@ -5181,6 +5274,7 @@ return [
 ],
 [
     "PA4009 LADIES' SPORTS TANK TOP",
+    1,
     135,
     "PROACT",
     "Sport",
@@ -5222,6 +5316,7 @@ return [
 ],
 [
     "PA134 LADIES' RUNNING SHORTS",
+    1,
     70,
     "PROACT",
     "Sport",
@@ -5267,6 +5362,7 @@ return [
 ],
 [
     "PA4010 ADULT TRIBLEND TWO-TONE SPORTS SHORT-SLEEVED T-SHIRT",
+    2,
     130,
     "PROACT",
     "Sport",
@@ -5324,6 +5420,7 @@ return [
 ],
 [
     "PA1021 LADIES' SPORTS SHORTS",
+    1,
     210,
     "PROACT",
     "Sport",
@@ -5380,6 +5477,7 @@ return [
 ],
 [
     "PA4023 ADULTS' BICOLOUR SHORT-SLEEVED T-SHIRT",
+    2,
     140,
     "PROACT",
     "Sport",
@@ -5414,6 +5512,7 @@ return [
 ],
 [
     "PA4011 TRIBLEND SPORTS T-SHIRT",
+    2,
     130,
     "PROACT",
     "Sport",
@@ -5477,6 +5576,7 @@ return [
 ],
 [
     "JC012 WOMEN'S LONG SLEEVE COOL T",
+    1,
     140,
     "JUST COOL",
     "Sport",
@@ -5529,6 +5629,7 @@ return [
 ],
 [
     "JC110 COOL URBAN FITNESS T",
+    2,
     160,
     "JUST COOL",
     "Sport",
@@ -5585,6 +5686,7 @@ return [
 ],
 [
     "SO01221 SOL'S SAN SIRO 2 - ADULTS' BASIC SHORTS",
+    0,
     140,
     "SOL'S",
     "Sport",
@@ -5635,6 +5737,7 @@ return [
 ],
 [
     "PA444 LADIES' LONG-SLEEVED SPORTS T-SHIRT",
+    1,
     140,
     "PROACT",
     "Sport",
@@ -5687,6 +5790,7 @@ return [
 ],
 [
     "PA443 MEN'S LONG-SLEEVED SPORTS T-SHIRT",
+    0,
     140,
     "PROACT",
     "Sport",
@@ -5738,6 +5842,7 @@ return [
 ],
 [
     "JC027 WOMEN'S COOL SMOOTH WORKOUT VEST",
+    1,
     135,
     "JUST COOL",
     "Sport",
@@ -5786,6 +5891,7 @@ return [
 ],
 [
     "PA038 TECHNICAL TREKKING SOCKS",
+    2,
     null,
     "Sport",
     "Imbracaminte Unisex",
@@ -5812,6 +5918,7 @@ return [
 ],
 [
     "PA4021 LADIES' TRIBLEND ROUND NECK SPORTS T-SHIRT",
+    1,
     130,
     "PROACT",
     "Sport",
@@ -5845,6 +5952,7 @@ return [
 ],
 [
     "PA101 SPORTS SHORTS",
+    0,
     140,
     "PROACT",
     "Sport",
@@ -5906,6 +6014,7 @@ return [
 ],
 [
     "JC004 COOL URBAN T",
+    2,
     155,
     "JUST COOL",
     "Sport",
@@ -5962,6 +6071,7 @@ return [
 ],
 [
     "JC013 WOMEN'S OPEN BACK T",
+    1,
     140,
     "JUST COOL",
     "Sport",
@@ -6013,6 +6123,7 @@ return [
 ],
 [
     "PA035 TECHNICAL SPORTS SOCKS",
+    2,
     null,
     "Sport",
     "Imbracaminte Unisex",
@@ -6039,6 +6150,7 @@ return [
 ],
 [
     "PA4012 MEN'S RECYCLED ROUND NECK SPORTS T-SHIRT",
+    0,
     130,
     "PROACT",
     "Sport",
@@ -6101,6 +6213,7 @@ return [
 ],
 [
     "JC205 WOMEN'S RECYCLED COOL T",
+    1,
     140,
     "JUST COOL",
     "Sport",
@@ -6158,6 +6271,7 @@ return [
 ],
 [
     "PA042 MULTI-SPORTS REVERSIBLE BIB",
+    2,
     90,
     "PROACT",
     "Sport",
@@ -6195,6 +6309,7 @@ return [
 ],
 [
     "PA031 LADIES' SEAMLESS ADJUSTABLE SPORTS BRA",
+    1,
     295,
     "PROACT",
     "Sport",
@@ -6230,6 +6345,7 @@ return [
 ],
 [
     "PA4013 LADIES' RECYCLED ROUND NECK SPORTS T-SHIRT",
+    1,
     130,
     "PROACT",
     "Sport",
@@ -6287,6 +6403,7 @@ return [
 ],
 [
     "PA1024 LADIES' GAME SHORTS",
+    1,
     140,
     "PROACT",
     "Sport",
@@ -6345,6 +6462,7 @@ return [
 ],
 [
     "SO02071 SOL'S SPORTY LSL MEN - LONG-SLEEVE SPORTS T-SHIRT",
+    0,
     140,
     "SOL'S",
     "Sport",
@@ -6391,6 +6509,7 @@ return [
 ],
 [
     "PA439 LADIES' SHORT-SLEEVED SPORTS T-SHIRT",
+    1,
     140,
     "PROACT",
     "Sport",
@@ -6448,6 +6567,7 @@ return [
 ],
 [
     "SO01159 SOL'S SPORTY WOMEN - RAGLAN-SLEEVED T-SHIRT",
+    1,
     140,
     "SOL'S",
     "Sport",
@@ -6498,6 +6618,7 @@ return [
 ],
 [
     "SO11939 SOL'S SPORTY - RAGLAN SLEEVED T-SHIRT",
+    0,
     140,
     "SOL'S",
     "Sport",
@@ -6556,9 +6677,10 @@ return [
 ],
 [
     "PA015 STRIPED SPORTS SOCKS",
+    0,
     null,
+    "PROACT",
     "Sport",
-    "Imbracaminte De Barbati",
     [
         "Poliester/Elastan"
     ],
@@ -6603,9 +6725,10 @@ return [
 ],
 [
     "PA016 PLAIN SPORTS SOCKS",
+    0,
     null,
+    "PROACT",
     "Sport",
-    "Imbracaminte De Barbati",
     [
         "Poliester/Elastan"
     ],
@@ -6650,6 +6773,7 @@ return [
 ],
 [
     "PA033 MICROFIBRE TRAINER SOCKS - PACK OF 3 PAIRS",
+    2,
     null,
     "Sport",
     "Imbracaminte Unisex",
@@ -6675,6 +6799,7 @@ return [
 ],
 [
     "PA0300 TWO-TONE SPORTS SOCKS",
+    2,
     null,
     "Sport",
     "Imbracaminte Unisex",
@@ -6702,6 +6827,7 @@ return [
 ],
 [
     "SO02117 SOL'S SPORTY TT WOMEN - SPORTS TANK TOP",
+    1,
     140,
     "SOL'S",
     "Sport",
@@ -6750,6 +6876,7 @@ return [
 ],
 [
     "SO02995 SOL'S SPRINT - UNISEX SPORT T-SHIRT",
+    2,
     130,
     "SOL'S",
     "Sport",
@@ -6803,6 +6930,7 @@ return [
 ],
 [
     "PA043 MULTI-SPORTS LIGHT MESH BIB",
+    2,
     90,
     "PROACT",
     "Sport",
@@ -6838,6 +6966,7 @@ return [
 ],
 [
     "PA037 BAMBOO SPORTS TRAINER SOCKS",
+    2,
     null,
     "Sport",
     "Imbracaminte Unisex",
@@ -6859,6 +6988,7 @@ return [
 ],
 [
     "PA032 SEAMLESS SPORTS SLEEVES",
+    2,
     null,
     "Sport",
     "Imbracaminte Unisex",
@@ -6886,6 +7016,7 @@ return [
 ],
 [
     "PA678 ELASTIC ARMBAND WITH LABEL HOLDER",
+    2,
     null,
     "Sport",
     "Imbracaminte Unisex",
@@ -6909,6 +7040,7 @@ return [
 ],
 [
     "PA049 TOWELING MULTISPORT WRISTBAND",
+    2,
     660,
     "PROACT",
     "Sport",
@@ -6934,6 +7066,7 @@ return [
 ],
 [
     "KP304 OUTDOOR HAT",
+    2,
     85,
     "K-UP",
     "Sepci",
@@ -6970,6 +7103,7 @@ return [
 ],
 [
     "KP908 FLEXFIT® CAP - 5 PANELS",
+    2,
     300,
     "K-UP",
     "Sepci",
@@ -7001,6 +7135,7 @@ return [
 ],
 [
     "SO03999 SOL'S BUCKET NYLON",
+    2,
     125,
     "SOL'S",
     "Sepci",
@@ -7033,6 +7168,7 @@ return [
 ],
 [
     "KP911 CLASSIC TRUCKER CAP - 5 PANELS",
+    2,
     300,
     "K-UP",
     "Sepci",
@@ -7063,6 +7199,7 @@ return [
 ],
 [
     "WKP122 NEON WINTER CAP - 6 PANELS (ex.KP122)",
+    2,
     180,
     "DESIGNED TO WORK",
     "Sepci",
@@ -7091,6 +7228,7 @@ return [
 ],
 [
     "KP601 DUCKBILL HAT",
+    2,
     280,
     "K-UP",
     "Sepci",
@@ -7122,6 +7260,7 @@ return [
 ],
 [
     "KP611 PANAMA STRAW HAT",
+    2,
     430,
     "K-UP",
     "Sepci",
@@ -7155,6 +7294,7 @@ return [
 ],
 [
     "KP605 SUMMER DUCKBILL HAT",
+    2,
     180,
     "K-UP",
     "Sepci",
@@ -7186,6 +7326,7 @@ return [
 ],
 [
     "WKP123 NEON CAP - 5 PANELS (ex.KP123)",
+    2,
     180,
     "DESIGNED TO WORK",
     "Sepci",
@@ -7216,6 +7357,7 @@ return [
 ],
 [
     "KP023 VOYAGER - BUCKET HAT",
+    2,
     290,
     "K-UP",
     "Sepci",
@@ -7241,6 +7383,7 @@ return [
 ],
 [
     "KP427 THINSULATE™ POLAR-FLEECE GLOVES",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -7270,6 +7413,7 @@ return [
 ],
 [
     "KP206 FOLDABLE SPORTS CAP",
+    2,
     110,
     "K-UP",
     "Sepci",
@@ -7300,6 +7444,7 @@ return [
 ],
 [
     "KP067 CHECHE SCARF",
+    2,
     55,
     "K-UP",
     "Sepci",
@@ -7327,6 +7472,7 @@ return [
 ],
 [
     "KP118 PERFORATED PANEL CAP - 6 PANELS",
+    2,
     142,
     "K-UP",
     "Sepci",
@@ -7357,6 +7503,7 @@ return [
 ],
 [
     "KP426 THINSULATE™ KNITTED GLOVES",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -7386,6 +7533,7 @@ return [
 ],
 [
     "KP142 URBAN TRUCKER CAP - 6 PANELS",
+    2,
     170,
     "K-UP",
     "Sepci",
@@ -7416,6 +7564,7 @@ return [
 ],
 [
     "KP109 6 PANELS FASHION CAP",
+    2,
     255,
     "K-UP",
     "Sepci",
@@ -7443,6 +7592,7 @@ return [
 ],
 [
     "KP435 KNITTED SCARF",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -7468,6 +7618,7 @@ return [
 ],
 [
     "NE03204 TOM - 6-PANEL CAP",
+    2,
     220,
     "NEOBLU",
     "Sepci",
@@ -7489,6 +7640,7 @@ return [
 ],
 [
     "KP173 BASEBALL CAP - 6 PANELS",
+    2,
     260,
     "K-UP",
     "Sepci",
@@ -7508,6 +7660,7 @@ return [
 ],
 [
     "KP160 SNAPBACK CAP - 6 PANELS",
+    2,
     300,
     "K-UP",
     "Sepci",
@@ -7535,6 +7688,7 @@ return [
 ],
 [
     "KP159 SNAPBACK CAP - 5 PANELS",
+    2,
     300,
     "K-UP",
     "Sepci",
@@ -7565,6 +7719,7 @@ return [
 ],
 [
     "KP613 BRAIDED PANAMA HAT",
+    2,
     430,
     "K-UP",
     "Sepci",
@@ -7598,6 +7753,7 @@ return [
 ],
 [
     "KP163 SPORTS CAP",
+    2,
     140,
     "K-UP",
     "Sepci",
@@ -7628,6 +7784,7 @@ return [
 ],
 [
     "KP207 SPORTS CAP",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -7655,6 +7812,7 @@ return [
 ],
 [
     "KP434 FRINGED SCARF",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -7680,6 +7838,7 @@ return [
 ],
 [
     "KP540 FAIR ISLE KNIT BEANIE",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -7707,6 +7866,7 @@ return [
 ],
 [
     "KP134 6 PANELS ORGANIC COTTON CAP",
+    2,
     300,
     "K-UP",
     "Sepci",
@@ -7741,6 +7901,7 @@ return [
 ],
 [
     "KP135 5 PANELS ORGANIC COTTON CAP",
+    2,
     300,
     "K-UP",
     "Sepci",
@@ -7775,6 +7936,7 @@ return [
 ],
 [
     "KP165 6 PANELS VINTAGE CAP",
+    2,
     260,
     "K-UP",
     "Sepci",
@@ -7805,6 +7967,7 @@ return [
 ],
 [
     "KP420 SPORTS GLOVES",
+    2,
     280,
     "K-UP",
     "Sepci",
@@ -7836,6 +7999,7 @@ return [
 ],
 [
     "KP425 TOUCH SCREEN KNITTED GLOVES",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -7865,6 +8029,7 @@ return [
 ],
 [
     "KP113 TRUCKER FLAT PEAK CAP - 6 PANELS",
+    2,
     255,
     "K-UP",
     "Sepci",
@@ -7890,6 +8055,7 @@ return [
 ],
 [
     "KP550 KNITTED BEANIE",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -7918,6 +8084,7 @@ return [
 ],
 [
     "KP552 SAILOR'S BEANIE",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -7946,6 +8113,7 @@ return [
 ],
 [
     "KP610 CLASSIC STRAW HAT",
+    2,
     700,
     "K-UP",
     "Sepci",
@@ -7979,6 +8147,7 @@ return [
 ],
 [
     "KP612 RETRO PANAMA - STYLE STRAW HAT",
+    2,
     560,
     "K-UP",
     "Sepci",
@@ -8012,6 +8181,7 @@ return [
 ],
 [
     "KP158 TRUCKER CAP - 6 PANELS",
+    2,
     260,
     "K-UP",
     "Sepci",
@@ -8046,6 +8216,7 @@ return [
 ],
 [
     "KP876 FLEECE GLOVES",
+    2,
     200,
     "K-UP",
     "Sepci",
@@ -8077,6 +8248,7 @@ return [
 ],
 [
     "KP558 BEANIE WITH CHRISTMAS PATTERNS",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -8096,6 +8268,7 @@ return [
 ],
 [
     "KP198 CAP IN ORGANIC COTTON WITH CONTRASTING SANDWICH PEAK - 6 PANELS",
+    2,
     260,
     "K-UP",
     "Sepci",
@@ -8118,6 +8291,7 @@ return [
 ],
 [
     "KP050 CUBA - 3 PANELS CAP",
+    2,
     280,
     "K-UP",
     "Sepci",
@@ -8142,6 +8316,7 @@ return [
 ],
 [
     "KP878 FLEECE SCARF",
+    2,
     200,
     "K-UP",
     "Sepci",
@@ -8169,6 +8344,7 @@ return [
 ],
 [
     "KP110 OEKOTEX CERTIFIED TRUCKER CAP",
+    2,
     240,
     "K-UP",
     "Sepci",
@@ -8202,6 +8378,7 @@ return [
 ],
 [
     "KP533 BEANIE WITH TURN-UP",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -8230,6 +8407,7 @@ return [
 ],
 [
     "KP881 POLAR FLEECE NECKWARMER",
+    2,
     240,
     "K-UP",
     "Sepci",
@@ -8257,6 +8435,7 @@ return [
 ],
 [
     "KP875 FLEECE NECKWARMER",
+    2,
     200,
     "K-UP",
     "Sepci",
@@ -8284,6 +8463,7 @@ return [
 ],
 [
     "KP108 OEKOTEX CERTIFIED 6 PANELS CAP",
+    2,
     350,
     "K-UP",
     "Sepci",
@@ -8317,6 +8497,7 @@ return [
 ],
 [
     "KP133 OKEOTEX CERTIFIED 5 PANELS CAP",
+    2,
     350,
     "K-UP",
     "Sepci",
@@ -8350,6 +8531,7 @@ return [
 ],
 [
     "WKP145 OEKOTEX CERTIFIED 6 PANELS CAP WITH SANDWICH PEAK (ex.KP145)",
+    2,
     240,
     "DESIGNED TO WORK",
     "Sepci",
@@ -8383,6 +8565,7 @@ return [
 ],
 [
     "KP877 FLEECE HAT",
+    2,
     200,
     "K-UP",
     "Sepci",
@@ -8410,6 +8593,7 @@ return [
 ],
 [
     "SO01668 SOL'S BUBBLE - FIVE PANEL MESH CAP",
+    2,
     160,
     "SOL'S",
     "Sepci",
@@ -8431,6 +8615,7 @@ return [
 ],
 [
     "KP045 RACING - TWO-TONE 6 PANEL CAP",
+    2,
     260,
     "K-UP",
     "Sepci",
@@ -8455,6 +8640,7 @@ return [
 ],
 [
     "SO01196 SOL'S ACE - UNISEX VISOR",
+    2,
     150,
     "SOL'S",
     "Sepci",
@@ -8477,6 +8663,7 @@ return [
 ],
 [
     "KP518 FLEECE LINED BEANIE",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -8504,6 +8691,7 @@ return [
 ],
 [
     "KP119 6 PANELS EASY-PRINT CAP",
+    2,
     260,
     "K-UP",
     "Sepci",
@@ -8529,6 +8717,7 @@ return [
 ],
 [
     "KP121 FLEECE-LINED NECKWARMER",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -8554,6 +8743,7 @@ return [
 ],
 [
     "KP060 HAVANA - 3 PANELS CAP",
+    2,
     250,
     "K-UP",
     "Sepci",
@@ -8578,6 +8768,7 @@ return [
 ],
 [
     "KP880 POLAR FLEECE HEADBAND",
+    2,
     240,
     "K-UP",
     "Sepci",
@@ -8605,6 +8796,7 @@ return [
 ],
 [
     "KP057 SPORTS SUN VISOR",
+    2,
     175,
     "K-UP",
     "Sepci",
@@ -8630,6 +8822,7 @@ return [
 ],
 [
     "SO88112 SOL'S SERPICO 55 - UNISEX FLEECE HAT",
+    2,
     220,
     "SOL'S",
     "Sepci",
@@ -8654,6 +8847,7 @@ return [
 ],
 [
     "SO01664 SOL'S PITTSBURGH - SOLID-COLOUR BEANIE WITH CUFFED DESIGN",
+    2,
     null,
     "Sepci",
     "Imbracaminte Unisex",
@@ -8676,6 +8870,7 @@ return [
 ],
 [
     "KA101 ORGANIC BATH TOWEL",
+    2,
     450,
     "KARIBAN",
     "Prosoape",
@@ -8704,6 +8899,7 @@ return [
 ],
 [
     "KA102 ORGANIC BEACH TOWEL",
+    2,
     450,
     "KARIBAN",
     "Prosoape",
@@ -8732,6 +8928,7 @@ return [
 ],
 [
     "KA108 SPORTS TOWEL",
+    2,
     450,
     "KARIBAN",
     "Prosoape",
@@ -8762,6 +8959,7 @@ return [
 ],
 [
     "KA111 BEACH TOWEL",
+    2,
     450,
     "KARIBAN",
     "Prosoape",
@@ -8792,6 +8990,7 @@ return [
 ],
 [
     "KA112 HAND TOWEL",
+    2,
     450,
     "KARIBAN",
     "Prosoape",
@@ -8822,6 +9021,7 @@ return [
 ],
 [
     "KA113 BATH TOWEL",
+    2,
     450,
     "KARIBAN",
     "Prosoape",
@@ -8852,6 +9052,7 @@ return [
 ],
 [
     "KA118 BEACH TOWEL",
+    2,
     400,
     "KARIBAN",
     "Prosoape",
@@ -8882,6 +9083,7 @@ return [
 ],
 [
     "KA121 STRIPED BEACH TOWEL",
+    2,
     400,
     "KARIBAN",
     "Prosoape",
@@ -8912,6 +9114,7 @@ return [
 ],
 [
     "KA128 FOUTA TOWEL",
+    2,
     340,
     "KARIBAN",
     "Prosoape",
@@ -8939,6 +9142,7 @@ return [
 ],
 [
     "KA132 STRIPED FRINGED FOUTA",
+    2,
     380,
     "KARIBAN",
     "Prosoape",
@@ -8966,6 +9170,7 @@ return [
 ],
 [
     "KA133 VINTAGE FOUTA",
+    2,
     250,
     "KARIBAN",
     "Prosoape",
@@ -8993,6 +9198,7 @@ return [
 ],
 [
     "KA134 STRIPED FOUTA",
+    2,
     145,
     "KARIBAN",
     "Prosoape",
@@ -9020,6 +9226,7 @@ return [
 ],
 [
     "PA573 MICROFIBRE SPORTS TOWEL",
+    2,
     190,
     "PROACT",
     "Prosoape",
@@ -9047,6 +9254,7 @@ return [
 ],
 [
     "PA578 REFRESHING SPORTS TOWEL",
+    2,
     155,
     "PROACT",
     "Prosoape",
@@ -9075,6 +9283,7 @@ return [
 ],
 [
     "PA579 WAFFLE GOLF TOWEL",
+    2,
     290,
     "PROACT",
     "Prosoape",
@@ -9102,6 +9311,7 @@ return [
 ],
 [
     "PA580 MICROFIBRE SPORTS TOWEL",
+    2,
     190,
     "PROACT",
     "Prosoape",
@@ -9130,6 +9340,7 @@ return [
 ],
 [
     "PA581 UNISEX HOODED TOWELLING PONCHO",
+    2,
     300,
     "PROACT",
     "Prosoape",
@@ -9155,6 +9366,7 @@ return [
 ],
 [
     "SO01208 SOL'S ATOLL 30 - MICROFIBRE TOWEL",
+    2,
     190,
     "SOL'S",
     "Prosoape",
@@ -9182,6 +9394,7 @@ return [
 ],
 [
     "SO01209 SOL'S ATOLL 50 - MICROFIBRE TOWEL",
+    2,
     190,
     "SOL'S",
     "Prosoape",
@@ -9209,6 +9422,7 @@ return [
 ],
 [
     "SO01210 SOL'S ATOLL 70 - MICROFIBRE TOWEL",
+    2,
     190,
     "SOL'S",
     "Prosoape",
@@ -9236,6 +9450,7 @@ return [
 ],
 [
     "SO02936 SOL'S ATOLL 100 - MICROFIBRE TOWEL",
+    2,
     190,
     "SOL'S",
     "Prosoape",
@@ -9263,6 +9478,7 @@ return [
 ],
 [
     "OLH400 OLIMA CLASSIC HOTEL TOWEL",
+    2,
     400,
     "OLIMA",
     "Prosoape",
@@ -9289,6 +9505,7 @@ return [
 ],
 [
     "OLH500 OLIMA HIGH-QUALITY HOTEL TOWEL",
+    2,
     500,
     "OLIMA",
     "Prosoape",
@@ -9315,6 +9532,7 @@ return [
 ],
 [
     "OLP600 PREMIUM TOWEL (ex.OLH600)",
+    2,
     600,
     "OLIMA",
     "Prosoape",
@@ -9350,6 +9568,7 @@ return [
 ],
 [
     "OLSUB350 OLIMA SUBLIMATION TOWEL",
+    2,
     350,
     "OLIMA",
     "Prosoape",
@@ -9374,6 +9593,7 @@ return [
 ],
 [
     "OLXMAS01 OLIMA CHRISTMAS TOWEL - PINES",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9395,6 +9615,7 @@ return [
 ],
 [
     "OLXMAS02 OLIMA CHRISTMAS TOWEL - CHRISTMAS TREES",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9416,6 +9637,7 @@ return [
 ],
 [
     "OLXMAS03 OLIMA CHRISTMAS TOWEL - MERRY CHRISTMAS ORNAMENTS",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9437,6 +9659,7 @@ return [
 ],
 [
     "OLXMAS04 OLIMA CHRISTMAS TOWEL - SNOWFLAKE",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9458,6 +9681,7 @@ return [
 ],
 [
     "OLXMAS05 OLIMA CHRISTMAS TOWEL - SNOWMAN",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9479,6 +9703,7 @@ return [
 ],
 [
     "OLXMAS06 OLIMA CHRISTMAS TOWEL - CHRISTMAS SHOPPING",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9500,6 +9725,7 @@ return [
 ],
 [
     "OLXMAS07 OLIMA CHRISTMAS TOWEL - MERRY CHRISTMAS STARS",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9521,6 +9747,7 @@ return [
 ],
 [
     "OLXMAS09 OLIMA CHRISTMAS TOWEL - MERRY CHRISTMAS",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9542,6 +9769,7 @@ return [
 ],
 [
     "OLXMAS10 OLIMA CHRISTMAS TOWEL - REINDEER",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9563,6 +9791,7 @@ return [
 ],
 [
     "OLXMAS11 OLIMA CHRISTMAS TOWEL - PINE FOREST",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9584,6 +9813,7 @@ return [
 ],
 [
     "OLXMAS12 OLIMA CHRISTMAS TOWEL - LET IT SNOW SNOWMAN",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9605,6 +9835,7 @@ return [
 ],
 [
     "OLXMAS13 OLIMA CHRISTMAS TOWEL - LET IT SNOW FLAKES",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9626,6 +9857,7 @@ return [
 ],
 [
     "OLXMAS14 OLIMA CHRISTMAS TOWEL - SNOWFLAKES I",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9647,6 +9879,7 @@ return [
 ],
 [
     "OLXMAS15 OLIMA CHRISTMAS TOWEL - SNOWFLAKES II",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9668,6 +9901,7 @@ return [
 ],
 [
     "OLXMAS16 OLIMA CHRISTMAS TOWEL - CHRISTMAS SOCKS",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9689,6 +9923,7 @@ return [
 ],
 [
     "OLXMAS17 OLIMA CHRISTMAS TOWEL - SANTA CLAUS",
+    2,
     530,
     "OLIMA",
     "Prosoape",
@@ -9710,6 +9945,7 @@ return [
 ],
 [
     "NS405 ECO-FRIENDLY KIDS’ FULL ZIP HOODED SWEATSHIRT",
+    3,
     350,
     "NATIVE SPIRIT",
     "Copii",
@@ -9760,6 +9996,7 @@ return [
 ],
 [
     "PA238 KID'S HOODED BODYWARMER",
+    3,
     35,
     "PROACT",
     "Copii",
@@ -9800,6 +10037,7 @@ return [
 ],
 [
     "KA6115 KIDS' LIGHTWEIGHT SLEEVELESS PADDED JACKET",
+    3,
     35,
     "KARIBAN",
     "Copii",
@@ -9842,6 +10080,7 @@ return [
 ],
 [
     "KA455 KIDS FULL ZIP HOODED SWEATSHIRT",
+    3,
     300,
     "KARIBAN",
     "Copii",
@@ -9891,6 +10130,7 @@ return [
 ],
 [
     "NS404 KIDS’ HOODED SWEATSHIRT",
+    3,
     350,
     "NATIVE SPIRIT",
     "Copii",
@@ -9937,6 +10177,7 @@ return [
 ],
 [
     "AWJH014J KIDS CAMO HOODIE",
+    3,
     280,
     "JUST HOODS",
     "Copii",
@@ -9985,6 +10226,7 @@ return [
 ],
 [
     "FHLV873 KID'S KNITTED TRACKSUIT TOP",
+    3,
     250,
     "FINDEN + HALES",
     "Copii",
@@ -10037,6 +10279,7 @@ return [
 ],
 [
     "KA4014 UNISEX KIDS CONTRAST PATTERNED HOODED SWEATSHIRT",
+    2,
     280,
     "KARIBAN",
     "Copii",
@@ -10074,6 +10317,7 @@ return [
 ],
 [
     "PA1013 KID'S MULTISPORT JOGGING PANTS WITH POCKETS",
+    3,
     280,
     "PROACT",
     "Copii",
@@ -10128,6 +10372,7 @@ return [
 ],
 [
     "KA486 KIDS' FULL ZIP HOODED SWEATSHIRT",
+    3,
     280,
     "KARIBAN",
     "Copii",
@@ -10176,6 +10421,7 @@ return [
 ],
 [
     "NS702 KIDS’ JOGGING TROUSERS",
+    3,
     300,
     "NATIVE SPIRIT",
     "Copii",
@@ -10219,6 +10465,7 @@ return [
 ],
 [
     "KA498 KIDS TEDDY FLEECE JACKET",
+    3,
     320,
     "KARIBAN",
     "Copii",
@@ -10266,6 +10513,7 @@ return [
 ],
 [
     "AWJH043J KIDS VARSITY JACKET (ex.AWJH43J)",
+    3,
     330,
     "JUST HOODS",
     "Copii",
@@ -10318,6 +10566,7 @@ return [
 ],
 [
     "KA4029 KIDS' ECO-FRIENDLY HOODED SWEATSHIRT",
+    3,
     280,
     "KARIBAN",
     "Copii",
@@ -10373,6 +10622,7 @@ return [
 ],
 [
     "PA391 KIDS ZIPPED TRACKSUIT JACKET",
+    3,
     200,
     "PROACT",
     "Copii",
@@ -10425,6 +10675,7 @@ return [
 ],
 [
     "KA701 KID'S JOGGING BOTTOMS",
+    3,
     300,
     "KARIBAN",
     "Copii",
@@ -10476,6 +10727,7 @@ return [
 ],
 [
     "FHLV883 KID'S KNITTED TRACKSUIT PANTS",
+    3,
     250,
     "FINDEN + HALES",
     "Copii",
@@ -10527,6 +10779,7 @@ return [
 ],
 [
     "AWJH201J KIDS ORGANIC HOODIE",
+    3,
     280,
     "JUST HOODS",
     "Copii",
@@ -10584,6 +10837,7 @@ return [
 ],
 [
     "NS403 KIDS' ECO-FRIENDLY ROUND NECK SWEATSHIRT",
+    3,
     350,
     "NATIVE SPIRIT",
     "Copii",
@@ -10632,6 +10886,7 @@ return [
 ],
 [
     "SO03576 SOL'S STELLAR KID - HOODED SWEATSHIRT",
+    3,
     280,
     "SOL'S",
     "Copii",
@@ -10663,6 +10918,7 @@ return [
 ],
 [
     "JC087J GIRLS COOL ATHLETIC PANT",
+    3,
     280,
     "JUST COOL",
     "Copii",
@@ -10707,6 +10963,7 @@ return [
 ],
 [
     "KA9012 KIDS’ CREW NECK CHRISTMAS JUMPER",
+    3,
     260,
     "KARIBAN",
     "Copii",
@@ -10739,6 +10996,7 @@ return [
 ],
 [
     "AWJH050J KIDS ZOODIE",
+    3,
     280,
     "JUST HOODS",
     "Copii",
@@ -10793,6 +11051,7 @@ return [
 ],
 [
     "PA199 KIDS' TRACKSUIT BOTTOMS",
+    3,
     210,
     "PROACT",
     "Copii",
@@ -10851,6 +11110,7 @@ return [
 ],
 [
     "AWJH003J KIDS VARSITY HOODIE (ex.AWJH03J)",
+    3,
     280,
     "JUST HOODS",
     "Copii",
@@ -10904,6 +11164,7 @@ return [
 ],
 [
     "PA1041 KIDS TRAINING PANT",
+    3,
     200,
     "PROACT",
     "Copii",
@@ -10947,6 +11208,7 @@ return [
 ],
 [
     "AWJH006J KIDS SPORTS POLYESTER HOODIE",
+    3,
     200,
     "JUST HOODS",
     "Copii",
@@ -10993,6 +11255,7 @@ return [
 ],
 [
     "SO04238 SOL'S CONDOR KIDS - KIDS' HOODED SWEATSHIRT",
+    3,
     280,
     "SOL'S",
     "Copii",
@@ -11043,6 +11306,7 @@ return [
 ],
 [
     "SO00589 SOL'S NORTH KIDS - ZIPPED FLEECE JACKET",
+    3,
     300,
     "SOL'S",
     "Copii",
@@ -11091,6 +11355,7 @@ return [
 ],
 [
     "PA1023 KID'S FLEECE MULTISPORT BERMUDA SHORTS",
+    3,
     280,
     "PROACT",
     "Copii",
@@ -11142,6 +11407,7 @@ return [
 ],
 [
     "KA920 KIDS' FULL ZIP FLEECE JACKET",
+    3,
     300,
     "KARIBAN",
     "Copii",
@@ -11190,6 +11456,7 @@ return [
 ],
 [
     "AWJH001J KIDS HOODIE (ex.AWJH01J)",
+    3,
     280,
     "JUST HOODS",
     "Copii",
@@ -11248,6 +11515,7 @@ return [
 ],
 [
     "AWJH072J KIDS CUFFED JOGPANTS",
+    3,
     280,
     "JUST HOODS",
     "Copii",
@@ -11288,6 +11556,7 @@ return [
 ],
 [
     "GIB18500 HEAVY BLEND™ YOUTH HOODED SWEATSHIRT",
+    3,
     271,
     "GILDAN",
     "Copii",
@@ -11341,6 +11610,7 @@ return [
 ],
 [
     "SO04239 SOL'S COLUMBIA KIDS - KIDS' SWEATSHIRT",
+    3,
     280,
     "SOL'S",
     "Copii",
@@ -11390,6 +11660,7 @@ return [
 ],
 [
     "PA4018 CHILDREN’S LONG-SLEEVED TECHNICAL T-SHIRT WITH UV PROTECTION",
+    3,
     160,
     "PROACT",
     "Copii",
@@ -11444,6 +11715,7 @@ return [
 ],
 [
     "AWJH030J KIDS AWDIS SWEAT (ex.AWJH30J)",
+    3,
     280,
     "JUST HOODS",
     "Copii",
@@ -11502,6 +11774,7 @@ return [
 ],
 [
     "KA475 KIDS' CREW NECK SWEATSHIRT",
+    3,
     280,
     "KARIBAN",
     "Copii",
@@ -11554,6 +11827,7 @@ return [
 ],
 [
     "KXACTION CHILDREN’S SAFETY VEST (CO2 NEUTRAL) - ACTION",
+    3,
     120,
     "KORNTEX",
     "Copii",
@@ -11590,6 +11864,7 @@ return [
 ],
 [
     "PA4008 KID'S SURF T-SHIRT",
+    3,
     160,
     "PROACT",
     "Copii",
@@ -11635,6 +11910,7 @@ return [
 ],
 [
     "PA046 KID'S REVERSIBLE RUGBY BIB",
+    3,
     160,
     "PROACT",
     "Copii",
@@ -11667,6 +11943,7 @@ return [
 ],
 [
     "JC080J KIDS COOL SHORT",
+    3,
     140,
     "JUST COOL",
     "Copii",
@@ -11710,6 +11987,7 @@ return [
 ],
 [
     "PA153 KIDS' JERSEY SPORTS SHORTS",
+    3,
     185,
     "PROACT",
     "Copii",
@@ -11767,6 +12045,7 @@ return [
 ],
 [
     "KA831 BABIES' SHORT-SLEEVED BODYSUIT",
+    3,
     180,
     "KARIBAN",
     "Copii",
@@ -11824,6 +12103,7 @@ return [
 ],
 [
     "GIB18000 HEAVY BLEND™ YOUTH CREWNECK SWEATSHIRT",
+    3,
     271,
     "GILDAN",
     "Copii",
@@ -11876,6 +12156,7 @@ return [
 ],
 [
     "PR149 CHILDREN’S BIB APRON",
+    3,
     195,
     "PREMIER",
     "Copii",
@@ -11909,6 +12190,7 @@ return [
 ],
 [
     "PA4001 KIDS' SHORT SLEEVE JERSEY",
+    3,
     135,
     "PROACT",
     "Copii",
@@ -11960,6 +12242,7 @@ return [
 ],
 [
     "JC040J KIDS COOL POLO",
+    3,
     140,
     "JUST COOL",
     "Copii",
@@ -12010,6 +12293,7 @@ return [
 ],
 [
     "SO01400 SOL'S MILES KIDS - ROUND NECK STRIPED T-SHIRT",
+    3,
     150,
     "SOL'S",
     "Copii",
@@ -12069,6 +12353,7 @@ return [
 ],
 [
     "PA1014 KIDS' LEGGINGS",
+    3,
     190,
     "PROACT",
     "Copii",
@@ -12120,6 +12405,7 @@ return [
 ],
 [
     "SO01401 SOL'S MILES BABY - STRIPED BODYSUIT",
+    3,
     180,
     "SOL'S",
     "Copii",
@@ -12169,9 +12455,10 @@ return [
 ],
 [
     "SO70101 SOL'S RIDER - KIDS' 600D POLYESTER RUCKSACK",
+    3,
     null,
+    "SOL'S",
     "Copii",
-    "Imbracaminte De Copii",
     [
         "100% Poliester"
     ],
@@ -12199,6 +12486,7 @@ return [
 ],
 [
     "JT100J THE 100 KIDS T",
+    3,
     140,
     "JUST TS",
     "Copii",
@@ -12252,6 +12540,7 @@ return [
 ],
 [
     "JC201J KIDS RECYCLED COOL  T",
+    3,
     140,
     "JUST COOL",
     "Copii",
@@ -12304,6 +12593,7 @@ return [
 ],
 [
     "PA103 KIDS' SPORTS SHORTS",
+    3,
     140,
     "PROACT",
     "Copii",
@@ -12350,6 +12640,7 @@ return [
 ],
 [
     "KA362 GIRLS' VEST",
+    3,
     220,
     "KARIBAN",
     "Copii",
@@ -12390,6 +12681,7 @@ return [
 ],
 [
     "NS307 KID'S T-SHIRT",
+    3,
     155,
     "NATIVE SPIRIT",
     "Copii",
@@ -12442,6 +12734,7 @@ return [
 ],
 [
     "KP882 KIDS' FLEECE GLOVES",
+    3,
     null,
     "Copii",
     "Imbracaminte Unisex",
@@ -12471,6 +12764,7 @@ return [
 ],
 [
     "PA048 KID'S REVERSIBLE MULTISPORT BIB",
+    3,
     90,
     "PROACT",
     "Copii",
@@ -12503,6 +12797,7 @@ return [
 ],
 [
     "SO02947 SOL'S IMPERIAL LSL KIDS - LONG SLEEVE T-SHIRT",
+    3,
     190,
     "SOL'S",
     "Copii",
@@ -12548,6 +12843,7 @@ return [
 ],
 [
     "SO01166 SOL'S SPORTY KIDS - RAGLAN-SLEEVED T-SHIRT",
+    3,
     140,
     "SOL'S",
     "Copii",
@@ -12592,6 +12888,7 @@ return [
 ],
 [
     "SO03578 SOL'S PIONEER - KIDS’ ROUND-NECK FITTED JERSEY T-SHIRT",
+    3,
     175,
     "SOL'S",
     "Copii",
@@ -12638,6 +12935,7 @@ return [
 ],
 [
     "GIB8800 DRYBLEND® YOUTH JERSEY POLO SHIRT",
+    3,
     203,
     "GILDAN",
     "Copii",
@@ -12685,6 +12983,7 @@ return [
 ],
 [
     "SO00583 SOL'S BAMBINO - BABY BODYSUIT",
+    3,
     180,
     "SOL'S",
     "Copii",
@@ -12732,6 +13031,7 @@ return [
 ],
 [
     "KA832 BABIES' COTTON BIB",
+    3,
     180,
     "KARIBAN",
     "Copii",
@@ -12760,6 +13060,7 @@ return [
 ],
 [
     "SO11770 SOL'S IMPERIAL KIDS - ROUND NECK T-SHIRT",
+    3,
     190,
     "SOL'S",
     "Copii",
@@ -12818,6 +13119,7 @@ return [
 ],
 [
     "KA3027IC KIDS' BIO150IC CREW NECK T-SHIRT",
+    3,
     140,
     "KARIBAN",
     "Copii",
@@ -12875,6 +13177,7 @@ return [
 ],
 [
     "SO03580 SOL'S CRUSADER KIDS - ROUND-NECK FITTED JERSEY T-SHIRT",
+    3,
     150,
     "SOL'S",
     "Copii",
@@ -12932,6 +13235,7 @@ return [
 ],
 [
     "GIB65000 SOFTSTYLE® MIDWEIGHT YOUTH T-SHIRT",
+    3,
     183,
     "GILDAN",
     "Copii",
@@ -12983,6 +13287,7 @@ return [
 ],
 [
     "KXKW SAFETY VEST FOR KIDS \"AARHUS\"",
+    3,
     120,
     "KORNTEX",
     "Copii",
@@ -13018,6 +13323,7 @@ return [
 ],
 [
     "PA047 KID'S LIGHTWEIGHT MESH MULTISPORT BIB",
+    3,
     90,
     "PROACT",
     "Copii",
@@ -13050,9 +13356,10 @@ return [
 ],
 [
     "KP143 KIDS' TRUCKER MESH CAP - 5 PANELS",
+    3,
     null,
+    "K-UP",
     "Copii",
-    "Imbracaminte De Copii",
     [
         "5 paneluri"
     ],
@@ -13080,6 +13387,7 @@ return [
 ],
 [
     "SO01211 SOL'S BABIB - BABY BIB",
+    3,
     180,
     "SOL'S",
     "Copii",
@@ -13104,6 +13412,7 @@ return [
 ],
 [
     "SO01183 SOL'S REGENT FIT KIDS - ROUND NECK T-SHIRT",
+    3,
     150,
     "SOL'S",
     "Copii",
@@ -13162,9 +13471,10 @@ return [
 ],
 [
     "KP524 KNITTED KIDS' BEANIE",
+    3,
     null,
+    "K-UP",
     "Copii",
-    "Imbracaminte De Copii",
     [
         "100% Acril"
     ],
@@ -13181,6 +13491,7 @@ return [
 ],
 [
     "KP042 ORLANDO KIDS - KIDS' 6 PANELS CAP",
+    3,
     260,
     "K-UP",
     "Copii",
@@ -13205,6 +13516,7 @@ return [
 ],
 [
     "SO11981 SOL'S CHERRY - GIRLS' T-SHIRT",
+    3,
     150,
     "SOL'S",
     "Copii",
@@ -13264,6 +13576,7 @@ return [
 ],
 [
     "SO88111 SOL'S SUNNY KIDS - FIVE PANELS CAP",
+    3,
     180,
     "SOL'S",
     "Copii",
@@ -13285,6 +13598,7 @@ return [
 ],
 [
     "GIB5000 HEAVY COTTON™ YOUTH T-SHIRT",
+    3,
     180,
     "GILDAN",
     "Copii",
@@ -13337,6 +13651,7 @@ return [
 ],
 [
     "GIP5100 HEAVY COTTON™ TODDLER T-SHIRT",
+    3,
     180,
     "GILDAN",
     "Copii",
@@ -13389,6 +13704,7 @@ return [
 ],
 [
     "GIB64000 SOFTSTYLE® YOUTH T-SHIRT",
+    3,
     153,
     "GILDAN",
     "Copii",
@@ -13442,6 +13758,7 @@ return [
 ],
 [
     "SO11970 SOL'S REGENT KIDS - ROUND NECK T-SHIRT",
+    3,
     150,
     "SOL'S",
     "Copii",
@@ -13501,6 +13818,7 @@ return [
 ],
 [
     "GIB3000 LIGHT COTTON YOUTH T-SHIRT",
+    3,
     159,
     "GILDAN",
     "Copii",
@@ -13545,6 +13863,7 @@ return [
 ],
 [
     "KP041 FIRST KIDS - KIDS' 5 PANEL CAP",
+    3,
     155,
     "K-UP",
     "Copii",
@@ -13570,6 +13889,7 @@ return [
 ],
 [
     "SO04021 SOL'S STREAM BW WOMEN - LIGHTWEIGHT BODYWARMER",
+    0,
     280,
     "SOL'S",
     "Veste",
@@ -13613,6 +13933,7 @@ return [
 ],
 [
     "KA6172 MEN'S QUILTED BODYWARMER",
+    0,
     60,
     "KARIBAN",
     "Veste",
@@ -13666,6 +13987,7 @@ return [
 ],
 [
     "KA6173 LADIES' QUILTED BODYWARMER",
+    1,
     60,
     "KARIBAN",
     "Veste",
@@ -13715,6 +14037,7 @@ return [
 ],
 [
     "KA679 RECORD - FLEECE LINED BODYWARMER",
+    2,
     null,
     "Veste",
     "Imbracaminte Unisex",
@@ -13767,6 +14090,7 @@ return [
 ],
 [
     "WK6148 MEN'S DAYTODAY GILET (ex.KA6148)",
+    0,
     190,
     "DESIGNED TO WORK",
     "Veste",
@@ -13824,6 +14148,7 @@ return [
 ],
 [
     "WK6149 LADIES' DAYTODAY GILET (ex.KA6149)",
+    1,
     190,
     "DESIGNED TO WORK",
     "Veste",
@@ -13877,6 +14202,7 @@ return [
 ],
 [
     "SO01171 SOL'S SKATE - UNISEX LINED WINDBREAKER",
+    2,
     null,
     "Windbreakers",
     "Imbracaminte Unisex",
@@ -13925,6 +14251,7 @@ return [
 ],
 [
     "SO46000 SOL'S MISTRAL - JERSEY-LINED WATER REPELLENT WINDBREAKER",
+    2,
     null,
     "Windbreakers",
     "Imbracaminte Unisex",
@@ -13973,6 +14300,7 @@ return [
 ],
 [
     "KA632 EAGLE II - LINED WINDBREAKER",
+    2,
     null,
     "Windbreakers",
     "Imbracaminte Unisex",
@@ -14038,9 +14366,10 @@ return [
 ],
 [
     "KA687 EAGLE - LINED WINDBREAKER",
+    0,
     null,
+    "KARIBAN",
     "Windbreakers",
-    "Imbracaminte De Barbati",
     [
         "100% Poliamida"
     ],
@@ -14097,6 +14426,7 @@ return [
 ],
 [
     "KA616 UNLINED WINDBREAKER",
+    2,
     70,
     "KARIBAN",
     "Windbreaker",
@@ -14161,6 +14491,7 @@ return [
 ],
 [
     "SO32000 SOL'S SURF - UNISEX WATER REPELLENT WINDBREAKER",
+    2,
     null,
     "Windbreakers",
     "Imbracaminte Unisex",
@@ -14212,6 +14543,7 @@ return [
 ],
 [
     "GILWR800 HAMMER LADIES WINDWEAR JACKET",
+    1,
     70,
     "GILDAN",
     "Windbreakers",
@@ -14267,6 +14599,7 @@ return [
 ],
 [
     "KA9102 FULL ZIP MICROFLEECE JACKET",
+    2,
     180,
     "KARIBAN",
     "Polare & Softshell",
@@ -14333,6 +14666,7 @@ return [
 ],
 [
     "KA906 MELODIE - LADIES' MICROFLEECE GILET",
+    1,
     280,
     "KARIBAN",
     "Polare & Softshell",
@@ -14391,6 +14725,7 @@ return [
 ],
 [
     "KA913 LUCA - MEN'S MICROFLEECE GILET",
+    0,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -14448,6 +14783,7 @@ return [
 ],
 [
     "SO02093 SOL'S NORMAN MEN - PLAIN FLEECE JACKET",
+    0,
     220,
     "SOL'S",
     "Polare & Softshell",
@@ -14494,6 +14830,7 @@ return [
 ],
 [
     "SO02094 SOL'S NORMAN WOMEN - PLAIN FLEECE JACKET",
+    1,
     220,
     "SOL'S",
     "Polare & Softshell",
@@ -14536,6 +14873,7 @@ return [
 ],
 [
     "KA907 MAUREEN - LADIES' FULL ZIP MICROFLEECE JACKET",
+    1,
     280,
     "KARIBAN",
     "Polare & Softshell",
@@ -14604,6 +14942,7 @@ return [
 ],
 [
     "KA911 FALCO - FULL ZIP MICROFLEECE JACKET",
+    2,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -14671,6 +15010,7 @@ return [
 ],
 [
     "KA940 UNISEX MICROFLEECE ELASTICATED JACKET",
+    2,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -14732,6 +15072,7 @@ return [
 ],
 [
     "SO54500 SOL'S NORTH WOMEN - ZIPPED FLEECE JACKET",
+    1,
     300,
     "SOL'S",
     "Polare & Softshell",
@@ -14778,6 +15119,7 @@ return [
 ],
 [
     "SO55000 SOL'S NORTH MEN - ZIPPED FLEECE JACKET",
+    0,
     300,
     "SOL'S",
     "Polare & Softshell",
@@ -14840,6 +15182,7 @@ return [
 ],
 [
     "KA912 ENZO - ZIP NECK MICROFLEECE JACKET",
+    2,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -14901,6 +15244,7 @@ return [
 ],
 [
     "PR803 MEN'S 'ARTISAN' FLEECE GILET",
+    0,
     260,
     "PREMIER",
     "Polare & Softshell",
@@ -14948,6 +15292,7 @@ return [
 ],
 [
     "PR804 WOMEN'S 'ARTISAN' FLEECE GILET",
+    1,
     260,
     "PREMIER",
     "Polare & Softshell",
@@ -14995,6 +15340,7 @@ return [
 ],
 [
     "SO56000 SOL'S NESS - FLEECE 1/4 ZIP SWEATSHIRT",
+    2,
     300,
     "SOL'S",
     "Polare & Softshell",
@@ -15051,6 +15397,7 @@ return [
 ],
 [
     "SO55500 SOL'S NORDIC - MEN’S TWO-COLOUR ZIPPED FLEECE JACKET",
+    0,
     300,
     "SOL'S",
     "Polare & Softshell",
@@ -15096,6 +15443,7 @@ return [
 ],
 [
     "SO02887 SOL'S RACE BW MEN - SOFTSHELL BODYWARMER",
+    0,
     280,
     "SOL'S",
     "Polare & Softshell",
@@ -15145,6 +15493,7 @@ return [
 ],
 [
     "SO02888 SOL'S RACE BW WOMEN - SOFTSHELL BODYWARMER",
+    1,
     280,
     "SOL'S",
     "Polare & Softshell",
@@ -15190,6 +15539,7 @@ return [
 ],
 [
     "RETRA628 ABLAZE MEN'S PRINTABLE SOFTSHELL",
+    0,
     265,
     "REGATTA",
     "Polare & Softshell",
@@ -15246,6 +15596,7 @@ return [
 ],
 [
     "RETRA629 ABLAZE WOMEN'S PRINTABLE SOFTSHELL",
+    1,
     265,
     "REGATTA",
     "Polare & Softshell",
@@ -15302,9 +15653,10 @@ return [
 ],
 [
     "PR698 WOMEN'S LONG LENGTH KNITTED CARDIGAN",
+    1,
     null,
+    "PREMIER",
     "Imbracaminte Profesionala",
-    "Imbracaminte De Femei",
     [
         "Bumbac/Acril"
     ],
@@ -15364,6 +15716,7 @@ return [
 ],
 [
     "KA516 LONG-SLEEVED WASHED OXFORD COTTON SHIRT",
+    0,
     135,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -15431,6 +15784,7 @@ return [
 ],
 [
     "KA509 LADIES’ DENIM SHIRT",
+    1,
     160,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -15490,6 +15844,7 @@ return [
 ],
 [
     "KA512 MEN’S DENIM SHIRT",
+    0,
     160,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -15548,6 +15903,7 @@ return [
 ],
 [
     "NN610 'ENERGIZED' WOMEN’S ONNA-STRETCH JOGGER PANT",
+    1,
     210,
     "ONNA",
     "Imbracaminte Profesionala",
@@ -15591,6 +15947,7 @@ return [
 ],
 [
     "SO90011 SOL'S GOLDEN MEN - V-NECK KNITTED CARDIGAN",
+    0,
     280,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -15638,6 +15995,7 @@ return [
 ],
 [
     "SO90012 SOL'S GOLDEN WOMEN - V-NECK KNITTED CARDIGAN",
+    1,
     280,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -15684,6 +16042,7 @@ return [
 ],
 [
     "KA518 LADIES' LONG-SLEEVED DENIM SHIRT",
+    1,
     150,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -15749,6 +16108,7 @@ return [
 ],
 [
     "KA519 MEN'S LONG-SLEEVED DENIM SHIRT",
+    0,
     150,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -15814,6 +16174,7 @@ return [
 ],
 [
     "SO02102 SOL'S BRODY MEN - HERRINGBONE SHIRT",
+    0,
     125,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -15863,6 +16224,7 @@ return [
 ],
 [
     "SO02103 SOL'S BRODY WOMEN - HERRINGBONE SHIRT",
+    1,
     125,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -15908,6 +16270,7 @@ return [
 ],
 [
     "KA537 LONG-SLEEVED NON-IRON SHIRT",
+    0,
     115,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -15980,6 +16343,7 @@ return [
 ],
 [
     "KA538 LADIES' LONG-SLEEVED NON-IRON SHIRT",
+    1,
     115,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -16047,6 +16411,7 @@ return [
 ],
 [
     "KA961 MEN'S FULL ZIP CARDIGAN",
+    0,
     290,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -16109,6 +16474,7 @@ return [
 ],
 [
     "SO00548 SOL'S GORDON MEN ZIPPED KNITTED CARDIGAN",
+    0,
     280,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -16158,6 +16524,7 @@ return [
 ],
 [
     "SO00550 SOL'S GORDON WOMEN ZIPPED KNITTED CARDIGAN",
+    1,
     280,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -16203,6 +16570,7 @@ return [
 ],
 [
     "KA540 LADIES' SHORT-SLEEVED NON-IRON SHIRT",
+    1,
     115,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -16270,6 +16638,7 @@ return [
 ],
 [
     "KXTAC TACTICAL SAFETY VEST \"BONN\"",
+    0,
     220,
     "KORNTEX",
     "Imbracaminte Profesionala",
@@ -16289,6 +16658,7 @@ return [
 ],
 [
     "PK507 LADIES' LONG-SLEEVED TWILL SHIRT",
+    1,
     130,
     "KARIBAN PREMIUM",
     "Imbracaminte Profesionala",
@@ -16350,6 +16720,7 @@ return [
 ],
 [
     "PK502 MEN'S PINPOINT OXFORD LONG-SLEEVED SHIRT",
+    0,
     150,
     "KARIBAN PREMIUM",
     "Imbracaminte Profesionala",
@@ -16413,6 +16784,7 @@ return [
 ],
 [
     "PR823 MEN'S 'ARTISAN' FLEECE JACKET",
+    0,
     260,
     "PREMIER",
     "Polare & Softshell",
@@ -16445,6 +16817,7 @@ return [
 ],
 [
     "PR824 WOMEN'S 'ARTISAN' FLEECE JACKET",
+    1,
     260,
     "PREMIER",
     "Polare & Softshell",
@@ -16475,6 +16848,7 @@ return [
 ],
 [
     "KA424 MEN’S 2-LAYER SOFTSHELL JACKET",
+    0,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -16540,6 +16914,7 @@ return [
 ],
 [
     "KA425 LADIES’ 2-LAYER SOFTSHELL JACKET",
+    1,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -16605,6 +16980,7 @@ return [
 ],
 [
     "LE800 MEN’S 3-LAYER SOFTSHELL JACKET",
+    0,
     300,
     "LEGEND CLASSICS",
     "Polare & Softshell",
@@ -16668,6 +17044,7 @@ return [
 ],
 [
     "LE801 WOMEN’S 3-LAYER SOFTSHELL JACKET",
+    1,
     300,
     "LEGEND CLASSICS",
     "Polare & Softshell",
@@ -16731,6 +17108,7 @@ return [
 ],
 [
     "SO01194 SOL'S RACE WOMEN - SOFTSHELL ZIP JACKET",
+    1,
     280,
     "SOL'S",
     "Polare & Softshell",
@@ -16778,6 +17156,7 @@ return [
 ],
 [
     "SO01195 SOL'S RACE MEN - SOFTSHELL ZIP JACKET",
+    0,
     280,
     "SOL'S",
     "Polare & Softshell",
@@ -16828,6 +17207,7 @@ return [
 ],
 [
     "RETRF603 THORNLY MEN - FULL ZIP MARL FLEECE",
+    0,
     220,
     "REGATTA",
     "Polare & Softshell",
@@ -16881,6 +17261,7 @@ return [
 ],
 [
     "KA917 MARCO - FULL ZIP  MICROFLEECE JACKET",
+    2,
     350,
     "KARIBAN",
     "Polare & Softshell",
@@ -16944,6 +17325,7 @@ return [
 ],
 [
     "KA403 MEN'S SOFTSHELL BODYWARMER",
+    0,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -16998,6 +17380,7 @@ return [
 ],
 [
     "KA404 LADIES' SOFTSHELL BODYWARMER",
+    1,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -17052,6 +17435,7 @@ return [
 ],
 [
     "KA400 LADIES' SOFTSHELL JACKET",
+    1,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -17115,6 +17499,7 @@ return [
 ],
 [
     "KA401 SOFTSHELL JACKET",
+    0,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -17177,6 +17562,7 @@ return [
 ],
 [
     "SO46601 SOL'S RALLYE MEN - SLEEVELESS SOFTSHELL JACKET",
+    0,
     340,
     "SOL'S",
     "Polare & Softshell",
@@ -17227,6 +17613,7 @@ return [
 ],
 [
     "SO46801 SOL'S RALLYE WOMEN - SLEEVELESS SOFTSHELL JACKET",
+    1,
     340,
     "SOL'S",
     "Polare & Softshell",
@@ -17272,6 +17659,7 @@ return [
 ],
 [
     "KA9107 LADIES' FULL ZIP HEATHER JACKET",
+    1,
     345,
     "KARIBAN",
     "Polare & Softshell",
@@ -17336,6 +17724,7 @@ return [
 ],
 [
     "RETRA654 REID - SOFTSHELL",
+    0,
     270,
     "REGATTA",
     "Polare & Softshell",
@@ -17399,6 +17788,7 @@ return [
 ],
 [
     "PA365 MEN'S HEATHER HOODED JACKET",
+    0,
     345,
     "PROACT",
     "Polare & Softshell",
@@ -17463,6 +17853,7 @@ return [
 ],
 [
     "PA366 LADIES’ HEATHER HOODED JACKET",
+    1,
     345,
     "PROACT",
     "Polare & Softshell",
@@ -17527,6 +17918,7 @@ return [
 ],
 [
     "KA413 MEN'S DETACHABLE HOODED SOFTSHELL JACKET",
+    0,
     340,
     "KARIBAN",
     "Polare & Softshell",
@@ -17591,6 +17983,7 @@ return [
 ],
 [
     "KA414 LADIES' DETACHABLE HOODED SOFTSHELL JACKET",
+    1,
     340,
     "KARIBAN",
     "Polare & Softshell",
@@ -17655,6 +18048,7 @@ return [
 ],
 [
     "WK450 UNISEX 3-LAYER TWO-TONE BIONIC SOFTSHELL JACKET",
+    2,
     300,
     "DESIGNED TO WORK",
     "Polare & Softshell",
@@ -17724,6 +18118,7 @@ return [
 ],
 [
     "SO04042 SOL'S FURY",
+    2,
     440,
     "SOL'S",
     "Polare & Softshell",
@@ -17773,6 +18168,7 @@ return [
 ],
 [
     "KA422 UNISEX 3-LAYER SOFTSHELL HOODED JACKET WITH REMOVABLE SLEEVES",
+    2,
     300,
     "KARIBAN",
     "Polare & Softshell",
@@ -17846,6 +18242,7 @@ return [
 ],
 [
     "RETRA625 HI-VIS PRO 3 LAYER SOFTSHELL",
+    2,
     310,
     "REGATTA",
     "Polare & Softshell",
@@ -17900,6 +18297,7 @@ return [
 ],
 [
     "KA650 MEN'S HOODED SOFTSHELL LINED PARKA",
+    0,
     480,
     "KARIBAN",
     "Polare & Softshell",
@@ -17963,6 +18361,7 @@ return [
 ],
 [
     "KA651 LADIES’ HOODED SOFTSHELL LINED PARKA",
+    1,
     480,
     "KARIBAN",
     "Polare & Softshell",
@@ -18022,6 +18421,7 @@ return [
 ],
 [
     "GI12000 DRYBLEND® ADULT CREWNECK SWEATSHIRT",
+    2,
     305,
     "GILDAN",
     "Hanorace",
@@ -18074,6 +18474,7 @@ return [
 ],
 [
     "AWJH030 AWDIS SWEAT",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -18146,6 +18547,7 @@ return [
 ],
 [
     "KA474 CREW NECK SWEATSHIRT",
+    2,
     280,
     "KARIBAN",
     "Hanorace",
@@ -18213,6 +18615,7 @@ return [
 ],
 [
     "AWJH030F WOMEN'S AWDIS SWEAT",
+    1,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -18270,6 +18673,7 @@ return [
 ],
 [
     "SO47101 SOL'S SNAKE - UNISEX HOODED SWEATSHIRT",
+    2,
     280,
     "SOL'S",
     "Hanorace",
@@ -18329,6 +18733,7 @@ return [
 ],
 [
     "SO03814 SOL'S COLUMBIA - UNISEX ROUND-NECK SWEATSHIRT",
+    2,
     280,
     "SOL'S",
     "Hanorace",
@@ -18391,6 +18796,7 @@ return [
 ],
 [
     "KA4041 UNISEX HOODIE SWEATSHIRT",
+    2,
     280,
     "KARIBAN",
     "Hanorace",
@@ -18453,6 +18859,7 @@ return [
 ],
 [
     "GI18500 HEAVY BLEND™ ADULT HOODED SWEATSHIRT",
+    2,
     271,
     "GILDAN",
     "Hanorace",
@@ -18521,6 +18928,7 @@ return [
 ],
 [
     "GISF500 SOFTSTYLE® MIDWEIGHT FLEECE ADULT HOODIE",
+    2,
     285,
     "GILDAN",
     "Hanorace",
@@ -18589,6 +18997,7 @@ return [
 ],
 [
     "AWJH016 WOMEN'S CROPPED HOODIE",
+    1,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -18648,6 +19057,7 @@ return [
 ],
 [
     "KA473 LADIES’ HOODED SWEATSHIRT",
+    1,
     280,
     "KARIBAN",
     "Hanorace",
@@ -18707,6 +19117,7 @@ return [
 ],
 [
     "AWJH001 COLLEGE HOODIE",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -18779,6 +19190,7 @@ return [
 ],
 [
     "AWJH001F WOMEN'S COLLEGE HOODIE",
+    1,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -18837,6 +19249,7 @@ return [
 ],
 [
     "KA476 MEN’S HOODED SWEATSHIRT",
+    0,
     280,
     "KARIBAN",
     "Hanorace",
@@ -18906,6 +19319,7 @@ return [
 ],
 [
     "AWJH017 SURF HOODIE",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -18964,6 +19378,7 @@ return [
 ],
 [
     "AWJH037 WOMEN'S CROPPED 1/4 ZIP SWEAT",
+    1,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -19020,6 +19435,7 @@ return [
 ],
 [
     "SO03815 SOL'S CONDOR - UNISEX HOODED SWEATSHIRT",
+    2,
     280,
     "SOL'S",
     "Hanorace",
@@ -19083,6 +19499,7 @@ return [
 ],
 [
     "AWJH305 WOMEN'S RELAXED HOODIE",
+    1,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -19131,6 +19548,7 @@ return [
 ],
 [
     "AWJH011 EPIC PRINT HOODIE",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -19193,6 +19611,7 @@ return [
 ],
 [
     "AWJH003 VARSITY HOODIE",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -19265,6 +19684,7 @@ return [
 ],
 [
     "KA480 MEN'S ORGANIC COTTON CREW NECK RAGLAN SLEEVE SWEATSHIRT",
+    0,
     300,
     "KARIBAN",
     "Hanorace",
@@ -19324,6 +19744,7 @@ return [
 ],
 [
     "KA481 LADIES’ ORGANIC COTTON CREW NECK RAGLAN SLEEVE SWEATSHIRT",
+    1,
     300,
     "KARIBAN",
     "Hanorace",
@@ -19384,6 +19805,7 @@ return [
 ],
 [
     "AWJH006 SPORTS POLYESTER HOODIE",
+    2,
     200,
     "JUST HOODS",
     "Hanorace",
@@ -19437,6 +19859,7 @@ return [
 ],
 [
     "AWJH230 ORGANIC SWEAT",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -19495,6 +19918,7 @@ return [
 ],
 [
     "GI12500 DRYBLEND® ADULT HOODED SWEATSHIRT",
+    2,
     305,
     "GILDAN",
     "Hanorace",
@@ -19548,6 +19972,7 @@ return [
 ],
 [
     "AWJH046 SOPHOMORE 1/4 ZIP SWEAT",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -19599,6 +20024,7 @@ return [
 ],
 [
     "KA4042 UNISEX FULL ZIP HOODIE",
+    2,
     280,
     "KARIBAN",
     "Hanorace",
@@ -19661,6 +20087,7 @@ return [
 ],
 [
     "AWJH050 ZOODIE",
+    0,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -19730,6 +20157,7 @@ return [
 ],
 [
     "AWJH050F WOMEN'S COLLEGE ZOODIE",
+    1,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -19787,6 +20215,7 @@ return [
 ],
 [
     "KA446 MEN'S CONTRAST HOODED SWEATSHIRT",
+    0,
     280,
     "KARIBAN",
     "Hanorace",
@@ -19855,6 +20284,7 @@ return [
 ],
 [
     "KA465 LADIES’ CONTRAST HOODED SWEATSHIRT",
+    1,
     280,
     "KARIBAN",
     "Hanorace",
@@ -19914,6 +20344,7 @@ return [
 ],
 [
     "SO01714 SOL'S STONE - UNISEX ZIP HOODIE",
+    2,
     260,
     "SOL'S",
     "Hanorace",
@@ -19969,6 +20400,7 @@ return [
 ],
 [
     "KA488 CREW NECK SWEATSHIRT",
+    0,
     300,
     "KARIBAN",
     "Hanorace",
@@ -20035,6 +20467,7 @@ return [
 ],
 [
     "AWJH066 SPORTS POLYESTER ZOODIE",
+    2,
     200,
     "JUST HOODS",
     "Hanorace",
@@ -20095,6 +20528,7 @@ return [
 ],
 [
     "AWJH004 ELECTRIC HOODIE",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -20148,6 +20582,7 @@ return [
 ],
 [
     "KA4027 MEN'S ECO-FRIENDLY HOODED SWEATSHIRT",
+    0,
     280,
     "KARIBAN",
     "Hanorace",
@@ -20215,6 +20650,7 @@ return [
 ],
 [
     "PR900 'ESSENTIAL' SHORT SLEEVE CHEF'S JACKET",
+    2,
     170,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -20270,6 +20706,7 @@ return [
 ],
 [
     "PR202 MEN'S SHORT SLEEVE POPLIN SHIRT",
+    0,
     105,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -20383,6 +20820,7 @@ return [
 ],
 [
     "PR127 'DOMAIN' CONTRAST DENIM BIB APRON",
+    2,
     275,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -20410,6 +20848,7 @@ return [
 ],
 [
     "PR300 WOMEN'S LONG SLEEVE POPLIN BLOUSE",
+    1,
     105,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -20502,6 +20941,7 @@ return [
 ],
 [
     "PR200 MEN'S LONG SLEEVE POPLIN SHIRT",
+    0,
     105,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -20615,6 +21055,7 @@ return [
 ],
 [
     "PR252 'MAXTON' CHECK MEN'S LONG SLEEVE SHIRT",
+    0,
     110,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -20671,6 +21112,7 @@ return [
 ],
 [
     "PR352 'MAXTON' CHECK WOMEN'S LONG SLEEVE SHIRT",
+    1,
     110,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -20722,6 +21164,7 @@ return [
 ],
 [
     "KA545 JOFREY - LONG-SLEEVED SHIRT",
+    0,
     110,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -20812,6 +21255,7 @@ return [
 ],
 [
     "KA549 JESSICA - LADIES' LONG-SLEEVED SHIRT",
+    1,
     110,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -20880,6 +21324,7 @@ return [
 ],
 [
     "KA543 MEN'S SHORT-SLEEVED COTTON POPLIN SHIRT",
+    0,
     125,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -20964,6 +21409,7 @@ return [
 ],
 [
     "KA544 LADIES' SHORT-SLEEVED COTTON POPLIN SHIRT",
+    1,
     125,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -21032,6 +21478,7 @@ return [
 ],
 [
     "PR901 'ESSENTIAL' LONG SLEEVE CHEF'S JACKET",
+    2,
     170,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -21087,6 +21534,7 @@ return [
 ],
 [
     "KA541 MEN'S LONG-SLEEVED COTTON POPLIN SHIRT",
+    0,
     125,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -21153,6 +21601,7 @@ return [
 ],
 [
     "KA542 LADIES' LONG-SLEEVED COTTON POPLIN SHIRT",
+    1,
     125,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -21221,6 +21670,7 @@ return [
 ],
 [
     "PR220 MEN'S LONG SLEEVE GINGHAM COTTON MICROCHECK SHIRT",
+    0,
     115,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -21284,6 +21734,7 @@ return [
 ],
 [
     "PR320 WOMEN'S LONG SLEEVE GINGHAM MICROCHECK SHIRT",
+    1,
     115,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -21347,6 +21798,7 @@ return [
 ],
 [
     "KA532 LADIES' SHORT-SLEEVED COTTON/ELASTANE SHIRT",
+    1,
     120,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -21404,6 +21856,7 @@ return [
 ],
 [
     "KA533 MEN'S LONG-SLEEVED OXFORD SHIRT",
+    0,
     135,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -21488,6 +21941,7 @@ return [
 ],
 [
     "KA534 LADIES' LONG-SLEEVED OXFORD SHIRT",
+    1,
     135,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -21555,6 +22009,7 @@ return [
 ],
 [
     "KA529 LONG-SLEEVED COTTON/ELASTANE SHIRT",
+    0,
     120,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -21626,6 +22081,7 @@ return [
 ],
 [
     "KA530 LADIES' LONG-SLEEVED STRETCH SHIRT",
+    1,
     120,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -21683,6 +22139,7 @@ return [
 ],
 [
     "KA514 LADIES' LONG-SLEEVED MANDARIN COLLAR SHIRT",
+    1,
     110,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -21755,6 +22212,7 @@ return [
 ],
 [
     "KA515 MEN'S LONG-SLEEVED MANDARIN COLLAR SHIRT",
+    0,
     110,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -21827,6 +22285,7 @@ return [
 ],
 [
     "PR244 MEN'S STRETCH-FIT COTTON POPLIN LONG SLEEVE SHIRT",
+    0,
     115,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -21892,6 +22351,7 @@ return [
 ],
 [
     "PR344 WOMEN'S STRETCH-FIT COTTON POPLIN LONG SLEEVE SHIRT",
+    1,
     115,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -21941,6 +22401,7 @@ return [
 ],
 [
     "PR661 ‘CUISINE' LONG SLEEVE CHEF’S JACKET",
+    2,
     195,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -21997,6 +22458,7 @@ return [
 ],
 [
     "NN310 'INVINCIBLE'  WOMEN’S ONNA-STRETCH TUNIC",
+    1,
     210,
     "ONNA",
     "Imbracaminte Profesionala",
@@ -22042,6 +22504,7 @@ return [
 ],
 [
     "SO16000 SOL'S BOSTON - LONG SLEEVE OXFORD MEN'S SHIRT",
+    0,
     135,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -22099,6 +22562,7 @@ return [
 ],
 [
     "SO17015 SOL'S EDEN - LONG SLEEVE STRETCH WOMEN'S SHIRT",
+    1,
     140,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -22156,6 +22620,7 @@ return [
 ],
 [
     "KA510 LADIES’ LONG-SLEEVED COTTON POPLIN SHIRT",
+    1,
     125,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -22222,6 +22687,7 @@ return [
 ],
 [
     "KA513 MEN’S LONG-SLEEVED COTTON POPLIN SHIRT",
+    0,
     125,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -22294,6 +22760,7 @@ return [
 ],
 [
     "PR222 MEN’S JEANS STITCH DENIM SHIRT",
+    0,
     155,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -22357,6 +22824,7 @@ return [
 ],
 [
     "PR322 WOMEN'S JEANS STITCH DENIM SHIRT",
+    1,
     155,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -22420,6 +22888,7 @@ return [
 ],
 [
     "KA965 MEN’S V-NECK JUMPER",
+    0,
     290,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -22482,6 +22951,7 @@ return [
 ],
 [
     "KA966 LADIES' V-NECK JUMPER",
+    1,
     290,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -22544,6 +23014,7 @@ return [
 ],
 [
     "KA967 MEN'S CREW NECK JUMPER",
+    0,
     290,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -22606,6 +23077,7 @@ return [
 ],
 [
     "KA968 LADIES' CREW NECK JUMPER",
+    1,
     290,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -22663,6 +23135,7 @@ return [
 ],
 [
     "SO01426 SOL'S BLAKE MEN - LONG SLEEVE STRETCH SHIRT",
+    0,
     120,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -22725,6 +23198,7 @@ return [
 ],
 [
     "SO01427 SOL'S BLAKE WOMEN - LONG SLEEVE STRETCH SHIRT",
+    1,
     120,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -22774,6 +23248,7 @@ return [
 ],
 [
     "KA4028 LADIES' ECO-FRIENDLY HOODED SWEATSHIRT",
+    1,
     280,
     "KARIBAN",
     "Hanorace",
@@ -22831,6 +23306,7 @@ return [
 ],
 [
     "KA479 FULL ZIP HOODED SWEATSHIRT",
+    2,
     280,
     "KARIBAN",
     "Hanorace",
@@ -22901,6 +23377,7 @@ return [
 ],
 [
     "SO04240 SOL'S COOPER - UNISEX FULL-ZIP SWEATSHIRT",
+    2,
     280,
     "SOL'S",
     "Hanorace",
@@ -22959,6 +23436,7 @@ return [
 ],
 [
     "KA4018 UNISEX OVERSIZED FLEECE HOODIE",
+    2,
     280,
     "KARIBAN",
     "Hanorace",
@@ -23017,6 +23495,7 @@ return [
 ],
 [
     "SO03812 SOL'S CARTER - UNISEX FULL-ZIP HOODIE",
+    2,
     280,
     "SOL'S",
     "Hanorace",
@@ -23072,6 +23551,7 @@ return [
 ],
 [
     "GISF600 SOFTSTYLE® MIDWEIGHT FLEECE ADULT FULL ZIP HOODED SWEATSHIRT",
+    0,
     285,
     "GILDAN",
     "Hanorace",
@@ -23136,6 +23616,7 @@ return [
 ],
 [
     "WK4000 POLO NECK SWEATSHIRT (ex.KA4000)",
+    2,
     300,
     "DESIGNED TO WORK",
     "Hanorace",
@@ -23207,6 +23688,7 @@ return [
 ],
 [
     "WK4001 SET-IN SLEEVE SWEATSHIRT (ex.KA4001)",
+    2,
     300,
     "DESIGNED TO WORK",
     "Hanorace",
@@ -23279,6 +23761,7 @@ return [
 ],
 [
     "AWJH015 HOODIE DRESS",
+    1,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -23338,6 +23821,7 @@ return [
 ],
 [
     "AWJH053 VARSITY ZOODIE",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -23391,6 +23875,7 @@ return [
 ],
 [
     "AWJH101 GRADUATE HEAVYWEIGHT HOODIE",
+    2,
     330,
     "JUST HOODS",
     "Hanorace",
@@ -23454,6 +23939,7 @@ return [
 ],
 [
     "NS400 ECO-FRIENDLY UNISEX ROUND NECK SWEATSHIRT",
+    2,
     350,
     "NATIVE SPIRIT",
     "Hanorace",
@@ -23527,6 +24013,7 @@ return [
 ],
 [
     "KA497 UNISEX TEDDY FLEECE JACKET",
+    2,
     320,
     "KARIBAN",
     "Hanorace",
@@ -23589,6 +24076,7 @@ return [
 ],
 [
     "AWJH020 STREET HOODIE",
+    2,
     330,
     "JUST HOODS",
     "Hanorace",
@@ -23642,6 +24130,7 @@ return [
 ],
 [
     "AWJH201 ORGANIC HOODIE",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -23705,6 +24194,7 @@ return [
 ],
 [
     "KA489 HOODED SWEATSHIRT",
+    0,
     300,
     "KARIBAN",
     "Hanorace",
@@ -23772,6 +24262,7 @@ return [
 ],
 [
     "AWJH147 CAMPUS FULL ZIP SWEAT",
+    2,
     330,
     "JUST HOODS",
     "Hanorace",
@@ -23824,6 +24315,7 @@ return [
 ],
 [
     "KA466 MEN'S CONTRAST HOODED FULL ZIP SWEATSHIRT",
+    0,
     280,
     "KARIBAN",
     "Hanorace",
@@ -23884,6 +24376,7 @@ return [
 ],
 [
     "KA467 LADIES’ CONTRAST HOODED FULL ZIP SWEATSHIRT",
+    1,
     280,
     "KARIBAN",
     "Hanorace",
@@ -23944,6 +24437,7 @@ return [
 ],
 [
     "KA4013 UNISEX CONTRAST PATTERNED HOODED SWEATSHIRT",
+    2,
     280,
     "KARIBAN",
     "Hanorace",
@@ -23996,6 +24490,7 @@ return [
 ],
 [
     "KA4009 UNISEX ECO-FRIENDLY FRENCH TERRY HOODIE",
+    2,
     300,
     "KARIBAN",
     "Hanorace",
@@ -24070,6 +24565,7 @@ return [
 ],
 [
     "AWJH014 CAMO HOODIE",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -24128,6 +24624,7 @@ return [
 ],
 [
     "AWJH022 TIE-DYE HOODIE",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -24184,6 +24681,7 @@ return [
 ],
 [
     "WK403 UNISEX DAYTODAY CONTRASTING POCKET SWEATSHIRT",
+    2,
     300,
     "DESIGNED TO WORK",
     "Hanorace",
@@ -24258,6 +24756,7 @@ return [
 ],
 [
     "KA442 UNISEX CREW NECK SWEATSHIRT",
+    2,
     360,
     "KARIBAN",
     "Hanorace",
@@ -24324,6 +24823,7 @@ return [
 ],
 [
     "NS420 ECO-FRIENDLY LADIES’ DROP-SHOULDER SWEATSHIRT",
+    1,
     280,
     "NATIVE SPIRIT",
     "Hanorace",
@@ -24381,6 +24881,7 @@ return [
 ],
 [
     "KA487 ZIPPED NECK SWEATSHIRT",
+    0,
     300,
     "KARIBAN",
     "Hanorace",
@@ -24446,6 +24947,7 @@ return [
 ],
 [
     "KA582 SHERPA-LINED FLEECE OVERSHIRT",
+    0,
     360,
     "KARIBAN",
     "Hanorace",
@@ -24517,6 +25019,7 @@ return [
 ],
 [
     "KA4030 MEN'S ECO-FRIENDLY HOODED SWEATSHIRT WITH ZIP FASTENING",
+    0,
     280,
     "KARIBAN",
     "Hanorace",
@@ -24583,6 +25086,7 @@ return [
 ],
 [
     "SO47800 SOL'S SEVEN MEN - JACKET WITH LINED HOOD",
+    0,
     280,
     "SOL'S",
     "Hanorace",
@@ -24635,6 +25139,7 @@ return [
 ],
 [
     "SO47900 SOL'S SEVEN WOMEN - JACKET WITH LINED HOOD",
+    1,
     280,
     "SOL'S",
     "Hanorace",
@@ -24679,6 +25184,7 @@ return [
 ],
 [
     "KA454 MEN'S FULL ZIP HOODED SWEATSHIRT",
+    0,
     300,
     "KARIBAN",
     "Hanorace",
@@ -24744,6 +25250,7 @@ return [
 ],
 [
     "KA464 LADIES' FULL ZIP HOODED SWEATSHIRT",
+    1,
     300,
     "KARIBAN",
     "Hanorace",
@@ -24803,6 +25310,7 @@ return [
 ],
 [
     "AWJH021 CROSS NECK HOODIE",
+    2,
     330,
     "JUST HOODS",
     "Hanorace",
@@ -24861,6 +25369,7 @@ return [
 ],
 [
     "AWJH120 SIGNATURE HEAVYWEIGHT HOODIE",
+    0,
     440,
     "JUST HOODS",
     "Hanorace",
@@ -24916,6 +25425,7 @@ return [
 ],
 [
     "AWJH250 ORGANIC ZOODIE",
+    2,
     280,
     "JUST HOODS",
     "Hanorace",
@@ -24975,6 +25485,7 @@ return [
 ],
 [
     "KA4003 UNISEX TEDDY JACKET WITH HOOD",
+    2,
     320,
     "KARIBAN",
     "Hanorace",
@@ -25038,6 +25549,7 @@ return [
 ],
 [
     "KA443 HOODED SWEATSHIRT",
+    2,
     360,
     "KARIBAN",
     "Hanorace",
@@ -25104,6 +25616,7 @@ return [
 ],
 [
     "NS401 ECO-FRIENDLY UNISEX HOODED SWEATSHIRT",
+    2,
     350,
     "NATIVE SPIRIT",
     "Hanorace",
@@ -25178,6 +25691,7 @@ return [
 ],
 [
     "AWJH100 CHUNKY HOODIE",
+    2,
     400,
     "JUST HOODS",
     "Hanorace",
@@ -25235,6 +25749,7 @@ return [
 ],
 [
     "KA444 FULL ZIP HOODED SWEATSHIRT",
+    2,
     360,
     "KARIBAN",
     "Hanorace",
@@ -25304,6 +25819,7 @@ return [
 ],
 [
     "AWJH052 CHUNKY ZOODIE",
+    2,
     400,
     "JUST HOODS",
     "Hanorace",
@@ -25357,6 +25873,7 @@ return [
 ],
 [
     "SO00584 SOL'S SHERPA - UNISEX ZIPPED JACKET WITH \"SHERPA\" LINING",
+    2,
     280,
     "SOL'S",
     "Hanorace",
@@ -25406,6 +25923,7 @@ return [
 ],
 [
     "KXX217 BASIC SAFETY VEST FOR PRINT \"KARLSRUHE\" - 2 VELCRO",
+    2,
     120,
     "KORNTEX",
     "Imbracaminte Profesionala",
@@ -25437,6 +25955,7 @@ return [
 ],
 [
     "KXRX217 SAFETY VEST WITH ZIPPER \"COLOGNE\"",
+    2,
     120,
     "KORNTEX",
     "Imbracaminte Profesionala",
@@ -25490,6 +26009,7 @@ return [
 ],
 [
     "PR167 POLYESTER BIB APRON",
+    2,
     195,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -25519,6 +26039,7 @@ return [
 ],
 [
     "PR996 ‘ANTIMICROBIAL’ BIB APRON",
+    2,
     195,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -25547,6 +26068,7 @@ return [
 ],
 [
     "PR171 WOMEN'S POCKET TABARD",
+    1,
     195,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -25595,6 +26117,7 @@ return [
 ],
 [
     "PR165 'ESSENTIAL' BIB APRON",
+    2,
     170,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -25624,6 +26147,7 @@ return [
 ],
 [
     "KA886 COTTON SHORT APRON",
+    2,
     280,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -25651,6 +26175,7 @@ return [
 ],
 [
     "SO01744 SOL'S GRAMERCY - LONG APRON WITH POCKET",
+    2,
     190,
     "SOL'S",
     "Imbracaminte Profesionala",
@@ -25678,6 +26203,7 @@ return [
 ],
 [
     "PR116 WATERPROOF SALON GOWN",
+    2,
     110,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -25708,6 +26234,7 @@ return [
 ],
 [
     "KA897 POLYCOTTON LONG APRON",
+    2,
     190,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -25735,6 +26262,7 @@ return [
 ],
 [
     "KA899 POLYCOTTON MID-LENGTH APRON",
+    2,
     190,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -25762,6 +26290,7 @@ return [
 ],
 [
     "KA8013 UNISEX ECO-FRIENDLY APRON",
+    2,
     200,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -25781,6 +26310,7 @@ return [
 ],
 [
     "KA8000 POLYCOTTON APRON WITHOUT POCKET",
+    2,
     190,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -25809,6 +26339,7 @@ return [
 ],
 [
     "KA890 POLYESTER COTTON APRON WITH POCKET",
+    2,
     190,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -25836,6 +26367,7 @@ return [
 ],
 [
     "PR150 'COLOURS COLLECTION’ BIB APRON",
+    2,
     195,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -25872,6 +26404,7 @@ return [
 ],
 [
     "PR649 COOLCHECKER® CHEF’S T-SHIRT (MESH BACK)",
+    2,
     135,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -25927,6 +26460,7 @@ return [
 ],
 [
     "PR151 'COLOURS COLLECTION’ MID LENGTH APRON",
+    2,
     195,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -25957,6 +26491,7 @@ return [
 ],
 [
     "KA8007 APRON WITH POCKET IN ORGANIC COTTON",
+    2,
     280,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -25982,6 +26517,7 @@ return [
 ],
 [
     "KA885 COTTON APRON WITH POCKET",
+    2,
     280,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -26009,6 +26545,7 @@ return [
 ],
 [
     "PR159 'COLOURS COLLECTION’ 2 IN 1 APRON",
+    2,
     195,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -26037,6 +26574,7 @@ return [
 ],
 [
     "KXEXQ MESH MULTIFUNCTIONAL VEST \"ATHENS\"",
+    2,
     120,
     "KORNTEX",
     "Imbracaminte Profesionala",
@@ -26095,6 +26633,7 @@ return [
 ],
 [
     "PR234 MEN’S LONG SLEEVE SIGNATURE OXFORD SHIRT",
+    0,
     135,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -26186,6 +26725,7 @@ return [
 ],
 [
     "PR334 WOMEN'S LONG SLEEVE SIGNATURE OXFORD BLOUSE",
+    1,
     135,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -26264,6 +26804,7 @@ return [
 ],
 [
     "PR125 JEANS STITCH DENIM WAIST APRON",
+    2,
     275,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -26292,6 +26833,7 @@ return [
 ],
 [
     "PR123 'ESPRESSO' BIB APRON",
+    2,
     195,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -26318,6 +26860,7 @@ return [
 ],
 [
     "KA548 JUDITH - LADIES' SHORT-SLEEVED SHIRT",
+    1,
     110,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -26386,6 +26929,7 @@ return [
 ],
 [
     "KA551 ACE - SHORT-SLEEVED SHIRT",
+    0,
     110,
     "KARIBAN",
     "Imbracaminte Profesionala",
@@ -26476,6 +27020,7 @@ return [
 ],
 [
     "PR121 ‘BARLEY’ CONTRAST STITCH SUSTAINABLE BIB APRON",
+    2,
     195,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -26493,6 +27038,7 @@ return [
 ],
 [
     "PR302 WOMEN'S SHORT SLEEVE POPLIN BLOUSE",
+    1,
     105,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -26585,6 +27131,7 @@ return [
 ],
 [
     "PR305 WOMEN'S POPLIN 3/4 SLEEVE BLOUSE",
+    1,
     105,
     "PREMIER",
     "Imbracaminte Profesionala",
@@ -26664,6 +27211,4872 @@ return [
         "4XL",
         "5XL",
         "6XL"
+    ]
+],
+[
+    "SO00553 SOL'S REGENT FIT - MEN’S ROUND NECK CLOSE FITTING T-SHIRT",
+    0,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Slim Fit"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Kelly Green', 'Dark Grey', 'Deep Black', 'French Navy', 'Grey Melange', 'Red', 'Royal Blue', 'White'],
+            'purchase_price' => 10.38,
+            'price' => 17.65,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+        ],
+        "Lungimea corpului (A)" => [
+            "66",	"70",	"72",	"74",	"76",	"78"
+        ],
+        "Latimea pieptului (B)" => [
+            "45",	"48",	"51",	"54",	"57",	"61"
+        ],
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+    ]
+],[
+    "GI3000 LIGHT COTTON ADULT T-SHIRT",
+    0,
+    159,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 6.74,
+            'price' => 11.45,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 8.38,
+            'price' => 14.24,
+        ],
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Black', 'Charcoal', 'Light Pink', 'Military Green', 'Navy', 'Red', 'Royal', 'Sand', 'Sport Grey'],
+            'purchase_price' => 7.88,
+            'price' => 13.39,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['Black', 'Charcoal', 'Light Pink', 'Military Green', 'Navy', 'Red', 'Royal', 'Sand', 'Sport Grey'],
+            'purchase_price' => 9.83,
+            'price' => 16.7,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "36",
+        ],
+        "Lungimea corpului (A)" => [
+            "n/a",	"72.12",	"73.66",	"76.20",	"78.74",	"81.28",	"83.82"
+        ],
+        "Latimea pieptului (B)" => [
+            "n/a",	"45.72",	"50.80",	"55.88",	"60.96",	"66.04",	"71.12"
+        ],
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+    ]
+],
+[
+    "GI980  SOFTSTYLE® ADULT T-SHIRT",
+    2,
+    153,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Pieptanat"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White',],
+            'purchase_price' => 7.29,
+            'price' => 13.39,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['White',],
+            'purchase_price' => 9.83,
+            'price' => 16.7,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Baby Blue','Black','Caribbean Blue','Charcoal','Charity Pink','Navy','Royal','Smoke','Storm Grey','Teal Ice','True Red'],
+            'purchase_price' => 9.08,
+            'price' => 15.49,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['Baby Blue','Black','Caribbean Blue','Charcoal','Charity Pink','Navy','Royal','Smoke','Storm Grey','Teal Ice','True Red'],
+            'purchase_price' => 12.38,
+            'price' => 21,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "36",
+            "36"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28",
+            "83.82"
+        ],
+        "Latimea pieptului (B)" => [
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04",
+            "71.12"
+        ],
+        "Lungimea manecii (C)" => [
+            "42.55",
+            "45.40",
+            "48.58",
+            "51.75",
+            "54.93",
+            "57.79"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "GI64000  SOFTSTYLE® ADULT T-SHIRT",
+    2,
+    153,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 7.29,
+            'price' => 12.39,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.78,
+            'price' => 16.6,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Antique Cherry Red','Antique Sapphire','Azalea','Black','Cardinal Red','Carolina Blue','Charcoal','Cherry Red','Daisy','Dark Chocolate','Dark Heather','Forest Green','Graphite Heather','Heather Military Green','Heather Navy','Heather Royal','Heliconia','Indigo Blue','Irish Green','Jade Dome','Kiwi','Light Blue','Light Pink','Lime','Maroon','Military Green','Mint Green','Natural','Navy','Orange','Paragon','Pistachio','Purple','Red','Royal','RS Sport Grey','Sand','Sapphire','Sky','Stone Blue','Tropical Blue','Antique Heliconia','Berry','Volcano Grey Heather',],
+            'purchase_price' => 9.13,
+            'price' => 15.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['Antique Cherry Red','Antique Sapphire','Azalea','Black','Cardinal Red','Carolina Blue','Charcoal','Cherry Red','Daisy','Dark Chocolate','Dark Heather','Forest Green','Graphite Heather','Heather Military Green','Heather Navy','Heather Royal','Heliconia','Indigo Blue','Irish Green','Jade Dome','Kiwi','Light Blue','Light Pink','Lime','Maroon','Military Green','Mint Green','Natural','Navy','Orange','Paragon','Pistachio','Purple','Red','Royal','RS Sport Grey','Sand','Sapphire','Sky','Stone Blue','Tropical Blue','Antique Heliconia','Berry','Volcano Grey Heather',],
+            'purchase_price' => 12.43,
+            'price' => 21.1,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "36",
+            "12",
+            "12"
+        ],
+        "Lungimea corpului (A)" => [
+            "0",
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28",
+            "83.82",
+            "86.36",
+            "88.90"
+        ],
+        "Latimea pieptului (B)" => [
+            "0",
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04",
+            "71.12",
+            "76.20",
+            "81.28"
+        ],
+        "Lungimea manecii (C)" => [
+            "0",
+            "42.55",
+            "45.40",
+            "48.58",
+            "51.75",
+            "54.93",
+            "57.79",
+            "60.64",
+            "63.82"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "GIL64000  SOFTSTYLE® LADIES' T-SHIRT",
+    1,
+    153,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Cusatura laterala",
+        "Fitted"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 7.29,
+            'price' => 12.39,
+        ],
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Antique Sapphire','Azalea','Black','Charcoal','Dark Heather','Graphite Heather','Heliconia','Irish Green','Light Blue','Navy','Paragon','Pistachio','Purple','Red','Royal','RS Sport Grey','Sand','Sky','Antique Cherry Red','Cobalt','Cornsilk','Heather Orange','Heather Purple','Indigo Blue','Kiwi','Light Pink',],
+            'purchase_price' => 9.13,
+            'price' => 15.5,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "36"
+        ],
+        "Lungimea corpului (A)" => [
+            "63.50",
+            "66.04",
+            "68.58",
+            "70.49",
+            "71.12",
+            "72.39"
+        ],
+        "Latimea pieptului (B)" => [
+            "43.18",
+            "45.72",
+            "49.53",
+            "52.07",
+            "58.42",
+            "62.23"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "SO01825  SOL'S REGENT WOMEN - ROUND COLLAR T-SHIRT",
+    1,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Fitted"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 7.53,
+            'price' => 12.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.28,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Apple Green','Aqua','Army','Atoll Blue','Bottle Green','Burgundy','Dark Grey','Dark Purple','Deep Black','Denim','Duck Blue','French Navy','Fuchsia','Gold','Grey Melange','Kelly Green','Lemon','Mouse Grey','Navy','Orange','Orchid Pink','Red','Royal Blue',],
+            'purchase_price' => 9.18,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['Apple Green','Aqua','Army','Atoll Blue','Bottle Green','Burgundy','Dark Grey','Dark Purple','Deep Black','Denim','Duck Blue','French Navy','Fuchsia','Gold','Grey Melange','Kelly Green','Lemon','Mouse Grey','Navy','Orange','Orchid Pink','Red','Royal Blue',],
+            'purchase_price' => 11.23,
+            'price' => 19,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "61",
+            "63",
+            "65",
+            "67",
+            "69",
+            "71"
+        ],
+        "Latimea pieptului (B)" => [
+            "41",
+            "44",
+            "47",
+            "50",
+            "53",
+            "56"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "SO11380  SOL'S REGENT - UNISEX ROUND COLLAR T-SHIRT",
+    2,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 7.53,
+            'price' => 12.95,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['White'],
+            'purchase_price' => 11.18,
+            'price' => 19,
+        ],
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Apple Green','Apricot','Aqua','Army','Ash','Atoll Blue','Bottle Green','Burgundy','Chocolate','Dark Grey','Dark Purple','Deep Black','Denim','Duck Blue','Emerald','French Navy','Fuchsia','Gold','Grey Melange','Kelly Green','Khaki','Lemon','Light Grey','Light Purple','Lime','Medium Pink','Mouse Grey','Natural','Navy','Orange','Orchid Pink','Pale Pink','Pure Grey','Red','Royal Blue','Sand','Sky Blue','Tango Red','Zinc',],
+            'purchase_price' => 9.18,
+            'price' => 15.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['Apple Green','Apricot','Aqua','Army','Ash','Atoll Blue','Bottle Green','Burgundy','Chocolate','Dark Grey','Dark Purple','Deep Black','Denim','Duck Blue','Emerald','French Navy','Fuchsia','Gold','Grey Melange','Kelly Green','Khaki','Lemon','Light Grey','Light Purple','Lime','Medium Pink','Mouse Grey','Natural','Navy','Orange','Orchid Pink','Pale Pink','Pure Grey','Red','Royal Blue','Sand','Sky Blue','Tango Red','Zinc',],
+            'purchase_price' => 13.47,
+            'price' => 22.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "64",
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80",
+            "82",
+            ""
+        ],
+        "Latimea pieptului (B)" => [
+            "48",
+            "50",
+            "53",
+            "56",
+            "59",
+            "62",
+            "65",
+            "68",
+            ""
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "GI41V00  PREMIUM COTTON® ADULT V-NECK T-SHIRT",
+    0,
+    185,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Cusatura laterala",
+        "Fitted"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 7.29,
+            'price' => 12.39,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Charcoal','Heliconia','Light Blue','Red','Royal','RS Sport Grey','Sapphire','Black','Navy',],
+            'purchase_price' => 9.13,
+            'price' => 15.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72"
+        ],
+        "Lungimea corpului (A)" => [
+            "71",
+            "73",
+            "76",
+            "79",
+            "81"
+        ],
+        "Latimea pieptului (B)" => [
+            "46",
+            "51",
+            "56",
+            "61",
+            "66"
+        ],
+        "Lungimea manecii (C)" => [
+            "42",
+            "46",
+            "48",
+            "52",
+            "55"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "GIL4100V  PREMIUM COTTON® LADIES' V-NECK T-SHIRT",
+    1,
+    185,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 7.29,
+            'price' => 12.39,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Azalea','Cornsilk','Heliconia','Light Blue','Red','Royal','RS Sport Grey','Sapphire','Black','Navy',],
+            'purchase_price' => 9.13,
+            'price' => 15.5,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "36",
+            "36",
+            "36",
+            "36",
+            "36"
+        ],
+        "Lungimea corpului (A)" => [
+            "64",
+            "66",
+            "69",
+            "71",
+            "74"
+        ],
+        "Latimea pieptului (B)" => [
+            "43",
+            "48",
+            "53",
+            "58",
+            "64"
+        ],
+        "Lungimea manecii (C)" => [
+            "33",
+            "36",
+            "38",
+            "41",
+            "43"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "GI5000  HEAVY COTTON™ ADULT T-SHIRT",
+    2,
+    180,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Bumbac/Poliester"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 7.93,
+            'price' => 13.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 11.68,
+            'price' => 19.9,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Antique Cherry Red','Antique Irish Green','Antique Jade Dome','Antique Orange','Antique Sapphire','Ash Grey','Azalea','Black','Blackberry','Brown Savana','Cardinal Red','Carolina Blue','Charcoal','Cobalt','Cornsilk','Daisy','Dark Chocolate','Dark Heather','Forest Green','Gold','Graphite Heather','Heather Sapphire','Heliconia','Indigo Blue','Irish Green','Kiwi','Light Blue','Light Pink','Lilac','Lime','Maroon','Midnight','Military Green','Mint Green','Natural','Navy','Old Gold','Orange','Purple','Red','Royal','Russet','S.Orange','Safety Green','Sand','Sapphire','Sky','Sport Grey','Sunset','Tangerine','Tweed','Violet','Yellow Haze',],
+            'purchase_price' => 9.88,
+            'price' => 16.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['Antique Cherry Red','Antique Irish Green','Antique Jade Dome','Antique Orange','Antique Sapphire','Ash Grey','Azalea','Black','Blackberry','Brown Savana','Cardinal Red','Carolina Blue','Charcoal','Cobalt','Cornsilk','Daisy','Dark Chocolate','Dark Heather','Forest Green','Gold','Graphite Heather','Heather Sapphire','Heliconia','Indigo Blue','Irish Green','Kiwi','Light Blue','Light Pink','Lilac','Lime','Maroon','Midnight','Military Green','Mint Green','Natural','Navy','Old Gold','Orange','Purple','Red','Royal','Russet','S.Orange','Safety Green','Sand','Sapphire','Sky','Sport Grey','Sunset','Tangerine','Tweed','Violet','Yellow Haze',],
+            'purchase_price' => 14.27,
+            'price' => 24.1,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "36",
+            "12",
+            "12"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28",
+            "83.82",
+            "86.36",
+            "88.90"
+        ],
+        "Latimea pieptului (B)" => [
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04",
+            "71.12",
+            "76.20",
+            "81.28"
+        ],
+        "Lungimea manecii (C)" => [
+            "38.42",
+            "41.91",
+            "45.72",
+            "49.53",
+            "53.34",
+            "56.83",
+            "60.01",
+            "63.50"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "GIL5000  HEAVY COTTON™  LADIES' T-SHIRT",
+    1,
+    180,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 7.93,
+            'price' => 13.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 10.08,
+            'price' => 16.9,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Azalea','Black','Daisy','Dark Heather','Graphite Heather','Heather Sapphire','Light Pink','Navy','Red','Royal','Sport Grey',],
+            'purchase_price' => 9.28,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['Azalea','Black','Daisy','Dark Heather','Graphite Heather','Heather Sapphire','Light Pink','Navy','Red','Royal','Sport Grey',],
+            'purchase_price' => 11.78,
+            'price' => 20,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "36",
+            "36",
+            "36",
+            "36",
+            "36",
+            "36"
+        ],
+        "Lungimea corpului (A)" => [
+            "64.77",
+            "66.04",
+            "68.58",
+            "71.12",
+            "72.39",
+            "0"
+        ],
+        "Latimea pieptului (B)" => [
+            "43.82",
+            "48.90",
+            "53.98",
+            "59.06",
+            "64.14",
+            "0"
+        ],
+        "Lungimea manecii (C)" => [
+            "33.66",
+            "35.56",
+            "37.47",
+            "40.01",
+            "42.55",
+            "0"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "KA3024IC  LADIES’ ECO-FRIENDLY TANK TOP",
+    1,
+    140,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 8.68,
+            'price' => 14.9,
+        ],
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Black','Navy','Oxford Grey',],
+            'purchase_price' => 10.58,
+            'price' => 17.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100"
+        ],
+        "Lungimea corpului (A)" => [
+            "61",
+            "63",
+            "65",
+            "67",
+            "69",
+            "71"
+        ],
+        "Latimea pieptului (B)" => [
+            "37",
+            "40",
+            "43",
+            "46",
+            "49",
+            "52"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "SO03581  SOL'S CRUSADER WOMEN - ROUND-NECK FITTED JERSEY T-SHIRT",
+    1,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton",
+        "jerseu"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.08,
+            'price' => 15.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 10.63,
+            'price' => 18,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Apple Green','Deep Black','French Navy','Natural','Red','Royal Blue','Ash','Bottle Green','Denim','Gold','Grey Melange','Mouse Grey','Orange',],
+            'purchase_price' => 10.48,
+            'price' => 18,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['Apple Green','Deep Black','French Navy','Natural','Red','Royal Blue','Ash','Bottle Green','Denim','Gold','Grey Melange','Mouse Grey','Orange',],
+            'purchase_price' => 12.38,
+            'price' => 21,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100"
+        ],
+        "Lungimea corpului (A)" => [
+            "61",
+            "63",
+            "65",
+            "67",
+            "69",
+            "71"
+        ],
+        "Latimea pieptului (B)" => [
+            "41",
+            "44",
+            "47",
+            "50",
+            "53",
+            "56"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "SO03582  SOL'S CRUSADER MEN - ROUND-NECK FITTED JERSEY T-SHIRT",
+    0,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton",
+        "jerseu"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.08,
+            'price' => 15.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['White'],
+            'purchase_price' => 12.87,
+            'price' => 21.9,
+        ],
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Deep Black','Denim','French Navy','Grey Melange','Khaki','Mouse Grey','Natural','Red','Royal Blue','Pale Pink',],
+            'purchase_price' => 10.48,
+            'price' => 17.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['Deep Black','Denim','French Navy','Grey Melange','Khaki','Mouse Grey','Natural','Red','Royal Blue','Pale Pink',],
+            'purchase_price' => 14.77,
+            'price' => 25,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100"
+        ],
+        "Lungimea corpului (A)" => [
+            "67.50",
+            "69.50",
+            "71.50",
+            "73.50",
+            "75.50",
+            "77.50",
+            "79.50",
+            "81.50"
+        ],
+        "Latimea pieptului (B)" => [
+            "45",
+            "48",
+            "51",
+            "54",
+            "57",
+            "60",
+            "63",
+            "66"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+    ]
+],
+[
+    "SO11500  SOL'S IMPERIAL - MEN'S ROUND COLLAR T-SHIRT",
+    0,
+    190,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.28,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 11.53,
+            'price' => 19.6,
+        ],
+        [
+            'sizeInterval' => ['4XL', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 17.22,
+            'price' => 29,
+        ],
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Ancient Pink','Apple Green','Aqua','Army','Ash','Atoll Blue','Blue','Bottle Green','Burgundy','Candy Pink','Caribbean Blue','Chili','Chocolate','Cream','Dark Grey','Dark Khaki','Dark Purple','Deep Black','Denim','Earth','Emerald','French Navy','Fuchsia','Gold','Grey Melange','Hibiscus','Ice Blue','Kelly Green','Khaki','Lemon','Light Grey','Light Purple','Mouse Grey','Navy','Off White','Orange','Orchid Pink','Petroleum Blue','Red','Royal Blue','Sage Green','Sand','Sky Blue','Tango Red','Terracotta','Ultramarine','Zinc',],
+            'purchase_price' => 11.53,
+            'price' => 19.6,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['Ancient Pink','Apple Green','Aqua','Army','Ash','Atoll Blue','Blue','Bottle Green','Burgundy','Candy Pink','Caribbean Blue','Chili','Chocolate','Cream','Dark Grey','Dark Khaki','Dark Purple','Deep Black','Denim','Earth','Emerald','French Navy','Fuchsia','Gold','Grey Melange','Hibiscus','Ice Blue','Kelly Green','Khaki','Lemon','Light Grey','Light Purple','Mouse Grey','Navy','Off White','Orange','Orchid Pink','Petroleum Blue','Red','Royal Blue','Sage Green','Sand','Sky Blue','Tango Red','Terracotta','Ultramarine','Zinc',],
+            'purchase_price' => 14.07,
+            'price' => 23.9,
+        ],
+        [
+            'sizeInterval' => ['4XL', '5XL'],
+            'colors' => ['Ancient Pink','Apple Green','Aqua','Army','Ash','Atoll Blue','Blue','Bottle Green','Burgundy','Candy Pink','Caribbean Blue','Chili','Chocolate','Cream','Dark Grey','Dark Khaki','Dark Purple','Deep Black','Denim','Earth','Emerald','French Navy','Fuchsia','Gold','Grey Melange','Hibiscus','Ice Blue','Kelly Green','Khaki','Lemon','Light Grey','Light Purple','Mouse Grey','Navy','Off White','Orange','Orchid Pink','Petroleum Blue','Red','Royal Blue','Sage Green','Sand','Sky Blue','Tango Red','Terracotta','Ultramarine','Zinc',],
+            'purchase_price' => 21.21,
+            'price' => 36,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "64",
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80",
+            "82",
+            "88"
+        ],
+        "Latimea pieptului (B)" => [
+            "48",
+            "50",
+            "53",
+            "56",
+            "59",
+            "62",
+            "65",
+            "68",
+            "72"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "SO11502  SOL'S IMPERIAL WOMEN - ROUND COLLAR T-SHIRT",
+    1,
+    190,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.28,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 11.53,
+            'price' => 19.6,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Apple Green','Aqua','Ash','Atoll Blue','Bottle Green','Burgundy','Candy Pink','Caribbean Blue','Chocolate','Dark Grey','Dark Purple','Deep Black','Denim','Emerald','French Navy','Fuchsia','Gold','Grey Melange','Kelly Green','Khaki','Lemon','Mouse Grey','Navy','Off White','Orange','Orchid Pink','Red','Royal Blue','Sky Blue',],
+            'purchase_price' => 11.53,
+            'price' => 19.6,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['Apple Green','Aqua','Ash','Atoll Blue','Bottle Green','Burgundy','Candy Pink','Caribbean Blue','Chocolate','Dark Grey','Dark Purple','Deep Black','Denim','Emerald','French Navy','Fuchsia','Gold','Grey Melange','Kelly Green','Khaki','Lemon','Mouse Grey','Navy','Off White','Orange','Orchid Pink','Red','Royal Blue','Sky Blue',],
+            'purchase_price' => 14.07,
+            'price' => 23.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100"
+        ],
+        "Lungimea corpului (A)" => [
+            "61",
+            "63",
+            "65",
+            "67",
+            "69",
+            "71"
+        ],
+        "Latimea pieptului (B)" => [
+            "41",
+            "44",
+            "47",
+            "50",
+            "53",
+            "56"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "SO04233  SOL'S RE CRUSADER - UNISEX ROUND-NECK T-SHIRT",
+    2,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Recycled cotton"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '4XL'],
+            'colors' => ['Deep Black','French Navy','Natural','White'],
+            'purchase_price' => 12.2,
+            'price' => 20.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "65",
+            "69",
+            "71",
+            "73",
+            "75",
+            "77",
+            "79",
+            "81"
+        ],
+        "Latimea pieptului (B)" => [
+            "47",
+            "50",
+            "53",
+            "56",
+            "59",
+            "62",
+            "65",
+            "68"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+    ]
+],
+[
+    "KA3025IC  BIO150IC MEN'S ROUND NECK T-SHIRT",
+    0,
+    140,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.43,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 12.67,
+            'price' => 21.5,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Ash Heather','Black','Chocolate','Cloudy Blue Heather','Dark Grey','Dark Khaki','Deep Blue','Deep Purple','Forest Green','French Navy Heather','Fuchsia','Grey Heather','Ice Mint','Kelly Green','Lemon Yellow','Light Royal Blue','Light Sand','Lime','Navy','Orange','Oxford Grey','Pale Pink','Red','Sage','Sea Turquoise','Sky Blue','Snow Grey','Terracotta Red','Tropical Blue','True Indigo','Wine','Wine Heather','Yellow','Coconut Milk',],
+            'purchase_price' => 11.53,
+            'price' => 19.6,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['Ash Heather','Black','Chocolate','Cloudy Blue Heather','Dark Grey','Dark Khaki','Deep Blue','Deep Purple','Forest Green','French Navy Heather','Fuchsia','Grey Heather','Ice Mint','Kelly Green','Lemon Yellow','Light Royal Blue','Light Sand','Lime','Navy','Orange','Oxford Grey','Pale Pink','Red','Sage','Sea Turquoise','Sky Blue','Snow Grey','Terracotta Red','Tropical Blue','True Indigo','Wine','Wine Heather','Yellow','Coconut Milk',],
+            'purchase_price' => 14.47,
+            'price' => 23.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80",
+            "82",
+            "84"
+        ],
+        "Latimea pieptului (B)" => [
+            "50",
+            "53",
+            "56",
+            "59",
+            "62",
+            "65",
+            "68",
+            "71"
+        ],
+        "Lungimea manecii (C)" => [
+            "17",
+            "17",
+            "18",
+            "18",
+            "19",
+            "19",
+            "20",
+            "20"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "KA3026IC  LADIES' BIO150IC CREW NECK T-SHIRT",
+    1,
+    140,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.43,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Black','Chocolate','Dark Grey','Dark Khaki','Forest Green','Fuchsia','Kelly Green','Light Royal Blue','Light Sand','Lime','Navy','Orange','Oxford Grey','Pale Pink','Red','Sky Blue','Tropical Blue','Wine','Yellow','Coconut Milk',],
+            'purchase_price' => 11.53,
+            'price' => 19.6,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100"
+        ],
+        "Lungimea corpului (A)" => [
+            "60",
+            "62",
+            "64",
+            "66",
+            "68",
+            "70",
+            "72"
+        ],
+        "Latimea pieptului (B)" => [
+            "43",
+            "46",
+            "49",
+            "52",
+            "55",
+            "58",
+            "61"
+        ],
+        "Lungimea manecii (C)" => [
+            "16",
+            "17",
+            "17",
+            "18",
+            "19",
+            "20",
+            "20"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "SO11150  SOL'S VICTORY - MEN'S V-NECK T-SHIRT",
+    0,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.53,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 11.38,
+            'price' => 19.5,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Deep Black','Grey Melange',],
+            'purchase_price' => 12.28,
+            'price' => 20.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['Deep Black','Grey Melange',],
+            'purchase_price' => 14.92,
+            'price' => 23.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100"
+        ],
+        "Lungimea corpului (A)" => [
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "78"
+        ],
+        "Latimea pieptului (B)" => [
+            "50",
+            "53",
+            "56",
+            "58",
+            "61",
+            "64"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "SO11388  SOL'S MOON - WOMEN’S V-NECK T-SHIRT",
+    1,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Pieptanat",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Slim Fit"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.53,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Atoll Blue','Deep Black','Fuchsia','Grey Melange','Orchid Pink','Red','Royal Blue',],
+            'purchase_price' => 12.28,
+            'price' => 20.9,
+        ],
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Atoll Blue','Deep Black','Fuchsia','Grey Melange','Orchid Pink','Red','Royal Blue',],
+            'purchase_price' => 14.57,
+            'price' => 23.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "60",
+            "62",
+            "64",
+            "66",
+            "68",
+            "70"
+        ],
+        "Latimea pieptului (B)" => [
+            "41",
+            "44",
+            "47",
+            "50",
+            "53",
+            "56"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "GI65000  SOFTSTYLE® MIDWEIGHT ADULT T-SHIRT",
+    2,
+    183,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 8.78,
+            'price' => 15.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 11.28,
+            'price' => 19.3,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Brown Savana','Charcoal','Daisy','Graphite Heather','Heliconia','Irish Green','Light Blue','Maroon','Mustard','Navy','Orange','Paragon','Pitch Black','Red','Royal','RS Sport Grey','Sage','Sand','Sapphire','Stone Blue','Violet',],
+            'purchase_price' => 9.78,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['Brown Savana','Charcoal','Daisy','Graphite Heather','Heliconia','Irish Green','Light Blue','Maroon','Mustard','Navy','Orange','Paragon','Pitch Black','Red','Royal','RS Sport Grey','Sage','Sand','Sapphire','Stone Blue','Violet',],
+            'purchase_price' => 12.57,
+            'price' => 20.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "36",
+            "12",
+            "12"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28",
+            "83.82",
+            "86.36",
+            "88.90"
+        ],
+        "Latimea pieptului (B)" => [
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04",
+            "71.12",
+            "76.20",
+            "81.28"
+        ],
+        "Lungimea manecii (C)" => [
+            "41.28",
+            "45.40",
+            "48.58",
+            "52.39",
+            "56.20",
+            "59.37",
+            "63.18",
+            "66.99"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "GI64V00  SOFTSTYLE® ADULT V-NECK T-SHIRT",
+    0,
+    153,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Slim Fit"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.83,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Black','Charcoal','Cherry Red','Dark Heather','Navy','Red','Royal','RS Sport Grey','Irish Green',],
+            'purchase_price' => 12.52,
+            'price' => 20.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "36",
+            "36",
+            "36",
+            "36",
+            "36",
+            "36"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28",
+            "83.82"
+        ],
+        "Latimea pieptului (B)" => [
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04",
+            "71.12"
+        ],
+        "Lungimea manecii (C)" => [
+            "42.55",
+            "45.40",
+            "48.58",
+            "51.75",
+            "54.93",
+            "57.79"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "GIL64V00  SOFTSTYLE® LADIES' V-NECK T-SHIRT",
+    1,
+    153,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Cusatura laterala",
+        "Fitted"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.83,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Azalea','Black','Cherry Red','Dark Heather','Navy','Royal','RS Sport Grey','Irish Green','Purple','Red',],
+            'purchase_price' => 12.52,
+            'price' => 20.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "36",
+            "36",
+            "36",
+            "36",
+            "36"
+        ],
+        "Lungimea corpului (A)" => [
+            "63.50",
+            "66.04",
+            "68.58",
+            "70.49",
+            "71.12"
+        ],
+        "Latimea pieptului (B)" => [
+            "43.18",
+            "45.72",
+            "49.53",
+            "52.07",
+            "58.42"
+        ],
+        "Lungimea manecii (C)" => [
+            "34.93",
+            "36.20",
+            "38.42",
+            "39.69",
+            "41.91"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "KA3022IC  ECO-FRIENDLY MEN SLEEVELESS T-SHIRT",
+    0,
+    140,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.78,
+            'price' => 15.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 11.03,
+            'price' => 17.9,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Black','Navy','Oxford Grey','Dark Khaki',],
+            'purchase_price' => 10.98,
+            'price' => 17.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '3XL'],
+            'colors' => ['Black','Navy','Oxford Grey','Dark Khaki',],
+            'purchase_price' => 13.07,
+            'price' => 21.5,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100"
+        ],
+        "Lungimea corpului (A)" => [
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80"
+        ],
+        "Latimea pieptului (B)" => [
+            "49",
+            "52",
+            "55",
+            "58",
+            "61",
+            "64"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "KA3023IC  ECO-FRIENDLY MEN TANKTOP",
+    0,
+    140,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.78,
+            'price' => 16.5,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Black','Navy','Oxford Grey',],
+            'purchase_price' => 10.98,
+            'price' => 18.5,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100"
+        ],
+        "Lungimea corpului (A)" => [
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80"
+        ],
+        "Latimea pieptului (B)" => [
+            "48",
+            "51",
+            "54",
+            "57",
+            "60",
+            "63"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "GI64200  SOFTSTYLE® ADULT TANK TOP",
+    0,
+    153,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Tubular",
+        "Slim Fit"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.83,
+            'price' => 16.5,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Black','Charcoal','Navy','Red','RS Sport Grey',],
+            'purchase_price' => 12.52,
+            'price' => 21.1,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28"
+        ],
+        "Latimea pieptului (B)" => [
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "GI2000  ULTRA COTTON™ ADULT T-SHIRT",
+    2,
+    203,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 9.98,
+            'price' => 16.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 14.87,
+            'price' => 25.2,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Ash Grey','Azalea','Black','Blue Dusk','Cardinal Red','Carolina Blue','Charcoal','Cherry Red','Cornsilk','Daisy','Dark Chocolate','Dark Heather','Forest Green','Gold','Heather Cardinal','Heather Navy','Heliconia','Ice Grey','Indigo Blue','Iris','Irish Green','Jade Dome','Kelly Green','Kiwi','Light Blue','Light Pink','Lime','Maroon','Metro Blue','Military Green','Natural','Navy','Olive','Orange','Orchid','Pistachio','Prairie Dust','Purple','Red','Royal','S.Orange','Safety Green','Sand','Sapphire','Sky','Sport Grey','Stone Blue','Tan','Tangerine','Texas Orange','Vegas Gold','Prepared for Dye (White)',],
+            'purchase_price' => 11,
+            'price' => 18.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['Ash Grey','Azalea','Black','Blue Dusk','Cardinal Red','Carolina Blue','Charcoal','Cherry Red','Cornsilk','Daisy','Dark Chocolate','Dark Heather','Forest Green','Gold','Heather Cardinal','Heather Navy','Heliconia','Ice Grey','Indigo Blue','Iris','Irish Green','Jade Dome','Kelly Green','Kiwi','Light Blue','Light Pink','Lime','Maroon','Metro Blue','Military Green','Natural','Navy','Olive','Orange','Orchid','Pistachio','Prairie Dust','Purple','Red','Royal','S.Orange','Safety Green','Sand','Sapphire','Sky','Sport Grey','Stone Blue','Tan','Tangerine','Texas Orange','Vegas Gold','Prepared for Dye (White)',],
+            'purchase_price' => 16.67,
+            'price' => 28.3,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "36",
+            "12",
+            "12"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28",
+            "83.82",
+            "86.36",
+            "88.90"
+        ],
+        "Latimea pieptului (B)" => [
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04",
+            "71.12",
+            "76.20",
+            "81.28"
+        ],
+        "Lungimea manecii (C)" => [
+            "38.42",
+            "41.91",
+            "45.72",
+            "49.53",
+            "53.34",
+            "56.83",
+            "60.01",
+            "63.50"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "SO04203  SOL'S TUNER - UNISEX T-SHIRT",
+    2,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 10.58,
+            'price' => 18.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 18.56,
+            'price' => 31.5,
+        ],
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Absolute White','Deep Black',],
+            'purchase_price' => 12.87,
+            'price' => 21.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['Absolute White','Deep Black',],
+            'purchase_price' => 22.5,
+            'price' => 38.1,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "68",
+            "71",
+            "73",
+            "76",
+            "78",
+            "81",
+            "83",
+            "86",
+            "88"
+        ],
+        "Latimea pieptului (B)" => [
+            "41",
+            "46",
+            "51",
+            "56",
+            "61",
+            "66",
+            "71",
+            "76",
+            "81"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "SO00580  SOL'S IMPERIAL FIT - MEN'S ROUND NECK CLOSE FITTING T-SHIRT",
+    0,
+    190,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Fitted"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 10.83,
+            'price' => 18.5,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Charcoal Melange','Deep Black','French Navy','Grey Melange',],
+            'purchase_price' => 13.82,
+            'price' => 21.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "70",
+            "72",
+            "74",
+            "76",
+            "78"
+        ],
+        "Latimea pieptului (B)" => [
+            "48",
+            "51",
+            "54",
+            "57",
+            "61"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "KA3032IC  ORGANIC 190IC CREW NECK T-SHIRT",
+    2,
+    185,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['XXS', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 10.83,
+            'price' => 18.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 16.37,
+            'price' => 28,
+        ],
+        [
+            'sizeInterval' => ['XXS', '2XL'],
+            'colors' => ['Black','Cloudy Blue Heather','Dark Grey','Deep Purple','Forest Green','Green Marble Heather','Ice Mint','Kelly Green','Lemon Yellow','Light Orange','Light Royal Blue','Light Sand','Navy','Oxford Grey','Red','Sage','Sea Turquoise','Terracotta Red','Wine Heather','Coconut Milk',],
+            'purchase_price' => 13.17,
+            'price' => 20.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "66",
+            "68",
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80",
+            "82",
+            "84"
+        ],
+        "Latimea pieptului (B)" => [
+            "44",
+            "47",
+            "50",
+            "53",
+            "56",
+            "59",
+            "62",
+            "65",
+            "68",
+            "71"
+        ],
+        "Lungimea manecii (C)" => [
+            "15.50",
+            "16",
+            "16.50",
+            "17",
+            "17.50",
+            "18",
+            "18.50",
+            "19",
+            "19.50",
+            "20"
+        ]
+    ],
+    [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "GI8000  DRYBLEND® ADULT T-SHIRT",
+    2,
+    186,
+    "GILDAN",
+    "Tricouri",
+    [
+        "Bumbac/Poliester"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 13.5,
+            'price' => 21.9,
+        ],
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Black','Irish Green','Navy','Orange','Red','Royal','S.Orange','Safety Green','Sport Grey',],
+            'purchase_price' => 14.6,
+            'price' => 25,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "36",
+            "12"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28",
+            "83.82",
+            "0"
+        ],
+        "Latimea pieptului (B)" => [
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04",
+            "71.12",
+            "0"
+        ],
+        "Lungimea manecii (C)" => [
+            "38.42",
+            "41.91",
+            "45.72",
+            "49.53",
+            "53.34",
+            "56.83",
+            "0"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+    ]
+],
+[
+    "SO11420  SOL'S MONARCH - MEN'S ROUND COLLAR LONG SLEEVE T-SHIRT",
+    0,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 11.38,
+            'price' => 18.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 20.46,
+            'price' => 34,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Aqua','Dark Grey','Deep Black','Grey Melange','Kelly Green','Navy','Orange','Red','Royal Blue','Ultramarine',],
+            'purchase_price' => 15.57,
+            'price' => 25.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['Aqua','Dark Grey','Deep Black','Grey Melange','Kelly Green','Navy','Orange','Red','Royal Blue','Ultramarine',],
+            'purchase_price' => 26.9,
+            'price' => 38.1,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "69.50",
+            "71.50",
+            "73.50",
+            "75.50",
+            "77.50",
+            "79.50",
+            "79.50",
+            "79.50"
+        ],
+        "Latimea pieptului (B)" => [
+            "50.50",
+            "53.50",
+            "56.50",
+            "59.50",
+            "62.50",
+            "65.50",
+            "68.50",
+            "71.50"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "GI67000  SOFTSTYLE® CVC ADULT T-SHIRT",
+    2,
+    156,
+    "GILDAN",
+    "Tricouri",
+    [
+        "Bumbac/Poliester"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 11.73,
+            'price' => 18.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['White'],
+            'purchase_price' => 15,
+            'price' => 25.2,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Kelly Mist','Navy Mist','Pitch Black','Red Mist',],
+            'purchase_price' => 11.73,
+            'price' => 18.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['Kelly Mist','Navy Mist','Pitch Black','Red Mist',],
+            'purchase_price' => 15,
+            'price' => 25.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "36",
+            "36",
+            "36",
+            "36",
+            "36",
+            "36",
+            "12"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28",
+            "83.82",
+            "86.36"
+        ],
+        "Latimea pieptului (B)" => [
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04",
+            "71.12",
+            "76.20"
+        ],
+        "Lungimea manecii (C)" => [
+            "42.55",
+            "45.40",
+            "48.58",
+            "51.75",
+            "54.93",
+            "57.79",
+            "60.64"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+    ]
+],
+[
+    "GIH400  HAMMER ADULT LONG SLEEVE T-SHIRT",
+    2,
+    203,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 23.1,
+            'price' => 39,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['White'],
+            'purchase_price' => 34.58,
+            'price' => 58.7,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Black','Graphite Heather','Sport Dark Navy','RS Sport Grey',],
+            'purchase_price' => 29.19,
+            'price' => 50.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['Black','Graphite Heather','Sport Dark Navy','RS Sport Grey',],
+            'purchase_price' => 43.66,
+            'price' => 64,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "36",
+            "12"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28",
+            "83.82",
+            "86.36"
+        ],
+        "Latimea pieptului (B)" => [
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04",
+            "71.12",
+            "76.20"
+        ],
+        "Lungimea manecii (C)" => [
+            "84.46",
+            "87.63",
+            "90.17",
+            "93.98",
+            "97.79",
+            "97.79",
+            "99.06"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+    ]
+],
+[
+    "SO02999  SOL'S MAGNUM MEN - LONG T-SHIRT",
+    0,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Pieptanat"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Deep Black','White'],
+            'purchase_price' => 12.87,
+            'price' => 21.1,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "75",
+            "77",
+            "79",
+            "81",
+            "83",
+            "85"
+        ],
+        "Latimea pieptului (B)" => [
+            "47",
+            "50",
+            "53",
+            "56",
+            "59",
+            "62"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "GI5400  GILDAN® HEAVY COTTON™ ADULT LONG SLEEVE T-SHIRT",
+    2,
+    185,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', 'XL'],
+            'colors' => ['White'],
+            'purchase_price' => 13.17,
+            'price' => 21.9,
+        ],
+        [
+            'sizeInterval' => ['2XL', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 19.96,
+            'price' => 33.9,
+        ],
+        [
+            'sizeInterval' => ['S', 'XL'],
+            'colors' => ['Forest Green','Maroon','Navy','Red','S.Orange','Safety Green','Sport Grey',],
+            'purchase_price' => 18.11,
+            'price' => 26.9,
+        ],
+        [
+            'sizeInterval' => ['2XL', '3XL'],
+            'colors' => ['Forest Green','Maroon','Navy','Red','S.Orange','Safety Green','Sport Grey',],
+            'purchase_price' => 26.9,
+            'price' => 45,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "36"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.00",
+            "74.00",
+            "76.00",
+            "79.00",
+            "81.00",
+            "0"
+        ],
+        "Latimea pieptului (B)" => [
+            "46.00",
+            "51.00",
+            "56.00",
+            "61.00",
+            "66.00",
+            "0"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "SO03981  SOL'S LEGEND - UNISEX T-SHIRT",
+    2,
+    175,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "170-199 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 14,
+            'price' => 23.8,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['White'],
+            'purchase_price' => 19.66,
+            'price' => 33,
+        ],
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Bright Red','Deep Black','Grey Melange','Lilac','Off White','Rope',],
+            'purchase_price' => 15.82,
+            'price' => 26.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['Bright Red','Deep Black','Grey Melange','Lilac','Off White','Rope',],
+            'purchase_price' => 22.62,
+            'price' => 38,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "67",
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80",
+            "82"
+        ],
+        "Latimea pieptului (B)" => [
+            "48",
+            "50",
+            "53",
+            "56",
+            "59",
+            "62",
+            "65",
+            "68"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+    ]
+],
+[
+    "SO02940  SOL'S IMPERIAL V MEN - V-NECK T-SHIRT",
+    0,
+    190,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Pieptanat"
+    ],
+    [
+        "170-199 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['White'],
+            'purchase_price' => 16.5,
+            'price' => 26.9,
+        ],
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Deep Black','French Navy','Grey Melange','Red','Royal Blue',],
+            'purchase_price' => 18.7,
+            'price' => 32.5,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80"
+        ],
+        "Latimea pieptului (B)" => [
+            "48",
+            "51",
+            "54",
+            "57",
+            "60",
+            "63"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "SO02941  SOL'S IMPERIAL V WOMEN - V-NECK T-SHIRT",
+    1,
+    190,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Pieptanat"
+    ],
+    [
+        "170-199 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 15.27,
+            'price' => 26.9,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Deep Black','French Navy','Grey Melange','Red','Royal Blue',],
+            'purchase_price' => 17,
+            'price' => 27.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100"
+        ],
+        "Lungimea corpului (A)" => [
+            "62",
+            "64",
+            "66",
+            "68",
+            "70"
+        ],
+        "Latimea pieptului (B)" => [
+            "40",
+            "43",
+            "46",
+            "49",
+            "52"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "NS300  ECO-FRIENDLY UNISEX T-SHIRT",
+    2,
+    155,
+    "NATIVE SPIRIT",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['XXS', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 15.67,
+            'price' => 26.9,
+        ],
+        [
+            'sizeInterval' => ['XXS', '5XL'],
+            'colors' => ['Adriatic Blue','Almond Green','Amazon Green','Apricot','Aquamarine','Beige Cream','Black','Butternut','Cool Blue','Curcuma','Dark Camel','Dark Cherry','Deep Chocolate','Deep Plum','Green Field','Hibiscus Red','Iron Grey','Ivory','Jade Green','Lemon Citrus','Light Olive Green','Light Turquoise','Mineral Grey','Navy Blue','Organic Khaki','Paprika','Parma','Peach','Peacock Blue','Petal Rose','Pineapple','Poppy Red','Raspberry Sorbet','Sea Blue','Sienna','Wet Sand',],
+            'purchase_price' => 16.27,
+            'price' => 27.2,
+        ],
+        [
+            'sizeInterval' => ['XXS', '5XL'],
+            'colors' => ['Amazon Green Heather','Clementine Heather','Cool Blue Heather','Grizzly Brown Heather','Moon Grey Heather','Navy Blue Heather','Organic Khaki Heather','Volcano Grey Heather'],
+            'purchase_price' => 22.65,
+            'price' => 38,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "66",
+            "68",
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80",
+            "82",
+            "84"
+        ],
+        "Latimea pieptului (B)" => [
+            "43",
+            "46",
+            "49",
+            "52",
+            "55",
+            "58",
+            "61",
+            "64",
+            "67",
+            "70"
+        ],
+        "Lungimea manecii (C)" => [
+            "19.50",
+            "20.25",
+            "21",
+            "21.75",
+            "22.50",
+            "23.25",
+            "24",
+            "24.75",
+            "25.50",
+            "26.25"
+        ]
+    ],
+    [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "NS324  LADIES' T-SHIRT",
+    1,
+    155,
+    "NATIVE SPIRIT",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 15.67,
+            'price' => 26.9,
+        ],
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Black','Dark Cherry','Ivory','Jade Green','Moon Grey Heather','Navy Blue','Peacock Blue','Petal Rose','Raspberry Sorbet',],
+            'purchase_price' => 16.27,
+            'price' => 26.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "61",
+            "63",
+            "65",
+            "67",
+            "69",
+            "71"
+        ],
+        "Latimea pieptului (B)" => [
+            "43",
+            "46",
+            "49",
+            "52",
+            "55",
+            "58"
+        ],
+        "Lungimea manecii (C)" => [
+            "16",
+            "16.75",
+            "17.50",
+            "18.25",
+            "19",
+            "19.75"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "JT100  THE 100 T",
+    2,
+    140,
+    "JUST TS",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 16.47,
+            'price' => 26.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '6XL'],
+            'colors' => ['White'],
+            'purchase_price' => 28,
+            'price' => 42,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Baby Pink','Bottle Green','Burgundy','Caramel Toffee','Charcoal','Combat Green','Deep Black','Desert Sand','Dusty Green','Dusty Pink','Dusty Purple','Earthy Green','Fire Red','Heather Grey','Ink Blue','Jade','Kelly Green','Lavender','Mango Tango','Moondust Grey','Mustard','Nude','Oxford Navy','Peppermint','Purple','Royal Blue','Sherbet Lemon','Sky Blue','Twilight Purple','Vanilla Milkshake','Wild Mulberry',],
+            'purchase_price' => 16.47,
+            'price' => 26.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '6XL'],
+            'colors' => ['Baby Pink','Bottle Green','Burgundy','Caramel Toffee','Charcoal','Combat Green','Deep Black','Desert Sand','Dusty Green','Dusty Pink','Dusty Purple','Earthy Green','Fire Red','Heather Grey','Ink Blue','Jade','Kelly Green','Lavender','Mango Tango','Moondust Grey','Mustard','Nude','Oxford Navy','Peppermint','Purple','Royal Blue','Sherbet Lemon','Sky Blue','Twilight Purple','Vanilla Milkshake','Wild Mulberry',],
+            'purchase_price' => 21.9,
+            'price' => 37.5,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "48",
+            "48",
+            "48",
+            "48",
+            "48",
+            "48",
+            "24",
+            "24",
+            "24"
+        ],
+        "Lungimea corpului (A)" => [
+            "68",
+            "71",
+            "74",
+            "77",
+            "80",
+            "83",
+            "86",
+            "89",
+            "92"
+        ],
+        "Latimea pieptului (B)" => [
+            "46",
+            "50",
+            "54",
+            "58",
+            "62",
+            "66",
+            "70",
+            "74",
+            "78"
+        ],
+        "Lungimea manecii (C)" => [
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "30"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL",
+        "6XL"
+    ]
+],
+[
+    "SO02074  SOL'S IMPERIAL LSL MEN - LONG-SLEEVE T-SHIRT",
+    0,
+    190,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 16.92,
+            'price' => 26.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['White'],
+            'purchase_price' => 19.96,
+            'price' => 35.5,
+        ],
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Bottle Green','Deep Black','French Navy','Grey Melange','Mouse Grey','Orange','Red','Royal Blue',],
+            'purchase_price' => 21.36,
+            'price' => 37.5,
+        ],
+        [
+            'sizeInterval' => ['3XL', '4XL'],
+            'colors' => ['Bottle Green','Deep Black','French Navy','Grey Melange','Mouse Grey','Orange','Red','Royal Blue',],
+            'purchase_price' => 24.9,
+            'price' => 39.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "68",
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80",
+            "84"
+        ],
+        "Latimea pieptului (B)" => [
+            "47",
+            "50",
+            "53",
+            "56",
+            "59",
+            "62",
+            "65",
+            "68"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+    ]
+],
+[
+    "SO02075  SOL'S IMPERIAL LSL WOMEN - LONG-SLEEVE T-SHIRT",
+    1,
+    190,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 16.92,
+            'price' => 26.9,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Deep Black','French Navy','Grey Melange','Red',],
+            'purchase_price' => 21.36,
+            'price' => 37.5,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "61",
+            "63",
+            "65",
+            "67",
+            "69"
+        ],
+        "Latimea pieptului (B)" => [
+            "41",
+            "44",
+            "47",
+            "50",
+            "53"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "SO11190  SOL'S FUNKY - MEN'S 2-COLOUR RAGLAN SLEEVES T-SHIRT",
+    0,
+    150,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Tubular",
+        "Raglan"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Black/Grey Melange','Black/Red','White/Black','White/Red','White/Royal Blue','White',],
+            'purchase_price' => 17.32,
+            'price' => 26.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100"
+        ],
+        "Lungimea corpului (A)" => [
+            "64",
+            "67",
+            "70",
+            "73",
+            "76",
+            "79"
+        ],
+        "Latimea pieptului (B)" => [
+            "47",
+            "50",
+            "53",
+            "56",
+            "59",
+            "62"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "KA380  LADIES' SHORT SLEEVE CREW NECK T-SHIRT",
+    1,
+    180,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Fitted"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Ash Heather','Black','Chocolate','Dark Grey','Dark Khaki','Forest Green','Fuchsia','Kelly Green','Light Royal Blue','Light Sand','Lime','Navy','Orange','Oxford Grey','Purple','Red','Sky Blue','Tropical Blue','Wine','Yellow','White',],
+            'purchase_price' => 17.46,
+            'price' => 26.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "60",
+            "61",
+            "63",
+            "66",
+            "68",
+            "70"
+        ],
+        "Latimea pieptului (B)" => [
+            "43",
+            "45",
+            "48",
+            "51",
+            "54",
+            "57"
+        ],
+        "Lungimea manecii (C)" => [
+            "14",
+            "15",
+            "15",
+            "16",
+            "17",
+            "18"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "KA381  LADIES' SHORT-SLEEVED V-NECK T-SHIRT",
+    1,
+    180,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Fitted"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Black','Dark Grey','Forest Green','Fuchsia','Kelly Green','Light Royal Blue','Light Sand','Lime','Navy','Orange','Oxford Grey','Purple','Red','Sky Blue','Tropical Blue','Wine','Yellow','White',],
+            'purchase_price' => 17.46,
+            'price' => 26.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "62",
+            "64",
+            "66",
+            "68",
+            "70",
+            "72"
+        ],
+        "Latimea pieptului (B)" => [
+            "45",
+            "48",
+            "51",
+            "54",
+            "57",
+            "60"
+        ],
+        "Lungimea manecii (C)" => [
+            "15",
+            "15.75",
+            "16.50",
+            "17.25",
+            "18",
+            "18.75"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "PR218  MEN'S LONG JOHN ROLL SLEEVE TEE",
+    0,
+    190,
+    "PREMIER",
+    "Tricouri",
+    [
+        "Poliester/Vascoza/Elastan"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '3XL'],
+            'colors' => ['Black','White/Navy','Grey Marl','Indigo','White',],
+            'purchase_price' => 34.93,
+            'price' => 59,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "36",
+            "36",
+            "36",
+            "36",
+            "36",
+            "36",
+            "36"
+        ],
+        "Lungimea corpului (A)" => [
+            "68",
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80"
+        ],
+        "Latimea pieptului (B)" => [
+            "50",
+            "54",
+            "58",
+            "62",
+            "66",
+            "70",
+            "74"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "PR318  WOMEN'S LONG JOHN ROLL SLEEVE TEE",
+    1,
+    190,
+    "PREMIER",
+    "Tricouri",
+    [
+        "Poliester/Vascoza/Elastan"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Black','White/Navy','Grey Marl','Indigo','White'],
+            'purchase_price' => 34.93,
+            'price' => 59,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "36",
+            "36",
+            "36",
+            "36",
+            "36",
+            "36"
+        ],
+        "Lungimea corpului (A)" => [
+            "64",
+            "66",
+            "68",
+            "70",
+            "72",
+            "74"
+        ],
+        "Latimea pieptului (B)" => [
+            "46",
+            "48.50",
+            "51",
+            "53.50",
+            "56",
+            "58.50"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "NS305  UNISEX ECO-FRIENDLY T-SHIRT",
+    2,
+    180,
+    "NATIVE SPIRIT",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 20.26,
+            'price' => 36.1,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Antique Rose','Black','Blue Sapphire','Driftwood','Gemstone Green','Hibiscus Red','Iron Grey','Moss Green','Navy Blue','Pineapple','Tangerine',],
+            'purchase_price' => 21.86,
+            'price' => 37,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "70",
+            "72",
+            "74",
+            "76",
+            "78"
+        ],
+        "Latimea pieptului (B)" => [
+            "49",
+            "52",
+            "55",
+            "58",
+            "61"
+        ],
+        "Lungimea manecii (C)" => [
+            "21",
+            "21.75",
+            "22.50",
+            "23.25",
+            "24"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "GI2400  ULTRA COTTON™ ADULT LONG SLEEVE T-SHIRT",
+    2,
+    203,
+    "GILDAN",
+    "Tricouri",
+    [
+        "100% Bumbac"
+    ],
+    [
+        "Tubular"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 20.36,
+            'price' => 36.1,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['White'],
+            'purchase_price' => 28,
+            'price' => 42,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Ash Grey','Black','Cardinal Red','Carolina Blue','Charcoal','Dark Chocolate','Dark Heather','Forest Green','Gold','Irish Green','Light Blue','Light Pink','Maroon','Navy','Orange','Red','Royal','S.Orange','Safety Green','Sport Grey',],
+            'purchase_price' => 23,15,
+            'price' => 37.9,
+        ],
+        [
+            'sizeInterval' => ['3XL', '5XL'],
+            'colors' => ['Ash Grey','Black','Cardinal Red','Carolina Blue','Charcoal','Dark Chocolate','Dark Heather','Forest Green','Gold','Irish Green','Light Blue','Light Pink','Maroon','Navy','Orange','Red','Royal','S.Orange','Safety Green','Sport Grey',],
+            'purchase_price' => 31.8,
+            'price' => 45,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "72",
+            "72",
+            "72",
+            "72",
+            "72",
+            "36",
+            "12",
+            "12"
+        ],
+        "Lungimea corpului (A)" => [
+            "71.12",
+            "73.66",
+            "76.20",
+            "78.74",
+            "81.28",
+            "83.82",
+            "86.36",
+            "88.90"
+        ],
+        "Latimea pieptului (B)" => [
+            "45.72",
+            "50.80",
+            "55.88",
+            "60.96",
+            "66.04",
+            "71.12",
+            "76.20",
+            "81.28"
+        ],
+        "Lungimea manecii (C)" => [
+            "82.55",
+            "86.36",
+            "90.17",
+            "93.98",
+            "97.79",
+            "97.79",
+            "99.06",
+            "100.33"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "JT006  WOMEN'S TRI-BLEND CROPPED T",
+    1,
+    160,
+    "JUST TS",
+    "Tricouri",
+    [
+        "Poliester/Bumbac/Vascoza"
+    ],
+    [
+        "Cusatura laterala",
+        "Slim Fit"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', 'XL'],
+            'colors' => ['Heather Black','Heather Grey','Solid Black','Solid White','White',],
+            'purchase_price' => 20.81,
+            'price' => 36,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "48",
+            "48",
+            "48",
+            "48",
+            "48"
+        ],
+        "Lungimea corpului (A)" => [
+            "41",
+            "43",
+            "45",
+            "47",
+            "49"
+        ],
+        "Latimea pieptului (B)" => [
+            "38",
+            "42",
+            "46",
+            "50",
+            "54"
+        ],
+        "Lungimea manecii (C)" => [
+            "17",
+            "18",
+            "19",
+            "20",
+            "21"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ]
+],
+[
+    "JT007  TRI-BLEND VEST",
+    0,
+    160,
+    "JUST TS",
+    "Tricouri",
+    [
+        "Poliester/Bumbac/Vascoza"
+    ],
+    [
+        "Cusatura laterala",
+        "Slim Fit"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Heather Black','Heather Grey','Solid Black','Solid White','White'],
+            'purchase_price' => 20.81,
+            'price' => 36,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "48",
+            "48",
+            "48",
+            "48",
+            "48"
+        ],
+        "Lungimea corpului (A)" => [
+            "71",
+            "74",
+            "77",
+            "80",
+            "83"
+        ],
+        "Latimea pieptului (B)" => [
+            "46",
+            "50",
+            "54",
+            "58",
+            "62"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "KA386  LADIES’ LONG-SLEEVED BRETON STRIPE TOP",
+    1,
+    220,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Nervura"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Striped White/Navy','White'],
+            'purchase_price' => 21.06,
+            'price' => 36.5,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "30",
+            "30",
+            "30",
+            "30",
+            "30",
+            "30"
+        ],
+        "Lungimea corpului (A)" => [
+            "59",
+            "61",
+            "63",
+            "65",
+            "67",
+            "69"
+        ],
+        "Latimea pieptului (B)" => [
+            "39",
+            "42",
+            "45",
+            "48",
+            "51",
+            "54"
+        ],
+        "Lungimea manecii (C)" => [
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "KA357  MEN'S SHORT-SLEEVED V-NECK T-SHIRT",
+    0,
+    180,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Slim Fit"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '4XL'],
+            'colors' => ['Black','Dark Grey','Forest Green','Kelly Green','Light Royal Blue','Light Sand','Lime','Navy','Orange','Oxford Grey','Purple','Red','Sky Blue','Tropical Blue','Fuchsia','Yellow','White'],
+            'purchase_price' => 21.06,
+            'price' => 35,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80",
+            "82"
+        ],
+        "Latimea pieptului (B)" => [
+            "49",
+            "52",
+            "55",
+            "58",
+            "61",
+            "64",
+            "67"
+        ],
+        "Lungimea manecii (C)" => [
+            "20.50",
+            "21.50",
+            "22",
+            "22.75",
+            "23.50",
+            "24.25",
+            "25"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+    ]
+],
+[
+    "KA330  BASEBALL - SHORT-SLEEVED TWO-TONE T-SHIRT",
+    0,
+    165,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Raglan"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Aqua Blue/White','Black/Red','Ice Blue/Denim','Navy/Yellow','Orange/Light Grey','Royal Blue/Yellow','Slate Grey/Black','White/Black','White/Navy','White/Red','White/Royal Blue','White'],
+            'purchase_price' => 23,
+            'price' => 36,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "69.55",
+            "71.65",
+            "73.75",
+            "75.85",
+            "78.75",
+            "81.65"
+        ],
+        "Latimea pieptului (B)" => [
+            "50",
+            "53",
+            "56",
+            "59",
+            "63",
+            "67"
+        ],
+        "Lungimea manecii (C)" => [
+            "37",
+            "39",
+            "41",
+            "43",
+            "45.55",
+            "48.10"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "JT004  ELECTRIC TRI-BLEND T",
+    2,
+    160,
+    "JUST TS",
+    "Tricouri",
+    [
+        "Poliester/Bumbac/Vascoza",
+        "Poliester/Vascoza/Elastan"
+    ],
+    [
+        "Cusatura laterala"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Electric Green','Electric Orange','Electric Pink','Electric Yellow','White'],
+            'purchase_price' => 21.91,
+            'price' => 35,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "48",
+            "48",
+            "48",
+            "48",
+            "48"
+        ],
+        "Lungimea corpului (A)" => [
+            "68",
+            "71",
+            "74",
+            "77",
+            "80"
+        ],
+        "Latimea pieptului (B)" => [
+            "46",
+            "50",
+            "54",
+            "58",
+            "62"
+        ],
+        "Lungimea manecii (C)" => [
+            "21",
+            "22",
+            "23",
+            "24",
+            "25"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "KA383  LADIES' LONG-SLEEVED CREW NECK T-SHIRT",
+    1,
+    180,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Slim Fit"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Black','Dark Grey','Forest Green','Kelly Green','Light Royal Blue','Light Sand','Lime','Navy','Orange','Oxford Grey','Purple','Red','Sky Blue','Tropical Blue','Yellow','Ash Heather','White'],
+            'purchase_price' => 22.75,
+            'price' => 36,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "62",
+            "64",
+            "66",
+            "68",
+            "70",
+            "72"
+        ],
+        "Latimea pieptului (B)" => [
+            "45",
+            "48",
+            "51",
+            "54",
+            "57",
+            "60"
+        ],
+        "Lungimea manecii (C)" => [
+            "58.75",
+            "59.75",
+            "60.75",
+            "61.75",
+            "62.75",
+            "63.75"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "SO03806  SOL'S BOXY MEN'S OVERSIZED T-SHIRT",
+    0,
+    180,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "Oversized"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 23.05,
+            'price' => 36.9,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Deep Black','French Navy','Light Yellow','Lilac','Off White',],
+            'purchase_price' => 25.86,
+            'price' => 42,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "73",
+            "75",
+            "77",
+            "79",
+            "81"
+        ],
+        "Latimea pieptului (B)" => [
+            "54",
+            "57",
+            "60",
+            "63",
+            "66"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "SO03807  SOL'S BOXY WOMEN'S OVERSIZED T-SHIRT",
+    1,
+    180,
+    "SOL'S",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "Organic cotton"
+    ],
+    [
+        "Oversized"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['White'],
+            'purchase_price' => 23.05,
+            'price' => 36.9,
+        ],
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Deep Black','French Navy','Light Yellow','Lilac','Off White',],
+            'purchase_price' => 25.85,
+            'price' => 42,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "59",
+            "61",
+            "63",
+            "65",
+            "67"
+        ],
+        "Latimea pieptului (B)" => [
+            "53",
+            "56",
+            "59",
+            "62",
+            "65"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+    ]
+],
+[
+    "JT032  SURF T",
+    2,
+    160,
+    "JUST TS",
+    "Tricouri",
+    [
+        "Bumbac/Poliester"
+    ],
+    [
+        "Cusatura laterala",
+        "Fitted"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '2XL'],
+            'colors' => ['Surf Blue','Surf Ocean','Surf Pink','Surf Purple','Surf Yellow','White'],
+            'purchase_price' => 23.05,
+            'price' => 36.9,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "48",
+            "48",
+            "48",
+            "48",
+            "48",
+            "48"
+        ],
+        "Lungimea corpului (A)" => [
+            "65",
+            "68",
+            "71",
+            "74",
+            "77",
+            "80"
+        ],
+        "Latimea pieptului (B)" => [
+            "42",
+            "46",
+            "50",
+            "54",
+            "58",
+            "62"
+        ],
+        "Lungimea manecii (C)" => [
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "KA3017  LADIES LONG-SLEEVED CREW NECK T-SHIRT",
+    1,
+    160,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "Bumbac/Elastan"
+    ],
+    [
+        "Cusatura laterala",
+        "Fitted"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '2XL'],
+            'colors' => ['Black','Light Grey Heather','Navy','White'],
+            'purchase_price' => 25.06,
+            'price' => 42,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "62",
+            "64",
+            "66",
+            "68",
+            "70"
+        ],
+        "Latimea pieptului (B)" => [
+            "44",
+            "47",
+            "50",
+            "53",
+            "56"
+        ],
+        "Lungimea manecii (C)" => [
+            "59",
+            "60",
+            "61",
+            "62",
+            "63"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+    ]
+],
+[
+    "WK3020  MEN'S SHORT-SLEEVED DAYTODAY T-SHIRT (ex.KA3020)",
+    0,
+    190,
+    "DESIGNED TO WORK",
+    "Tricouri",
+    [
+        "Poliester/Bumbac",
+        "jerseu"
+    ],
+    [
+        "170-199 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '5XL'],
+            'colors' => ['Black/Red','Black/Yellow','Navy/Light Royal Blue','Navy/Silver','Black/Kelly Green','Black/Orange','Black/Silver','White'],
+            'purchase_price' => 26,
+            'price' => 43,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "40",
+            "40",
+            "40",
+            "40",
+            "40",
+            "40",
+            "40",
+            "40"
+        ],
+        "Lungimea corpului (A)" => [
+            "70",
+            "72",
+            "74",
+            "765",
+            "78",
+            "80",
+            "82",
+            "84"
+        ],
+        "Latimea pieptului (B)" => [
+            "50",
+            "53",
+            "56",
+            "59",
+            "62",
+            "65",
+            "68",
+            "71"
+        ],
+        "Lungimea manecii (C)" => [
+            "23",
+            "23",
+            "24",
+            "25",
+            "26",
+            "26",
+            "27",
+            "28"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+    ]
+],
+[
+    "WK3021  LADIES SHORT-SLEEVED DAYTODAY T-SHIRT (ex.KA3021)",
+    1,
+    190,
+    "DESIGNED TO WORK",
+    "Tricouri",
+    [
+        "Poliester/Bumbac",
+        "jerseu"
+    ],
+    [
+        "170-199 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Black/Red','Navy/Light Royal Blue','Black/Kelly Green','Black/Orange','Black/Silver','Black/Yellow','Navy/Silver','White'],
+            'purchase_price' => 25.3,
+            'price' => 42,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "40",
+            "40",
+            "40",
+            "40",
+            "40",
+            "40",
+            "40"
+        ],
+        "Lungimea corpului (A)" => [
+            "60",
+            "62",
+            "64",
+            "66",
+            "68",
+            "70",
+            "72"
+        ],
+        "Latimea pieptului (B)" => [
+            "43",
+            "46",
+            "49",
+            "52",
+            "55",
+            "58",
+            "61"
+        ],
+        "Lungimea manecii (C)" => [
+            "16",
+            "17",
+            "17",
+            "18",
+            "19",
+            "20",
+            "20"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "KA3014  MEN'S SHORT-SLEEVED V-NECK T-SHIRT",
+    0,
+    160,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "Bumbac/Elastan"
+    ],
+    [
+        "140-169 g/m2"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '3XL'],
+            'colors' => ['Black','Light Grey Heather','Navy','White'],
+            'purchase_price' => 25.5,
+            'price' => 42,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "69",
+            "71",
+            "73",
+            "75",
+            "77",
+            "79"
+        ],
+        "Latimea pieptului (B)" => [
+            "48",
+            "51",
+            "54",
+            "57",
+            "60",
+            "63"
+        ],
+        "Lungimea manecii (C)" => [
+            "22",
+            "22",
+            "23",
+            "24",
+            "25",
+            "25"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+    ]
+],
+[
+    "KA359  MEN'S LONG-SLEEVED CREW NECK T-SHIRT",
+    0,
+    180,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Slim Fit"
+    ],
+    [
+        [
+            'sizeInterval' => ['S', '4XL'],
+            'colors' => ['Ash Heather','Black','Chocolate','Dark Grey','Dark Khaki','Forest Green','Kelly Green','Light Royal Blue','Light Sand','Lime','Navy','Orange','Oxford Grey','Purple','Red','Sky Blue','Tropical Blue','Wine','Yellow','Fuchsia','White'],
+            'purchase_price' => 25.85,
+            'price' => 42,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "70",
+            "72",
+            "74",
+            "76",
+            "78",
+            "80",
+            "82"
+        ],
+        "Latimea pieptului (B)" => [
+            "49",
+            "52",
+            "55",
+            "58",
+            "61",
+            "64",
+            "67"
+        ],
+        "Lungimea manecii (C)" => [
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70"
+        ]
+    ],
+    [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+    ]
+],
+[
+    "KA3008  OVERSIZED SHORT SLEEVE UNISEX T-SHIRT",
+    2,
+    220,
+    "KARIBAN",
+    "Tricouri",
+    [
+        "100% Bumbac",
+        "jerseu"
+    ],
+    [
+        "Cusatura laterala",
+        "Oversized"
+    ],
+    [
+        [
+            'sizeInterval' => ['XS', '3XL'],
+            'colors' => ['Black','Coconut Milk','Ink Blue','Navy','Oxford Grey','Storm Grey','White'],
+            'purchase_price' => 28.9,
+            'price' => 45,
+        ],
+    ],
+    [
+        "Buc./" => [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        "Lungimea corpului (A)" => [
+            "69",
+            "71",
+            "73",
+            "75",
+            "77",
+            "79",
+            "81"
+        ],
+        "Latimea pieptului (B)" => [
+            "52",
+            "55",
+            "58",
+            "61",
+            "64",
+            "67",
+            "70"
+        ],
+        "Lungimea manecii (C)" => [
+            "21.50",
+            "22",
+            "22.50",
+            "23",
+            "23.50",
+            "24",
+            "24.50"
+        ]
+    ],
+    [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
     ]
 ],
 ];

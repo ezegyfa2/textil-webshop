@@ -34,9 +34,18 @@ class ProductSeeder extends Seeder
 
     protected $colors = [];
     protected $combinedColors = [];
+    protected $missingColorNames = [];
     
     public function run(): void
     {
+        $imageNames = scandir(storage_path('app/public/images/producttype'));
+        foreach ($imageNames as $imageName) {
+            if (!is_dir(storage_path('app/public/images/producttype') . '/' . $imageName)) {
+                $image = new ProductTypeImage([ 'relative_path' => $imageName]);
+                $image->createResizedVersions();
+            }
+        }
+
         $this->imageNames = array_filter(scandir(storage_path('app/public/images/producttype')), function($fileName) {
             return is_dir(storage_path('app/public/images/producttype') . '/' . $fileName);
         });
@@ -44,7 +53,9 @@ class ProductSeeder extends Seeder
         $productTypes = require(__DIR__ . '/Products.php');
         $productTypes = array_map(function ($productType) use ($enProductTypes) {
             $enProductType = $this->getEnProductType($productType, $enProductTypes);
-            $productType[6] = $enProductType[6];
+            if ($enProductType) {
+                $productType[7] = $enProductType[6];
+            }
 
             return $productType;
         }, $productTypes);
@@ -58,13 +69,15 @@ class ProductSeeder extends Seeder
                 $productType[5],
                 $productType[6],
                 $productType[7],
-                $productType[8]
+                $productType[8],
+                $productType[9]
             );
         }
     }
 
     protected function create(
         string $name,
+        int $gender,
         ?int $gPerM2,
         string $brandName,
         string $categoryName,
@@ -125,6 +138,7 @@ class ProductSeeder extends Seeder
 
         $productType = ProductType::create([
             'name' => $name,
+            'gender' => $gender,
             'gram_per_m2' => $gPerM2,
             'brand_id' => $brand->id,
             'product_category_id' => $category->id,
@@ -157,21 +171,8 @@ class ProductSeeder extends Seeder
                 'product_type_id' => $productType->id,
             ]);
             foreach ($productData['colors'] as $colorName) {
-                $combinedColor = $this->getCombinedColor($colorName);
+                $combinedColor = $this->getCombinedColor($colorName, $productCode);
                 $product->combinedColors()->attach($combinedColor->id);
-                
-                /*$color = Color::where('name', $colorName)->first();
-                if ($color) {
-                    $product->colors()->attach($color->id);
-                } else {
-                    //throw new \Exception('itt a hiba');
-                    $currentColors = explode('/', $colorName);
-                    foreach ($currentColors as $currentColor) {
-                        if (!in_array($currentColor, array_keys($this->colors))) {
-                            $this->colors[$currentColor] = $name;
-                        }
-                    }
-                }*/
             }
             foreach ($this->getIntervalSizes($productData, $priceSizes) as $intervalSize) {
                 $size = Size::firstOrCreate([
@@ -218,7 +219,7 @@ class ProductSeeder extends Seeder
         }
     }
 
-    protected function getCombinedColor(string $colorName): CombinedColor
+    protected function getCombinedColor(string $colorName, $productCode): CombinedColor
     {
         $currentColorNames = collect(explode('/', $colorName));
         /*foreach ($this->combinedColors as $combinedColor) {
@@ -228,10 +229,16 @@ class ProductSeeder extends Seeder
         }*/
         $newCombinedColor = CombinedColor::create([]);
         foreach ($currentColorNames as $colorName) {
-            $color = Color::firstOrCreate([
+            $color = Color::where([
                 'name' => $colorName,
-            ]);
-            $newCombinedColor->colors()->attach($color->id);
+            ])->first();
+            if ($color) {
+                $newCombinedColor->colors()->attach($color->id);
+            } else {
+                if (!isset($this->missingColorNames[$colorName])) {
+                    $this->missingColorNames[$colorName] = $productCode;
+                }
+            }
         }
         $newCombinedColor->save();
         array_push($this->combinedColors, [
@@ -263,7 +270,8 @@ class ProductSeeder extends Seeder
                 return $enProductType;
             }
         }
-        throw new \Exception('Nincs angol valtozat ' . $productType[0]);
+
+        return null;
     }
 
     protected function getSizeInterval(string $beginSize, string $endSize)
