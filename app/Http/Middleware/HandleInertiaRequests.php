@@ -31,20 +31,21 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
-        $categories = ProductCategory::with('image')->get()->map(function($productCategory) {
-            if ($productCategory->image) {
-                $imageSrc = $productCategory->image->getUrl(450);
-            } else {
-                $imageSrc = null;
-            }
+        $categories = ProductCategory::whereNot('name', 'Copii')->with('image')->get()
+            ->map(function($productCategory) {
+                if ($productCategory->image) {
+                    $imageSrc = $productCategory->image->getUrl(450);
+                } else {
+                    $imageSrc = null;
+                }
 
-            return [
-                'id' => $productCategory->id,
-                'name' => $productCategory->name,
-                'image_src' => $imageSrc,
-                'url' => route('product.index') . '?category=' . $productCategory->id,
-            ];
-        });
+                return [
+                    'id' => $productCategory->id,
+                    'name' => $productCategory->name,
+                    'image_src' => $imageSrc,
+                    'url' => route('product.index') . '?category=' . $productCategory->id,
+                ];
+            });
 
         $genders = array_map(function ($gender) {
             return [
