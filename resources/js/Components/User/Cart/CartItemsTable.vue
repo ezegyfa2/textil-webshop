@@ -61,7 +61,7 @@
 
         <template v-slot:item.quantity="{ item }">
             <div class="d-flex justify-center">
-                <div class="d-flex align-center quantity-field">
+                <div class="d-flex align-center quantity-section">
                     <v-btn
                         icon="mdi-minus-thick"
                         :size="buttonSize"
@@ -269,7 +269,7 @@ const updateQuantity = debounce((item: CartItem) => {
             width: 30px !important;
         }
     }
-    .quantity-field {
+    .quantity-section {
         width: 100px !important;
         .cart-item-input .v-field {
             height: 32px !important;
@@ -280,16 +280,16 @@ const updateQuantity = debounce((item: CartItem) => {
     }
 }
 @media #{map-get($display-breakpoints, 'sm')} {
-    .quantity-field {
+    .quantity-section {
         width: 140px !important;
     }
 }
 @media #{map-get($display-breakpoints, 'md-and-up')} {
-    .quantity-field {
+    .quantity-section {
         width: 140px !important;
     }
 }
-.quantity-field input {
+.quantity-section input {
     text-align: center;
 }
 </style>

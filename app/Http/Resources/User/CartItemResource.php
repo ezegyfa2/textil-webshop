@@ -13,7 +13,7 @@ class CartItemResource extends JsonResource
                 'id' => $this->product->id,
                 'name' => $this->product->type->name,
                 'price' => $this->product->price,
-                'image_src' => $this->product->type->mainImage->getUrl(400),
+                'image_src' => $this->product->type->mainImage->getUrl(100),
             ],
             'size' => [
                 'name' => $this->size->name,
