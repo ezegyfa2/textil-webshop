@@ -9,7 +9,7 @@
         first-icon=""
         last-icon=""
         items-per-page-text="Produse pe pagină"
-        :hide-default-footer="itemsTotalCount <= itemsPerPage"
+        :hide-default-footer="itemsTotalCount <= 5"
         disable-sort
         @update:options="loadItems"
     >
@@ -201,7 +201,7 @@ function removeItem(item) {
 function loadItems(): void {
     axios.get(route('cart.fetch-items', {
         page: page.value,
-        per_page: itemsPerPage.value,
+        per_page: 100000,
     }))
     .then((response) => {
         items.value = response.data.data;
