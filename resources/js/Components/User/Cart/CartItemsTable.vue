@@ -6,6 +6,7 @@
         :headers="headers"
         :items="currentItems"
         :items-length="itemsTotalCount"
+        :items-per-page-options="itemsPerPageOptions"
         first-icon=""
         last-icon=""
         items-per-page-text="Produse pe pagină"
@@ -137,6 +138,13 @@ import { ref, computed } from 'vue';
 const page = ref(1);
 const itemsPerPage = ref(5);
 const itemsTotalCount = ref(0);
+const itemsPerPageOptions = [
+    {value: 5, title: '5'},
+    {value: 10, title: '10'},
+    {value: 25, title: '25'},
+    {value: 50, title: '50'},
+    {value: 100, title: '100'},
+]
 const items = defineModel('items');
 const loading = defineModel('loading');
 const itemsLoaded = ref(false);
