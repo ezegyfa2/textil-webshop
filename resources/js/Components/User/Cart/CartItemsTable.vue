@@ -4,7 +4,7 @@
         v-model:items-per-page="itemsPerPage"
         class="cart-items-table"
         :headers="headers"
-        :items="items"
+        :items="currentItems"
         :items-length="itemsTotalCount"
         first-icon=""
         last-icon=""
@@ -175,6 +175,7 @@ const headers = computed(() => {
 });
 
 const buttonSize = computed(() => smAndUp.value ? 'small' : 'x-small');
+const currentItems = computed(() => items.value.slice((page.value - 1) * itemsPerPage.value, page.value * itemsPerPage.value));
 
 function removeItem(item) {
     loading.value = true;
@@ -206,10 +207,6 @@ function loadItems(): void {
     .then((response) => {
         items.value = response.data.data;
         itemsTotalCount.value = response.data.meta.total;
-        const pageCount = Math.ceil(response.data.meta.total / response.data.meta.per_page);
-        if (page.value > pageCount) {
-            page.value = pageCount;
-        }
     })
     .catch((error) => {
         console.error(error);
